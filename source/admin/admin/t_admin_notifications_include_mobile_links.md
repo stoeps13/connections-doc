@@ -9,14 +9,11 @@ A configuration option in the notification-config.xml file allows you to enable 
 1.  Start the wsadmin client from the following directory of the system where you installed the deployment manager:
 
     ```
-    [app\_server\_root](../plan/i_ovr_r_directory_conventions.md)\profiles\dm\_profile\_root\bin
+    app_server_root\profiles\dm_profile_root\bin
     ```
 
-    ```
-    app\_server\_root\profiles\dm\_profile\_root\bin
-    ```
-
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+        You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the [Starting the wsadmin client](../admin/t_admin_wsadmin_starting.md) topic.
 
 2.  Enter the following command to access the HCL Connections configuration files:
 
@@ -29,28 +26,27 @@ A configuration option in the notification-config.xml file allows you to enable 
 3.  Enter the following command to check out the notification-config.xml file:
 
     ```
-    LCConfigService.checkOutNotificationConfig("temp\_dir","cell\_name")
+    LCConfigService.checkOutNotificationConfig("temp_dir","cell_name")
     ```
 
     where
 
     -   temp\_dir is the temporary directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes to separate directories in the file path, even if you are using the Microsoft Windows operating system.
     -   cell\_name is the WebSphere® Application Server cell to which you installed the application for which you are enabling mail. This argument is case-sensitive, so type it with care.
-    **Note:** If you installed HCL Connections into multiple WebSphere Application Server profiles, for example: Activities is installed on AppSrv01, Blogs is installed on AppSrv02, and so on\), then there is a notification-config.xml file for each application. If you used this type of deployment, you must perform these steps to edit the notification-config.xml file associated with each WebSphere Application Server profile.
 
-    For example:
+For example:
 
-    -   AIX or Linux:
+-   AIX or Linux:
 
-        ```
-        LCConfigService.checkOutNotificationConfig("/opt/temp","foo01Cell01")
-        ```
+    ```
+    LCConfigService.checkOutNotificationConfig("/opt/temp","foo01Cell01")
+    ```
 
-    -   Microsoft Windows:
+-   Microsoft Windows:
 
-        ```
-        LCConfigService.checkOutNotificationConfig("c:/temp","foo01Cell01")
-        ```
+    ```
+    LCConfigService.checkOutNotificationConfig("c:/temp","foo01Cell01")
+    ```
 
 4.  From the temporary directory to which you checked out the notification-config.xml file, open it in a text editor.
 
