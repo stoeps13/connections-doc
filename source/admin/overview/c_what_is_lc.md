@@ -13,7 +13,7 @@ Blogs
 Bookmarks
 :   Social bookmarking tool for saving, organizing, and sharing Internet and intranet bookmarks. Discover bookmarks that were created by others with similar interests and expertise.
 
-    !!! note
+!!! note
     This application was previously named Dogear.
 
 Communities
