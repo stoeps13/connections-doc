@@ -188,7 +188,7 @@ nav:
                 - Attribute mapping for Profiles: admin/install/r_attribute_mapping_profiles.md
               - Populating Profiles with photos from LDAP: admin/install/t_install_profiles_import_photos_ldap.md
               - Configuring the Manager designation in user profiles: admin/install/r_report-to_chains_profiles.md
-              - Supplemental user data for Profiles: admin/install/install/r_prof_fill-tables.md
+              - Supplemental user data for Profiles: admin/install/r_prof_fill-tables.md
               - Specifying the global ID attribute for users and groups: admin/install/c_specify_guid.md
               - Optional&colon; Specifying a custom ID attribute for users or groups: admin/install/t_specify_dif_guid.md
             - Before installing:
@@ -431,7 +431,7 @@ nav:
             - Adding a welcome video to Touchpoint: admin/install/tp_t_add_welcome_video.md
           - Configuring external collaboration: admin/install/t_install_configure_external_collab.md
           - Integrating Connections Sidebar with a website: admin/install/t_install_config_sidebar_for_website.md
-          - Configuring Files to use an object store: admin/install/admin_files_conf_obj_store.md
+          - Configuring Files to use an object store: admin/admin/admin_files_conf_obj_store.md
           - Installing and deploying HCL Connections Docs: admin/install/t_inst_deploy_file_viewr.md
           - Deploying URL preview in an environment where anonymous access is disabled: admin/install/t_inst_access_internal_resources_when_authentication_forced.md
           - Enabling anonymous access for the Rich Content Widget component: admin/install/t_inst_enable_anonymous_access_for_rte.md
@@ -440,7 +440,7 @@ nav:
           - Setting up and configuring a WAS proxy server for long poll testing:
             - admin/secure/t_admin_config_was_proxy.md
             - Setting up a WAS proxy server for long polling: admin/secure/t_admin_setting_up_WASProxy_t.md
-            - Setting up a new proxy core group: admin/securetall/t_admin_setting_up_ProxyCoreGroup_t.md
+            - Setting up a new proxy core group: admin/secure/t_admin_setting_up_ProxyCoreGroup_t.md
             - Tuning the WAS proxy server for long poll: admin/secure/t_admin_tuning_WASProxy_t.md
           - Configuring notifications:
             - admin/admin/t_admin_common_config_notification.md
@@ -449,7 +449,7 @@ nav:
             - Accessing the notification configuration file: admin/admin/t_admin_common_checkout_notification_config.md
             - Sending mail from any available mail server: admin/admin/t_admin_common_config_mail_dnx.md
             - Sending mail from a dedicated mail server: admin/admin/t_admin_common_config_mail_was.md
-            - Enabling email notifications (default templates): admin/admin/t_admin_common_enable_mail.hmd
+            - Enabling email notifications (default templates): admin/admin/t_admin_common_enable_mail.md
             - Enabling link stripping in email notifications: admin/install/enable_link_stripping_in_notifications.md
             - Setting the default frequency of email digests: admin/admin/t_admin_common_specify_default_notification_frequency.md
           - Configuring Forums for email notification replies:
@@ -507,7 +507,7 @@ nav:
               - updateSilent command: admin/migrate/r_updatelc_command.md
             - Uninstalling fixes:
               - admin/migrate/c_update_uninstall.md
-              - Uninstalling fixes in interactive mode: t_uninstall_interim-fix_interactive-mode.md
+              - Uninstalling fixes in interactive mode: admin/migrate/t_uninstall_interim-fix_interactive-mode.md
               - Uninstalling fixes in silent mode: admin/migrate/t_uninstall_interim-fix_silent-mode.md
           - Synchronizing nodes:
             - admin/migrate/t_synch_updates.md
@@ -1845,7 +1845,7 @@ nav:
                           - Mobile mode: connectors/icec/cec-inst-mobile-mode.md
                   - Installing:
                       - connectors/icec/cec-inst-installing.md
-                      - Enable trace logs to analyze errors \(optional\)](connectors/icec/cec-inst-enable-trace-logs.md
+                      - connectors/icec/cec-inst-enable-trace-logs.md
                       - Mapping security roles: connectors/icec/cec-inst-tmap-security-roles.md
                   - Configuring:
                       - connectors/icec/cec-inst-configuring.md
