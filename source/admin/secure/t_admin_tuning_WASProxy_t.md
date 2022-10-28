@@ -88,7 +88,8 @@ If the WebSphere Application Server \(WAS\) proxy server is used without additio
 
     3.  For **System.out** and **System.err**, make sure that the **Log File Rotation** check box is checked, set **Maximum Size** to `20MB`, and set **Maximum Number of Historical Log Files. Number in range 1 through 200.** value to `50`.
 
-        **Note:** You can use any values for the size of the log files, but make sure to specify a log size that is large enough to prevent the logs cycling over older logs. Also, make sure that your proxy server has enough hard disk space to allow for the theoretical maximum required size for your values. For example, multiply your maximum log file size by your historical logs value to determine the maximum required space, and then check your proxy server to ensure that enough space exists on the disk.
+        !!! note
+    You can use any values for the size of the log files, but make sure to specify a log size that is large enough to prevent the logs cycling over older logs. Also, make sure that your proxy server has enough hard disk space to allow for the theoretical maximum required size for your values. For example, multiply your maximum log file size by your historical logs value to determine the maximum required space, and then check your proxy server to ensure that enough space exists on the disk.
 
     4.  Click **Apply** and save the configuration if prompted.
 

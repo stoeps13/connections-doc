@@ -10,7 +10,8 @@ To set your notification preferences:
 4.  In the **Email language** list, select the language in which you want to receive email notifications.
 5.  Turn browser notifications on or off by toggling the switches accordingly.
 
-    **Note:** Browser notifications are supported in the latest versions of Firefox, Chrome, and Safari.
+    !!! note
+    Browser notifications are supported in the latest versions of Firefox, Chrome, and Safari.
 
 6.  Specify how often you want to be notified by email about responses to content that you create yourself, and the people and content that you follow. To disable email notifications, select **No Email** from the list.
 7.  Click **Save**.

@@ -4,7 +4,8 @@ Remove databases with the database wizard in silent mode.
 
 Ensure that the wizard has created the response.properties file in the user\_settings/lcWizard/response/dbWizard directory.
 
-**Note:** To create a response file, run the wizard in standard mode and specify that you would like to create a response file. You can modify the existing response file or create your own, using a text editor.
+!!! note
+    To create a response file, run the wizard in standard mode and specify that you would like to create a response file. You can modify the existing response file or create your own, using a text editor.
 
 To remove databases in silent mode, complete the following steps:
 
@@ -23,7 +24,8 @@ To remove databases in silent mode, complete the following steps:
     -   Microsoft® Windows: dbWizard.bat -silent response\_file
     where response\_file is the file path to the response file.
 
-    **Note:** If the path to the response\_file contains a space, this parameter must be enclosed in double quotation marks \("\).
+    !!! note
+    If the path to the response\_file contains a space, this parameter must be enclosed in double quotation marks \("\).
 
 
 After the wizard has finished, check the log file in the Lotus\_Connections\_set-up\_directory/Wizards/DBWizard directory for messages. The log file name uses the time as a postfix. For example: dbConfig\_20101228\_202501.log.

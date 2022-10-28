@@ -22,7 +22,8 @@ To create a wiki:
 
 5.  Click **Save**.
 
-**Note:** Access to a community wiki is managed by community owners. Community owners can grant either an Editor or Reader role to community members. For further details, see [Assigning app roles for community members](../communities/managing_roles_for_community_members.md).
+!!! note
+    Access to a community wiki is managed by community owners. Community owners can grant either an Editor or Reader role to community members. For further details, see [Assigning app roles for community members](../communities/managing_roles_for_community_members.md).
 
 ## Creating a page { .section}
 

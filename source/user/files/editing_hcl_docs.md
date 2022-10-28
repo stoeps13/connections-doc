@@ -12,7 +12,8 @@ To edit a file in HCL Docs:
 
     ![A screenshot showing the option to edit a file in HCL Docs](images/edit_hcl_docs.png)
 
-    **Note:** The edit option is available only if you have HCL Docs and Editor access to the selected file.
+    !!! note
+    The edit option is available only if you have HCL Docs and Editor access to the selected file.
 
 
 To get the most out of HCL Docs, see [Connections Docs](https://help.hcltechsw.com/connections/welcome/index.html).

@@ -10,11 +10,13 @@ Verify that all necessary prerequisite conditions are complete before installing
 2.  Install all the required fixes for WebSphere® Application Server that are listed in the [HCL Connections Software Requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073654) web page. If you are migrating from an earlier release or updating a release, verify that you have upgraded to the supported versions of all required software and all required fixes. Requirements have changed since the previous release.
 3.  Upgrade to the 64-bit, version 1.9.1 of IBM Install Manager. Connections 8 will not install with IIM 1.8.x.
 
-    **Note:** Use the same user account to install IBM® Installation Manager and HCL Connections.
+    !!! note
+    Use the same user account to install IBM® Installation Manager and HCL Connections.
 
 4.  Plan which of three deployment options makes the most sense for your HCL Connections implementation. For more information about these options, Refer to the *Deployment options* topic.
 
-    **Note:** The HCL Connections installation process supports the creation of new server instances and clusters. Do not use existing clusters to deploy HCL Connections.
+    !!! note
+    The HCL Connections installation process supports the creation of new server instances and clusters. Do not use existing clusters to deploy HCL Connections.
 
 5.  Complete the Pre-installation tasks.
 6.  Install IBM WebSphere Application Server Network Deployment \(Application Server option\) on each node. HCL Connections is installed on the system where WebSphere Application Server Deployment Manager is installed. For more information, see the *Installing IBM WebSphere Application Server*topic.

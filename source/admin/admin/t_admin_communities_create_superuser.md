@@ -6,7 +6,8 @@ Global communities administrators can access all communities with rights to view
 
 You can use search to find private communities, but you must add the global administrator to the search-admin role of the Search application. Use the **My Organization Communities** view to find public and moderated communities.
 
-**Note:** The global administrator role is not supported on mobile devices. Global administrators must use a supported browser.
+!!! note
+    The global administrator role is not supported on mobile devices. Global administrators must use a supported browser.
 
 1.  Create a user who is dedicated to administering content, and add them to the Java EE **admin** role of Communities, Activities, Blogs, Files, Forums, and Wikis. Also, add them to the **search-admin** role of Search. See *Roles*.
 
@@ -80,7 +81,8 @@ You can use search to find private communities, but you must add the global admi
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied. The files are kept in this working directory while you make changes to them.
 
-            **Note:** AIX and Linux only: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX and Linux only: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the HCL Connections application. This argument is required. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 

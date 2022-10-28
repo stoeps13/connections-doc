@@ -41,7 +41,8 @@ At least two logs are created by the wizard under the [connections\_root](../pla
 -   Date\_Time\_ifix name\_application name\_uninstall.log
 -   Date\_Time\_ifix name\_uninstall.log
 
-**Note:** Check the <timestamp\>\_<fix name\>\_<feature name\>\_uninstall.log to find "Build Successful" near the end of the file. If this exists, it means you have uninstalled the fixes successfully. Otherwise, uninstall the fix again.
+!!! note
+    Check the <timestamp\>\_<fix name\>\_<feature name\>\_uninstall.log to find "Build Successful" near the end of the file. If this exists, it means you have uninstalled the fixes successfully. Otherwise, uninstall the fix again.
 
 **Parent topic:**[Uninstalling fixes](../migrate/c_update_uninstall.md)
 

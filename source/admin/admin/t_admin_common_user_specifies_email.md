@@ -33,7 +33,8 @@ The following preferences are set by default:
     app\_server\_root\profiles\dm\_profile\_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
 
 2.  Enter the following command to access the HCL Connections configuration files:
 
@@ -53,7 +54,8 @@ The following preferences are set by default:
 
     -   temp\_dir is the temporary directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes to separate directories in the file path, even if you are using the Microsoft Windows operating system.
     -   cell\_name is the WebSphere® Application Server cell to which you installed the application for which you are enabling mail. This argument is case-sensitive, so type it with care.
-    **Note:** If you installed HCL Connections into multiple WebSphere Application Server profiles, for example: Activities is installed on AppSrv01, Blogs is installed on AppSrv02, and so on\), then there is a notification-config.xml file for each application. If you used this type of deployment, you must perform these steps to edit the notification-config.xml file associated with each WebSphere Application Server profile.
+    !!! note
+    If you installed HCL Connections into multiple WebSphere Application Server profiles, for example: Activities is installed on AppSrv01, Blogs is installed on AppSrv02, and so on\), then there is a notification-config.xml file for each application. If you used this type of deployment, you must perform these steps to edit the notification-config.xml file associated with each WebSphere Application Server profile.
 
     For example:
 
@@ -89,7 +91,8 @@ The following preferences are set by default:
         -   If you want to define a default language to use for all notification messages all of the time, set <useLanguageFromCallingComponent\> to false and specify the language code of the language in the <defaultLanguage\> element.
         Users can change these settings from the product user interface; you are just defining the default values here.
 
-        **Note:** The list of languages present in the Settings page represents the languages that are enabled for the product, which is defined in the <languageSelector\> element in the LotusConnections-config.xml file. For more details, see *Enabling users to set a language preference*.
+        !!! note
+    The list of languages present in the Settings page represents the languages that are enabled for the product, which is defined in the <languageSelector\> element in the LotusConnections-config.xml file. For more details, see *Enabling users to set a language preference*.
 
     -   Edit the following defaultEmailPreferences.categories and elements:
 

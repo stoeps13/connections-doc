@@ -68,7 +68,8 @@ Communities can integrate with the Activities, Blogs, Files, Forums, News, and W
     -   application\_name is the application that is affected by the system crash.
     -   file\_path is a string that specifies the absolute path to the file name. The path can only contain forward slashes. For example, "c:/temp/community\_output.xml".
     -   event\_type is a string value that specifies the event type "community". An error is returned if this is set to anything other than "community".
-    **Note:** In clusters, when you run the command from the deployment manager, the path and file are created on the server running the specified application. In clusters where multiple nodes are running the specified application, you are asked to choose a server to connect to and run the command on, and then the path and file are created on that server.
+    !!! note
+    In clusters, when you run the command from the deployment manager, the path and file are created on the server running the specified application. In clusters where multiple nodes are running the specified application, you are asked to choose a server to connect to and run the command on, and then the path and file are created on that server.
 
     Depending on which application or applications you are correcting, choose from the following commands:
 
@@ -152,7 +153,8 @@ Communities can integrate with the Activities, Blogs, Files, Forums, News, and W
         WikisLibraryService.exportSyncedResourceInfo("/temp-dir/wikisOutput.xml", "community")
         ```
 
-    **Note:** If the Communities database fails, all remote applications are affected and you need to run each of the application-specific commands.
+    !!! note
+    If the Communities database fails, all remote applications are affected and you need to run each of the application-specific commands.
 
 
 The export XML files are used in the steps covered in the next topic to generate a report of how the information differs from the current state of the Communities application. For more information, see *Generating a synchronization report*.

@@ -4,7 +4,8 @@ Include the Profiles business card in your web application so that users can acc
 
 The CSS files that are loaded with the Profiles business card do not include font style information. Define your custom font styles globally so that the styles used in your application are also applied to the business card. Defining global styles ensures that the business card appears integrated with your web application.
 
-**Note:** You must use an Ajax web proxy to retrieve the business card data from HCL Connections.
+!!! note
+    You must use an Ajax web proxy to retrieve the business card data from HCL Connections.
 
 You can integrate the Profiles business card with your web application based on one of the following parameters:
 
@@ -12,7 +13,8 @@ You can integrate the Profiles business card with your web application based on 
 -   Email address, with the email parameter
 -   LDAP distinguished name, with the DN parameter
 
-    **Note:** The lookup by distinguished name requires that Profiles include the DN as an attribute of the profile. Specifically, the DN parameter must be mapped to the Profile database column EMPLOYEE.PROF\_SOURCE\_UID. See [Mapping fields manually](../install/t_prof_tdi_mapfields.md) and [Attribute mapping for Profiles](../install/r_attribute_mapping_profiles.md) for related information.
+    !!! note
+    The lookup by distinguished name requires that Profiles include the DN as an attribute of the profile. Specifically, the DN parameter must be mapped to the Profile database column EMPLOYEE.PROF\_SOURCE\_UID. See [Mapping fields manually](../install/t_prof_tdi_mapfields.md) and [Attribute mapping for Profiles](../install/r_attribute_mapping_profiles.md) for related information.
 
 
 The x-lconn-userid parameter is any unique identifier for the user that is defined by the administrator and originating from the corporate LDAP directory. Many LDAP directories contain users who do not have email addresses. Using the x-lconn-userid parameter is a way of preemptively avoiding a dependency on the email address. In addition, administrators can edit configuration property settings to prevent email addresses from being displayed inHCL Connections™. Hiding email is a way to protect user privacy. You can design your web application so that it does not rely on email addresses for retrieving user data, such as the contextual business card.
@@ -180,7 +182,8 @@ For example:    ```
 
 6.  If your application constructs its user interface with Ajax, do one of the following to make the business card user interface and a person's profile data available.
 
-    **Note:** This step applies only when you are building an application that constructs its user interface with Ajax. The business card code scans the HTML only when the page is first loaded. If you dynamically alter the page, you must manually specify the DOM elements that the code needs to rescan for business card vCard class attributes. If you are developing a static page, you can ignore this step.
+    !!! note
+    This step applies only when you are building an application that constructs its user interface with Ajax. The business card code scans the HTML only when the page is first loaded. If you dynamically alter the page, you must manually specify the DOM elements that the code needs to rescan for business card vCard class attributes. If you are developing a static page, you can ignore this step.
 
     Do one of the following:
 
@@ -235,7 +238,8 @@ For example:    ```
             
             ```
 
-    **Note:** When displaying in Internet Explorer Quirks mode, a user's integrated business card might display their name in a different location than when using the browser’s Standards mode. To work around this display issue, enter the following statement in the html file to force a Standards mode rendering:
+    !!! note
+    When displaying in Internet Explorer Quirks mode, a user's integrated business card might display their name in a different location than when using the browser’s Standards mode. To work around this display issue, enter the following statement in the html file to force a Standards mode rendering:
 
     ```
     <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> (http://www.w3.org/TR/html4/strict.dtd%27%3E)

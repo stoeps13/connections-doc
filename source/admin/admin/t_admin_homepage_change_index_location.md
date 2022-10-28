@@ -4,7 +4,8 @@ By default, the Search index is stored in the search/index subdirectory of the H
 
 Each node running the Search application requires its own dedicated index on the file system. Using a Search index on a network share is not supported. Highly-available network storage, such as a storage area network \(SAN\), can be used but it must be configured to be locally mounted to each node running the Search application.
 
-**Note:** Changing the value of the SEARCH\_INDEX\_DIR variable causes the next indexing task that fires to index all content from the beginning, so that the task creates a clean index. This operation might take some time to complete.
+!!! note
+    Changing the value of the SEARCH\_INDEX\_DIR variable causes the next indexing task that fires to index all content from the beginning, so that the task creates a clean index. This operation might take some time to complete.
 
 1.  To change the location of the Search index, complete the following steps.
 2.  Launch the WebSphere Application Server Integrated Solutions Console.

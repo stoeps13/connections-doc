@@ -4,7 +4,8 @@ HCL Connections provides several batch files that automate the collection and pr
 
 ## Batch file functions { .section}
 
-**Note:** The name of each batch file ends with the .sh suffix for the IBM® AIX® and Linux™ operating systems and with the .bat suffix for the Microsoft™ Windows™ operating system.
+!!! note
+    The name of each batch file ends with the .sh suffix for the IBM® AIX® and Linux™ operating systems and with the .bat suffix for the Microsoft™ Windows™ operating system.
 
 The following list describes each batch file and its functions. You can search for more information about these files in the help topics.
 
@@ -17,7 +18,8 @@ collect\_dns
 delete\_or\_inactivate\_employees
 :   Deactivate employee records in the Profiles database. The records are not removed from the Profiles database but are set to an inactive state and the employee login and mail address values are removed. These changes are propagated to the member and login tables in the databases of installed applications. The records to be deactivated are defined in the delete\_or\_inactivate\_employees.in file. To remove users from only the Profiles database, change the value of the sync\_delete\_or\_inactivate property in the profiles\_tdi.properties file to delete.
 
-    **Note:** You must manually create the delete\_or\_inactivate\_employees.in file. Use the following format for adding entries:
+    !!! note
+    You must manually create the delete\_or\_inactivate\_employees.in file. Use the following format for adding entries:
 
     $dn:cn=Any User3,cn=Users,l=Westford,st=Kansas,c=US,ou=Marketing,o=ABC Company,dc=ibm,dc=com uid:Any User3
 
@@ -63,7 +65,8 @@ populate\_from\_dn\_file
 process\_ad\_changes
 :   Synchronize LDAP directory changes with the Profiles database when your LDAP directory type is Microsoft Active Directory. This batch file is stored in the solution-dir/Samples directory. For more information, see [Active Directory Change Detection Connector](http://www-01.ibm.com/support/knowledgecenter/SSCQGF_7.2.0.1/com.ibm.IBMDI.doc_7.2.0.1/rg_conn_adchangedetection.html?lang=en).
 
-    **Note:** The sync\_all\_dns script is recommended when you want to synchronize changes in the LDAP directory with the Profiles database.
+    !!! note
+    The sync\_all\_dns script is recommended when you want to synchronize changes in the LDAP directory with the Profiles database.
 
 process\_draft\_updates
 :   Synchronize changes from the Profiles database back to the LDAP directory.
@@ -71,7 +74,8 @@ process\_draft\_updates
 process\_tds\_changes
 :   Synchronize LDAP directory changes with the Profiles database when your LDAP directory type is IBM Tivoli® Directory Integrator. This batch file is stored in the solution-dir/Samples directory.
 
-    **Note:** The sync\_all\_dns script is recommended when you want to synchronize changes in the LDAP directory with the Profiles database.
+    !!! note
+    The sync\_all\_dns script is recommended when you want to synchronize changes in the LDAP directory with the Profiles database.
 
 sync\_all\_dns
 :   Update the Profiles database to capture changes to the LDAP directory. This synchronization process includes updates to employee records and additions and deletions of records.

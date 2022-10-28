@@ -2,11 +2,13 @@
 
 Set properties that make it possible for people outside of your company to self-register for a Connections account when invited to join.
 
-**Note:** Self-registration requires that users have anonymous access to be able to register and reset their guest password. If an access manager solution such as IBM® Security Access Manager is in place, a junction for the following context route has to be created/whitelisted: **/selfservice/**
+!!! note
+    Self-registration requires that users have anonymous access to be able to register and reset their guest password. If an access manager solution such as IBM® Security Access Manager is in place, a junction for the following context route has to be created/whitelisted: **/selfservice/**
 
 1.  For external collaboration self-registration to work, it is mandatory that each of the following properties in the selfregistration-config.xml file have a value entered. You can modify default values to fit your environment.
 
-    **Note:** For this feature, you need to edit the configuration file directly in the /opt/IBM/WebSphere/AppServer/profiles/Dmgr01/config/cells/Cell01/LotusConnections-config directory.
+    !!! note
+    For this feature, you need to edit the configuration file directly in the /opt/IBM/WebSphere/AppServer/profiles/Dmgr01/config/cells/Cell01/LotusConnections-config directory.
 
     1.  Turn on the external collaboration service, and decide whether you want the option for authorized Connections users to invite external users to be displayed in the product UI. The default for the UI option is `false`.
 
@@ -43,7 +45,8 @@ Set properties that make it possible for people outside of your company to self-
                                <user>LDAP\_bind\_user</user>
         ```
 
-        **Note:** If you use Domino LDAP and your setup does not allow write access, you can use a secondary directory by \(1\) creating a default configuration in the secondary directory, allowing write access in the LDAP settings, \(2\) adding the LDAP user in the secondary directory's ACL, as Editor with \[UserCreator\] and \[UserModifier\] Roles, and \(3\) restarting the LDAP task. For further details on this configuration, see the Knowledge Article [Populating Guest Profiles in a Secondary Domino Directory](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0081243)
+        !!! note
+    If you use Domino LDAP and your setup does not allow write access, you can use a secondary directory by \(1\) creating a default configuration in the secondary directory, allowing write access in the LDAP settings, \(2\) adding the LDAP user in the secondary directory's ACL, as Editor with \[UserCreator\] and \[UserModifier\] Roles, and \(3\) restarting the LDAP task. For further details on this configuration, see the Knowledge Article [Populating Guest Profiles in a Secondary Domino Directory](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0081243)
 
     5.  Add the password for the LDAP bind user:
 
@@ -54,7 +57,8 @@ Set properties that make it possible for people outside of your company to self-
                                <password>LDAP\_bind\_user\_password</password>
         ```
 
-        **Note:** If you prefer, the password for the LDAP BindDN can be XOR-encoded. You can use the set\_invite\_pass.py wsadmin script provided by the Connections installation to encode the given password and store it in this configuration file. For more information, see [\(Optional\) Encoding the LDAP password in self-registration-confg.xml](t_admin_encode_ldap_pwd_self-reg.md).
+        !!! note
+    If you prefer, the password for the LDAP BindDN can be XOR-encoded. You can use the set\_invite\_pass.py wsadmin script provided by the Connections installation to encode the given password and store it in this configuration file. For more information, see [\(Optional\) Encoding the LDAP password in self-registration-confg.xml](t_admin_encode_ldap_pwd_self-reg.md).
 
     6.  Add the base distinguished name for your organization:
 

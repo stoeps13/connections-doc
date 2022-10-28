@@ -15,7 +15,8 @@ The process\_draft\_updates\_ldap command starts the daemon, which monitors chan
 -   source\_ldap\_search\_filter
 -   source\_ldap\_use\_ssl \(set this to true if the URL port is 636\)
 
-**Note:** The following procedure uses the Office Number field as an example. Other fields are similar, unless the fields are tied to extension attributes. Extension attributes are not covered in this topic.
+!!! note
+    The following procedure uses the Office Number field as an example. Other fields are similar, unless the fields are tied to extension attributes. Extension attributes are not covered in this topic.
 
 1.  To ensure that changes that users make to the Office Number field in Profiles are updated in the LDAP directory:
 2.  Open profiles-config.xml for editing and add telephoneNumber in a `<draftableAttribute>` element to the `<profileDataModel>` element.
@@ -28,7 +29,8 @@ The process\_draft\_updates\_ldap command starts the daemon, which monitors chan
     </profileDataModel>
     ```
 
-    **Note:** Profiles must be restarted for this change to take effect.
+    !!! note
+    Profiles must be restarted for this change to take effect.
 
 3.  Open the file map\_dbrepos\_from\_source.properties and locate the property name that represents the Office Number, which in this case is telephoneNumber.
 
@@ -56,7 +58,8 @@ The process\_draft\_updates\_ldap command starts the daemon, which monitors chan
 
     -   IBM® AIX® or Linux™: chmod +x process\_draft\_updates\_ldap.sh./process\_draft\_updates\_ldap.sh
     -   Microsoft™ Windows™: process\_draft\_updates\_ldap.bat
-    **Note:** The process\_draft\_update command tracks the database change record number in a persistent field. Your task will not run successfully if you clear the content of the EMP\_DRAFT table manually.
+    !!! note
+    The process\_draft\_update command tracks the database change record number in a persistent field. Your task will not run successfully if you clear the content of the EMP\_DRAFT table manually.
 
 
 **Parent topic:**[Synchronizing the Profiles database with your organization's user data](../admin/t_admin_profiles_sync_ldap.md)

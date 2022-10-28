@@ -36,7 +36,8 @@ It is important to understand how the default migration for each file works to v
 
     For more information, see [Adding custom strings for widgets and other scenarios](../customize/t_admin_profiles_add_custom_strings.md).
 
-    **Note:** Be sure to check the url and port in the LotusConnections-config.xml file.
+    !!! note
+    Be sure to check the url and port in the LotusConnections-config.xml file.
 
 -   profiles-policy.xml
 

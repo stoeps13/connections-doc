@@ -34,7 +34,8 @@ You can edit configuration properties in LotusConnections-config.xml to redirect
             -   AIX®, and Linux® only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
 4.  Open LotusConnections-config.xml in a text editor.
 
@@ -48,9 +49,11 @@ You can edit configuration properties in LotusConnections-config.xml to redirect
     
     ```
 
-    **Note:** If the `<properties>` tag, is already present, add `genericProperty` to it.
+    !!! note
+    If the `<properties>` tag, is already present, add `genericProperty` to it.
 
-    **Note:** If both `homepage.default.widgets` and `homepage.gettingstarted.bypass` are set to true, then users go directly to /homepage/web/widgets/when they log in \(bypassing **Getting Started**\).
+    !!! note
+    If both `homepage.default.widgets` and `homepage.gettingstarted.bypass` are set to true, then users go directly to /homepage/web/widgets/when they log in \(bypassing **Getting Started**\).
 
 6.  Save LotusConnections-config.xml.
 

@@ -23,7 +23,8 @@ Transferring file ownership gives the new owner the appropriate access. For more
 -   On the **Sharing** tab in the side panel, the new owner is listed as both Owner and Editor/Reader if the file was previously shared with them. The new owner still sees the file in their **Shared With Me** view.
 -   A transferred file might remain in a folder created by the original owner.
 
-**Note:** If you prefer not to transfer the files yourself, you can ask your administrator to reassign ownership in bulk. For more information, see [Transferring ownership of user files](https://help.hcltechsw.com/connections/v7/admin/admin/t_transfer_ownership_of_user_files.html) in the Administering Connections Help.
+!!! note
+    If you prefer not to transfer the files yourself, you can ask your administrator to reassign ownership in bulk. For more information, see [Transferring ownership of user files](https://help.hcltechsw.com/connections/v7/admin/admin/t_transfer_ownership_of_user_files.html) in the Administering Connections Help.
 
 **Parent topic:**[Managing files and folders](../files/managing_files_folders.md)
 

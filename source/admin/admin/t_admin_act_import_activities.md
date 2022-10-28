@@ -45,7 +45,8 @@ To run administrative commands, you must use the wsadmin client. See [Starting t
 
     2.  To retrieve a subset of activities that were created by the member from the repository of exported activities and save it to variable, use the following command:
 
-        **Note:** Do not use these member-based commands to fetch activities that were exported from a different deployment of HCL Connections. These commands use the member ID to find the activities, and member IDs are not persisted across different deployments. Use these commands only to collect activities when you are importing the activities to the same server from which they were exported. If you are importing the activities to a different server, use the ArchiveService.fetchActivities\(directory\) command instead.
+        !!! note
+    Do not use these member-based commands to fetch activities that were exported from a different deployment of HCL Connections. These commands use the member ID to find the activities, and member IDs are not persisted across different deployments. Use these commands only to collect activities when you are importing the activities to the same server from which they were exported. If you are importing the activities to a different server, use the ArchiveService.fetchActivities\(directory\) command instead.
 
         ```
         variable=ArchiveService.fetchActivitiesCreatedByMember(java.lang.string export_directory,java.util.Hashtable member)
@@ -87,7 +88,8 @@ To run administrative commands, you must use the wsadmin client. See [Starting t
 
 4.  Use one of the following commands to import the activities:
 
-    **Note:** For community activities, the community from which the activity was created must exist on the server to which you are importing the activities. If it does not, an error is returned when you attempt to import the activities. The associated community is identified by its communityUUID which is not persisted across different deployments, so you can only include community activities in the activities to be imported when you are importing them to the same server from which they were exported.
+    !!! note
+    For community activities, the community from which the activity was created must exist on the server to which you are importing the activities. If it does not, an error is returned when you attempt to import the activities. The associated community is identified by its communityUUID which is not persisted across different deployments, so you can only include community activities in the activities to be imported when you are importing them to the same server from which they were exported.
 
     -   If you do not want to overwrite any of the activities currently on the server and would rather create an additional copy of an activity if you are importing one that already exists, use this command:
 

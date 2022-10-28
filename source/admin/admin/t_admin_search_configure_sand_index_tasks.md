@@ -24,7 +24,8 @@ taggedby
 communitymembership
 :   Creates relationships between the users who are members of the same community.
 
-    **Note:** Communities that have more than 100 members are skipped. These communities will not be recommended to users.
+    !!! note
+    Communities that have more than 100 members are skipped. These communities will not be recommended to users.
 
 When defining a social analytics scheduled task in the Home page database, you need to specify when the scheduler starts the task. The schedule is defined using a Cron schedule. For more information about the scheduler, see *Scheduling tasks*.
 

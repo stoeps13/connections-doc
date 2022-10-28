@@ -6,7 +6,8 @@ Where additional customization is required, custom plugins can be loaded into Ti
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the property [`externalPlugins`](r_config-js-sample.md#externalPlugins) and modify the array to customize the external plugin configuration using the following resources:
 

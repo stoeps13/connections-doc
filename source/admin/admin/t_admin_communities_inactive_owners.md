@@ -46,7 +46,8 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
         wsadmin>CommunitiesService.addMembersToCommunityByEmail("Ski Club Community",1,threeowners)
         ```
 
-        **Note:** When you use this command, if the community name that you provide as input to the command is not unique, an error similar to the following displays:
+        !!! note
+    When you use this command, if the community name that you provide as input to the command is not unique, an error similar to the following displays:
 
         ```
         WASX7015E: Exception running command: 
@@ -83,7 +84,8 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
         wsadmin>CommunitiesService.addMembersToCommunityByEmail("Ski Club Community",1,threeowners, "0000000043")
         ```
 
-        **Note:** When you use this command, if the community name that you provide as input to the command is not unique, an error similar to the following displays:
+        !!! note
+    When you use this command, if the community name that you provide as input to the command is not unique, an error similar to the following displays:
 
         ```
         WASX7015E: Exception running command: 
@@ -103,7 +105,8 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
     CommunitiesService.addMembersToCommunityByMemberUuid\(String communityName, Integer memberRole, List UUID of member\)
     :   Adds members to an existing community. Use this command when you want to add owners to a community's membership list, but they don't have an email address.
 
-        **Note:** The member's UUID is the external LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in the previous command:
+        !!! note
+    The member's UUID is the external LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in the previous command:
 
         -   CommunitiesMemberService.getMemberExtIdByEmail\("email"\)
         -   CommunitiesMemberService.getMemberExtIdByLogin\("login"\)
@@ -120,12 +123,14 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
         wsadmin>CommunitiesService.addMembersToCommunityByMemberUuid("Ski Club Community",1,oneowner)
         ```
 
-        **Note:** When you use this command, if you get an error telling you that the community name is not unique, instead of entering the name of the community in the command input, enter the UUID instead.
+        !!! note
+    When you use this command, if you get an error telling you that the community name is not unique, instead of entering the name of the community in the command input, enter the UUID instead.
 
     CommunitiesService.addMembersToCommunityByMemberUuid\(String communityName, Integer memberRole, List UUID of member, String orgId\)
     :   Adds members to an existing community. Use this command when you want to add owners to a community's membership list, but they don't have an email address.
 
-        **Note:** The member's UUID is the external LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in the previous command:
+        !!! note
+    The member's UUID is the external LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in the previous command:
 
         -   CommunitiesMemberService.getMemberExtIdByEmail\("email"\)
         -   CommunitiesMemberService.getMemberExtIdByLogin\("login"\)
@@ -142,7 +147,8 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
         wsadmin>CommunitiesService.addMembersToCommunityByMemberUuid("Ski Club Community",1,oneowner)
         ```
 
-        **Note:** When you use this command, if you get an error telling you that the community name is not unique, instead of entering the name of the community in the command input, enter the UUID instead.
+        !!! note
+    When you use this command, if you get an error telling you that the community name is not unique, instead of entering the name of the community in the command input, enter the UUID instead.
 
 
 **Parent topic:**[Managing membership in Communities](../admin/c_admin_communities_managing_membership.md)

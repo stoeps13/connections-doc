@@ -8,7 +8,8 @@ Edit og-config.xml in the <dmgr\_profile\_root\>/config/cells/<cell\>/LotusConne
 
     |Section|Parameter|Description|Default|
     |-------|---------|-----------|-------|
-    |retriever.httpclient|totalConnections|Maximum number of simultaneous open connections while fetching resources.**Note:** Ensure that the value of this setting does not exceed the number of threads in the web container thread pool on the cluster where the URL Preview \(oembed.ear\) application is located \(Common by default\).
+    |retriever.httpclient|totalConnections|Maximum number of simultaneous open connections while fetching resources.!!! note
+    Ensure that the value of this setting does not exceed the number of threads in the web container thread pool on the cluster where the URL Preview \(oembed.ear\) application is located \(Common by default\).
 
 For more information, see *URL preview security*.|20|
     | |redirects| |true|
@@ -22,7 +23,8 @@ For more information, see *URL preview security*.|20|
     | |port|Proxy server port number.|1080|
     | |password|Proxy server password.|pa88word|
     |retriever.parser|provider|Internal html snippets parser engine: jsoup or jtidy is supporte.d|jsoup|
-    |service|rewriteImageUrl|Format string that is used to rewrite image URL to point it to proxy image service; this must be an absolute URl with placeholder to keep service deployment details.**Note:** Do not change rewriteImageUrl unless instructed by IBM® support.
+    |service|rewriteImageUrl|Format string that is used to rewrite image URL to point it to proxy image service; this must be an absolute URl with placeholder to keep service deployment details.!!! note
+    Do not change rewriteImageUrl unless instructed by IBM® support.
 
 |/api/imageProxy?url=\{0\}|
     |security|htmlPageMaxSize|Maximum acceptable size for parsing html header \(everything between`<head> </head>`\) in bytes.|1048576|

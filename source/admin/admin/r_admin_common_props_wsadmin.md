@@ -56,7 +56,8 @@ activities.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 activities.ssl.href
 :   Web address from which to access this application over HTTPS.
@@ -109,7 +110,8 @@ blogs.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 blogs.ssl.href
 :   Web address from which to access this application over HTTPS.
@@ -155,7 +157,8 @@ communities.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 communities.ssl.href
 :   Web address from which to access this application over HTTPS.
@@ -183,7 +186,8 @@ customAuthenticator.name
     -   SiteMinderAuthenticator: Uses a SiteMinder token to secure the connection.
     -   ISAMAuthenticator: Uses the IBM Security Access Manager token to secure the connection.
 
-    **Note:** The customAuthenticator.ConnectionTimeout, customAuthenticator.CookieTimeout, customAuthenticator.DefaultMaxConnectionsPerHost, customAuthenticator.MaxTotalConnections, and customAuthenticator.SoTimeout properties were deprecated in version 3.
+    !!! note
+    The customAuthenticator.ConnectionTimeout, customAuthenticator.CookieTimeout, customAuthenticator.DefaultMaxConnectionsPerHost, customAuthenticator.MaxTotalConnections, and customAuthenticator.SoTimeout properties were deprecated in version 3.
 
 deployment.id
 :   Unique identifier of the current deployment. When the address of a deployment changes, this ID is used by plug-ins and other API clients to determine whether the new address is the same deployment. The deployment ID is a unique value that is generated during installation.
@@ -239,7 +243,8 @@ dogear.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 dynamicHosts.enabled
 :   Specifies whether a reverse proxy is configured for HCL Connections.
@@ -301,7 +306,8 @@ files.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 files.ssl.href
 :   Web address from which to access this application over HTTPS.
@@ -354,7 +360,8 @@ forums.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 forums.ssl.href
 :   Web address from which to access this application over HTTPS.
@@ -387,7 +394,8 @@ help.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 help.ssl.href
 :   Web address from which to access the help system over HTTPS.
@@ -427,7 +435,8 @@ homepage.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 homepage.ssl.href
 :   Web address from which to access this application over HTTPS.
@@ -467,7 +476,8 @@ metrics.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 metrics.ssl.href
 :   Web address from which to access this application over HTTPS.
@@ -523,7 +533,8 @@ mobile.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 mobile.ssl.href
 :   Web address from which to access HCL Connections over HTTPS from a mobile device.
@@ -572,7 +583,8 @@ news.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 news.ssl.href
 :   Web address from which to access Home page updates over HTTPS.
@@ -623,7 +635,8 @@ personTag.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 personTag.ssl.href
 :   Web address from which to access the business card service over HTTPS.
@@ -642,7 +655,8 @@ profiles.directory.service.extension.enabled
 
     The property is set to false by default. During the installation, if you specify the Profiles database as the user directory, this value is set to true.
 
-    **Note:** Group information can be retrieved from the LDAP directory only.
+    !!! note
+    Group information can be retrieved from the LDAP directory only.
 
     **Tip:** The profiles.directory.service.extension.auth, profiles.directory.service.extension.auth.alias, communities.directory.service.extension.auth, communities.directory.service.extension.auth.alias, and communities.directory.service.extension.enabled properties cannot be edited by using wsadmin commands.
 
@@ -680,7 +694,8 @@ profiles.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 profiles.ssl.href
 :   Web address from which to access this application over HTTPS.
@@ -726,7 +741,8 @@ quickr.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 quickr.ssl.href
 :   Web address from which to access a Lotus Quickr place over HTTPS.
@@ -743,21 +759,24 @@ sametimeLinks.anonymousLogin.enabled
 
     This property accepts a value of true or false.
 
-    **Note:** Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
+    !!! note
+    Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
 
 sametimeLinks.enabled
 :   Specifies whether the ability to connect to the Sametime Links resources over HTTP is enabled.
 
     This property accepts a value of true or false.
 
-    **Note:** Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
+    !!! note
+    Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
 
 sametimeLinks.href
 :   Web address from which Sametime Links resources can be accessed over HTTP.
 
     Specify the protocol \(HTTP\), server name, and, optionally, the port number.
 
-    **Note:** Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
+    !!! note
+    Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
 
 sametimeLinks.href.prefix
 :   Context root from which to access the application. For example: `/sametime`.
@@ -773,14 +792,16 @@ sametimeLinks.interService.href
 sametimeLinks.ssl.enabled
 :   Specifies whether Sametime Links resources can be accessed over HTTPS.
 
-    **Note:** Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
+    !!! note
+    Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
 
 sametimeLinks.ssl.href
 :   Web address from which Sametime Links resources can be accessed over HTTPS.
 
     Specify the protocol \(HTTPS\), server name, and, optionally, the port number.
 
-    **Note:** Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
+    !!! note
+    Do not edit this property. For information about how to add Sametime awareness to HCL Connections, see the *Adding Sametime awareness to HCL Connections* topic.
 
 sametimeProxy.enabled
 :   Specifies whether Sametime proxy resources can be accessed over HTTP.
@@ -805,7 +826,8 @@ sametimeProxy.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 sametimeProxy.ssl.href
 :   Web address from which Sametime proxy resources can be accessed over HTTPS.
@@ -832,7 +854,8 @@ sand.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 sand.ssl.href
 :   Web address from which Social Networking and Discovery resources can be accessed over HTTPS.
@@ -847,7 +870,8 @@ sand.ssl.href
 search.ejb.cluster
 :   Name of the cluster on which the application is running in a network deployment. This property is used for JNDI lookups in cluster environments to ensure failover and load balancing on lookups.
 
-    **Note:** This property has no default value and must not be modified.
+    !!! note
+    This property has no default value and must not be modified.
 
 search.ejb.port
 :   Port number of the application server instance on the first node of the cluster that hosts this application. This information is used during JNDI lookups. This value is usually 2809 but might be different if port 2809 is already in use.
@@ -855,7 +879,8 @@ search.ejb.port
 search.ejb.server
 :   Fully qualified domain name of the application server instance on the first node of the cluster that hosts this application. This information is used during JNDI lookups.
 
-    **Note:** This property has no default value.
+    !!! note
+    This property has no default value.
 
 search.enabled
 :   Specifies whether Advanced Search can be accessed over HTTP.
@@ -884,7 +909,8 @@ search.ignore.punctuation.enabled
 
     When the property is set to true, punctuation in search terms is ignored. For example, for an occurrence of the term I.B.M, the terms I.B.M. and IBM are stored in the index.
 
-    **Note:** This configuration results in a larger index. To change this option, complete the steps in the *Deleting the index* topic.
+    !!! note
+    This configuration results in a larger index. To change this option, complete the steps in the *Deleting the index* topic.
 
 search.interService.href
 :   Web address from which other HCL Connections applications access Advanced Search.
@@ -903,14 +929,16 @@ search.language.sensitivity.enabled
 
     When the property is set to true, the product supports accent-insensitive searches. For example, for an occurrence of ált, the product stores ált and alt.
 
-    **Note:** This configuration results in a larger index. To change this option, complete the steps in the *Deleting the index* topic.
+    !!! note
+    This configuration results in a larger index. To change this option, complete the steps in the *Deleting the index* topic.
 
 search.Queue\_Max
 :   If the server that hosts the Search application stops responding, a queue of requests is created. The length of the queue is defined by the value of this property. Only the last search request in the queue is sent to the Search server. When the server starts responding, the queue is no longer used. The default value is 10.
 
     This property specifies the number of connections that are refused before a subsequent transaction is allowed.
 
-    **Note:** The property is used only when Search is installed on a different server from the server where a search is run.
+    !!! note
+    The property is used only when Search is installed on a different server from the server where a search is run.
 
 search.seedlist.maximumPageSize
 :   Maximum number of items on the search return page. The value must be greater than or equal to 100.
@@ -920,7 +948,8 @@ search.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 search.ssl.href
 :   Web address from which to access Advanced Search over HTTPS.
@@ -935,7 +964,8 @@ search.ssl.href
 search.Transaction\_Max
 :   Maximum number of transactions allowed. This setting prevents the server that is running the search from running out of memory because the server is not responding. The default value is 20.
 
-    **Note:** The property is used only when Search is installed on a different server from the server where a search is run.
+    !!! note
+    The property is used only when Search is installed on a different server from the server where a search is run.
 
 seedlistSettings.maximumIncrementalQuerySpanInDays
 :   Number of days that deletion records are preserved before they can be deleted by the SearchClearDeletionHistory task. The value must be greater than or equal to 1.
@@ -998,7 +1028,8 @@ wikis.ssl.enabled
 
     This property is set to true by default.
 
-    **Note:** Disabling SSL is not supported.
+    !!! note
+    Disabling SSL is not supported.
 
 **Parent topic:**[Common configuration properties](../admin/r_admin_common_props.md)
 

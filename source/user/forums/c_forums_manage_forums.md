@@ -4,7 +4,8 @@ When you are the Forums administrator or a forum owner, you can edit, delete, an
 
 Forums can be stand-alone or they can be associated with a community. To create a stand-alone forum, you must add it from the Forums application. Community forums must be added by community owners from the Communities application. After they are created, stand-alone forums cannot be converted into community forums, nor can community forums be converted into stand-alone forums.
 
-**Note:** External users do not have access to the Forums application, but do have access to Forums within Communities. For more information, see the [What can external users do?](../eucommon/c_eucommon_ext_user.md) topic.
+!!! note
+    External users do not have access to the Forums application, but do have access to Forums within Communities. For more information, see the [What can external users do?](../eucommon/c_eucommon_ext_user.md) topic.
 
 -   **[Creating a forum](../forums/t_forums_add_forum.md)**  
 Start a new forum when you want to solicit answers to a specific question or to discuss particular topic.

@@ -6,7 +6,8 @@ To run administrative commands, you must use the wsadmin client. See [Starting t
 
 A microblog is a status update message that is posted to a community activity stream. Microblog updates are displayed in the aggregated list of events in the Recent Updates widget in Communities. If a community owner adds the Status Updates widget to a community, microblog messages can also be seen in that widget. In addition, microblog messages are displayed when users filter the home page activity stream to show status updates for a community.The microblogs that display in the Recent Updates and Status Updates widgets in Communities are stored in the News repository. If a database failure or some other disaster occurs or if the associated community data has been deleted, you might decide that the orphaned microblog data in the News repository should be removed. The NewsMicrobloggingService.deleteMicroblogs command allows you to remove all microblog and associated data for a community from the News repository.
 
-**Note:** There is no support for deleting other types of events that display in the Recent Updates widget. For more information about removing orphaned data, see *Deleting orphaned data*.
+!!! note
+    There is no support for deleting other types of events that display in the Recent Updates widget. For more information about removing orphaned data, see *Deleting orphaned data*.
 
 1.  To delete community microblogs from the News repository, complete the following steps.
 2.  Start the wsadmin client from the following directory of the system on which you installed the Deployment Manager:

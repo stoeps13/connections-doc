@@ -38,7 +38,8 @@ To extend the Profiles business card, complete the following steps:
             -   AIX, and Linux only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
 3.  Open the LotusConnections-config.xml file, and modify it to include the following attributes:
 
@@ -113,7 +114,8 @@ You can add a resource string as the value for this attribute. The resource stri
 
 5.  After making changes, you must check the configuration files back in, and you must do so during the same wsadmin session in which you checked them out for the changes to take effect. See [Applying common configuration property changes](../admin/t_admin_common_save_changes.md) for information about how to save and apply your changes.
 
-    **Note:** If you added third-party links to the Profiles business card and those links are no longer needed, you can remove them by modifying the LotusConnections-config.xml configuration file to undo or comment out what was done to add them. You cannot remove third-party links using JavaScript.
+    !!! note
+    If you added third-party links to the Profiles business card and those links are no longer needed, you can remove them by modifying the LotusConnections-config.xml configuration file to undo or comment out what was done to add them. You cannot remove third-party links using JavaScript.
 
 
 **Parent topic:**[Customizing the Profiles business card](../customize/c_admin_profiles_customize_biz_card_links.md)

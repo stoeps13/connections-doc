@@ -8,7 +8,8 @@ HCL Connections requires the use of several collateral products for its normal o
 
 During the testing of a new release, HCL generally tests HCL Connections with a prescribed list of these collateral products. These products are designated as "Supported Products" in the documented hardware and software requirements for that release. Because the list of "Supported Products" cannot reasonably describe all possible configurations that a customer may need to use, this document is intended to provide clarification of the level of support that can be generally expected for the current release with various combinations of dependent products.
 
-**Note:** Although the statements in this document reflect the general level of support that can be expected for HCL Connections, the terms and conditions of any specific support offering, license or other Agreement you might have with HCL will determine the actual delivered support for the product. Nothing herein shall be construed as supplementing, modifying or superseding the terms of your HCL license agreement for HCL Connections or any other agreement you might have with HCL, nor shall it create any obligation for HCL to deliver a level of support other than might be set forth in such Agreements.
+!!! note
+    Although the statements in this document reflect the general level of support that can be expected for HCL Connections, the terms and conditions of any specific support offering, license or other Agreement you might have with HCL will determine the actual delivered support for the product. Nothing herein shall be construed as supplementing, modifying or superseding the terms of your HCL license agreement for HCL Connections or any other agreement you might have with HCL, nor shall it create any obligation for HCL to deliver a level of support other than might be set forth in such Agreements.
 
 ## Categories of Support {#section_r4y_5nb_glb .section}
 
@@ -30,7 +31,8 @@ During the testing of a new release, HCL generally tests HCL Connections with a 
 
     -   *Conditional support for HCL Sametime versions 10 and 11: At this time, Connections supports Sametime version 9. HCL Connections Development believes Sametime versions 10 and 11 should work with Connections 7.0, however these versions have not been tested. If a customer would like to deploy and test, HCL Support will help troubleshoot any problems encountered on a case-by-case basis. If minor issues are identified, we will investigate creating a fix. However, if a major issue is identified, a roll back to Sametime version 9 may be required.*
     -   *For IBM products, such as IBM Directory Server or Domino LDAP, and IBM JDKs \(JVMs\), HCL Connections will fully support fix-pack, release and version updates that do not significantly change interfaces or other underlying support that HCL Connections depends on for its functionality. If and when a newer release of one of these products is shipped that HCL Connections cannot accommodate, that fact will be noted as described in the next section entitled "Unsupported Products." Note that in order for HCL Connections to support an update to a database or LDAP product, WebSphere Application Server must support that update as well.*
-    -   **Note:** *HCL Connections has been tested extensively with the stated release version and fix pack release of WebSphere Application Server found in the HCL Connections Software requirements. The HCL Connections 7.0 System Requirements section will be updated when successfully completing testing of forward WebSphere Application Server fix packs as we continue to test. Upgrading to a new fix pack level of the WebSphere Application Server that is not listed in HCL Connections 7.0 System Requirements is not well tolerated and is treated as an **Unsupported Product** described below.*
+    -   !!! note
+    *HCL Connections has been tested extensively with the stated release version and fix pack release of WebSphere Application Server found in the HCL Connections Software requirements. The HCL Connections 7.0 System Requirements section will be updated when successfully completing testing of forward WebSphere Application Server fix packs as we continue to test. Upgrading to a new fix pack level of the WebSphere Application Server that is not listed in HCL Connections 7.0 System Requirements is not well tolerated and is treated as an **Unsupported Product** described below.*
 
     -   *If the Support organization for the untested product in question is unable to resolve the problem, Support will deem that version, release or fix pack level of the untested product in question to now be an "Unsupported Product."*
 3.  **Unsupported Products**
@@ -77,7 +79,8 @@ The following are restricted products where the HCL Connections team has a speci
 -   DB2 11.1 and 11.1 fix packs are supported, as specified in the [HCL System Requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073654).
 -   Exact match for supporting: WebSphere Application Server fix pack\(s\) specified in the in the [HCL System Requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073654).
 
-    **Note:** As forward fix pack\(s\) are verified supporting HCL Connections 7.0, the HCL Connections 7.0 System Requirements will be updated with the additional supported version\(s\).
+    !!! note
+    As forward fix pack\(s\) are verified supporting HCL Connections 7.0, the HCL Connections 7.0 System Requirements will be updated with the additional supported version\(s\).
 
 -   Not currently supported: Integrating SPNEGO or IWA with the HCL Connections Activities sidebar and Business Card in the HCL Notes 9.0.x Client.
 -   The Connections UI only supports browsers in their default zoom settings. Any UI issues found with non-default settings \(zoom in/out\) are not supported.

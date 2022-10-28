@@ -43,12 +43,14 @@ To access administration for library content, complete the following steps:
     WHERE ClbTeamspaceState=2
     ```
 
-    **Note:** If you exclude the WHERE clause from this query, then all teamspaces \(Connections libraries\) are returned. Running such a query takes a long time and degrades performance.
+    !!! note
+    If you exclude the WHERE clause from this query, then all teamspaces \(Connections libraries\) are returned. Running such a query takes a long time and degrades performance.
 
 6.  Click **Search** to run administrative queries on objects in the object store. You can then inspect or delete items in the object store.
 
 
 In the example query, the search returns a list of Libraries that are marked for deletion by removing the Library widget from a Community. Community owners mark a library for deletion by removing a Library widget from a community.
 
-**Note:** Deleting teamspace objects does not remove the corresponding widget from a Community. You can delete teamspace objects only after the corresponding library widget is removed from a community.
+!!! note
+    Deleting teamspace objects does not remove the corresponding widget from a Community. You can delete teamspace objects only after the corresponding library widget is removed from a community.
 

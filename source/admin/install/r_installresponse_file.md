@@ -6,7 +6,8 @@ Response files provide input parameters for silent installations of HCL Connecti
 
 The default response file for AIX, and Linux™ is called LC.rsp and is located in the HCL Connections set-up directory. You can edit this file and use it as input for a silent installation.
 
-**Note:** HCL does not provide a default response file on Windows because it is more convenient if you to generate the file yourself. For information about generating a response file, see the *Creating a response file* topic.
+!!! note
+    HCL does not provide a default response file on Windows because it is more convenient if you to generate the file yourself. For information about generating a response file, see the *Creating a response file* topic.
 
 Instead of generating a new response file, you can edit the default response file that is provided with the product. However, if you edit the default response file, you need to add encrypted passwords to the file. For more information, see the [Creating encrypted passwords for a response file](t_silent_create_encrypted_passwords.md) topic.
 

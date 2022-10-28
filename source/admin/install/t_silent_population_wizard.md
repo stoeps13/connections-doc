@@ -4,7 +4,8 @@ You can run the Profiles population wizard in silent mode to populate the Profil
 
 When you run the Profiles population wizard in silent mode, it creates the map\_dbrepos\_from\_source.properties file, located in the Wizards\\TDIPopulation\\platform\\TDI directory, and updates this file with data from the mappings.properties file.
 
-**Note:** When you use the Profiles population wizard in interactive mode, the wizard creates a response file called tdisettings.properties in the Wizards\\TDIPopulation directory. You can modify the existing response file or create a new one. It also creates a mappings.properties file, which contains properties very similar to those in map\_dbrepos\_from\_source.properties file.
+!!! note
+    When you use the Profiles population wizard in interactive mode, the wizard creates a response file called tdisettings.properties in the Wizards\\TDIPopulation directory. You can modify the existing response file or create a new one. It also creates a mappings.properties file, which contains properties very similar to those in map\_dbrepos\_from\_source.properties file.
 
 If you need to configure multiple systems with Profiles data, you can run the wizard in silent mode.
 
@@ -29,7 +30,8 @@ To run the Profiles population wizard in silent mode, complete the following ste
 
     xhost +
 
-    **Note:** If granting display authority to all users is a security concern for you, change the command to grant display authority to a specific user or users. For more information about this command, consult your AIX or Linux administrator guide.
+    !!! note
+    If granting display authority to all users is a security concern for you, change the command to grant display authority to a specific user or users. For more information about this command, consult your AIX or Linux administrator guide.
 
     echo $DISPLAY
 

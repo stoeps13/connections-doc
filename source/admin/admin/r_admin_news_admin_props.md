@@ -63,7 +63,8 @@ NewsActivityStreamService.registerApplication\(appId, displayName, url, secureUr
     -   summary. A short description of the application.
     -   isEnabled. A Boolean string that specifies whether the registration is enabled or disabled.
 
-    **Note:** You must include the appId and isEnabled parameters, but the remaining parameters are optional. After registering an application, you might also need to restart the Home page application for the application to display in the filter list.
+    !!! note
+    You must include the appId and isEnabled parameters, but the remaining parameters are optional. After registering an application, you might also need to restart the Home page application for the application to display in the filter list.
 
     For example:
 
@@ -114,14 +115,16 @@ NewsActivityStreamService.updateApplicationRegistrationForEmailDigest\(appId, is
 
     This command takes the following parameters:
 
-    **Note:** You must run the command every time a parameter update is required.
+    !!! note
+    You must run the command every time a parameter update is required.
 
     -   appId. The ID of the application that you want to update.
     -   isEnabled. A Boolean string that specifies whether the registration is enabled or disabled for email digest sending.
     -   defaultFollowFrequency. A value that specifies the default frequency with which application updates are notified. The following values are valid: NONE, INDIVIDUAL, DAILY, and WEEKLY.
     -   isLocked. A Boolean string that specifies whether email settings for the application are locked or unlocked.
 
-        **Note:** Setting this parameter to true enforces the defaultFollowFrequency parameter for all users, and individual user settings for the application are overridden. When isLocked is set to true, a lock icon displays next to the application name on the Email Preferences page, and the radio buttons for selecting the notification frequency for the application are disabled. When isLocked is set to false, users can specify notification frequency settings for the application, and any settings that were previously specified are restored.
+        !!! note
+    Setting this parameter to true enforces the defaultFollowFrequency parameter for all users, and individual user settings for the application are overridden. When isLocked is set to true, a lock icon displays next to the application name on the Email Preferences page, and the radio buttons for selecting the notification frequency for the application are disabled. When isLocked is set to false, users can specify notification frequency settings for the application, and any settings that were previously specified are restored.
 
 
     For example:

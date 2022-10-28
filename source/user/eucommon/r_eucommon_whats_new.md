@@ -2,7 +2,8 @@
 
 HCL Connections 8.0 transforms the way you connect with content and colleagues with a fresh, new look and enhanced features.
 
-**Note:** Community surveys are no longer supported in Connections 8, and will be replaced by LEAP in an upcoming release.
+!!! note
+    Community surveys are no longer supported in Connections 8, and will be replaced by LEAP in an upcoming release.
 
 ## Search from anywhere in Connections {#section_g1m_3k4_k5b .section}
 
@@ -44,5 +45,6 @@ Decide on the updates that matter to you by [setting your browser and email noti
 
 Check out the App Store for iOS or Google Play for Android for the latest information and release.
 
-**Note:** Features might differ depending on your deployment.
+!!! note
+    Features might differ depending on your deployment.
 

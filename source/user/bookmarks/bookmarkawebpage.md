@@ -10,7 +10,8 @@ If you don't have the [bookmark button installed](getstarted-oneapproach.md) for
 
 3.  Fill in the form and click **Save**.
 
-    **Note:** You can choose to save a bookmark to other HCL Connections applications such as Communities, Blogs, and Activities. For example, you can add a bookmark to a community and post a message for discussion.
+    !!! note
+    You can choose to save a bookmark to other HCL Connections applications such as Communities, Blogs, and Activities. For example, you can add a bookmark to a community and post a message for discussion.
 
 
 **Parent topic:**[Getting started](../bookmarks/c_getting_started.md)

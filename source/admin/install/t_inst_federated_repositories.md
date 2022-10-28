@@ -24,7 +24,8 @@ To set up federated repositories in WebSphere Application Server, complete the f
 
 5.  If installing HCL Connections Content Manager, set the realm name to defaultWIMFileBasedRealm.
 
-    **Note:** After installation has completed, you can change the realm name as you prefer. When changing realms names, the logs might show LTPA errors, and as such the scheduled tasks list should be cleared to avoid errors in the logs.
+    !!! note
+    After installation has completed, you can change the realm name as you prefer. When changing realms names, the logs might show LTPA errors, and as such the scheduled tasks list should be cleared to avoid errors in the logs.
 
 6.  Click **Add repositories** and then, on the Repository reference page, click **New Repository** \> **LDAP repository**.
 
@@ -42,7 +43,8 @@ To set up federated repositories in WebSphere Application Server, complete the f
 
     See [Choosing login values](c_install_choose_login.md) for information about the types of login values that can be used.
 
-    **Note:** If you are using Active Directory and you use an email address as the login, specify **mail** as the value for this property. If you use the **samAccountName** attribute as the login, specify uid as the value for this property.
+    !!! note
+    If you are using Active Directory and you use an email address as the login, specify **mail** as the value for this property. If you use the **samAccountName** attribute as the login, specify uid as the value for this property.
 
 12. Click **Apply** and then click **Save**.
 
@@ -68,13 +70,15 @@ To set up federated repositories in WebSphere Application Server, complete the f
 
 18. Click the **Group** entity type and modify the object classes mapping. You can also edit the **Search bases** and **Search filters** fields, if necessary. Enter LDAP parameters that are suitable for your LDAP directory.
 
-    **Note:** You can accept the default object classes value for Group. However, if you are using Domino, change the value to dominoGroup.
+    !!! note
+    You can accept the default object classes value for Group. However, if you are using Domino, change the value to dominoGroup.
 
 19. Click **Apply** and then click **Save**.
 
 20. Click the **PersonAccount** entity type and modify the default object classes mapping. You can also edit the **Search bases** and **Search filters** fields, if necessary. Enter LDAP parameters that are suitable for your LDAP directory. Click **Apply**, and then click **Save** to save this setting.
 
-    **Note:** If you are using a Domino LDAP, replace the default mapping with dominoPerson object classes for person accounts.
+    !!! note
+    If you are using a Domino LDAP, replace the default mapping with dominoPerson object classes for person accounts.
 
 21. In the navigation links at the beginning of the page, click the name of the repository that you have just modified to return to the Repository page.
 
@@ -138,7 +142,8 @@ To set up federated repositories in WebSphere Application Server, complete the f
 
 |
 
-    **Note:** Select a **Scope** option based on LDAP type.
+    !!! note
+    Select a **Scope** option based on LDAP type.
 
     -   Select Nested for IBM Tivoli Directory Security Server and IBM Domino directories. Nested contains only immediate members of the group without members of subgroups.
     -   Select Direct for Active Directory. Direct contains direct members and members nested within subgroups of this group.
@@ -177,7 +182,8 @@ To set up federated repositories in WebSphere Application Server, complete the f
 
     2.  Select **Enabled**, **Interoperability Mode** \(optional\) and **web inbound security attribute propagation**.
 
-        **Note:** You must click Apply before continuing to the next step.
+        !!! note
+    You must click Apply before continuing to the next step.
 
     3.  Return to the Global security page and click **web and SIP security** \> **General settings**.
 
@@ -185,7 +191,8 @@ To set up federated repositories in WebSphere Application Server, complete the f
 
     5.  Click **Apply** and then click **Save**.
 
-    **Note:** For more information about SSO security, see [Configuring single sign-on](../secure/c_sec_config_sso.md).
+    !!! note
+    For more information about SSO security, see [Configuring single sign-on](../secure/c_sec_config_sso.md).
 
 29. Create an administrator for WebSphere Application Server:
 

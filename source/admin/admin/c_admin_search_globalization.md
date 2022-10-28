@@ -2,7 +2,8 @@
 
 You can configure globalization settings to enable users to perform accent-insensitive searches, ignore punctuation in search terms, and perform a one-to-two mapping in search terms. Search globalization settings are disabled by default.
 
-**Note:** For non-English deployments, ensure that you first enable the relevant language dictionary for your geography. This procedure is a mandatory post-installation task. Without multiple dictionary support for languages other than English, Search will only return results where there is an exact match between the search term and content term. Enabling multiple dictionaries ensures better quality search results when your user base is multilingual. By default, only the English language dictionary is enabled during installation. For more information about enabling multilingual support, see *Configuring dictionaries for Search*.
+!!! note
+    For non-English deployments, ensure that you first enable the relevant language dictionary for your geography. This procedure is a mandatory post-installation task. Without multiple dictionary support for languages other than English, Search will only return results where there is an exact match between the search term and content term. Enabling multiple dictionaries ensures better quality search results when your user base is multilingual. By default, only the English language dictionary is enabled during installation. For more information about enabling multilingual support, see *Configuring dictionaries for Search*.
 
 When your organization spans multiple geographies and multiple languages, you might find it useful to enable the globalization options provided by the Search application. Note that when these options are enabled, Search requires more terms to be indexed, resulting in a larger Search index that contains the extra globalized terms. As more terms need to be indexed, this means that the indexing task will take longer to complete.
 

@@ -140,7 +140,8 @@ SearchService.addIndexingTask\(String taskName, String schedule, String startBy,
     -   all\_configured. Indicates that the operation is performed on all applications.
     -   optimizeFlag. A flag that indicates if an optimization step should be performed after indexing. This argument is a boolean value.
 
-        **Note:** The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
+        !!! note
+    The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
 
         Note that when you install HCL Connections, a search optimization task is set up to run every night by default. See *Search default tasks* for more information.
 
@@ -156,7 +157,8 @@ SearchService.addIndexingTask\(String taskName, String schedule, String startBy,
 
     When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
-    **Note:** The refreshTasks\(\) command should be used after this command for the new task definitions to take effect immediately. Otherwise, the changes take place when the Search application is next restarted.
+    !!! note
+    The refreshTasks\(\) command should be used after this command for the new task definitions to take effect immediately. Otherwise, the changes take place when the Search application is next restarted.
 
     You can also use the SearchService.addIndexingTask command to replace the 15min-search-indexing-task that is automatically configured when you install HCL Connections. By default, all installed HCL Connections applications are crawled and indexed every 15 minutes, except for a one-hour period between 01:00 and 02:00. To replace the default indexing task settings, first remove the existing indexing task using the SearchService.deleteTask\(String taskName\) command. Then, use the SearchService.addIndexingTask command to create a new indexing task with the values that you specify.
 
@@ -182,7 +184,8 @@ SearchService.addOptimizeTask\(String taskName, String schedule, String startBy\
 
     All arguments are required.
 
-    **Note:** The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
+    !!! note
+    The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
 
     Note that when you install HCL Connections, a search optimization task is set up to run every night by default. See *Search default tasks* for more information.
 
@@ -195,7 +198,8 @@ SearchService.addOptimizeTask\(String taskName, String schedule, String startBy\
 
     When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
-    **Note:** The refreshTasks\(\) command should be used after this command for the new task definitions to take effect immediately. Otherwise, the changes take place when the Search application is next restarted.
+    !!! note
+    The refreshTasks\(\) command should be used after this command for the new task definitions to take effect immediately. Otherwise, the changes take place when the Search application is next restarted.
 
     You can also use the SearchService.addOptimizeTask command to replace the nightly-optimize-task that is automatically configured when you install HCL Connections. By default, this task runs nightly at 01:30. To replace the default optimize task settings, first remove the existing optimize task using the SearchService.deleteTask command. Then, use the SearchService.addOptimizeTask command to create a new optimize task with the values that you specify.
 
@@ -253,7 +257,8 @@ SearchService.backupIndexNow\(\)
 SearchService.deleteFeatureIndex\(String featureName\)
 :   Removes and purges the content for the specified application from the Search index.
 
-    **Note:** Only use this command if you are uninstalling an application from IBM Connections. After running the command, you cannot reindex the content from the application that has been deleted. For more information, see *Purging content from the index*.
+    !!! note
+    Only use this command if you are uninstalling an application from IBM Connections. After running the command, you cannot reindex the content from the application that has been deleted. For more information, see *Purging content from the index*.
 
     This command takes a string value, which is the name of the application whose content is to be deleted. The following values are valid:
 
@@ -395,11 +400,13 @@ SearchService.enableTask\(String taskName\)
 SearchService.flushPersistedCrawlContent\(\)
 :   Deletes current persisted seedlists.
 
-    **Note:** This command only clears persisted seedlists in the default persistence location. Seedlists crawled using the startBackgroundCrawl, startBackgroundFileContentExtraction, or startBackgroundIndex commands must be deleted manually.
+    !!! note
+    This command only clears persisted seedlists in the default persistence location. Seedlists crawled using the startBackgroundCrawl, startBackgroundFileContentExtraction, or startBackgroundIndex commands must be deleted manually.
 
     This command does not take any input parameters.
 
-    **Note:** Do not run this command while a crawl is in progress.
+    !!! note
+    Do not run this command while a crawl is in progress.
 
     When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
@@ -474,7 +481,8 @@ SearchService.indexNow\(String applicationNames\)
 
     Use all\_configured instead of listing all indexable services when you want to index all the applications.
 
-    **Note:** An optimize operation is not run at the end of the indexing operation.
+    !!! note
+    An optimize operation is not run at the end of the indexing operation.
 
     For example:
 
@@ -515,7 +523,8 @@ SearchService.indexNowWithOptimization\(String applicationNames\)
         -   status\_updates
         -   wikis.
 
-    **Note:** The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
+    !!! note
+    The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
 
     Note that when you install HCL Connections, a search optimization task is set up to run every night by default. See *Search default tasks* for more information.
 
@@ -620,7 +629,8 @@ SearchService.notifyRestore\(Boolean isNewIndex\)
 SearchService.optimizeNow\(\)
 :   Creates a one-off task that performs an optimize operation on the search index, 30 seconds after being called.
 
-    **Note:** The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
+    !!! note
+    The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
 
     Note that when you install HCL Connections, a search optimization task is set up to run every night by default. See *Search default tasks* for more information.
 
@@ -694,28 +704,32 @@ SearchService.refreshTasks\(\)
 SearchService.reloadIndex\(\)
 :   Reloads the Search index on the current node only without a restart of the Search application.
 
-    **Note:** If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
+    !!! note
+    If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
 
     When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
 SearchService.reloadIndexAllNodes\(\)
 :   Reloads the Search index on all the nodes in the cluster without a restart of the Search application.
 
-    **Note:** If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
+    !!! note
+    If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
 
     When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
 SearchService.reloadSearchConfiguration\(\)
 :   Reloads the search-config.xml file for Search on the current node only without a restart of the Search application.
 
-    **Note:** If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
+    !!! note
+    If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
 
     When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
 SearchService.reloadSearchConfigurationAllNodes\(\)
 :   Reloads the search-config.xml file for Search on all nodes in the cluster without a restart of the Search application.
 
-    **Note:** If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
+    !!! note
+    If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
 
     When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
@@ -769,7 +783,8 @@ SearchService.retryContentFailuresNow\(String applicationNames\)
 SearchService.retryIndexing\(String service, String id\)
 :   Attempts to index an item of content that was not indexed successfully during initial or incremental indexing.
 
-    **Note:** retryIndexing does not work for ecm\_files.
+    !!! note
+    retryIndexing does not work for ecm\_files.
 
     This command takes two parameters:
 
@@ -951,7 +966,8 @@ SearchService.startBackgroundIndex\(String persistenceLocation, String extracted
 
     You can run social analytics indexing jobs at the end of the background indexing operation. Alternatively, you can run the SearchService.startSandBackgroundIndex if you want to create a background index for the social analytics service. For more information, see *Creating a background index for the social analytics service*.
 
-    **Note:** This command is case-sensitive, even on Windows. For example, if you specify c:\\temp as the location to create the seedlist, but the directory is C:\\Temp, an error message is returned.
+    !!! note
+    This command is case-sensitive, even on Windows. For example, if you specify c:\\temp as the location to create the seedlist, but the directory is C:\\Temp, an error message is returned.
 
     This command takes the following arguments:
 
@@ -1028,7 +1044,8 @@ SearchService.startBackgroundSandIndex\(String indexLocation, String jobs\)
 SearchService.updateResumeTokens\(String components, String date, String indexLocation\)
 :   Updates the resume tokens in the index.
 
-    **Note:** You can run this command on background indexes only.
+    !!! note
+    You can run this command on background indexes only.
 
     This command takes the following arguments:
 

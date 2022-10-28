@@ -99,7 +99,8 @@ The resource strings can be identified by the call to comUtil.resource\(\) reque
 
 Many notifications have actions associated with them. The two most common actions are to open the notification in Connections and to open the notification in the Connections mobile application.
 
-**Note:** Not all notification templates follow this exact pattern due to functional differences. This can be used as a reference for altering or adding actions in those cases.
+!!! note
+    Not all notification templates follow this exact pattern due to functional differences. This can be used as a reference for altering or adding actions in those cases.
 
 Additional actions can be added to the actions list variable.
 

@@ -4,7 +4,8 @@ Nancy Smith is a project manager for Greenwell, a fast-growing corporate event p
 
 ## File sync scenario { .section}
 
-**Note:** In this scenario, all companies and people are fictitious.
+!!! note
+    In this scenario, all companies and people are fictitious.
 
 These are the people who need to collaborate on the project. They all have subscriptions to Connections Cloud:
 

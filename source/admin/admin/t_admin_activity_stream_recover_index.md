@@ -4,7 +4,8 @@ If the activity stream search index becomes corrupt or is not being refreshed pr
 
 The IBM® WebSphere® Application Server variables ACTIVITY\_STREAM\_SEARCH\_INDEX\_DIR and ACTIVITY\_STREAM\_SEARCH\_REPLICATION\_DIR define the location of the activity stream search index directory and replication directory respectively. If there are issues with the existing activity stream index, you can restore it by deleting the contents of these directories. The index is rebuilt when the next scheduled crawl takes place.
 
-**Note:** In a clustered environment, ACTIVITY\_STREAM\_SEARCH\_REPLICATION\_DIR is a shared folder whereas ACTIVITY\_STREAM\_SEARCH\_INDEX\_DIR exists on each one of the servers.
+!!! note
+    In a clustered environment, ACTIVITY\_STREAM\_SEARCH\_REPLICATION\_DIR is a shared folder whereas ACTIVITY\_STREAM\_SEARCH\_INDEX\_DIR exists on each one of the servers.
 
 1.  To access the Activity Stream Search Administration page, enter the following URL in your browser and log in using your admin user credentials:
 

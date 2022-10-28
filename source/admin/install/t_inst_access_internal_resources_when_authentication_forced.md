@@ -12,7 +12,8 @@ HCL Connections can be configured to [force user authentication](../secure/t_adm
     -   Do not use the default admin user, since administrative users have access to all Connections content \(including private content\).
 2.  Create a JAAS authentication alias if it does not exist named urlpreviewJAASAuthS2S. Set the username and password of the user defined in step 1.
 
-    **Note:** The name of the JAAS authentication alias used by the service can be configured in the og-config.xml file as described in [Configuring URL preview](../admin/t_admin_news_url_preview_config.md).
+    !!! note
+    The name of the JAAS authentication alias used by the service can be configured in the og-config.xml file as described in [Configuring URL preview](../admin/t_admin_news_url_preview_config.md).
 
 3.  In the og-config.xml file, set the **security.anonymousAccess** attribute to true.
 

@@ -4,11 +4,13 @@ To populate the Profiles database with data from the enterprise LDAP directory, 
 
 Edit the map\_dbrepos\_from\_source.properties file to map fields between the Profiles database and the LDAP directory. Open the profiles\_functions.js file to see the options for the different mapping functions. You can add your own functions if necessary.
 
-**Note:** When you run the Profiles population wizard in interactive mode, it generates two property files in the Wizards\\TDIPopulation directory: a tdisetting.properties file and a mappings.properties file. The properties in mappings.properties are very similar to those in map\_dbrepos\_from\_source.properties.
+!!! note
+    When you run the Profiles population wizard in interactive mode, it generates two property files in the Wizards\\TDIPopulation directory: a tdisetting.properties file and a mappings.properties file. The properties in mappings.properties are very similar to those in map\_dbrepos\_from\_source.properties.
 
 To map fields, complete the following steps:
 
-**Note:** In order to manually populate the Profiles database, ensure you have [Set up the Security Directory Integrator Solutions directory \(tdisol\)](t_setting_up_security_dir_integ_solutions_dir.md).
+!!! note
+    In order to manually populate the Profiles database, ensure you have [Set up the Security Directory Integrator Solutions directory \(tdisol\)](t_setting_up_security_dir_integ_solutions_dir.md).
 
 1.  Edit the properties files to define the mapping between the LDAP directory and the Profiles database. Consider using LDAP viewer software to help you map the fields. To define the mappings that are used when populating the Profiles database from the enterprise directory:
 
@@ -25,7 +27,8 @@ To map fields, complete the following steps:
 
             bldgId=\{func\_map\_to\_db\_bldgId\}
 
-        **Note:** See [Sample complex mappings of Profiles data](r_pers_complex_map_ex.md) for an example of complex mapping.
+        !!! note
+    See [Sample complex mappings of Profiles data](r_pers_complex_map_ex.md) for an example of complex mapping.
 
         **Notes:**
 
@@ -59,9 +62,11 @@ To map fields, complete the following steps:
     </profileExtensionAttributes>
     ```
 
-    **Note:** The formatting between the tdi-profiles-config.xml and the profiles-config.xml files is compatible, so you can copy and paste configuration information between the files. For the extension to be displayed in the user interface, the modifications must be made in profiles-config.xml. For more information, see [Extension properties in the data model](../customize/r_admin_profiles_attributes_ext.md) in the [Customizing Profiles](../customize/c_admin_profiles_customizing.md) section.
+    !!! note
+    The formatting between the tdi-profiles-config.xml and the profiles-config.xml files is compatible, so you can copy and paste configuration information between the files. For the extension to be displayed in the user interface, the modifications must be made in profiles-config.xml. For more information, see [Extension properties in the data model](../customize/r_admin_profiles_attributes_ext.md) in the [Customizing Profiles](../customize/c_admin_profiles_customizing.md) section.
 
-    **Note:** To leverage the custom attribute in the Profiles user interface or REST API, you must configure the application per the instructions in the [Customizing Profiles](../customize/c_admin_profiles_customizing.md) section. For a detailed example that uses custom attributes, see [Creating a simple profile data model and template customization](../customize/t_admin_profiles_custom_example.md).
+    !!! note
+    To leverage the custom attribute in the Profiles user interface or REST API, you must configure the application per the instructions in the [Customizing Profiles](../customize/c_admin_profiles_customizing.md) section. For a detailed example that uses custom attributes, see [Creating a simple profile data model and template customization](../customize/t_admin_profiles_custom_example.md).
 
 4.  Save your changes to the tdi-profiles-config.xml file.
 
@@ -95,7 +100,8 @@ To map fields, complete the following steps:
         extattr.spokenLangs={func_map_to_langs}
         ```
 
-        **Note:** In this example, the extension attribute is spokenLangs. The extension attribute must match the specified extensionId in the tdi-profiles-config.xml extension attribute definition.
+        !!! note
+    In this example, the extension attribute is spokenLangs. The extension attribute must match the specified extensionId in the tdi-profiles-config.xml extension attribute definition.
 
     3.  Add a new func\_map\_to\_langs JavaScript function in the TDISolution\\TDI\\profiles\_functions.js file. Write logic for the function that specifies the new extension attribute mapping.
 
@@ -120,7 +126,8 @@ To map fields, complete the following steps:
 
 The properties in the map\_dbrepos\_from\_source.properties file have the default values defined in the following table. Many of them are null. You must determine which LDAP properties to map to your database fields and edit this file to specify values that apply to your configuration. Any values that you omit or set to null are not populated in the database.
 
-**Note:** See [Attribute mapping for Profiles](r_attribute_mapping_profiles.md) for a table of additional attribute mapping field values.
+!!! note
+    See [Attribute mapping for Profiles](r_attribute_mapping_profiles.md) for a table of additional attribute mapping field values.
 
 |SDI property|Default LDAP attribute mapping|
 |------------|------------------------------|
@@ -143,7 +150,8 @@ The properties in the map\_dbrepos\_from\_source.properties file have the defaul
 |
 |distinguishedName|$dn Required.
 
-**Note:** By default the SDI Property distinguishedName is mapped to the $dn function which executes a DN lookup based on the directory type.
+!!! note
+    By default the SDI Property distinguishedName is mapped to the $dn function which executes a DN lookup based on the directory type.
 
 |
 |email|mail|

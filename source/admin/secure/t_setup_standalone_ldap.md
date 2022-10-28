@@ -51,7 +51,8 @@ To enable SSO between Connections and a WebSphere Application Server configured 
 
     8.  Click **OK** and then click **Save**.
 
-    **Note:** If there is only one user, you might not be allowed to remove the user. In that case, add the new user first and then remove the original user.
+    !!! note
+    If there is only one user, you might not be allowed to remove the user. In that case, add the new user first and then remove the original user.
 
 8.  Synchronize the nodes and then restart the servers:
 

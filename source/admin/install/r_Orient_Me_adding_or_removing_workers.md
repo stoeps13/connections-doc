@@ -8,7 +8,8 @@ There are currently two types of supported worker nodes, generic and infrastruct
 
 Component Pack services are configured with Kubernetes "node affinity". All service rules are set to "preference" rather than a hard requirement. This means that, although the Elasticsearch pods will do its best to run on the dedicated infrastructure nodes, if one or more of those nodes are unavailable, then it is possible for an Elasticsearch pod to run on a generic worker node. The same applies for all other services. If they cannot find a generic worker node to run on, they may run on the infrastructure worker.
 
-**Note:** Component Pack employs Pod Anti-Affinity and Node Affinity across all its microservices for resiliency.
+!!! note
+    Component Pack employs Pod Anti-Affinity and Node Affinity across all its microservices for resiliency.
 
 Pod Anti Affinity:
 
@@ -26,7 +27,8 @@ Node affinity:
 
 It is possible to add worker nodes after the installation of IBM Cloud Private has already been done. A scenario where this may be required is if you have a system without Elasticsearch installed \(and therefore have no dedicated Elasticsearch infrastructure nodes\), and you wish to now install the Elasticsearch service. You can pass the --add\_infra\_worker argument into the IBM Cloud Private installer in order to add the new infrastructure worker. You can also use the --add\_worker argument to add a generic worker.
 
-**Note:** You can only add one worker at a time with these flags.
+!!! note
+    You can only add one worker at a time with these flags.
 
 Make sure the worker node you are adding has been included in the worker list. For example, when adding a generic worker node:
 
@@ -59,7 +61,8 @@ sudo bash /opt/deployCfC/deployCfC.sh \
 
 You can remove a generic or infrastructure worker by passing the --remove\_worker or --remove\_infra\_worker flag to the IBM Cloud Private installer.
 
-**Note:** You can only remove one worker at a time with these flags.
+!!! note
+    You can only remove one worker at a time with these flags.
 
 Make sure the worker you are removing has been included in the worker list. For example, when removing a generic worker:
 

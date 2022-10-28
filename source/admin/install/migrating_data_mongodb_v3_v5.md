@@ -24,13 +24,15 @@ Before migrating your data, check the verification section below to understand h
     |MongoDB 5 \(to restore\)|Mongo5|/pv-connections/mongo5-node-0/data/db|
 
 
-**Note:** To avoid losing new data while migrating the existing data, run this task during a maintenance window.
+!!! note
+    To avoid losing new data while migrating the existing data, run this task during a maintenance window.
 
 ## Migrate MongoDB data {#section_bs5_f1q_bvb .section}
 
 1.  Copy the backup from Mongo to the new Mongo5 database.
 
-    **Note:** The following steps depend on the type of file system used, for example NFS, EFS, and the like.
+    !!! note
+    The following steps depend on the type of file system used, for example NFS, EFS, and the like.
 
     1.  Ensure that you have the necessary permissions to complete the following steps.
     2.  Go to the location which was configured as the PV storage component directory on your Mongo database, for example: /mnt/pv-connections/mongo-node-0/data/db/backups or NFS master: /pv-connections/mongo-node-0/data/db/backups

@@ -37,7 +37,8 @@ If you change other files in the base TDI directory, you must delete existing TD
 ./sync_all_dns.sh refreshsols
 ```
 
-**Note:** You must use a sufficiently powerful system with multiple processors and at least 16GB of memory. The multi8 option requires more memory and disk space than the multi4 option. Do not use this technique on a virtual machine.
+!!! note
+    You must use a sufficiently powerful system with multiple processors and at least 16GB of memory. The multi8 option requires more memory and disk space than the multi4 option. Do not use this technique on a virtual machine.
 
 The following description assumes that sync\_updates\_size\_model is set to multi4. The process is similar when multi6 and multi8 are chosen.
 
@@ -57,7 +58,8 @@ If you are synchronizing with more than one LDAP directory or LDAP branch, and a
 
 All LDAP directory servers maintain an operational attribute per leaf that stores the last time the leaf was modified. The attribute is named 'modifyTimestamp', and the value is a string of the form "YYYYMMDDHHMMSS..." The precision in the SS part is an implementation detail; it could be the a thousandth of a second or a millionths of a second.
 
-**Note:** Because timestamp tracking relies on the time of the last LDAP update, timestamp tracking is useful only if you use data that originates from the LDAP. If you use data from other sources, timestamp tracking has no effect unless LDAP is also updated.
+!!! note
+    Because timestamp tracking relies on the time of the last LDAP update, timestamp tracking is useful only if you use data that originates from the LDAP. If you use data from other sources, timestamp tracking has no effect unless LDAP is also updated.
 
 In Phase 3 of the sync\_all\_dns process, the standard way that the algorithm decides whether a record needs to be updated is to compare all Profiles database values from Phase 1 with the corresponding LDAP values from Phase 2. This process can become very time consuming as the number of users and the number of extension attributes increases.
 

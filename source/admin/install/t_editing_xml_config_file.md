@@ -7,7 +7,8 @@ The XML configuration file, config.xml, is used to adjust settings once the edit
 
 Consider making a backup copy of config.xml, before editing it.
 
-**Note:** The toolbar contains a placeholder item for HCL Connections-specific toolbar buttons. These buttons as a group are represented by the entry `<toolbarButton name="connectionsDialogs" />` in the configuration file. This setting can be used as previously described to configure the position of these items within the toolbar.
+!!! note
+    The toolbar contains a placeholder item for HCL Connections-specific toolbar buttons. These buttons as a group are represented by the entry `<toolbarButton name="connectionsDialogs" />` in the configuration file. This setting can be used as previously described to configure the position of these items within the toolbar.
 
 To ensure that images in wiki drafts upload correctly, the following entry must not be removed from your configuration file:
 

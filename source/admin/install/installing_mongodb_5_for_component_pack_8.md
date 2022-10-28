@@ -73,7 +73,8 @@ Ensure you have the following:
 
         All PVCs are in BOUND state.
 
-        **Note:** If `upgrade connections-volumes` fails, try to delete all PV, PVC first and then run upgrade command.
+        !!! note
+    If `upgrade connections-volumes` fails, try to delete all PV, PVC first and then run upgrade command.
 
 10. Install MongoDB 5 using Helm charts.
     1.  On your Component Pack node, download [infrastructure.yml.j2](https://github.com/HCL-TECH-SOFTWARE/connections-automation/tree/main/roles/hcl/component-pack/templates/helmvars). Then, rename the file to infrastructure.yml and open it.
@@ -91,7 +92,8 @@ Ensure you have the following:
 
         2.  Install infrastructure charts:
 
-            **Note:** You need only one --set option with a comma-separated list of properties.
+            !!! note
+    You need only one --set option with a comma-separated list of properties.
 
             ``` {#codeblock_dv3_bwv_dvb}
             helm upgrade infrastructure v-connections-helm/infrastructure -i --version 0.1.0-20220617-050009 --namespace connections -f infrastructure.yml --set mongo5.global.image.repository={{ docker_registry_url  }}/middleware-mongodb5,mongo5.image.tag={{ image_tag }}

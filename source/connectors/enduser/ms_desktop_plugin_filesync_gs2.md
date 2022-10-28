@@ -16,11 +16,13 @@ Sync works as follows:
 
 1.  After successfully connecting to a server, you are notified that a folder named **My Drive on server-name** is added to your Windows Explorer Favorites folder.
 
-    **Note:** If you connect to more than one server, you will have a **My Drive** folder for each server.
+    !!! note
+    If you connect to more than one server, you will have a **My Drive** folder for each server.
 
 2.  Files and folders that you add to the **My Drive** folder on your desktop are automatically copied to a corresponding My Drive folder on the server.
 
-    **Note:** Files and folders you add from the Connections Files app also appear in your local My Drive folder.
+    !!! note
+    Files and folders you add from the Connections Files app also appear in your local My Drive folder.
 
 3.  Changes made to either the desktop or server copy of the file are automatically synced so that the files remain consistent.
 4.  In the event that changes cannot be synced, for example if you modify a local file that is locked on the server, you are warned that your local copy might not match the server copy. You are advised to take steps to correct the problem.
@@ -46,7 +48,8 @@ After your **My Drive** folder is established, you can interact with the folder 
     -   View previous versions if any exist
     -   Delete the file from server
 
-        **Note:** Files can be added to more than one location in My Drive. For example, you can add a single file to My Drive and then later add a folder containing the same file. That does not affect the file, but if you later want to remove it entirely from My Drive, you must remove it from both locations.
+        !!! note
+    Files can be added to more than one location in My Drive. For example, you can add a single file to My Drive and then later add a folder containing the same file. That does not affect the file, but if you later want to remove it entirely from My Drive, you must remove it from both locations.
 
 
 -   **[Scenario: Collaborating on a document using automatic sync](../../connectors/enduser/scenario_file_sync.md)**  

@@ -19,7 +19,8 @@ This is an optional, but recommended step. To encrypt Redis traffic from Connect
     -   `sudo chmod 600 keys_dir/ssh_key`
     -   `sudo ssh-copy-id -o StrictHostKeyChecking=no -i keys_dir/ssh_key root@IP\_address\_of\_master\_node || error_cleanup "ssh_key copy failure to node (no prompt)"`
 
-        **Note:** If using HA, you must specify each master IP in turn. For example:
+        !!! note
+    If using HA, you must specify each master IP in turn. For example:
 
         -   `- sudo ssh-copy-id -o StrictHostKeyChecking=no -i keys_dir/ssh_key root@<IP\_address\_of\_master\_1> || error_cleanup "ssh_key copy failure to node (no prompt)"`
         -   `- sudo ssh-copy-id -o StrictHostKeyChecking=no -i keys_dir/ssh_key root@<IP\_address\_of\_master\_2> || error_cleanup "ssh_key copy failure to node (no prompt)"`
@@ -60,7 +61,8 @@ This is an optional, but recommended step. To encrypt Redis traffic from Connect
         -   The -f tells ssh to go into the background just before it executes the command.
         -   This is followed by the user name and server you are logging into.
         -   The -N instructs OpenSSH to not execute a command on the remote system.
-        **Note:** If deploying for high availability, specify the floating IP address for master servers when specifying the IP\_or\_Host\_name\_of\_master.
+        !!! note
+    If deploying for high availability, specify the floating IP address for master servers when specifying the IP\_or\_Host\_name\_of\_master.
 
     4.  Press Esc, then type :wq and press Enter to close and save the file.
 

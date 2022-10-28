@@ -14,10 +14,12 @@ Table 1 lists the file types that can be viewed.
 |Microsoft™ Word|.doc, .docx, .dot, .dotx|
 |Microsoft PowerPoint|.ppt, .pptx, .pot, .potx|
 |Microsoft Excel|.xls, .xlsx, .xlsm, .xlt, .xltx|
-|Adobe™ Reader|.pdf**Note:** When viewing .pdf files, if you have accessibility requirements, download the file and then open it using a third party application that supports PDF accessibility.
+|Adobe™ Reader|.pdf!!! note
+    When viewing .pdf files, if you have accessibility requirements, download the file and then open it using a third party application that supports PDF accessibility.
 
 |
-|Others|.txt, .rtf**Note:** If you view a file in HCL Connections, .txt and .rtf can only be viewed in Connections 6.0 CR1 and later versions.
+|Others|.txt, .rtf!!! note
+    If you view a file in HCL Connections, .txt and .rtf can only be viewed in Connections 6.0 CR1 and later versions.
 
 |
 

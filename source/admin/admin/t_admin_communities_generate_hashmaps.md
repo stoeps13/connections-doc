@@ -6,7 +6,8 @@ To use administrative commands, you must use the wsadmin client. See [Starting t
 
 Java hash maps provide a useful mechanism for storing community data so that it can be quickly retrieved. You can use the community fetch commands to return a vector of hash maps that contain all the data for communities. The fetch commands return a list of communities. You then pass the lists to print commands to print data for specific communities.
 
-**Note:** The following commands listed can also be used to retrieve information about subcommunities.
+!!! note
+    The following commands listed can also be used to retrieve information about subcommunities.
 
 1.  To retrieve and list community data, complete the following steps.
 2.  Start the wsadmin client from the following directory of the system on which you installed the Deployment Manager:
@@ -107,7 +108,8 @@ Java hash maps provide a useful mechanism for storing community data so that it 
         CommunitiesService.fetchCommByMemberUuid("193F1CE8-E10A-4B9A-B933-C8ECD6C072E4", "0000000042")
         ```
 
-        **Note:** The Member's UUID is the External LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in this command.
+        !!! note
+    The Member's UUID is the External LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in this command.
 
         -   CommunitiesMemberService.getMemberExtIdByEmail\("email"\)
         -   CommunitiesMemberService.getMemberExtIdByLogin\("login"\)
@@ -115,7 +117,8 @@ Java hash maps provide a useful mechanism for storing community data so that it 
     CommunitiesService.fetchCommByName\(String name, String orgId\)
     :   Returns the community or subcommunity with the specified name in the specified organization.
 
-        **Note:** There is a maximum of one community in the list, but that list can be used in the other methods that use a list input. If no match is found, the list will be empty.
+        !!! note
+    There is a maximum of one community in the list, but that list can be used in the other methods that use a list input. If no match is found, the list will be empty.
 
         For example:
 

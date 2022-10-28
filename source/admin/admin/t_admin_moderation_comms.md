@@ -65,7 +65,8 @@ contentApproval
 contentFlagging
 :   Set to "true" to require moderation for flagged content. By default this attribute is set to "false". When the setting is set to false, the user cannot flag content from the user interface or using an API command. Blogs Moderation API and filters still work. Moderators can still perform moderation tasks. Files and Forums API commands returns errors.
 
-    **Note:** If you upgraded HCL Connections from release 2.5 to release 3.0 or higher, the default for Blogs is "true" for compatibility reasons.
+    !!! note
+    If you upgraded HCL Connections from release 2.5 to release 3.0 or higher, the default for Blogs is "true" for compatibility reasons.
 
 ownerModerate
 :   Must be set to "true" to specify that community owners can moderate the content in communities that they own, otherwise it is set to "false". If contentFlagging or contentApproval for a service is set to false, then ownerModerate must be set to false.

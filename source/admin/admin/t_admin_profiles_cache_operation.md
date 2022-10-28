@@ -52,7 +52,8 @@ If you use the administrative commands to disable the cache, the reporting struc
     ProfilesService.reloadFullReportsToCache\(\)
     :   Forces a reload of the full report-to chain cache from the Profiles database. This command does not take any arguments.
 
-        **Note:** If the full report-to cache is disabled, it cannot be reloaded. This command fails when the cache is disabled.
+        !!! note
+    If the full report-to cache is disabled, it cannot be reloaded. This command fails when the cache is disabled.
 
 
 **Parent topic:**[Administering cache](../admin/c_admin_profiles_cache.md)

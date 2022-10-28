@@ -58,7 +58,8 @@ In this procedure you create a separate TDI solution directory for the LDAP bran
 
     3.  Customize the string that gets added to the display name. Modify the value of `decorateVisitorDisplayName` by replacing the string `- External User` with your custom string.
 
-        **Note:** The string is not translated into other languages. If your installation of Connections supports more than one language, use a string that works in all languages.
+        !!! note
+    The string is not translated into other languages. If your installation of Connections supports more than one language, use a string that works in all languages.
 
 8.  Populate the Profiles database with external users. In the directory TDI\_external, run the following commands, in order:
 

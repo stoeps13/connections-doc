@@ -6,7 +6,8 @@ HCL Connections™ does not provide virus scanning software, but it does enable 
 
 Connections supports the Internet Content Adaptation Protocol \(ICAP\) and its applications use this protocol to communicate with virus detection products. Specifically, Connections supports the ICAP 1.0 protocol. Ensure that the virus detection product used in your enterprise supports ICAP 1.0. Follow the configuration instructions below to enable the ICAP communication between the Connections server and your ICAP virus scanning server. In that process, you update LotusConnections-config.xml with the hostname and the ICAP response modification service of your virus scanning server. Once configured, Connections then instigates virus detection using ICAP when uploading files and images as mentioned in the following content. Note that your virus detection product must include response headers X-Infection-Found and X-Violations-Found since those are the virus detection responses Connections uses to determine whether a scanning error occurred.
 
-**Note:** Disable any file cleaning services that are provided by the virus scanning product you are using. Cleaning must be disabled for the virus scanner to interact properly with Connections. See the documentation for the virus scanner to determine how to disable file cleaning.
+!!! note
+    Disable any file cleaning services that are provided by the virus scanning product you are using. Cleaning must be disabled for the virus scanner to interact properly with Connections. See the documentation for the virus scanner to determine how to disable file cleaning.
 
 To edit configuration files, you must use the wsadmin client. See [Starting the wsadmin client](../admin/t_admin_wsadmin_starting.md) for details.
 
@@ -30,13 +31,15 @@ To enable virus scanning for Activities, Blogs, Communities, Files, Forums, Prof
         where:
 
         -   working\_directory is the temporary working directory to which configuration files are copied. The files are kept in this working directory while you edit them.
-        -   **Note:** When you specify a path to the working directory on a system that is running Microsoft Windows, use a forward slash for the directory.
+        -   !!! note
+    When you specify a path to the working directory on a system that is running Microsoft Windows, use a forward slash for the directory.
 
 -   For example:"C:/temp".
 -   AIX®, and Linux only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
 2.  From the temporary directory to which you just checked out the Connections configuration files, open the LotusConnections-config.xml file in a text editor.
 

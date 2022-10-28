@@ -9,7 +9,8 @@
     3.  $ export PATH=$PATH:$ORACLE\_HOME/bin
     4.  $ export DISPLAY=hostname:displaynumber.screennumber
 
-        **Note:** where hostname:displaynumber.screennumber represents the client system, monitor number, and window number. For example: localhost:0.0
+        !!! note
+    where hostname:displaynumber.screennumber represents the client system, monitor number, and window number. For example: localhost:0.0
 
     5.  $ dbca &
 3.  On the Database Operation page, accept the default option to **Create database** and click **Next**.

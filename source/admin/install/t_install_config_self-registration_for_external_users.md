@@ -4,7 +4,8 @@
 
 1.  For external collaboration self-registration to work, it is mandatory that each of the following properties in the selfregistration-config.xml file have a value entered. You can modify default values to fit your environment.
 
-    **Note:** For this feature, you need to edit the configuration file directly.
+    !!! note
+    For this feature, you need to edit the configuration file directly.
 
     1.  Turn on the external collaboration service, and decide whether you want the option for authorized Connections users to invite external users to be displayed in the product UI. The default for the UI option is `false`.
 

@@ -2,7 +2,8 @@
 
 If you have an Sametime® 8.5.2 client or later and the Profiles application deployed, you can enable Sametime awareness in HCL Connections.
 
-**Note:** This is an optional configuration.
+!!! note
+    This is an optional configuration.
 
 When you enable Sametime awareness in HCL Connections, a person's online status is indicated by a set of icons and an associated status message that is available from the person's profile and business card. Sametime awareness tells you whether the person is available to chat, busy in a meeting, or away from their computer.
 
@@ -10,7 +11,8 @@ You must have the following software enabled to be able to add Sametime awarenes
 
 -   Sametime 8.5.2 or later stand-alone client.
 
-    **Note:** Alternatively, you can use Sametime embedded in Notes® if the Notes client version is Notes 8.5 or later.
+    !!! note
+    Alternatively, you can use Sametime embedded in Notes® if the Notes client version is Notes 8.5 or later.
 
 -   When using Sametime 8.5 or later the following limitations apply:
     -   Users defined in the Sametime directory must have the same email address as the users defined in the Profiles directory.
@@ -23,7 +25,8 @@ You must have the following software enabled to be able to add Sametime awarenes
 
 For more information about enabling SSL for Sametime, refer to the documentation provided with the Sametime SDK, which is available from the following web site: [http://www.ibm.com/developerworks/lotus/downloads/toolkits.html](http://www.ibm.com/developerworks/lotus/downloads/toolkits.html)
 
-**Note:** After downloading the toolkit, the ConnectWebApiDevguide.pdf documentation can be found in the sdk/client/connectWebApi/doc directory.
+!!! note
+    After downloading the toolkit, the ConnectWebApiDevguide.pdf documentation can be found in the sdk/client/connectWebApi/doc directory.
 
 1.  Start the wsadmin client from the following directory of the system where you installed the deployment manager:
 
@@ -35,7 +38,8 @@ For more information about enabling SSL for Sametime, refer to the documentation
     app\_server\_root\profiles\dm\_profile\_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
 
 2.  Edit the profiles-config.xml file to indicate that you want to enable awareness. Start the wsadmin client. Use the following commands to access and check out the Profiles configuration files:
 
@@ -49,11 +53,13 @@ For more information about enabling SSL for Sametime, refer to the documentation
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes \(/\) to separate directories in the file path, regardless of your operating system.
 
-            **Note:** In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
+            !!! note
+    In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
 
             -   AIX
             -   Linux
-            **Note:** The directory must grant write permissions or the command does not complete successfully.
+            !!! note
+    The directory must grant write permissions or the command does not complete successfully.
 
         -   cell\_name is the name of the WebSphere® Application Server cell hosting the Profiles application. This argument is required. It is also case-sensitive. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor: print AdminControl.getCell\(\)
         For example:

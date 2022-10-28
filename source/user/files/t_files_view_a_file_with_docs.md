@@ -14,7 +14,8 @@ To view a file from the Files app, simply click on the file name. From there, yo
 |Microsoft™ Word|.doc, .docx, .dot, .dotx|
 |Microsoft PowerPoint|.ppt, .pptx, .pot, .potx|
 |Microsoft Excel|.xls, .xlsx, .xlsm, .xlt, .xltx|
-|Adobe™ Reader|.pdf**Note:** When viewing .pdf files, if you have accessibility requirements, download the file and then open it using a third-party application that supports PDF accessibility.
+|Adobe™ Reader|.pdf!!! note
+    When viewing .pdf files, if you have accessibility requirements, download the file and then open it using a third-party application that supports PDF accessibility.
 
 |
 |Image files|.jpg, .gif, .png|

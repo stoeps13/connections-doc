@@ -28,7 +28,8 @@ The content of individual notifications is defined in templates that are process
 
         [http://freemarker.sourceforge.net/docs/index.html](http://freemarker.sourceforge.net/docs/index.html)
 
-        **Note:** The FreeMarker version currently used is 2.3.15.
+        !!! note
+    The FreeMarker version currently used is 2.3.15.
 
     3.  Save your changes and then close the file.
 
@@ -115,7 +116,8 @@ The content of individual notifications is defined in templates that are process
         <property name="sender">Firstname Lastname &lt;user@example.com&gt;</property>
         ```
 
-        **Note:** Be sure to use escape characters `&lt;` and `&gt;` for the `<` and `>` characters in the email address.
+        !!! note
+    Be sure to use escape characters `&lt;` and `&gt;` for the `<` and `>` characters in the email address.
 
     3.  Check in /LotusConnections-config/notification-config.xml and restart the News application for the changes to take effect.
 

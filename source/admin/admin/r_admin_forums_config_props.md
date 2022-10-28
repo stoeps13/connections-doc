@@ -11,7 +11,8 @@ activeContentFilter.enabled
 
     This property takes a Boolean value: true or false.
 
-    **Note:** Disabling this property introduces vulnerability to cross-site scripting \(XSS\) and other type of malicious attacks. For more information, see *Securing applications from malicious attack*.
+    !!! note
+    Disabling this property introduces vulnerability to cross-site scripting \(XSS\) and other type of malicious attacks. For more information, see *Securing applications from malicious attack*.
 
     For example:
 

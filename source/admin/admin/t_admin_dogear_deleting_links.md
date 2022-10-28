@@ -49,7 +49,8 @@ Before you delete links, you can send a notification email to bookmark owners to
         LinkService.deleteLinkByUIDBatch("/opt/Bookmarks/badlinks.txt")
         ```
 
-        **Note:** If you are using DB2® as your database, you can create the batch file for deleting all of the bookmarks associated with a user this way:
+        !!! note
+    If you are using DB2® as your database, you can create the batch file for deleting all of the bookmarks associated with a user this way:
 
         1.  Open the DB2 Control Center.
         2.  From the command editor, connect to the Bookmarks database.

@@ -31,13 +31,15 @@ On the master node \(refer to the [Component Pack overview](c_Orient_Me_architec
 3.  Create a Kubernetes persistent volume using option a \(HostPath\) or b \(NFS\):
     1.  Create a persistent volume on HostPath:
 
-        **Note:** Use for evaluation purpose only. HostPath must be used only for test in a ICp single-node installation. It will not work if you have a cluster.
+        !!! note
+    Use for evaluation purpose only. HostPath must be used only for test in a ICp single-node installation. It will not work if you have a cluster.
 
         ```
         sudo /usr/local/bin/kubectl create -f fullPVs_HostPath.yml
         ```
 
-        **Note:** You can find a sample fullPVs\_HostPath.yml in the install ZIP file at the following extracted location: <extractedFolder\>/microservices/hybridcloud/doc/samples/
+        !!! note
+    You can find a sample fullPVs\_HostPath.yml in the install ZIP file at the following extracted location: <extractedFolder\>/microservices/hybridcloud/doc/samples/
 
     2.  Create a persistent volume on NFS: The following steps assume that you are in a IPv4 environment, and that all persistent volumes will be created on the Master node.
         1.  Replace the string \_\_\_NFS\_SERVER\_IP\_\_\_ in the fullPVs\_NFS.yml file with the IP address of the NFS server, by running the following command:
@@ -53,7 +55,8 @@ On the master node \(refer to the [Component Pack overview](c_Orient_Me_architec
             sudo sed -i "s/\/pv-connections\//\/nfs\/IBM\/iccontainers\//g" fullPVs_NFS.yml
             ```
 
-            **Note:** Use `\/` everywhere you want to look for or write in a `/`. For example, For example, /nfs/IBM/iccontainers/ becomes \\/nfs\\/IBM\\/iccontainers\\/.
+            !!! note
+    Use `\/` everywhere you want to look for or write in a `/`. For example, For example, /nfs/IBM/iccontainers/ becomes \\/nfs\\/IBM\\/iccontainers\\/.
 
         3.  Provide execution permission to the nfsSetup.sh script and run it in order to get NFS installed and configured:
 

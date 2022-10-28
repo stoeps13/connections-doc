@@ -25,7 +25,8 @@ The Profiles Worker is the process that sends the user lifecycle commands to the
     [3/9/15 17:02:00:370 GMT] 0000012f NotificationS I   CLFWY0337I: The next run time for the task ProcessLifeCycleEventsTask for Profiles is at 17:04:00.
     ```
 
-    **Note:** Any data was processed during a particular run of the task, is echoed as a separate, timestamped notification in SystemOut.log.
+    !!! note
+    Any data was processed during a particular run of the task, is echoed as a separate, timestamped notification in SystemOut.log.
 
     You can also search for error and informational messages, for example, search for com.ibm.lconn.profiles.config.EnableUserDataPropagation in SystemOut.log
 

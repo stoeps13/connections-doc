@@ -24,7 +24,8 @@ To perform a search:
 
 4.  When done with your search, you can click the **close search** icon ![Close search icon](close_search.png) beside the title bar to return to the page you were last viewing.
 
-**Note:** The full features mentioned require that your organization has deployed Component Pack for Connections. If your organization doesn't have Component Pack and you still don't see the results you want, click **Advanced Search**. For information on the advanced search page, see [Performing an advanced search](t_eucommon_perform_advanced_search.md).
+!!! note
+    The full features mentioned require that your organization has deployed Component Pack for Connections. If your organization doesn't have Component Pack and you still don't see the results you want, click **Advanced Search**. For information on the advanced search page, see [Performing an advanced search](t_eucommon_perform_advanced_search.md).
 
 **Parent topic:**[Searching Connections](../eucommon/c_eucommon_search.md)
 

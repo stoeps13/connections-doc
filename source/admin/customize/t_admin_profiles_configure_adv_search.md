@@ -29,11 +29,13 @@ A directory search in Profiles allows the user to search using multiple fields. 
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes \(/\) to separate directories in the file path, regardless of your operating system.
 
-            **Note:** In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
+            !!! note
+    In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
 
             -   AIX
             -   Linux
-            **Note:** The directory must grant write permissions or the command does not complete successfully.
+            !!! note
+    The directory must grant write permissions or the command does not complete successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the Profiles application. This argument is required. It is also case-sensitive. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor: print AdminControl.getCell\(\)
         For example:
@@ -80,7 +82,8 @@ A directory search in Profiles allows the user to search using multiple fields. 
         http://yourco.com/profiles/html/advancedSearch.do?keyword=&displayName=&preferredFirstName=Joseph&preferredLastName=&profileTags=&jobResp=&experience=&background=&organizationTitle=&workLocation%24city=&workLocation%24state=&countryDisplayValue=&email=&telephoneNumber=&extattr%24schoolName=yourschool&lang=en_us
         ```
 
-        **Note:** For more information about adding custom extension attributes to Profiles, see [Adding custom extension attributes for Profiles](t_admin_profiles_enable_custom_fields.md). For information about how to add custom strings in Profiles, see [Adding custom strings for widgets and other specified scenarios](t_admin_profiles_add_custom_strings.md).
+        !!! note
+    For more information about adding custom extension attributes to Profiles, see [Adding custom extension attributes for Profiles](t_admin_profiles_enable_custom_fields.md). For information about how to add custom strings in Profiles, see [Adding custom strings for widgets and other specified scenarios](t_admin_profiles_add_custom_strings.md).
 
     For example:
 

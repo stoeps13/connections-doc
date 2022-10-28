@@ -8,7 +8,8 @@ Files that you upload from the Files app are stored in your repository, hence yo
 
 To see how a file is shared, open the file page and click the **Sharing** tab.
 
-**Note:** If you have a subscription to HCL Connections Docs Cloud, you also can collaborate on an uploaded document, spreadsheet, or presentation file by using a **Share** option. This enables you to send an invitation to named contacts and request that they view or edit a particular file with you. Sharing in that context is described in the following topic: *Editing a file by using HCL Docs*.
+!!! note
+    If you have a subscription to HCL Connections Docs Cloud, you also can collaborate on an uploaded document, spreadsheet, or presentation file by using a **Share** option. This enables you to send an invitation to named contacts and request that they view or edit a particular file with you. Sharing in that context is described in the following topic: *Editing a file by using HCL Docs*.
 
 ## Sharing a file { .section}
 

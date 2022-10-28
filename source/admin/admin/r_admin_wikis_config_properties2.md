@@ -39,7 +39,8 @@ cache.http.publicContentMaxAgeInSecs
 
     The value must be greater than or equal to 0.
 
-    **Note:** You can force a resource update by opening the `LotusConnections-config.xml` file and setting the versionStamp property to any value. For example: <versionStamp value="20130929.013427"\>. The token is included in most URLs and in URL caches. The new URL overrides the old version and refreshes the resources. For information about editing the `LotusConnections-config.xml` file, see *Common configuration properties*.
+    !!! note
+    You can force a resource update by opening the `LotusConnections-config.xml` file and setting the versionStamp property to any value. For example: <versionStamp value="20130929.013427"\>. The token is included in most URLs and in URL caches. The new URL overrides the old version and refreshes the resources. For information about editing the `LotusConnections-config.xml` file, see *Common configuration properties*.
 
     Some resources, including some images, do not use version stamps. If you edit these resources frequently, you can reduce the cache.http.publicContentMaxAgeInSecs value to show changes more quickly. Otherwise, update the version stamp when you modify the wikis-config.xml file.
 
@@ -109,7 +110,8 @@ directory.typeaheadSearch.maximumResults
 
     If the value is large, such as 1000, and there are 1000 or more matches, all names are returned and performance is greatly reduced. If the value is low, such as 10, a user who enters a generic name might not see all matches.
 
-    **Note:** Type-ahead is available for public pages but not for filtered pages that might appear in Owner, Editor, or Reader views.
+    !!! note
+    Type-ahead is available for public pages but not for filtered pages that might appear in Owner, Editor, or Reader views.
 
 download.modIBMLocalRedirect.enabled
 :   Specifies whether IBM® HTTP Server, and not WebSphere® Application Server, serves downloaded files. In a production environment, use IBM HTTP Server to serve downloaded files.
@@ -323,7 +325,8 @@ security.logout.href
 
     For more information, see *Enabling single sign-on for Tivoli Access Manager*.
 
-    **Note:** You must use fully qualified domain names in the configuration file. If you use an abbreviated name, secure communication between the servers fails.
+    !!! note
+    You must use fully qualified domain names in the configuration file. If you use an abbreviated name, secure communication between the servers fails.
 
 **Parent topic:**[Changing Wikis configuration property values](../admin/t_admin_wikis_changing_config_properties.md)
 

@@ -83,7 +83,8 @@ HCL Connections uses the Apache Tika conversion libraries to convert business do
 
 These parameters can be updated in the search-config.xml file.
 
-**Note:** The following properties might not be present in search-config.xml. If a property is missing from search-config.xml, it will use the default value documented in this article. If you need to specify a different value for any of these properties, add the property to search-config.xml: Edit search-config.xml and find `<propertySettings>` at the end of the file. Inside this element, at the bottom of the list of `<property>` names, add the following:
+!!! note
+    The following properties might not be present in search-config.xml. If a property is missing from search-config.xml, it will use the default value documented in this article. If you need to specify a different value for any of these properties, add the property to search-config.xml: Edit search-config.xml and find `<propertySettings>` at the end of the file. Inside this element, at the bottom of the list of `<property>` names, add the following:
 
 ``` {#codeblock_v2m_fqq_55b}
         <property name="tikaFileConversion">

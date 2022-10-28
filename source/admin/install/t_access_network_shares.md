@@ -6,7 +6,8 @@ This task applies only to deployments of HCL Connections environments where the 
 
 When WebSphere Application Server runs as a Windows service, it uses the local system account to log in with null credentials. When WebSphere Application Server tries to access an HCL Connections network share using Universal Naming Convention \(UNC\) mapping, the access request fails because the content share is accessible only to valid user IDs.
 
-**Note:** When using a Windows service to start WebSphere Application Server, you must use UNC mapping; you cannot use drive letters to reference network shares.
+!!! note
+    When using a Windows service to start WebSphere Application Server, you must use UNC mapping; you cannot use drive letters to reference network shares.
 
 To resolve this problem, configure the WebSphere Application Server service login attribute to log in with a user account that is authorized to access the content share.
 

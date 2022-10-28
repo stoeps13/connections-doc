@@ -48,11 +48,13 @@ A lookup connector is not usable in every situation. For example, if your source
 
     5.  Optionally add additional error checking code and tracing output.
 
-    **Note:** To help get started with Tivoli Directory Integrator, go to the [Learning TDI](http://www.tdi-users.org/twiki/bin/view/Integrator/LearningTDI) site. You can also refer to the [Tivoli Directory Integrator product documentation](http://www-01.ibm.com/support/knowledgecenter/SSCQGF_7.1.0/com.ibm.IBMDI.doc_7.1/welcome.htm) for more information.
+    !!! note
+    To help get started with Tivoli Directory Integrator, go to the [Learning TDI](http://www.tdi-users.org/twiki/bin/view/Integrator/LearningTDI) site. You can also refer to the [Tivoli Directory Integrator product documentation](http://www-01.ibm.com/support/knowledgecenter/SSCQGF_7.1.0/com.ibm.IBMDI.doc_7.1/welcome.htm) for more information.
 
 3.  Export your lookup solution by completing the following steps:
 
-    **Note:** You can package the lookup connector together with the iterator assembly line, which is best practice suggestion but not a required step.
+    !!! note
+    You can package the lookup connector together with the iterator assembly line, which is best practice suggestion but not a required step.
 
     1.  Shift-click the assembly lines that comprise your lookup solution in the Tivoli Directory Integrator configuration editor.
 
@@ -79,9 +81,11 @@ A lookup connector is not usable in every situation. For example, if your source
         :/AssemblyLines/{name-of-your-LOOKUP-al}
         ```
 
-        **Note:** This expression should be entered as a single line; it is shown in two lines here to avoid page runoff.
+        !!! note
+    This expression should be entered as a single line; it is shown in two lines here to avoid page runoff.
 
-        **Note:** This property may already be present and commented out in the file. If so, remove the comment character \(hash sign\) and make the edits.
+        !!! note
+    This property may already be present and commented out in the file. If so, remove the comment character \(hash sign\) and make the edits.
 
     3.  Substitute `{name-of-your-adapter.xml}` with the package ID that you entered in step 2c.
 

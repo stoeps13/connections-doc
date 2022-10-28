@@ -29,7 +29,8 @@ To schedule the permanent removal of activities or entries from the Trash view, 
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes to separate directories in the file path, even if you are using the Microsoft™ Windows™ operating system.
 
-            **Note:** AIX®, and Linux™: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX®, and Linux™: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere® Application Server cell hosting the HCL Connections application. This argument is case-sensitive, so type it with care. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 
@@ -62,7 +63,8 @@ To schedule the permanent removal of activities or entries from the Trash view, 
     jobs.TrashAutoPurge.daysRetention
     :   Number of days after which you would like activities and their entries removed from the Trash view. Specify the value in days. The default value is 90.
 
-        **Note:** Do not set this value to 0. When it is set to 0, activities and their entries are not removed from the Trash view.
+        !!! note
+    Do not set this value to 0. When it is set to 0, activities and their entries are not removed from the Trash view.
 
     **jobs.TrashAutoPurge.interval**
     :   Frequency with which the job to check for expired content runs. See *Scheduling tasks* for information about the format to use to specify the interval. The default value is `0 0 2 ? * SUN`, which specifies that the job should run weekly at 2 AM on Sunday.
@@ -80,7 +82,8 @@ To schedule the permanent removal of activities or entries from the Trash view, 
     ActivitiesConfigService.updateConfig("jobs.TrashAutoPurge.interval", "0 15 10 L * ?")
     ```
 
-    **Note:** The `0 15 10 L * ?` value schedules the job to run at 10:15 AM on the last day of every month.
+    !!! note
+    The `0 15 10 L * ?` value schedules the job to run at 10:15 AM on the last day of every month.
 
 4.  If you want to prevent the trash purge job from running altogether, you can use the following commands to disable the jobs:
 

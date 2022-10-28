@@ -13,7 +13,8 @@ Example:
 -   Action: "redirect the message to addresses"
 -   Target address: "lconn@acme.com". Substitue lconn@acme.com with the address of the mailbox dedicated to storing notification reply emails.
 
-**Note:** The domain configured in the news-config.xml file for ReplyTo needs to be an Accepted Domain, which can be configured in the Hub Transport tab of the Exchange console.
+!!! note
+    The domain configured in the news-config.xml file for ReplyTo needs to be an Accepted Domain, which can be configured in the Hub Transport tab of the Exchange console.
 
 For details on creating rules for identifying and directing email, see the Microsoft Exchange documentation.
 

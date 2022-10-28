@@ -8,7 +8,8 @@ If you plan to reuse UID values, or other unique Profiles fields, you must perma
 
 When you inactivate a user, the email and login fields are cleared, but other fields such as uid, guid, and distinguished name are not cleared. After a specified length of time you might want to permanently delete the inactive user from Profiles so that you can, for example, reuse a uid. The revoke\_users command deletes the user from Profiles, but has no affect on other applications in Connections. For related information, see [User life cycle details](c_admin_common_user_life_cycle_goal.md).
 
-**Note:** After flagging a user as inactive, but before deleting that user, you can retrieve that user and their Profiles data. However, after deleting a user, you cannot retrieve that user or that user’s Profiles data.
+!!! note
+    After flagging a user as inactive, but before deleting that user, you can retrieve that user and their Profiles data. However, after deleting a user, you cannot retrieve that user or that user’s Profiles data.
 
 Usually the sync\_all\_dns command is used to synchronize the Profiles database with the member source, typically an LDAP. When a user leaves the organization and is removed from LDAP, the sync\_all\_dns command will either inactivate or delete the user, depending on the value of the sync\_delete\_or\_inactivate property in profiles\_tdi.properties. By default, the value is inactivate. When inactivated, the user is flagged as inactive in the Profiles database, and this information is propagated to the other Connections components.
 
@@ -37,7 +38,8 @@ In the following example, you will use the revoke\_users command to permanently 
     -   revoke.ldif: A list of the inactive users who were deleted from the Profiles database. They were deleted because they were flagged as inactive 30 days or more ago.
     -   revoke\_skip.ldif: A list of the inactive users who were not deleted from the Profiles database. They were not deleted because they were flagged as inactive less than 30 days ago.
 
-        **Note:** The logs/ibmdi.log file is updated after every 10K user names processed.
+        !!! note
+    The logs/ibmdi.log file is updated after every 10K user names processed.
 
 
 ## Additional Options { .section}

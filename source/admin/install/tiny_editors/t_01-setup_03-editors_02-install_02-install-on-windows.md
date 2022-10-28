@@ -47,7 +47,8 @@ Before you begin:
 
     The installer, install.exe, is located in the root directory of the Tiny Editors for HCL Connections package.
 
-    **Note:** The installer may require System Administrator privileges. If prompted, click **Yes**.
+    !!! note
+    The installer may require System Administrator privileges. If prompted, click **Yes**.
 
     ![Windows User Access Control prompt requesting installation privileges](resource/install/windows_install_01.png "Accept UAC prompt")
 
@@ -61,7 +62,8 @@ Before you begin:
 
 6.  Add the customization\_path and provision\_path to the relevant input fields and continue.
 
-    **Note:** Default paths are initially provided.
+    !!! note
+    Default paths are initially provided.
 
     1.  Input the provision\_path with \\webresources appended, into the **Web Resources Provisioning** field.
 
@@ -107,7 +109,8 @@ Before you begin:
 
         If the installation was successful, the Tiny editors will be loaded.
 
-    **Note:** If Tiny Editors for HCL Connections is not available, [restart the Common enterprise application](t_restart-common-app.md) to force a cache update.
+    !!! note
+    If Tiny Editors for HCL Connections is not available, [restart the Common enterprise application](t_restart-common-app.md) to force a cache update.
 
 
 **Parent topic:**[Installing Tiny Editors integration](../../install/tiny_editors/t_01-setup_03-editors_02-install_00-summary.md)

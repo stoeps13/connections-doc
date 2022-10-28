@@ -8,7 +8,8 @@ Publish the community mode configuration to all servers by executing a script to
 
 |**Open a Windows shell \(cmd.exe\) and execute following script**.
 
- **Note:** Alternatively, you may clear widget caches in Connections with an Connections administrative account and synchronize the nodes afterwards in the ISC. You will need to restart all Connections servers:
+ !!! note
+    Alternatively, you may clear widget caches in Connections with an Connections administrative account and synchronize the nodes afterwards in the ISC. You will need to restart all Connections servers:
 
  ```
 

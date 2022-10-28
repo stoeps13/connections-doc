@@ -8,7 +8,8 @@ For related information, see *Developing custom Tivoli Directory Integrator asse
 
 Use these commands to manage and work with profile data.
 
-**Note:** Before running any of the SDI Solutions \(tdisol\) scripts,ensure you have [Set up the Security Directory Integrator Solutions directory \(tdisol\)](../install/t_setting_up_security_dir_integ_solutions_dir.md).
+!!! note
+    Before running any of the SDI Solutions \(tdisol\) scripts,ensure you have [Set up the Security Directory Integrator Solutions directory \(tdisol\)](../install/t_setting_up_security_dir_integ_solutions_dir.md).
 
 |Command|Description|
 |-------|-----------|

@@ -16,7 +16,8 @@ To create databases in silent mode, complete the following steps:
 
     where response\_file is the file path to the response file.
 
-    **Note:** If the path to the response\_file contains a space, this parameter must be enclosed in double quotation marks \("\).
+    !!! note
+    If the path to the response\_file contains a space, this parameter must be enclosed in double quotation marks \("\).
 
 
 After the wizard has finished, check the log file in the dbUser\_home/lcWizard/log/dbWizard directory for messages. The log file name uses the time as a postfix. For example: dbConfig\_20110308\_202501.log.

@@ -4,7 +4,8 @@ Determine the properties that users can specify when searching in Profiles.
 
 Specify which properties the Profiles application exposes in its search index.
 
-**Note:** For information about the underlying Profiles search logic, see the [How does search work in HCL Connections Profiles](http://www-10.lotus.com/ldd/lcwiki.nsf/dx/How_does_search_work_in_IBM_Connections_Profiles) wiki article.
+!!! note
+    For information about the underlying Profiles search logic, see the [How does search work in HCL Connections Profiles](http://www-10.lotus.com/ldd/lcwiki.nsf/dx/How_does_search_work_in_IBM_Connections_Profiles) wiki article.
 
 **Related information**  
 

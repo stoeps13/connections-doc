@@ -16,7 +16,8 @@ To prepare to configure your LDAP directory with IBM® WebSphere® Application S
     Log in
     :   Determine which attribute or attributes you want people to be able to use to log in to HCL Connections. For example: uid. See *Choosing login values* for important considerations when deciding which attributes to use.
 
-        **Note:** The values of the login name attribute must be unique in the LDAP directory.
+        !!! note
+    The values of the login name attribute must be unique in the LDAP directory.
 
     Messaging
     :   \(Optional.\) Determine which attribute to use to define the email address of a person. The email address must be unique in the LDAP directory. If a person does not have an email address and does not have an LDAP attribute that represents the email address, that person cannot receive notifications.

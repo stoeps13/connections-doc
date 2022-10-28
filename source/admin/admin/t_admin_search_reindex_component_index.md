@@ -18,7 +18,8 @@ In some cases, you must reindex data for a specific IBM® Connections component.
         SearchService.disableTask("15min-search-indexing-task")
         ```
 
-        **Note:** The currently active search index is still in place on the deployment and is still used to service search requests. Running SearchService.disableTask\(\) ensures that there is no interruption to search services while you add new Connections components.
+        !!! note
+    The currently active search index is still in place on the deployment and is still used to service search requests. Running SearchService.disableTask\(\) ensures that there is no interruption to search services while you add new Connections components.
 
 2.  Use the following command to back up the current search index: SearchService.backupIndexNow\(\). This command copies a new backup of the search index to the backup folder specified in the WebSphere® variable SEARCH\_INDEX\_BACKUP\_DIR.
 
@@ -32,7 +33,8 @@ In some cases, you must reindex data for a specific IBM® Connections component.
     "/opt/IBM/Connections/data/local/search/backgroundIndex", "people_finder") 
     ```
 
-    **Note:** Valid values for application parameter are as follows: activities, blogs, calendar, communities, dogear, ecm\_files, files, forums, people\_finder, profiles, status\_updates, wikis
+    !!! note
+    Valid values for application parameter are as follows: activities, blogs, calendar, communities, dogear, ecm\_files, files, forums, people\_finder, profiles, status\_updates, wikis
 
 5.  Restore the modified index across the deployment. When the background index operation is complete, you must roll out the working copy of the index across the deployment. For more information, see *Restoring the Search index*.
 

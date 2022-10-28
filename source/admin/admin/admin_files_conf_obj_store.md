@@ -6,7 +6,8 @@ Before you can configure Files to work with an object store, you must the instal
 
 Connections Files uses an intermediary application called storageProxy to function as a proxy so it can isolate details of the object store from Connections. After you set up your object store, you can configure its settings in the StorageProxy.ear file. Then configure the Files application to use the storageProxy service to access data in the object store.
 
-**Note:** This task is optional.
+!!! note
+    This task is optional.
 
 1.  Set up your external object store.
 
@@ -16,7 +17,8 @@ Connections Files uses an intermediary application called storageProxy to functi
 
         When the Files application connects to the proxy service, it will provide the alias's credentials for authentication. Typically, IBM® WebSphere Application Server installs with a J2C authentication alias called `storageProxyAliasS2S` already defined. If the alias does not exist, you can create it now using the instructions in [Configuring J2C Aliases for the moderation proxy service](t_admin_common_moderation_config_proxy_id.md).
 
-        **Note:** If you create a new J2C alias, make sure that the **Prefix new alias names with the node name of the cell \(for compatibility with earlier releases\)** option is unchecked.
+        !!! note
+    If you create a new J2C alias, make sure that the **Prefix new alias names with the node name of the cell \(for compatibility with earlier releases\)** option is unchecked.
 
     2.  Configure a J2C alias for the external object store using the same process.
 
@@ -28,7 +30,8 @@ Connections Files uses an intermediary application called storageProxy to functi
         <j2cAlias storageProxy="storageProxyAliasS2S" objectStorage="cleverSafeAlias"/>
         ```
 
-        **Note:** If you use a file system to mimic object storage, you can set the object store to `objectStorage=storageProxyAliasS2S`.
+        !!! note
+    If you use a file system to mimic object storage, you can set the object store to `objectStorage=storageProxyAliasS2S`.
 
     4.  Enable the storageProxy service in the LCC.xml file as shown in the following example.
 
@@ -127,7 +130,8 @@ Connections Files uses an intermediary application called storageProxy to functi
 
     To prevent users from seeing a vendor-specific URL, edit the httpd.conf file and define an HTTP proxy for download requests as shown in the following example.
 
-    **Note:** If the object storage system requires HTTPS connections, then Apache requires additional configuration to import its certificate.
+    !!! note
+    If the object storage system requires HTTPS connections, then Apache requires additional configuration to import its certificate.
 
     ```
     LoadModule proxy_module modules/mod_proxy.so

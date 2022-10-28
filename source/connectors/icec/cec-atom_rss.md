@@ -2,7 +2,8 @@
 
 This widget allows you to include elements from other web sites. You can show RSS or ATOM Feeds from external sites within that widget.
 
-**Note:** Be sure that you have configured the AJAX-Proxy \(Connections Engagement Center - Installation Instructions\).
+!!! note
+    Be sure that you have configured the AJAX-Proxy \(Connections Engagement Center - Installation Instructions\).
 
 As of Connections Engagement Center v11 this widget allows enriching the displayed content with the Rich RSS Option. With that option you may display images from the target resources within the RSS widget.
 

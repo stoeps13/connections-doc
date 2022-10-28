@@ -49,7 +49,8 @@ wkhtmltopdf [args]
 
 on the system's command line \(`cmd` on Windows, `shell/bash` on Linux\). This can be enabled by adding the wkhtmltopdf to the system's path variable. To test this, try to execute above command on the system's command line. If the command is not recognized, this is not configured correctly. Otherwise PDF Export is now ready and can be used.
 
-**Note:** The command needs to be executable by the same user that will start the WebSphere servers/JVMs.
+!!! note
+    The command needs to be executable by the same user that will start the WebSphere servers/JVMs.
 
 2.2\). Configure PDF Export to invoke wkhtmltopdf in the correct install location
 
@@ -78,7 +79,8 @@ you can add this via WebSphere configuration. Perform the following:
 -   Restart ICXT server. ![wkhtmltopdf configuration](images/wkhtmltopdf_config.png)
 
 
-**Note:** In case of a clustered environment, this library needs to be installed the same way on all nodes of the cluster.
+!!! note
+    In case of a clustered environment, this library needs to be installed the same way on all nodes of the cluster.
 
 ###  Server side fonts {#optional-server-side-fonts}
 

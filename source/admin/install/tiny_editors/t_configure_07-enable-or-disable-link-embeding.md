@@ -6,7 +6,8 @@ Before you begin: The Tiny Editor Services must be installed and to use the hype
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the property [`linkEmbedEnabled`](r_config-js-sample.md#linkEmbedEnabled) such as `linkEmbedEnabled: true,` and set it to:
 

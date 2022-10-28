@@ -37,7 +37,8 @@ There are cases where a collection of URLs in a Blogs deployment will break. For
 
     changes URLs with the form http://example.com:9082/blogs/xxx to http://example.com:9080/blogs/xxx.
 
-    **Note:** The <replacePattern\> URL can contain a wildcard character \(\*\). For example,
+    !!! note
+    The <replacePattern\> URL can contain a wildcard character \(\*\). For example,
 
     ```
     BlogsAdminService.fixBrokenUrls

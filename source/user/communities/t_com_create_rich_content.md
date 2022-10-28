@@ -9,7 +9,8 @@ Community owners can add rich text pages to a community. Community members can v
 1.  To add a rich content page to your community:
 2.  Add the Rich Content app to your community and the community Highlights page. For more information, see [Adding apps to increase capabilities](c_com_add_widgets.md) and [Adding apps and widgets to the Highlights page](c_com_highlights_widgets.md) respectively.
 
-    **Note:** You can add multiple rich content pages to your community. Each new page appears beneath the previously added page.
+    !!! note
+    You can add multiple rich content pages to your community. Each new page appears beneath the previously added page.
 
 3.  On the community Highlights page, in the **Rich Content** area, click **Add Content**.
 

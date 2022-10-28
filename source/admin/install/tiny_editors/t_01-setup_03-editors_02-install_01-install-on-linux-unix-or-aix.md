@@ -43,7 +43,8 @@ The following script makes numerous connections, and connection prompts for a pa
 
     Remember to append /webresources to the provision\_path in the above command.
 
-    **Note:** This command will automatically backup any existing configuration it finds in
+    !!! note
+    This command will automatically backup any existing configuration it finds in
 
     -   customization\_path/javascript/tiny/editors/connections
     -   customization\_path/javascript/ephox/editors/connections
@@ -104,7 +105,8 @@ The following script makes numerous connections, and connection prompts for a pa
 
         If the installation was successful, the Tiny editors will be loaded.
 
-    **Note:** If Tiny Editors for HCL Connections is not available, [restart the Common enterprise application](t_restart-common-app.md) to force a cache update.
+    !!! note
+    If Tiny Editors for HCL Connections is not available, [restart the Common enterprise application](t_restart-common-app.md) to force a cache update.
 
 
 **Parent topic:**[Installing Tiny Editors integration](../../install/tiny_editors/t_01-setup_03-editors_02-install_00-summary.md)

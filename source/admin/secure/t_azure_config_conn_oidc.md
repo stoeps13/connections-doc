@@ -51,7 +51,8 @@ Since some Connections login urls are not protected and intercepted by the OIDC 
     https://login.microsoftonline.com/{tenant}/v2.0/.well-known/openid-configuration 
     ```
 
-    **Note:** Use the value for \{tenant\} from step 3 of [Adding an application in Azure AD for SSO with Connections](t_azure_add_app.md).
+    !!! note
+    Use the value for \{tenant\} from step 3 of [Adding an application in Azure AD for SSO with Connections](t_azure_add_app.md).
 
 
 ## Updating the SameSite cookie attribute {#section_fqy_np5_t4b .section}

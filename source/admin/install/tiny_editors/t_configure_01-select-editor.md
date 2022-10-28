@@ -4,7 +4,8 @@ This option is used to select the editor for HCL Connections™. If the [Tiny Ed
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the property [`editor`](r_config-js-sample.md#editor) such as `editor: 'TinyMCE',` and update the value to one of the following choices:
 

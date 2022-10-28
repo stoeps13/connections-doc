@@ -6,7 +6,8 @@ To edit configuration files, you must use the IBM® WebSphere® Application Serv
 
 When tagging is enabled in Profiles, users can tag themselves and other users. To enable tagging, you set a configuration value in the widgets-config.xml file located in the was\_profile\_rootconfig/cells/cell\_name/nodes/node-name/LotusConnections-config directory. Enabling this setting displays the tagging widget in Profiles. Users can then assign tags, or keywords, to their own profile and other people's profiles to identify work activities, skills, and interests.
 
-**Note:** Although changes to widgets-config.xml should generally be made using wsadmin client scripting, there is no wsadmin command to enable tagging, so you can make changes to the file using a text editor.
+!!! note
+    Although changes to widgets-config.xml should generally be made using wsadmin client scripting, there is no wsadmin command to enable tagging, so you can make changes to the file using a text editor.
 
 To configure the Tags widget, complete the following steps:
 

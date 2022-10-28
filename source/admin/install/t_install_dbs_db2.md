@@ -30,7 +30,8 @@ If the database server and HCL Connections are installed on different systems, c
 
 You must perform this task for each HCL Connections application that you are installing.
 
-**Note:** To capture the output of each command to a log file, append the following parameter to each command: \>\> /file\_path/db\_application.log
+!!! note
+    To capture the output of each command to a log file, append the following parameter to each command: \>\> /file\_path/db\_application.log
 
 where file\_path is the full path to the log file and application is the name of the log file. For example:
 
@@ -78,7 +79,8 @@ To create the application databases, complete the following steps:
     db2 -td@ -vf connections.sql/wikis/db2/createDb.sql
     ```
 
-    **Note:** The SQL scripts for Bookmarks are stored in the dogear directory.
+    !!! note
+    The SQL scripts for Bookmarks are stored in the dogear directory.
 
 7.  Run the following command to grant access privileges to the lcuser account for the Activities, Blogs, Bookmarks, Communities, Community Highlights / Connections Engagement Center \(ICEC\), Dogear, Feature Foundation, Files, Forums, Home page, Mobile, Profiles, Push Notifications, and Wikis databases:
 

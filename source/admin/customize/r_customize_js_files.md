@@ -62,7 +62,8 @@ Use the information in the tables to help you find the customizable strings that
 
 ## Bookmarklet { .section}
 
-**Note:** The bookmarklet is the window that displays when you add a bookmark. It is in the Common.ear file. The bookmarklet allows users to add bookmarks to different applications, such as Communities or Activities. Users can add a button to their browser that allows them to access the bookmarklet window. Every page in Connections has a **Bookmarking Tools** link in the page footer that allows users to install this toolbar button.
+!!! note
+    The bookmarklet is the window that displays when you add a bookmark. It is in the Common.ear file. The bookmarklet allows users to add bookmarks to different applications, such as Communities or Activities. Users can add a button to their browser that allows them to access the bookmarklet window. Every page in Connections has a **Bookmarking Tools** link in the page footer that allows users to install this toolbar button.
 
 |Description|Source location|Place customizations in|
 |-----------|---------------|-----------------------|
@@ -101,9 +102,11 @@ Use the information in the tables to help you find the customizable strings that
 |-----------|---------------|-----------------------|
 |Profiles business card|installedApps/Common.ear/connections.web.resources.war/WEB-INF/eclipse/plugins/com.ibm.lconn.core.web.resources\_version.jar|customizationDir/javascript/lconn/profiles/bizCard/nls/ui.js|
 
-**Note:** For locale-specific ui.js, create a folder in thecustomizationDir/javascript/lconn/profiles/bizCard/nls/<language code\> directory, name it with the corresponding language code, and save the JavaScript file in the new folder. For example, to save Dutch ui.js for Profiles, save the customized JavaScript file in the following location: customizationDir/javascript/lconn/profiles/bizCard/nls/nl/ui.js
+!!! note
+    For locale-specific ui.js, create a folder in thecustomizationDir/javascript/lconn/profiles/bizCard/nls/<language code\> directory, name it with the corresponding language code, and save the JavaScript file in the new folder. For example, to save Dutch ui.js for Profiles, save the customized JavaScript file in the following location: customizationDir/javascript/lconn/profiles/bizCard/nls/nl/ui.js
 
-**Note:** Profiles JavaScript defined strings come from property files; all Dojo dijits that are used in Profiles are defined in core.ui \(bizcard, invite\) and their strings are stored in core.web.resources.
+!!! note
+    Profiles JavaScript defined strings come from property files; all Dojo dijits that are used in Profiles are defined in core.ui \(bizcard, invite\) and their strings are stored in core.web.resources.
 
 ## Search { .section}
 
@@ -123,7 +126,8 @@ In the source location, com.ibm.lconn.search.web.resources is the name of the JA
 |Share dialog|installedApps/Common.ear/connections.web.resources.war/WEB-INF/eclipse/plugins/com.ibm.social.ee.sharebox.resources\_version.jar/resources/nls/socialShareboxStrings.js|customizationDir/javascript/com/ibm/social/sharebox/nls/socialShareboxStrings.js|
 |Share update form|webresources/com.ibm.lconn.news.microblogging.sharebox.form\_version.jar/resources/nls/InputForm.js|customizationDir/javascript/lconn/news/microblogging/sharebox/nls/InputForm.js|
 
-**Note:** The file upload form that is used by the Share feature uses Files strings. For information about customizing Files strings, see [Property file strings](r_customize_properties_files.md).
+!!! note
+    The file upload form that is used by the Share feature uses Files strings. For information about customizing Files strings, see [Property file strings](r_customize_properties_files.md).
 
 ## Social analytics { .section}
 

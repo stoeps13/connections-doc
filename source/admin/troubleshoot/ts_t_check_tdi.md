@@ -25,7 +25,8 @@ For more detailed information about determining the cause of problems with Secur
     -   OFF
     When a given level is enabled, all levels that are lower in severity are automatically enabled. For more information about how to configure tracing, see [Logging and debugging](https://www.ibm.com/docs/en/sdi/7.2.0?topic=SSCQGF_7.2.0/com.ibm.IBMDI.doc_7.2/adminguide172.htm#logging) in the IBM Security Directory Integrator documentation.
 
-    **Note:** Depending on the tracing level enabled, the output can be very lengthy, so try to perform small operations only when tracing is enabled.
+    !!! note
+    Depending on the tracing level enabled, the output can be very lengthy, so try to perform small operations only when tracing is enabled.
 
     Profiles service layer logging
 
@@ -47,7 +48,8 @@ For more detailed information about determining the cause of problems with Secur
     log4j.logger.com.ibm.lconn.profiles.internal.service=ALL
     ```
 
-    **Note:** This setting is very verbose, so be sure to enable it for targeted operations.
+    !!! note
+    This setting is very verbose, so be sure to enable it for targeted operations.
 
     Database layer logging
 

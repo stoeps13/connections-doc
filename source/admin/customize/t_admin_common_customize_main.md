@@ -30,7 +30,8 @@ The style of theConnections user interface is based on the Collaboration Solutio
     -   com.ibm.lconn.oneui3.styles\_version.jar is only found in one application, Common.ear/connections.web.resources.war
     WAS\_HOME/profiles/profile\_name/installedApps/cell\_name/application\_name.ear/application\_name.war/WEB-INF/eclipse/plugins/com.ibm.lconn.core.styles\_version.jar
 
-    **Note:** The com.ibm.lconn.core.styles\_version.jar file contains CSS style sheets that extend or override default styles from the OneUI 3.0.x toolkit.
+    !!! note
+    The com.ibm.lconn.core.styles\_version.jar file contains CSS style sheets that extend or override default styles from the OneUI 3.0.x toolkit.
 
     Where:
 
@@ -43,7 +44,8 @@ The style of theConnections user interface is based on the Collaboration Solutio
         **Tip:** For a list of the web application source directories that are packaged with Connections, see [Application WAR files and OSGi bundles](r_customize_war_osgi_file_locations.md).
 
     -   version is the version number of the Connections release plus the date and build number of the JAR file.
-    **Note:** In previous releases of Connections, the default style sheets were in the nav subdirectory of the WAS\_HOME/profiles/profile\_name/installedApps/cell\_name/application\_name.ear/application\_name.war directory. That location is deprecated in this release.
+    !!! note
+    In previous releases of Connections, the default style sheets were in the nav subdirectory of the WAS\_HOME/profiles/profile\_name/installedApps/cell\_name/application\_name.ear/application\_name.war directory. That location is deprecated in this release.
 
     The following table identifies the source files for each user interface area.
 
@@ -51,7 +53,8 @@ The style of theConnections user interface is based on the Collaboration Solutio
     |-------|-------------|
     |Cascading style sheets|    -   To add custom styles to the product, edit the following files:
 
-**Note:** If your users view the product in Arabic, Hebrew, or another right-to-left language, copy the defaultTheme\_rtl.css file too.
+!!! note
+    If your users view the product in Arabic, Hebrew, or another right-to-left language, copy the defaultTheme\_rtl.css file too.
 
         -   /nav/common/styles/defaultTheme/custom.css
         -   /nav/common/styles/defaultTheme/custom\_rtl.css

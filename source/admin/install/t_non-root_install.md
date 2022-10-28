@@ -8,7 +8,8 @@ This task applies to the AIX® and Linux™ operating systems only.
 
 By default, only root users have the necessary permissions to install an HCL Connections deployment. On the AIX and Linux operating systems, you can permit non-root users to install the product by changing their permissions to access certain data directories. On the Windows™ operating system, the user must be a member of the administrator group.
 
-**Note:** The non-root user must be the same user who installed IBM® WebSphere® Application Server.
+!!! note
+    The non-root user must be the same user who installed IBM® WebSphere® Application Server.
 
 To grant the necessary permissions to a non-root user, complete the following steps:
 
@@ -31,7 +32,8 @@ To grant the necessary permissions to a non-root user, complete the following st
 
     -   AIX or Linux:
 
-        **Note:** Use either the chmod or chown commands, depending on your security environment. Use the chown commands to grant permissions to a user and group but ensure that the group includes the user account that installed WebSphere Application Server.
+        !!! note
+    Use either the chmod or chown commands, depending on your security environment. Use the chown commands to grant permissions to a user and group but ensure that the group includes the user account that installed WebSphere Application Server.
 
         |Directory|Permissions|chmod command|chown command|
         |---------|-----------|-------------|-------------|
@@ -48,7 +50,8 @@ To grant the necessary permissions to a non-root user, complete the following st
         |[shared\_resources\_root](../plan/i_ovr_r_directory_conventions.md)|RWX|chgrp -R non-root\_user\_group shared\_resources\_root chmod -R g+wrx shared\_resources\_root|chown -R non-root\_ID:group shared\_resources\_root|
         |var/ibm/InstallationManager
 
-|RWX|chmod -R ugo+rwx /var/ibm/InstallationManager**Note:** Grant permissions to this folder only if the root user installed IBM Installation Manager.
+|RWX|chmod -R ugo+rwx /var/ibm/InstallationManager!!! note
+    Grant permissions to this folder only if the root user installed IBM Installation Manager.
 
 |chown -R non-root\_ID:group /var/ibm/InstallationManager|
 

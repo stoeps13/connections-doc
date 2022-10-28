@@ -60,7 +60,8 @@ https://login.microsoftonline.com/{​​​​​​​​​​​​​​​
 
     2.  Check the list for `com.ibm.websphere.security.InvokeTAIbeforeSSO`. At the end of the existing value, add `",com.ibm.ws.security.oidc.client.RelyingParty"`.
 
-        **Note:** This begins with a comma.
+        !!! note
+    This begins with a comma.
 
     3.  Click **OK**.
 

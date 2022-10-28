@@ -18,7 +18,8 @@ In some cases, the initial search index is created with only a subset of compone
         SearchService.disableTask("15min-search-indexing-task")
         ```
 
-        **Note:** The currently active search index is still in place on the deployment and is still used to service search requests. Running SearchService.disableTask\(\) ensures that there is no interruption to search services while you add new Connections components.
+        !!! note
+    The currently active search index is still in place on the deployment and is still used to service search requests. Running SearchService.disableTask\(\) ensures that there is no interruption to search services while you add new Connections components.
 
 2.  Use the following command to back up the current search index: SearchService.backupIndexNow\(\). This command copies a new backup of the search index to the backup folder specified in the WebSphere® variable SEARCH\_INDEX\_DIR.
 
@@ -45,7 +46,8 @@ In some cases, the initial search index is created with only a subset of compone
           forums,profiles,status_updates,wikis", "false")
         ```
 
-        **Note:** You cannot modify existing tasks, you must define a new one.
+        !!! note
+    You cannot modify existing tasks, you must define a new one.
 
     2.  Use the following command after you define a new task: SearchService.refreshTasks\(\)
 

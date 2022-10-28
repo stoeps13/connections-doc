@@ -2,7 +2,8 @@
 
 HCL Connections stores the apps that are created for a community in a database. As part of the Overview page customization, the mandatory user interface elements are being replaced with new apps that can be moved, hidden, or removed. Therefore, the Communities app is being updated to accommodate four new apps: Community Description, Tags, Important Bookmarks, and Members. The migration involves updating the database to add these new widgets for each community.
 
-**Note:** This topic cannot be found in the help **Contents** or **Search**. To get to this topic again, you must click a link in the product.
+!!! note
+    This topic cannot be found in the help **Contents** or **Search**. To get to this topic again, you must click a link in the product.
 
 **Parent topic:**[Administering widgets and remote applications](../admin/c_admin_communities_administering_widgets.md)
 

@@ -10,7 +10,8 @@ Problem: Error prompt on the command line "java is not recognized as an internal
 
 |1.  Ensure that the tool is executed under <IC\_HOME\>/addons/ccm/ccmDomainTool.
 
-**Note:** The tool might be executed under <IC\_HOME\>/FileNet/ContentEngine/ccmDomainTool
+!!! note
+    The tool might be executed under <IC\_HOME\>/FileNet/ContentEngine/ccmDomainTool
 
 2.  Ensure the Connections Content Manager application was installed successfully and exists at the path <IC\_HOME\>/addons/ccm/ContentEngine/\_cejvm/jre where it should have been created during the Connections Content Manager application installation.
 

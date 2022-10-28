@@ -83,7 +83,8 @@ Notification templates are programmed in FreeMarker template language and make u
 
 6.  You must check the configuration files back in after making changes, and they must be checked in during the same wsadmin session in which they were checked out for the changes to take effect. See the topic *Applying Files property changes* for details.
 
-    **Note:** Check in the templates using includeEmailTemplates="true" with the checkin command, for example:`FilesConfigService.checkInConfig(includeEmailTemplates = "true")`.
+    !!! note
+    Check in the templates using includeEmailTemplates="true" with the checkin command, for example:`FilesConfigService.checkInConfig(includeEmailTemplates = "true")`.
 
 
 **Related information**  

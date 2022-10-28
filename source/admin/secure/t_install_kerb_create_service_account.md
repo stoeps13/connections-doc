@@ -100,7 +100,8 @@ To create a service principal name and keytab file, complete the following steps
     ktpass -out c:\finance1.keytab -princ HTTP/finance1.us.example.com@US.EXAMPLE.COM -mapuser icserver01 -mapOp set -pass Passw0rd1
     ```
 
-    **Note:** For extra security, you should consider creating a keytab file for each system, where each system has its own user account. If you use the same user account to generate the keytab file, use the -mapOp add parameter instead of the -mapOp set parameter.
+    !!! note
+    For extra security, you should consider creating a keytab file for each system, where each system has its own user account. If you use the same user account to generate the keytab file, use the -mapOp add parameter instead of the -mapOp set parameter.
 
     This example shows how to create unique keytab files for different systems:
 

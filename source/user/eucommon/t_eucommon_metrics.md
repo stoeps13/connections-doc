@@ -33,7 +33,8 @@ Connections collects metrics on global and community levels. Global metrics repo
 6.  Explore the report with the following options:
     -   Click **Show table** ![](show_table.png) or **Show chart** ![](show_chart.png) to switch between a table and a chart.
 
-        **Note:** If the report is in **Table view**, you may click on the **Export** report icon ![](export.PNG) to download the report.
+        !!! note
+    If the report is in **Table view**, you may click on the **Export** report icon ![](export.PNG) to download the report.
 
     -   Click **View more detail** or **View less detail** to control the amount of information shown.
     -   Click on a data point to display more information.

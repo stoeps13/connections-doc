@@ -6,7 +6,8 @@ Some of these settings might already be set for you, but you should still check 
 
 1.  Open the Administration Console for Content Platform Engine \(ACCE\) on the FileNet system with a web browser and log in using the administrator's user name and password by accessing the following URL:
 
-    **Note:** Administration Console for Content Platform Engine \(ACCE\) supports a subset of the browsers supported by Connections. While some operations in Administration Console for Content Platform Engine might work with other browsers, if an error is encountered, make sure you are running a supported browser. See the system requirements for [supported software](http://www-01.ibm.com/support/docview.wss?uid=swg27013654) for FileNet Content Engine. Click **Administrative Console for Content Engine** in the **By component** column, view **Prerequisites** and check **Web Browser support**.
+    !!! note
+    Administration Console for Content Platform Engine \(ACCE\) supports a subset of the browsers supported by Connections. While some operations in Administration Console for Content Platform Engine might work with other browsers, if an error is encountered, make sure you are running a supported browser. See the system requirements for [supported software](http://www-01.ibm.com/support/docview.wss?uid=swg27013654) for FileNet Content Engine. Click **Administrative Console for Content Engine** in the **By component** column, view **Prerequisites** and check **Web Browser support**.
 
     ```
     http://server:port/acce
@@ -19,7 +20,8 @@ Some of these settings might already be set for you, but you should still check 
     http://cpe.example.com:9080/acce
     ```
 
-    **Note:** A port is not necessary if a web server is being used.
+    !!! note
+    A port is not necessary if a web server is being used.
 
 2.  On the **ICDomain** tab, expand the **Object Stores** node in the navigation tree and open the existing object store you want to configure.
 
@@ -63,13 +65,16 @@ https://connections.example.com:9443
 |
     |Activity Stream Gadget URL|Fully hard-coded Gadget URL: \{connections\}/resources/web/com.ibm.social.ee/ConnectionsEE.xml
 
-**Note:** You should enter this url exactly as shown, including the text: `{connections}`.
+!!! note
+    You should enter this url exactly as shown, including the text: `{connections}`.
 
 |
-    |Config 1|Holds password for the Connections user defined in the Config 2 property and will be encrypted after input.**Note:** Optional: This field may be left empty if Config 2 is also left blank.
+    |Config 1|Holds password for the Connections user defined in the Config 2 property and will be encrypted after input.!!! note
+    Optional: This field may be left empty if Config 2 is also left blank.
 
 |
-    |Config 2|Holds the login name of a Connections user and will be encrypted after input. This user must be in the **trustedExternalApplication** role on the Widget Container application in HCL Connections. By default, the Connections administrator has these privileges and may be used here.**Note:** Optional: If this field is left blank, the connectionsAdmin J2C alias will be used when FileNet contacts the Connections Activity Stream. This user alias is used for inter-service communication in other parts of Connections and normally will have the necessary rights. If you want to use a dedicated user other than the login stored in connectionsAdmin, or if you have a standard FileNet deployment where this alias does not exist, you may override the user ID here. If this field is entered, also enter the password in Config 1.
+    |Config 2|Holds the login name of a Connections user and will be encrypted after input. This user must be in the **trustedExternalApplication** role on the Widget Container application in HCL Connections. By default, the Connections administrator has these privileges and may be used here.!!! note
+    Optional: If this field is left blank, the connectionsAdmin J2C alias will be used when FileNet contacts the Connections Activity Stream. This user alias is used for inter-service communication in other parts of Connections and normally will have the necessary rights. If you want to use a dedicated user other than the login stored in connectionsAdmin, or if you have a standard FileNet deployment where this alias does not exist, you may override the user ID here. If this field is entered, also enter the password in Config 1.
 
 |
     |Activity Stream Extended Settings|Activity Stream Extended Settings may be left empty. If you want to set Activity Stream Extended Settings, take the following steps.    1.  Click the action menu associated with the **Property Value** for this entry and select **Display or Edit Value**.

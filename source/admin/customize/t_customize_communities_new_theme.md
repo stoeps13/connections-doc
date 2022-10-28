@@ -29,7 +29,8 @@ Customize the default Hikari theme in HCL Connections™.
     <CONNECTIONS_CUSTOMIZATION_PATH>/themes/HikariTheme/applications/wikisRTL.css
     ```
 
-    **Note:** The Hikari theme does not support bidirectional \(bidi\) languages. However, you can add right-to-left \(RTL\) styles through customization.
+    !!! note
+    The Hikari theme does not support bidirectional \(bidi\) languages. However, you can add right-to-left \(RTL\) styles through customization.
 
 5.  To customize image.png referenced in the following example rule:
 
@@ -46,7 +47,8 @@ Customize the default Hikari theme in HCL Connections™.
     defaultTheme/path/to/image.png
     ```
 
-    **Note:** HCL Connections parses the stylesheet, and resolves URLs of resources that are linked using url\(\) CSS properties by rebasing them. In the example, Connections parses and rebases this as:
+    !!! note
+    HCL Connections parses the stylesheet, and resolves URLs of resources that are linked using url\(\) CSS properties by rebasing them. In the example, Connections parses and rebases this as:
 
     ```
     .lotusui30 .lotusMain { 

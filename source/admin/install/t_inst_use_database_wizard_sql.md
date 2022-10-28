@@ -30,7 +30,8 @@ To create databases with the wizard, complete the following steps:
 
     3.  Specify a database instance.
 
-        **Note:** If attempting to use the actual name of the SQL Server as the database instance \(MSSQLSERVER or MSSQL11.MSSQLSERVER\) yields errors, use \\ as the database instance.
+        !!! note
+    If attempting to use the actual name of the SQL Server as the database instance \(MSSQLSERVER or MSSQL11.MSSQLSERVER\) yields errors, use \\ as the database instance.
 
 5.  Select an application and click **Next**.
 

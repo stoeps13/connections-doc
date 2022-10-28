@@ -11,7 +11,8 @@ Open a document in any Microsoft Office application or from Microsoft Outlook, c
 |Email settings|Select **Use Mail application** and specify an email provider, such as HCL Notes. This is the email that the plug-in uses for notifications. Select **Use mailto: protocol** to use the default email.|
 |Show Desktop icon|Places an icon for the plug-in on your desktop.|
 |Show Windows Explorer Context Menu Extension|This controls whether the HCL Connections context menu displays when you right-click a desktop file.|
-|Enable beta features|Check this box if you want to enable beta features for the plug-in. This will give you access to features in a pre-release state. You may need to log in again before you can see new features. **Note:** Beta features are generally not documented or fully supported and are intended to give you a preview of what is coming in a future release.
+|Enable beta features|Check this box if you want to enable beta features for the plug-in. This will give you access to features in a pre-release state. You may need to log in again before you can see new features. !!! note
+    Beta features are generally not documented or fully supported and are intended to give you a preview of what is coming in a future release.
 
 |
 

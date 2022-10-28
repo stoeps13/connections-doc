@@ -43,7 +43,8 @@ Bootstrapping a Kubernetes cluster performs the following tasks:
     |`env.set_redis_secret`|Minimum of 6 characters. Set the Redis secret. If you omit this entry, the password will be generated for you.|
     |`env.set_search_secret`|Minimum of 6 characters. Set the search secret. If you omit this entry, the password will be generated for you.|
     |`env.set_solr_secret`|Minimum of 6 characters. Set the Solr secret. If you omit this entry, the password will be generated for you.|
-    |`env.skip_configure_redis`|If you want to skip the Redis configuration, set this variable to `true`; otherwise you can omit it because it defaults to `false`.**Note:** Redis is required for Orient Me, so only skip the Redis configuration it if you do not plan to deploy Orient Me. If you later deploy Orient Me, you can either run the bootstrap install again, or configure Redis manually as explained in [Manually configuring Redis traffic to Orient Me](cp_config_om_redis_enable.md).
+    |`env.skip_configure_redis`|If you want to skip the Redis configuration, set this variable to `true`; otherwise you can omit it because it defaults to `false`.!!! note
+    Redis is required for Orient Me, so only skip the Redis configuration it if you do not plan to deploy Orient Me. If you later deploy Orient Me, you can either run the bootstrap install again, or configure Redis manually as explained in [Manually configuring Redis traffic to Orient Me](cp_config_om_redis_enable.md).
 
 |
     |`env.set_starter_stack_list`|If you don't want to deploy all of the components, you can specify the ones you want as a space-delimited list enclosed in quotation marks. Options are:    -   customizer

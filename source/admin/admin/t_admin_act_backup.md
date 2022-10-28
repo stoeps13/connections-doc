@@ -6,7 +6,8 @@ Activities stores data in both a database and the file system. You should backup
 
 2.  Back up the OPNACT database according to the database documentation provided by your database vendor.
 
-    **Note:** Backup the database before backing up the content store on the file system.
+    !!! note
+    Backup the database before backing up the content store on the file system.
 
 3.  Backup the directory on the file system that contains the Activities data according to the documentation provided by your file system vendor. To determine the location of the Activities directory, get the value of the ACTIVITIES\_CONTENT\_DIR WebSphere Application Server variable for the relevant server by completing the following steps:
 

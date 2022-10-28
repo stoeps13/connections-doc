@@ -6,7 +6,8 @@ To run administrative commands, you must use the wsadmin client. For more inform
 
 You can control space on the server by editing settings in the forum-config.xml file to limit the number of attachments that users can upload to a forum post.
 
-**Note:** You can also use the <sizelimits\> section of the forum-config.xml to set a file size limit per file extension type.
+!!! note
+    You can also use the <sizelimits\> section of the forum-config.xml to set a file size limit per file extension type.
 
 1.  To configure the maximum number of attachments that can be uploaded to a single post, complete the following steps.
 2.  Start the wsadmin client from the following directory on the system where you installed the Deployment Manager:
@@ -37,7 +38,8 @@ You can control space on the server by editing settings in the forum-config.xml 
 
         -   working\_directory is the temporary working directory to which the XML and XSD configuration files are copied. The files are kept in this working directory while you modify them.
 
-            **Note:** AIX and Linux only: The directory must grant write permissions or the command fails.
+            !!! note
+    AIX and Linux only: The directory must grant write permissions or the command fails.
 
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections applications. This argument is required. It is also case-sensitive, so type it with care. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 

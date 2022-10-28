@@ -6,7 +6,8 @@ Configuration settings control various configurable applications within Profiles
 
 You can check out and modify the following configuration settings in the profiles-config.xml file.
 
-**Note:** Some configuration settings, such as the settings for the board and tagging features, were moved from the profiles-config.xml file to the profiles-policy.xml file. For more information about the settings that you can configure in the profiles-policy.xml file, see *Profile-types*.
+!!! note
+    Some configuration settings, such as the settings for the board and tagging features, were moved from the profiles-config.xml file to the profiles-policy.xml file. For more information about the settings that you can configure in the profiles-policy.xml file, see *Profile-types*.
 
 activeContentFilter.enabled
 :   Enables/disables filtering for active content of text entered into the **About me** and **Background** text input fields.

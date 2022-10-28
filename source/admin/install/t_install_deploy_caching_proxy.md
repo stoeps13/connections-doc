@@ -14,7 +14,8 @@ A reverse proxy configuration intercepts browser requests, forwards them to the 
 
 This topic describes how to configure the Edge components to optimize the performance of HCL Connections.
 
-**Note:** Some network caching devices cause users to experience intermittent errors in the Files, Community Files, and Wikis apps. To prevent this behavior, exclude Files and Wikis content from the caching. \(The Files and Wikis apps use preconditions when requesting certain content. Caching devices can return status 412 when those preconditions aren't met.\)
+!!! note
+    Some network caching devices cause users to experience intermittent errors in the Files, Community Files, and Wikis apps. To prevent this behavior, exclude Files and Wikis content from the caching. \(The Files and Wikis apps use preconditions when requesting certain content. Caching devices can return status 412 when those preconditions aren't met.\)
 
 1.  Open the ibmproxy.conf configuration file for the Edge components in a text editor. The file is stored in the following directory:
 
@@ -50,7 +51,8 @@ This topic describes how to configure the Edge components to optimize the perfor
 
         where httpserver is the host name of the HTTP server. The HTTP server is usually IBM HTTP Server, but could be a load balancer or another proxy, depending on your deployment. proxyserver is the host name of the proxy server.
 
-        **Note:** You can specify \* in the URL \(to indicate that all URLs for the server can be passed\) only if HCL Connections is the only application installed on the server. Alternatively, you can use a more specific URL such as http://httpserver/connections/\*. You can use more than one ReversePass rule if you need to specify different servers for each component.
+        !!! note
+    You can specify \* in the URL \(to indicate that all URLs for the server can be passed\) only if HCL Connections is the only application installed on the server. Alternatively, you can use a more specific URL such as http://httpserver/connections/\*. You can use more than one ReversePass rule if you need to specify different servers for each component.
 
     6.  Also in the Mapping Rules section, add the following proxy rules:
 
@@ -74,7 +76,8 @@ This topic describes how to configure the Edge components to optimize the perfor
 
         Enable DELETE
 
-        **Note:** Also, be sure to enable SSL tunneling by resetting the **SSLTunneling** setting to On.
+        !!! note
+    Also, be sure to enable SSL tunneling by resetting the **SSLTunneling** setting to On.
 
     10. Add the following rule to the CacheQueries Directives section:
 
@@ -122,7 +125,8 @@ This topic describes how to configure the Edge components to optimize the perfor
 
 6.  Using iKeyman, extract certificates from HCL Connections and add them to the proxy server key database:
 
-    **Note:** Be sure to use iKeyman that comes with the HTTP server, since it does not come with the proxy.
+    !!! note
+    Be sure to use iKeyman that comes with the HTTP server, since it does not come with the proxy.
 
     1.  Open the HCL Connections kdb file and extract the certificates.
 

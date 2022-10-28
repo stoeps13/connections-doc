@@ -4,7 +4,8 @@ Instead of using the Profiles population wizard, you can manually populate the d
 
 You can populate the Profiles database manually, as described here, or with the help of the population wizard as described in the [Using the Profiles population wizard](t_prof_populate.md) topic. You might choose to manually populate the database to take advantage of functionality not provided by the wizard, such as anonymous LDAP access, large data sets, and property configuration other than what is provided by the wizard, for example alternate source options.
 
-**Note:** Additional and related information about configuration and mapping properties may be available in the [Using the Profiles population wizard](t_prof_populate.md) topic.
+!!! note
+    Additional and related information about configuration and mapping properties may be available in the [Using the Profiles population wizard](t_prof_populate.md) topic.
 
 **Important:** If your database uses a database driver that requires Java 8, or you otherwise require Java 8 when running the IBM Security Directory Integrator, see this article for instructions: [Using IBM Security Directory Integrator with Java 8 and HCL Connections](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0094191). Note that you must use the manual population method when using Java 8, not the population wizards.
 
@@ -46,7 +47,8 @@ After installing the Profiles database, and setting up the SDI Solutions Directo
         {protect}-source_ldap_user_password=wpsbind  
         ```
 
-        **Note:** Tivoli® Directory Integrator automatically encrypts any properties which have the \{protect\} prefix. If you do not want to encrypt these properties, remove the \{protect\} prefix.
+        !!! note
+    Tivoli® Directory Integrator automatically encrypts any properties which have the \{protect\} prefix. If you do not want to encrypt these properties, remove the \{protect\} prefix.
 
     source\_ldap\_search\_base
     :   A portion of the LDAP DN that must be part of all entries processed. This base usually contains the expected organization \(o\) value, such as `source_ldap_search_base=o=ibm.com`. Use the following syntax to specify the value:
@@ -133,9 +135,11 @@ After installing the Profiles database, and setting up the SDI Solutions Directo
 
 3.  Run the ./collect\_dns.sh or collect\_dns.bat script to create a file containing the distinguished names \(DNs\) to be processed from the source LDAP directory.
 
-    **Note:** Before starting the script, ensure that you have completed the steps in the [Mapping fields manually](t_prof_tdi_mapfields.md) task.
+    !!! note
+    Before starting the script, ensure that you have completed the steps in the [Mapping fields manually](t_prof_tdi_mapfields.md) task.
 
-    **Note:** If the script does not run, you might need to enable its Executable attribute by running the `chmod` command first. The Executable attribute of a script can become disabled after the script is copied from a read-only medium such as DVD.
+    !!! note
+    If the script does not run, you might need to enable its Executable attribute by running the `chmod` command first. The Executable attribute of a script can become disabled after the script is copied from a read-only medium such as DVD.
 
     The new file is named collect.dns by default but you can rename it if necessary. If you change the file name, update the source\_ldap\_collect\_dns\_file parameter in the profiles\_tdi.propertiesfile.
 
@@ -145,15 +149,18 @@ After installing the Profiles database, and setting up the SDI Solutions Directo
 
     Depending on how many records you are processing, this step could take many hours. For example, 5,000 records might take a few minutes, but half a million records might take a few hours, depending on the speed of your system. Tivoli Directory Integrator prints a message to the screen after every 1,000 iterations to inform you of its progress.
 
-    **Note:** If a failure occurs during processing, such as loss of the network connection to the LDAP directory server, you can run the populate\_from\_dn\_file script again with no harm. If you want to save time though, you can start processing the names from where it was interrupted. Examine the PopulateDBFromDNFile.log file in the logs subdirectory to find out which distinguished name was last successfully processed. The ibmdi.log file also tracks the tasks that you run. Edit the collect.dns file to remove all entries up to and including the last successfully processed entry. Start the task again. You can repeat this step as many times as necessary until all the distinguished names are processed.
+    !!! note
+    If a failure occurs during processing, such as loss of the network connection to the LDAP directory server, you can run the populate\_from\_dn\_file script again with no harm. If you want to save time though, you can start processing the names from where it was interrupted. Examine the PopulateDBFromDNFile.log file in the logs subdirectory to find out which distinguished name was last successfully processed. The ibmdi.log file also tracks the tasks that you run. Edit the collect.dns file to remove all entries up to and including the last successfully processed entry. Start the task again. You can repeat this step as many times as necessary until all the distinguished names are processed.
 
 5.  If you are setting the PROF\_IS\_MANAGER field based on PROF\_MANAGER\_UID references in other employee records, run the ./mark\_managers.sh or mark\_managers.bat script.
 
     For more information, see [Configuring the Manager designation in user profiles](r_report-to_chains_profiles.md) for details.
 
-    **Note:** Manager identification is not performed as part of the previous record population step because it must run across all the records and it is possible that the initial record population step does not complete in a single pass for large organizations.
+    !!! note
+    Manager identification is not performed as part of the previous record population step because it must run across all the records and it is possible that the initial record population step does not complete in a single pass for large organizations.
 
-    **Note:** If the manager designation was not part of the source records for your data set, you can run this task to analyze all the records after population. This task will take each user record and see if it is referenced as the manager for any other users. If yes, the user will be marked as a manager. If not, the user will be marked as not a manager. If you need to use this process to set this profile attribute, you will also need to run it periodically to perform updates. For more information, see [Synchronizing user data between Profiles and the LDAP directory](../admin/t_admin_profiles_sync_dbs.md).
+    !!! note
+    If the manager designation was not part of the source records for your data set, you can run this task to analyze all the records after population. This task will take each user record and see if it is referenced as the manager for any other users. If yes, the user will be marked as a manager. If not, the user will be marked as not a manager. If you need to use this process to set this profile attribute, you will also need to run it periodically to perform updates. For more information, see [Synchronizing user data between Profiles and the LDAP directory](../admin/t_admin_profiles_sync_dbs.md).
 
 6.  Run additional and optional scripts to populate additional fields. For example, run the Country code script ./fill\_country.sh or fill\_country.bat to populate the Country table from the isocc.csv file. Other scripts include the following:
 

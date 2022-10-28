@@ -39,7 +39,8 @@ To map a different user ID to one of the default roles, complete the following s
         1.  From the WebSphere Application Server Integrated Solutions Console, select **Service integration** \> **Buses**.
         2.  Click the bus to which you want to map a different user ID.
 
-            **Note:** All HCL Connections buses have names that begin with Connections.
+            !!! note
+    All HCL Connections buses have names that begin with Connections.
 
         3.  Click **Security** \> **Users and groups in the bus connector role**.
         4.  Delete the existing user ID by selecting the check box next to the user ID and clicking **Delete**.
@@ -69,7 +70,8 @@ To map a different user ID to one of the default roles, complete the following s
 
 3.  \(widget-admin role only\) Edit the widget-config.xml file for each application that is affected:
 
-    **Note:** Check out each file by using the wsadmin client and the Jython script interpreter. For more information about checking out files, see the *Starting the wsadmin client* and *Applying common configuration property changes* topics.
+    !!! note
+    Check out each file by using the wsadmin client and the Jython script interpreter. For more information about checking out files, see the *Starting the wsadmin client* and *Applying common configuration property changes* topics.
 
     1.  From the profile\_root\\config\\cells\\cellName\\LotusConnections-config directory, open the widget-config.xmlfile in a text editor.
 
@@ -99,7 +101,8 @@ To map a different user ID to one of the default roles, complete the following s
             -   AIX®, and Linux® only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
     3.  Use the following command to update the alias information:
 

@@ -9,7 +9,8 @@ You can add widgets to the widget catalog to meet the needs of your users. Use t
 1.  To add a widget to the widget catalog, complete the following steps:
 2.  Log in to HCL Connections as an administrator.
 
-    **Note:** To add widgets to the Home page, you must be logged in as an administrator. If you do not see an **Administration** option display under the **My Page** option in the navigation sidebar on the Home page, this means that you are not configured as an administrator of the Home page app. For more information, see the *Configuring the Home page administrator* topic.
+    !!! note
+    To add widgets to the Home page, you must be logged in as an administrator. If you do not see an **Administration** option display under the **My Page** option in the navigation sidebar on the Home page, this means that you are not configured as an administrator of the Home page app. For more information, see the *Configuring the Home page administrator* topic.
 
 3.  Open the Administration view.
 
@@ -27,11 +28,13 @@ You can add widgets to the widget catalog to meet the needs of your users. Use t
         -   Select **Use SSO token** for trusted enterprise gadgets. Selecting this feature disables all the security that is provided by locked domains for this particular gadget.
         -   In general, gadgets must be written to use OAuth unless they are connecting to a legacy system that is not OAuth enabled. Since HCL Connections v4.0, all of the Connections APIs are OAuth-enabled. Currently, SSO is not a standard OpenSocial feature, but specific to the Common Rendering Engine \(CRE\). Some IBM® Containers, such as Notes® Social Edition, do not support the SSO feature.
         -   Restricted gadgets are limited in terms of the OpenSocial features. For example, they are not able to open model dialogs. In general, scope gadget feature access as narrowly as possible. Use this setting if the gadget does not require the additional page API features provided to trusted gadgets.
-        **Note:** If locked domains are not configured, do not add external \(restricted\) gadgets to HCL Connections.
+        !!! note
+    If locked domains are not configured, do not add external \(restricted\) gadgets to HCL Connections.
 
     2.  For **UI integration points** select where the gadget is to be inserted in the user interface: **Show in Share dialog** or **Show for Activity stream events** or both.
 
-        **Note:** Your gadgets are displayed after the HCL Connections gadgets in the Share dialog.
+        !!! note
+    Your gadgets are displayed after the HCL Connections gadgets in the Share dialog.
 
     3.  Select the **Server access via proxy** preference:
 
@@ -40,7 +43,8 @@ You can add widgets to the widget catalog to meet the needs of your users. Use t
         -   **Custom rule defined for this gadget in the proxy-policy.dynamic file** enforces settings that are defined in the policy file. For more information, see the *Configuring per-host proxy access rules for OpenSocial gadgets* topic.
     4.  In the **Service Mappings** section, create a new mapping between an OAuth client, such as Facebook or Twitter, and its associated service. Also, you can edit or remove an existing mapping.
 
-        **Note:** This setting manages the association of the clients with individual gadgets.OAuth clients must be pre-configured using wsadmin commands.
+        !!! note
+    This setting manages the association of the clients with individual gadgets.OAuth clients must be pre-configured using wsadmin commands.
 
         1.  Click **Add Mapping** to create a new mapping between an OAuth service and an OAuth client. In the fields that display, select an **OAuth Client** name and enter the associated **Service Name**.
         2.  Select an existing mapping in the map list and then click **Edit Mapping** to update the mapping.
@@ -83,11 +87,13 @@ You can add widgets to the widget catalog to meet the needs of your users. Use t
 
     Each widget instance has its own properties. For example, if you are using a widget that displays bookmarks for a specific tag, you can enable multiple instances of the widget so that you can follow different tags in each widget.
 
-    **Note:** This setting is applicable only for iWidgets. Only one instance of an OpenSocial gadget can be loaded at a time.
+    !!! note
+    This setting is applicable only for iWidgets. Only one instance of an OpenSocial gadget can be loaded at a time.
 
 17. If there are specific HCL Connections applications that must be included in your deployment for the widget to function correctly, select the required applications in the **Prerequisites** area.
 
-    **Note:** When an HCL Connections application is selected as a prerequisite but that application is not installed, the widget is not displayed on the Home page. For gadgets that declare dependencies this way, they act as though they are disabled for the purposes of whitelisting.
+    !!! note
+    When an HCL Connections application is selected as a prerequisite but that application is not installed, the widget is not displayed on the Home page. For gadgets that declare dependencies this way, they act as though they are disabled for the purposes of whitelisting.
 
 18. Click **Save**.
 

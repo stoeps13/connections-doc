@@ -17,17 +17,20 @@ To set the default sharing settings for a library ask your administrator to enab
 
     -   Specific individuals, ensure that **a Member** is selected from the **Share with** list, and then enter one or more names in the text field provided.
 
-        **Note:** If groups are enabled for your organization, you cannot add an individual user to a role that is below, or the same role as group they are included in.
+        !!! note
+    If groups are enabled for your organization, you cannot add an individual user to a role that is below, or the same role as group they are included in.
 
     -   A group, select **a Group** from the **Share with** list, and then enter the name of the group in the field provided.
     -   All community members, select **Community Members** from the **Share with** list, select the access level that you want members to have, and click **Add**.
     -   Everyone, including non-community members, select **Everyone \(public\)** from the **Share with** list, ensure that the appropriate access level is showing, and click **Add**.
 
-        **Note:** This option is only available for public communities.
+        !!! note
+    This option is only available for public communities.
 
     -   A library, select the **Sharing** tab on the library level, and select **Change sharing on Library settings**. You can then use the library edit mode of the app to change sharing settings at the library level.
 
-        **Note:** If you do not see the **Sharing** control on an individual library, ask your administrator to enable it.
+        !!! note
+    If you do not see the **Sharing** control on an individual library, ask your administrator to enable it.
 
 5.  Click **OK** to save your changes.
 

@@ -164,7 +164,8 @@ FilesMemberService.getByEmail\(string email\)
     FilesMemberService.getByEmail("john_doe@company.com")
     ```
 
-    **Note:** See *Synchronizing user data using administrative commands* for details.
+    !!! note
+    See *Synchronizing user data using administrative commands* for details.
 
 FilesMemberService.syncAllMembersByExtId\( \{"updateOnEmailLoginMatch": \["true" \| "false"\] \} \)
 :   FilesMemberService.syncMemberByExtId\("currentExternalId"\[, \{"newExtId" : "id-string" \[, "allowExtIdSwap" : \["true" \| "false"\] \] \} \] \)
@@ -854,7 +855,8 @@ FilesMetricsService.savePersonalToFile\(string filePath, string startDate, strin
     FilesMetricsService.savePersonalToFile("C:/connections/files/metrics.csv", "2012-01-01", "2012-01-10", "C:/connections/files/metric_keys.txt", "false")
     ```
 
-    **Note:** While the filePathWithFilterKeys parameter is optional you cannot leave it out completely, you must at least have empty quotes, for example:
+    !!! note
+    While the filePathWithFilterKeys parameter is optional you cannot leave it out completely, you must at least have empty quotes, for example:
 
     ```
     FilesMetricsService.savePersonalToFile("C:/connections/files/metrics.csv", "2012-01-01", "2012-01-10", "", "false")
@@ -996,7 +998,8 @@ Use these commands to import and export custom Content Management Interoperabili
 FilesObjectTypeService.importType\("filePath"\)
 :   Imports an XML file defining a custom object type.
 
-    **Note:** The Files application must be restarted after an object type has been imported before the new object type can be accessed and used by the system.
+    !!! note
+    The Files application must be restarted after an object type has been imported before the new object type can be accessed and used by the system.
 
     Parameters:
 
@@ -1029,7 +1032,8 @@ FilesObjectTypeService.exportType\("filePath", "Id"\)
 FilesObjectTypeService.deleteType\("Id"\)
 :   Deletes an imported custom object type.
 
-    **Note:** The Files application must be restarted after a custom object type has been deleted.
+    !!! note
+    The Files application must be restarted after a custom object type has been deleted.
 
     Parameters:
 

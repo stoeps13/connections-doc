@@ -12,7 +12,8 @@ In general, an \(offline\) process for moving your Connections 7.0 databases to 
 
 .
 
-**Note:** Depending on your environment, you can also use an online process involving RDBMS backup/restore and then upgrade the database format. For Db2 however, offline full database backups as well as offline incremental database backups can be restored to a later database version, whereas online backups cannot.
+!!! note
+    Depending on your environment, you can also use an online process involving RDBMS backup/restore and then upgrade the database format. For Db2 however, offline full database backups as well as offline incremental database backups can be restored to a later database version, whereas online backups cannot.
 
 ## Updating the migrated databases {#section_h5l_l2v_4qb .section}
 

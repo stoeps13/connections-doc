@@ -24,7 +24,8 @@ taggedby
 communitymembership
 :   Creates relationships between the users who are members of the same community.
 
-    **Note:** Communities that have more than 100 members are skipped. These communities will not be recommended to users.
+    !!! note
+    Communities that have more than 100 members are skipped. These communities will not be recommended to users.
 
 1.  To run a one-off social analytics scheduled task, complete the following steps:
 2.  Start the wsadmin client from one of the following directories on the system on which you installed the Deployment Manager:

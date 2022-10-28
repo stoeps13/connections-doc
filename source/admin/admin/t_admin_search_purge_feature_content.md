@@ -4,13 +4,15 @@ Use the SearchService.deleteFeatureIndex command to purge content for a specific
 
 To run administrative commands, you must use the IBM® WebSphere® Application Server wsadmin client. See [Starting the wsadmin client](t_admin_wsadmin_starting.md) for details.
 
-**Note:** In an environment with multiple nodes, use the SearchService.deleteFeatureIndex command only when you want to delete the index for an application that has been uninstalled. After running this command, the content from the component that has been deleted cannot be reindexed. If you want to delete content for a specific application from the index, use the SearchService.startBackgroundIndex command to rebuild a new index for all applications instead. For more information about this command, see *Creating a background index*.
+!!! note
+    In an environment with multiple nodes, use the SearchService.deleteFeatureIndex command only when you want to delete the index for an application that has been uninstalled. After running this command, the content from the component that has been deleted cannot be reindexed. If you want to delete content for a specific application from the index, use the SearchService.startBackgroundIndex command to rebuild a new index for all applications instead. For more information about this command, see *Creating a background index*.
 
 If there is a problem with indexed content from any of the HCL Connections applications, instead of deleting and recreating the entire index, you can use the SearchService.deleteFeatureIndex command to remove and purge all documents for a given application from the index. The command deletes the content from the database that is shared by all the servers in the cluster as well as from the indexes.
 
 When you run the SearchService.deleteFeatureIndex command, the command removes indexed content for the specified application from the node in your deployment. Indexing tasks are automatically disabled at the start of this process and re-enabled when the process is complete, regardless of whether the tasks were disabled initially.
 
-**Note:** When you remove an application from the Search index, you need to rebuild the indexes for the social analytics service. The social analytics indexes are completely rebuilt every night by default, however, to fully remove an application's index immediately, you must use the SearchService.sandIndexNow command on each of the social analytics indexes. For more information about this command, see *Running one-off social analytics scheduled tasks*.
+!!! note
+    When you remove an application from the Search index, you need to rebuild the indexes for the social analytics service. The social analytics indexes are completely rebuilt every night by default, however, to fully remove an application's index immediately, you must use the SearchService.sandIndexNow command on each of the social analytics indexes. For more information about this command, see *Running one-off social analytics scheduled tasks*.
 
 1.  To purge content for a specific application from the index, complete the following steps.
 2.  Start the wsadmin client from one of the following directories on the system on which you installed the Deployment Manager:

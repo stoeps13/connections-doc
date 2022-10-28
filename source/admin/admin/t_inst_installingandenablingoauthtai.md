@@ -25,7 +25,8 @@ You need to install and enable the OAuth TAI in HCL Connections.
 
 3.  You can modify the TAI filter for Connections applications by enabling WebSphere global security, including Application security, as follows:
 
-    **Note:** TAI filter rules should be modified only when the context root for components is changed. The default rule is set by the Connections Installer.
+    !!! note
+    TAI filter rules should be modified only when the context root for components is changed. The default rule is set by the Connections Installer.
 
     1.  Using the WebSphere Application Server Integrated Solutions Console, navigate to **Security** \> **Global Security** \> **Web and SIP Security** \> **Trust Association** \> **Interceptors** \> **com.ibm.ws.security.oauth20.tai.OAuthTAI**.
 

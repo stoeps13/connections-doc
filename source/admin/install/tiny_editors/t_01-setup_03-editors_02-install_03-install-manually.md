@@ -45,7 +45,8 @@ Before you begin:
 
 3.  In the customization\_path/javascript directory, create the subdirectory tiny/editors/connections.
 
-    **Note:** If the directory already exists, delete or move the contents to a new folder before proceeding.
+    !!! note
+    If the directory already exists, delete or move the contents to a new folder before proceeding.
 
 4.  Install the Tiny Editors for HCL Connections configuration files:
 
@@ -87,7 +88,8 @@ Before you begin:
 
         If the installation was successful, the Tiny editors will be loaded.
 
-    **Note:** If Tiny Editors for HCL Connections is not available, [restart the Common enterprise application](t_restart-common-app.md) to force a cache update.
+    !!! note
+    If Tiny Editors for HCL Connections is not available, [restart the Common enterprise application](t_restart-common-app.md) to force a cache update.
 
 
 **Parent topic:**[Installing Tiny Editors integration](../../install/tiny_editors/t_01-setup_03-editors_02-install_00-summary.md)

@@ -10,11 +10,13 @@ To prepare the database wizard, complete the following steps:
 
 2.  Start the database instance:
 
-    **Note:** Run the database commands under the user account that has administrative access to the database.
+    !!! note
+    Run the database commands under the user account that has administrative access to the database.
 
     -   Microsoft™ Windows™:
 
-        **Note:** Windows registers most database instances as a service. You can start or stop a database service manually if necessary.
+        !!! note
+    Windows registers most database instances as a service. You can start or stop a database service manually if necessary.
 
         -   SQL Server
             1.  Open SQL Server Management Studio.

@@ -26,7 +26,8 @@ An HCL Connections administrator can run a script that generates xml files for t
     
     ```
 
-    **Note:** There is an optional fifth argument `"secure"` that defaults to `"false"`. A value of `"false"` indicates that `https` is not being used and instead plain `http` is used. If provided and set to `"true"`, the gadget URLs will be the secure `https` versions of the URLs. For example, `NotesRegistrar.registerGadgets("appid","applabel","callbackurl","workingdir","false")` is the same as calling `NotesRegistrar.registerGadgets("appid","applabel","callbackurl","workingdir")` and it generates gadget URLs with plain `http`. However, if the last argument is `"true"`, then the URLs are generated with the `https` prefix. If the value of the **forceConfidentialCommunications** attribute in the LotusConnections-config.xml is true, then the secure parameter should also be set to true.
+    !!! note
+    There is an optional fifth argument `"secure"` that defaults to `"false"`. A value of `"false"` indicates that `https` is not being used and instead plain `http` is used. If provided and set to `"true"`, the gadget URLs will be the secure `https` versions of the URLs. For example, `NotesRegistrar.registerGadgets("appid","applabel","callbackurl","workingdir","false")` is the same as calling `NotesRegistrar.registerGadgets("appid","applabel","callbackurl","workingdir")` and it generates gadget URLs with plain `http`. However, if the last argument is `"true"`, then the URLs are generated with the `https` prefix. If the value of the **forceConfidentialCommunications** attribute in the LotusConnections-config.xml is true, then the secure parameter should also be set to true.
 
     **Result**: When the script completes, the following six files can be found in the specified outputdir:
 

@@ -4,7 +4,8 @@ Looking for something specific? Perform an advanced search to narrow down your r
 
 ## Advanced searching {#section_zbh_5rb_ty .section}
 
-**Note:** This procedure applies only to a standard Connections deployment \(without Component Pack\).
+!!! note
+    This procedure applies only to a standard Connections deployment \(without Component Pack\).
 
 1.  From any app, in the search field, enter the word or phrase that you want to search for, and click the search icon.
 2.  From the results page, click **Advanced Search**.
@@ -19,11 +20,13 @@ Looking for something specific? Perform an advanced search to narrow down your r
     -   Enter one or more keywords in the **Keywords** field.
     -   Enter a tag in the **Tags** field.
 
-        **Note:** The tag that you enter in this field must be an exact match for the tag that you are searching for. Wildcard characters, such as an asterisk \(\*\), question mark \(?\), or exclamation point \(!\), are not supported.
+        !!! note
+    The tag that you enter in this field must be an exact match for the tag that you are searching for. Wildcard characters, such as an asterisk \(\*\), question mark \(?\), or exclamation point \(!\), are not supported.
 
     -   Type a name in the **Person** field to find content associated with a specified person.
 
-        **Note:** By default, users who are marked as inactive in your company directory are excluded from the search results. To include inactive users in your search results, you can select **Profiles** from the navigation pane on the Search Results page, and then select **All People** from the **Show** options.
+        !!! note
+    By default, users who are marked as inactive in your company directory are excluded from the search results. To include inactive users in your search results, you can select **Profiles** from the navigation pane on the Search Results page, and then select **All People** from the **Show** options.
 
     -   Enter a title or file name in the **Title** field to retrieve entries with the specified title or files with the specified name.
 6.  Click **Search**.

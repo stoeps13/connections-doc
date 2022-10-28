@@ -11,7 +11,8 @@ When you share files, roles determine how others can interact with the file. Own
 
 2.  To share the file with everyone, select **Public**.
 
-    **Note:** In Connections Cloud, this option is **Everyone in organization**.
+    !!! note
+    In Connections Cloud, this option is **Everyone in organization**.
 
 3.  To share with people or communities, select **People** or **Communities** and specify the people or communities you want to share the file with.
 

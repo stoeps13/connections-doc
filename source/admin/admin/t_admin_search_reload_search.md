@@ -36,28 +36,32 @@ You can use the SearchService commands for reloading Search after running Search
     SearchService.reloadSearchConfiguration\(\)
     :   Reloads the search-config.xml file for Search on the current node only without a restart of the Search application.
 
-        **Note:** If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
+        !!! note
+    If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
 
         When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
     SearchService.reloadSearchConfigurationAllNodes\(\)
     :   Reloads the search-config.xml file for Search on all nodes in the cluster without a restart of the Search application.
 
-        **Note:** If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
+        !!! note
+    If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
 
         When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
     SearchService.reloadIndex\(\)
     :   Reloads the Search index on the current node only without a restart of the Search application.
 
-        **Note:** If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
+        !!! note
+    If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
 
         When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
     SearchService.reloadIndexAllNodes\(\)
     :   Reloads the Search index on all the nodes in the cluster without a restart of the Search application.
 
-        **Note:** If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
+        !!! note
+    If you are making changes to the configuration of the social analytics service, you still need to restart Search to apply the changes.
 
         When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 

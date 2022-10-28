@@ -101,7 +101,8 @@ Each configuration file is an XML that is paired with an XSD file. The XML file 
         -   AIX, and Linux only: The directory must grant write permissions or the command fails.
     -   cell\_name is the name of the WebSphere Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-        **Note:** This input parameter is case-sensitive.
+        !!! note
+    This input parameter is case-sensitive.
 
     For example:
 
@@ -120,7 +121,8 @@ Each configuration file is an XML that is paired with an XSD file. The XML file 
     -   Profiles: ProfilesConfigService.checkOutConfig\("C:/temp","foo01Cell01"\)
     -   Search: SearchCellConfig.checkOutConfig\("/temp","foo01Cell01"\)
 
-        **Note:** The HomepageCellConfig.checkOutConfig command is superseded by the SearchCellConfig.checkOutConfig command.
+        !!! note
+    The HomepageCellConfig.checkOutConfig command is superseded by the SearchCellConfig.checkOutConfig command.
 
     -   Wikis: WikisConfigService.checkOutConfig\("C:/temp","foo01Cell01"\)
 4.  To see the current values of the configuration properties, use the following command:
@@ -147,7 +149,8 @@ Each configuration file is an XML that is paired with an XSD file. The XML file 
 
     where service\_name is one of the service names that are defined in step 4. You do not have to complete this step for the Blogs application. To check in the events-config.xml file, use the LCConfigService.checkInEventsConfig\(\) command.
 
-    **Note:** You must check in the file during the same wsadmin session in which you checked it out.
+    !!! note
+    You must check in the file during the same wsadmin session in which you checked it out.
 
 8.  Deploy the changes by synchronizing the nodes:
 
@@ -157,7 +160,8 @@ Each configuration file is an XML that is paired with an XSD file. The XML file 
 
 10. Stop and restart the servers that host the HCL Connections applications.
 
-    **Note:** If you changed Blogs configuration settings only, you do not have to restart the servers.
+    !!! note
+    If you changed Blogs configuration settings only, you do not have to restart the servers.
 
 
 -   **[HCL Connections configuration property values](../admin/t_admin_common_change_config_value_over.md)**  

@@ -2,7 +2,8 @@
 
 Libraries enable Community members to upload, manage, organize and collaborate on files shared on the FileNet Document Management system. A community can contain multiple Libraries.
 
-**Note:** Interaction with libraries from Microsoft Office is only available when you are connecting to a HCL Connections server. This feature is not supported on Connections Cloud.
+!!! note
+    Interaction with libraries from Microsoft Office is only available when you are connecting to a HCL Connections server. This feature is not supported on Connections Cloud.
 
 When the HCL Connections Content Manager add-on is deployed on a Connections server, community owners can create community libraries directly in Office. Community libraries provide owners and members with the content management capabilities and enhanced social features.
 

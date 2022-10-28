@@ -14,7 +14,8 @@ A custom ID must meet the following requirements:
     -   These requirements generally makes a login name \(such as jsmith\) or e-mail \(jsmith@example.com\) a poor choice for a custom ID. Since these attributes are frequently recycled as different users join and leave an organization,jsmith may not reference the same user today and into the future. Since this attribute is used in access control lists, the use of login name, email or similar attributes that are recycled might result in a future user getting access to a current user's private communities and content. Connections will store that jsmith has access to content if that is used as the value of the ID. Whom jsmith refers to might change over time. If this occurs, a new user might get access to content unintentionally because a prior jsmith had access.
 -   The ID must not exceed 256 characters in length. To achieve faster search results, use a fixed-length attribute for the ID.
 
-    **Note:** If you are planning to install the Files or Wikis application, the ID cannot exceed 252 characters in length. Values of IDs are compared frequently, so you should choose reasonably compact values for performance. The lengths of default ID values range from approximately 16-to-36 bytes.
+    !!! note
+    If you are planning to install the Files or Wikis application, the ID cannot exceed 252 characters in length. Values of IDs are compared frequently, so you should choose reasonably compact values for performance. The lengths of default ID values range from approximately 16-to-36 bytes.
 
 -   The ID must have a one-to-one mapping per directory object. You cannot use an attribute with multiple values as a unique ID.
 
@@ -87,7 +88,8 @@ To specify a custom attribute as the unique ID for users or groups, complete the
         </sdo:datagraph> 
         ```
 
-    **Note:** The **customUserID** and **customGroupID** properties are not related to the properties of the login ID.
+    !!! note
+    The **customUserID** and **customGroupID** properties are not related to the properties of the login ID.
 
 3.  Add the new property types to each repository adapter. Open the wimconfig.xml file in a text editor.
 

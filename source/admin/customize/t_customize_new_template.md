@@ -4,7 +4,8 @@ You can change many aspects of notifications in Connections 6.0 CR4 and later by
 
 Make sure that you first [enable the updated templates](../admin/t_admin_common_enable_template.md).
 
-**Note:** **You can also make changes by customizing the shared resources used by the templates, as well as the templates themselves.** For more information, see [Customizing shared resources for notifications \(CR4 templates\)](t_cr4_customize_shared_resources_for_notifications.md) and [Editing notification templates](t_edit_notification_templates_container.md).
+!!! note
+    **You can also make changes by customizing the shared resources used by the templates, as well as the templates themselves.** For more information, see [Customizing shared resources for notifications \(CR4 templates\)](t_cr4_customize_shared_resources_for_notifications.md) and [Editing notification templates](t_edit_notification_templates_container.md).
 
 The following procedures are provided as a way for you to easily override several properties that affect the CR4 notifications: company name, sender name and email, placement of the Connections application name, date format, maximum number of events, company logo, profile photo type, background colors in the notification, and footers.
 
@@ -47,7 +48,8 @@ These procedures do NOT apply to notifications from the default \(earlier than C
     }
     ```
 
-    **Note:** The `orgIcon` data is truncated in the examples for brevity.
+    !!! note
+    The `orgIcon` data is truncated in the examples for brevity.
 
     **Important:** When you are finished editing all of the properties that you want to change, save your changes and restart the News application for the changes to take effect.
 
@@ -69,7 +71,8 @@ These procedures do NOT apply to notifications from the default \(earlier than C
                 }
         ```
 
-    **Note:** If this property is omitted entirely, the company name defaults to "HCL Connections". This value is defined in language localized property files and can be customized. For more information, see [Customizing shared resources for notifications \(CR4 templates\)](t_cr4_customize_shared_resources_for_notifications.md).
+    !!! note
+    If this property is omitted entirely, the company name defaults to "HCL Connections". This value is defined in language localized property files and can be customized. For more information, see [Customizing shared resources for notifications \(CR4 templates\)](t_cr4_customize_shared_resources_for_notifications.md).
 
 -   To customize the **sender name and email** used in notifications and email digests:
 
@@ -84,7 +87,8 @@ These procedures do NOT apply to notifications from the default \(earlier than C
             }
         ```
 
-        **Note:** The sender information that you customize here will overwrite the previously defined email addresses at: [Defining valid administrator email addresses](../admin/t_admin_act_managing_notifications.md).
+        !!! note
+    The sender information that you customize here will overwrite the previously defined email addresses at: [Defining valid administrator email addresses](../admin/t_admin_act_managing_notifications.md).
 
 -   To customize the **placement of the Connections application name** in the subject line:
 
@@ -128,7 +132,8 @@ These procedures do NOT apply to notifications from the default \(earlier than C
 
 -   To customize the **company logo**:
 
-    **Note:** Supported image file formats:
+    !!! note
+    Supported image file formats:
 
     -   jpg/jpeg
     -   png \(under 40Kb in size due to email client restrictions\)
@@ -217,7 +222,8 @@ These procedures do NOT apply to notifications from the default \(earlier than C
 
         If you don't want to display a profile photo or application icon in notifications, removing the photoType property prevents the image from being displayed.
 
-    **Note:** The stock application icons used in notifications can be customized. See [Customizing shared resources for notifications \(CR4 templates\)](t_cr4_customize_shared_resources_for_notifications.md).
+    !!! note
+    The stock application icons used in notifications can be customized. See [Customizing shared resources for notifications \(CR4 templates\)](t_cr4_customize_shared_resources_for_notifications.md).
 
 -   To customize the**background colors in the notification**:
 

@@ -38,7 +38,8 @@ Make sure you've [configured an Azure app to support the Microsoft Teams app](t_
 
     3.  Enter the team channel or chat that you want to add the app to and click **Set up** to enable both the Tab app and Messaging Extension app. You can also select either **Set up a tab** or **Set up a bot** from the **Set up** list to add each component individually.
 
-        **Note:** The **Set up a bot** action is required for the messaging extension component to work in a team or chat.
+        !!! note
+    The **Set up a bot** action is required for the messaging extension component to work in a team or chat.
 
 
 [Install/update Component Pack services with Microsoft Teams integration](../../admin/install/cp_install_services_tasks.md)

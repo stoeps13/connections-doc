@@ -56,7 +56,8 @@ By default, all of the Connections applications that use whitelisting allow cont
             -   AIX®, and Linux® only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
     3.  Open the LotusConnections-config.xml file in a text editor.
 

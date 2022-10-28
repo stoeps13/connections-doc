@@ -17,7 +17,8 @@ Add a file to an activity to share it with other activity users.
         2.  Optionally add a due date.
         3.  Add people or communities as members with specified access.
         4.  Click **Create**.
-    **Note:** Creating a new activity is not available if you are connecting to a Connections Cloud site.
+    !!! note
+    Creating a new activity is not available if you are connecting to a Connections Cloud site.
 
 4.  If you are adding the file as a To Do item, by default, the task is assigned to **Anyone \(shared\)**, meaning any member of the activity can perform the task, and then check it off after it is completed. To assign the to-do item to a specific member perform one of the following actions:
 
@@ -30,14 +31,16 @@ Add a file to an activity to share it with other activity users.
 
             If the activity has more than 500 members, you can click **Next** to see additional names.
 
-            **Note:** The filter searches the names on the current page only. If there are multiple pages, click **Next** until you get to a page with names in the same alphabetic range as the name you are looking for, and then type the name into the filter box.
+            !!! note
+    The filter searches the names on the current page only. If there are multiple pages, click **Next** until you get to a page with names in the same alphabetic range as the name you are looking for, and then type the name into the filter box.
 
     -   Community activity to which only a subset of community members were added:
         -   Select **Individual activity members**, and then select the persons name from the list. To find people, scroll through the alphabetic list of names or type a person's name into the **Type to filter this list** field.
 
             If the activity has more than 500 members, you can click **Next** to see additional names.
 
-            **Note:** The filter searches the names on the current page only. If there are multiple pages, click **Next** until you get to a page with names in the same alphabetic range as the name you are looking for, and then type the name into the filter box.
+            !!! note
+    The filter searches the names on the current page only. If there are multiple pages, click **Next** until you get to a page with names in the same alphabetic range as the name you are looking for, and then type the name into the filter box.
 
         -   To assign the to-do entry to a community owner, select **community\_name \(community owners\)** where community\_name is the name of the community, and then select the owners name from the list.
         -   \(Connections Cloud only\) To assign the to-do entry to both community owners and individual members, select owner names from the **community\_name \(community owners\)** list where community\_name is the name of the community, and then select individual names from the **Individual activity members** list. Your selections is remembered as you switch between each list.

@@ -6,7 +6,8 @@ Activities, Files, Mobile, and Wikis data must be stored on a shared file system
 
 All IBM HTTP Servers in the deployment must have READ access to the files, and all WebSphere Application Servers must have WRITE access. This task is required after installing Connections whether you configure an IBM HTTP Server as part of the install or not.
 
-**Note:** For shared and remote network file system requirements, review the footnotes for each supported operating system in the detailed [system requirements](https://support.hcltechsw.com/csm?sys_kb_id=2010cc82db30acd0a45ad9fcd3961971&id=kb_article_view).
+!!! note
+    For shared and remote network file system requirements, review the footnotes for each supported operating system in the detailed [system requirements](https://support.hcltechsw.com/csm?sys_kb_id=2010cc82db30acd0a45ad9fcd3961971&id=kb_article_view).
 
 If you choose not to configure IBM HTTP Server to download files, you must configure WebSphere Application Server to transfer data synchronously instead of asynchronously. This configuration avoids errors that are related to using too much memory. For more information, see the [Excessive native memory use in IBM WebSphere Application Server](http://www.ibm.com/support/docview.wss?uid=swg21317658) technote.
 
@@ -57,7 +58,8 @@ To configure IBM HTTP Server to download files, complete the following steps:
 
     For example: `LoadModule env_module modules/mod_env.so`
 
-    **Note:** By default, the `mod_env` module is installed in the /modules directory. It might already be loaded, or it might be a commented-out line that you can edit.
+    !!! note
+    By default, the `mod_env` module is installed in the /modules directory. It might already be loaded, or it might be a commented-out line that you can edit.
 
 5.  Grant access to the data directory root:
 

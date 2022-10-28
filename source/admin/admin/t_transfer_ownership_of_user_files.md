@@ -14,7 +14,8 @@ In this procedure, let's say that a user asks you to transfer six of their files
     FilesMemberService.getByEmail("ajones@renovations.com")
     ```
 
-    **Note:** If you prefer, you can use the future owner's directory ID to find their internal ID. In this case, run `FilesMemberService.getByExtId` instead of the preceding command.
+    !!! note
+    If you prefer, you can use the future owner's directory ID to find their internal ID. In this case, run `FilesMemberService.getByExtId` instead of the preceding command.
 
     The following example shows the properties that are returned by using getByEmail, including the ID for the new owner \(9b1683e7-ca4f-4ac1-85a1-c780fa1340b5\) that you will need in step 3.
 
@@ -60,7 +61,8 @@ In this procedure, let's say that a user asks you to transfer six of their files
     FilesScheduler.forceTaskExecution("TagUpdateFrequency", "true")
     ```
 
-    **Note:** If you skip this step, the new tag will be captured in the tag cloud after 1 day.
+    !!! note
+    If you skip this step, the new tag will be captured in the tag cloud after 1 day.
 
     **Alternative Option:** If the current owner is active, as administrator you can also use the user interface in the Files app to transfer files, *but only one file at a time*. Only the file owner can use the user interface to transfer multiple files at a time.
 

@@ -10,7 +10,8 @@ Get involved in the discussion and comment on a blog post or respond to a commen
 6.  Click **Submit** to publish the comment to the blog. Multiple comments for an entry are displayed in the reverse order in which they were created.
 7.  If you'd like to notify others, next to your comment click **More Actions** and select **Notify Other People**, then specify the people to notify.
 
-**Note:** If the blog's comments are moderated, the comment does not display immediately. Someone must approve the comment before it is displayed.
+!!! note
+    If the blog's comments are moderated, the comment does not display immediately. Someone must approve the comment before it is displayed.
 
 **Parent topic:**[Connecting with other blogs](../blogs/c_blog_connecting_others.md)
 

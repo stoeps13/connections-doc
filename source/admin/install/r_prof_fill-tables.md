@@ -10,7 +10,8 @@ When the LDAP directory provides a code or abbreviation for a particular setting
 
 The profiles\_tdi.properties file stores the settings that determine how the files are formatted.
 
-**Note:** These properties are supplied in the profiles\_tdi.properties file. The file path specified is relative to the TDI solution directory.
+!!! note
+    These properties are supplied in the profiles\_tdi.properties file. The file path specified is relative to the TDI solution directory.
 
 This step is mandatory if one or more entities have been selected as the Group By filter in Metrics. Otherwise, when you categorize the Metrics report by this entity, the report will show an unknown value, not the descriptive name of the entity in the chart. Metrics have three default Group By attributes: country, organization and title. The country and organization attributes are in the supported list.
 

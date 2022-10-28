@@ -18,11 +18,13 @@ To install HCL Connections in console mode, complete the following steps:
 
 3.  Copy the installation files to the system that hosts the Deployment Manager.
 
-    **Note:** Ensure that the directory path that you enter contains no spaces.
+    !!! note
+    Ensure that the directory path that you enter contains no spaces.
 
 4.  Start IBM Installation Manager in console mode:
 
-    **Note:** Run IBM Installation Manager on the system where the Deployment Manager is installed.
+    !!! note
+    Run IBM Installation Manager on the system where the Deployment Manager is installed.
 
     -   If Installation Manager is already installed, open a command prompt and change to the IBM Installation Manager installation directory. Then run the following command:
         -   AIX® or Linux™: /opt/IBM/InstallationManager/eclipse/tools/imcl -c
@@ -43,7 +45,8 @@ To install HCL Connections in console mode, complete the following steps:
 
 5.  In the console window, specify the HCL Connections repository:
 
-    **Note:** If you chose the option to run the install.console.bat\|sh file in Step 4, you can skip this step.
+    !!! note
+    If you chose the option to run the install.console.bat\|sh file in Step 4, you can skip this step.
 
     1.  Type P to edit preferences.
 
@@ -100,7 +103,8 @@ To install HCL Connections in console mode, complete the following steps:
 
     -   The wizard always installs the Home page, News, and Search, Common, Files, Push Notification, Rich Text Editors, and Widget Container applications, which are core features.
 
-        **Note:** If you install Communities and want users to be able to add the Rich Content app in a community, you must also install Wikis now.
+        !!! note
+    If you install Communities and want users to be able to add the Rich Content app in a community, you must also install Wikis now.
 
     -   Install Metrics now so that your application data is captured from the moment that HCL Connections is deployed. If you install Metrics at a later stage, you will not have any data reports for the period before you installed Metrics.
         |**HCL Connections 7.0**|Install all HCL Connections applications.|
@@ -136,9 +140,11 @@ To install HCL Connections in console mode, complete the following steps:
         Administrator ID
         :   The administrative ID of the DM.
 
-            **Note:** This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Security Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
+            !!! note
+    This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Security Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
 
-            **Note:** This user account needs to be both a WebSphere Application Server administrative user and an LDAP user.
+            !!! note
+    This user account needs to be both a WebSphere Application Server administrative user and an LDAP user.
 
         Administrator Password
         :   The password for the administrative ID of the DM.
@@ -148,7 +154,8 @@ To install HCL Connections in console mode, complete the following steps:
 
     3.  Press Enter to verify the DM information that you entered. The verification process also checks that application security is enabled on WebSphere Application Server. If the verification fails, IBM Installation Manager displays an error message.
 
-        **Note:** \(AIX and Linux\) The validation process checks the number of open files that are supported by your system. If the value for this parameter, which is known as the **Open File Descriptor limit**, is too low, a file open error, memory allocation failure, or connection establishment error could occur. If one of these errors occurs, exit the installation wizard and increase the open file limit before restarting the wizard. To set the file limit, refer to the [Installation error messages](../troubleshoot/r_error_codes_install.md) topic and search for error code CLFRP0042E. The recommended value for HCL Connections is 8192. For more information about the Open File Descriptor limit, see the documentation for your operating system.
+        !!! note
+    \(AIX and Linux\) The validation process checks the number of open files that are supported by your system. If the value for this parameter, which is known as the **Open File Descriptor limit**, is too low, a file open error, memory allocation failure, or connection establishment error could occur. If one of these errors occurs, exit the installation wizard and increase the open file limit before restarting the wizard. To set the file limit, refer to the [Installation error messages](../troubleshoot/r_error_codes_install.md) topic and search for error code CLFRP0042E. The recommended value for HCL Connections is 8192. For more information about the Open File Descriptor limit, see the documentation for your operating system.
 
     4.  If the verification check is successful, type N to proceed. If verification fails, press B to reenter the required information.
 
@@ -166,15 +173,18 @@ To install HCL Connections in console mode, complete the following steps:
         1.  Type 2 to select the **Medium deployment** topology.
         2.  Select the default value or enter a **Cluster name** for each application or for groups of applications. For example, use Cluster1 for Activities, Communities, and Forums.
 
-            **Note:** IBM Installation Manager creates servers and clusters when required.
+            !!! note
+    IBM Installation Manager creates servers and clusters when required.
 
         3.  Select a **Node** for each cluster. Accept the predefined node or select a different node.
 
-            **Note:** These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
+            !!! note
+    These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
 
         4.  Enter a **Server member** name for the selected node. Choose the default or enter a custom name.
 
-            **Note:** If you enter a custom server member name, the name must be unique across all nodes in your deployment.
+            !!! note
+    If you enter a custom server member name, the name must be unique across all nodes in your deployment.
 
         5.  The topology that you specified is displayed. To re-specify any details, type the number that corresponds to the application; for example, type 1 for Activities.
         6.  Type N to proceed.
@@ -182,15 +192,18 @@ To install HCL Connections in console mode, complete the following steps:
         1.  Type 3 to select the **Large deployment** topology.
         2.  Enter a **Cluster name** for each application.
 
-            **Note:** IBM Installation Manager creates servers and clusters when required.
+            !!! note
+    IBM Installation Manager creates servers and clusters when required.
 
         3.  Select a **Node** for each cluster. Accept the predefined node or select a different node.
 
-            **Note:** These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
+            !!! note
+    These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
 
         4.  Enter a **Server member** name for the selected node. Choose the default or enter a custom name.
 
-            **Note:** If you enter a custom server member name, the name must be unique across all nodes in your deployment.
+            !!! note
+    If you enter a custom server member name, the name must be unique across all nodes in your deployment.
 
         5.  The topology that you specified is displayed. To re-specify any details, type the number that corresponds to the application; for example, type 1 for Activities.
         6.  Type N to proceed.
@@ -198,7 +211,8 @@ To install HCL Connections in console mode, complete the following steps:
 
     1.  Type 1 to specify that the applications use same database server or instance; type 2 to specify that they use different database servers or instances.
 
-        **Note:** If allowed by your database configuration, you can select multiple database instances as well as different database servers.
+        !!! note
+    If allowed by your database configuration, you can select multiple database instances as well as different database servers.
 
     2.  Select a **Database type** from one of the following options:
 
@@ -232,7 +246,8 @@ To install HCL Connections in console mode, complete the following steps:
         DB2®
         :   db2jcc4.jar and db2jcc\_license\_cu.jar
 
-            **Note:** Ensure that your user account has the necessary permissions to access the DB2 JDBC files.
+            !!! note
+    Ensure that your user account has the necessary permissions to access the DB2 JDBC files.
 
         Oracle
         :   Upgrade the JDBC Database Driver to version 8 ojdbc8.jar. Refer to [Oracle site to download the ojdbc8.jar driver](https://www.oracle.com/database/technologies/jdbc-drivers-12c-downloads.html).
@@ -254,7 +269,8 @@ To install HCL Connections in console mode, complete the following steps:
 
         IBM Installation Manager tests your database connection with the database values that you supplied. You can change the database configuration later in the WebSphere Application Server Integrated Solutions Console.
 
-        **Note:** Usually you can continue even if the validation failed because you can change the database settings from WebSphere Application Server Integrated Solutions Console afterward.
+        !!! note
+    Usually you can continue even if the validation failed because you can change the database settings from WebSphere Application Server Integrated Solutions Console afterward.
 
     10. If the verification check is successful, type N to proceed. If verification fails, press B to reenter the required information.
 
@@ -334,7 +350,8 @@ To install HCL Connections in console mode, complete the following steps:
 
     1.  Enter a **domain name**. For example: mail.example.com.
 
-        **Note:** This domain name is used to build the ReplyTo address. The address consists of the suffix or prefix, a unique key, and the domain name.
+        !!! note
+    This domain name is used to build the ReplyTo address. The address consists of the suffix or prefix, a unique key, and the domain name.
 
     2.  The reply email address is given a unique ID by the system. You can customize the address by adding a prefix or suffix, using a maximum of 28 characters. This extra information is useful if the domain name is already in use for other purposes. Select one of the following options:
 
@@ -367,7 +384,8 @@ To install HCL Connections in console mode, complete the following steps:
 
     4.  Type N to proceed.
 
-    **Note:** You can modify the ReplyTo settings after installation. To edit the domain name and prefix or suffix, edit the news-config.xml file. To edit the server and authentication details, log in to the WebSphere Application Server Integrated Solutions Console and navigate to the Mail Sessions page, where you can edit the configuration.
+    !!! note
+    You can modify the ReplyTo settings after installation. To edit the domain name and prefix or suffix, edit the news-config.xml file. To edit the server and authentication details, log in to the WebSphere Application Server Integrated Solutions Console and navigate to the Mail Sessions page, where you can edit the configuration.
 
 19. Review the information that you entered. To revise your selections, press B. To continue installing, press N.
 
@@ -397,7 +415,8 @@ To install HCL Connections in console mode, complete the following steps:
 
     2.  Select the nodes and click **Full Resynchronize**.
 
-    **Note:** Wait until the DM copies all the application EAR files to the installedApps directory on each of the nodes. This process can take up to 30 minutes.
+    !!! note
+    Wait until the DM copies all the application EAR files to the installedApps directory on each of the nodes. This process can take up to 30 minutes.
 
     To verify that the DM has distributed the application EAR files to the nodes, check the SystemOut.logfile of each node agent. The default path to the SystemOut.logfile on a node is [profile\_root](../plan/i_ovr_r_directory_conventions.md)/logs/nodeagent.
 
@@ -411,7 +430,8 @@ To install HCL Connections in console mode, complete the following steps:
 
     3.  Select the HCL Connections clusters and click **Start**.
 
-    **Note:** If some applications do not start, the file-copying process might not have completed. Wait a few minutes and start the applications. In case the Connections applications are installed on different clusters, the cluster start order should start with the core features, then move to the other features:
+    !!! note
+    If some applications do not start, the file-copying process might not have completed. Wait a few minutes and start the applications. In case the Connections applications are installed on different clusters, the cluster start order should start with the core features, then move to the other features:
 
     -   Hompage cluster
     -   News cluster

@@ -8,7 +8,8 @@ Create a user account in the LDAP directory and add it to the WebSphere® Applic
 
 Complete the steps in the [Creating a service principal name and keytab file](t_install_kerb_create_service_account.md) topic.
 
-**Note:** If you are using on-ramp plug-ins or mobile services, your data traffic is not authenticated by Kerberos tickets or SPNEGO tokens. It is instead authenticated through Java EE form-based authentication.
+!!! note
+    If you are using on-ramp plug-ins or mobile services, your data traffic is not authenticated by Kerberos tickets or SPNEGO tokens. It is instead authenticated through Java EE form-based authentication.
 
 To configure Connections to use SPNEGO, complete the following tasks:
 

@@ -28,9 +28,11 @@ cache.http.publicContentMaxAgeInSecs
 
     The value must be greater than or equal to 0.
 
-    **Note:** You can force a resource update by opening the LotusConnections-config.xml common configuration properties file and setting the versionStamp property to any token. This token is included in most urls, so changing this token changes the url. Since urls are cached by path and cache header, the new url overrides the old url and refreshes the resources. For information, see *Common configuration properties*.
+    !!! note
+    You can force a resource update by opening the LotusConnections-config.xml common configuration properties file and setting the versionStamp property to any token. This token is included in most urls, so changing this token changes the url. Since urls are cached by path and cache header, the new url overrides the old url and refreshes the resources. For information, see *Common configuration properties*.
 
-    **Note:** Some resources, such as some images, do not use version stamps. If you edit those frequently, you can decrease the cache.http.publicContentMaxAgeInSecs value to show changes more quickly. If not, you can leave the value high and update the version stamp when you make changes.
+    !!! note
+    Some resources, such as some images, do not use version stamps. If you edit those frequently, you can decrease the cache.http.publicContentMaxAgeInSecs value to show changes more quickly. If not, you can leave the value high and update the version stamp when you make changes.
 
 cache.http.publicFeedMaxAgeInSecs
 :   Maximum age of the public feed cache before it is refreshed, in seconds. Public feeds pass information to the Public Files view. You may want to raise this value in very large deployments \(for example, over a million files\) to avoid performance issues. It could also be decreased to have very up-to-date information in the public view. A value of 0 means no feeds are cached.
@@ -312,7 +314,8 @@ security.inlineDownload.enabled
 
     Configure a property in `files-config.xml` to change the content disposition from attachment to inline. Then set the inline parameter to true in your Files API download requests. See *Displaying files inline*.
 
-    **Note:** Files uses the attachment disposition for security reasons. Uploaded files could potentially contain malicious code that can exploit the cross-site scripting vulnerabilities of some browsers. If you switch to inline disposition, you should configure an alternate domain download for greater security. See *Securing applications from malicious attack*.
+    !!! note
+    Files uses the attachment disposition for security reasons. Uploaded files could potentially contain malicious code that can exploit the cross-site scripting vulnerabilities of some browsers. If you switch to inline disposition, you should configure an alternate domain download for greater security. See *Securing applications from malicious attack*.
 
     Accepted values are `true` and `false`.
 
@@ -329,7 +332,8 @@ security.logout.href
 
     For more information, see *Enabling single-sign on with IBM Tivoli Access Manager*.
 
-    **Note:** You must use fully-qualified domain names in this configuration file. If you use an abbreviated name, secure communications between servers will fail.
+    !!! note
+    You must use fully-qualified domain names in this configuration file. If you use an abbreviated name, secure communications between servers will fail.
 
     If you customize the contextroot for Files in WebSphere Application Server \(WAS\) and LotusConnections-config.xml, you must also change the contextroot in the security.logout.href value. Otherwise, users will be unable to log out.
 
@@ -346,7 +350,8 @@ upload.modIBMUpload.enabled
 
     This is an optimization that moves potentially long running tasks off of the WebSphere® Application Server, which is tuned for short running operations. If this property is set to true, increase the file.media.maximumSizeInKb property to allow large files to be uploaded. If this property is set to false, the WebSphere Application Server handles the complete upload process. For more information and steps for configuring the IBM HTTP Server to upload files, see [Configuring file uploads through the HTTP Server](../install/t_install_post_files_uploads.md).
 
-    **Note:** Files sizes up to the value of api.simpleUploadAPI.maximumSizeInKb are still uploaded by the WebSphere® Application Server.
+    !!! note
+    Files sizes up to the value of api.simpleUploadAPI.maximumSizeInKb are still uploaded by the WebSphere® Application Server.
 
 For information on how to format the value of an interval attribute, see *Scheduling tasks*.
 

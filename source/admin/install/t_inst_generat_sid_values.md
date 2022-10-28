@@ -6,7 +6,8 @@ A Security Identifier \(SID\) is an internal ID used within Connections Content 
 
 1.  Find the tool under <Connections\_HOME\>\\addons\\ccm\\ccmDomainTool.
 
-    **Note:** You might find the tool under <Connections\_HOME\>\\Filenet\\ContentEngine\\ccmDomainTool
+    !!! note
+    You might find the tool under <Connections\_HOME\>\\Filenet\\ContentEngine\\ccmDomainTool
 
 2.  Run the following command to generate the SID value for an associate username:
 

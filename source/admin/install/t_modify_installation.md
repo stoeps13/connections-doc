@@ -34,7 +34,8 @@ To modify your installation, complete the following steps:
     -   The Home page, News, and Search applications are required and cannot be removed.
 10. Enter the administrative ID and password of the Deployment Manager.
 
-    **Note:** This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java™ EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Tivoli® Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
+    !!! note
+    This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java™ EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Tivoli® Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
 
 11. Configure your topology:
 
@@ -51,43 +52,53 @@ To modify your installation, complete the following steps:
         1.  Select the **Medium deployment** topology.
         2.  Select the default value or enter a **Cluster name** for each application or for groups of applications. For example, use Cluster1 for Activities, Communities, and Forums.
 
-            **Note:** IBM Installation Manager creates servers and clusters when required.
+            !!! note
+    IBM Installation Manager creates servers and clusters when required.
 
         3.  Select a **Node** for each cluster. Accept the predefined node or select a different node.
 
-            **Note:** These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
+            !!! note
+    These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
 
         4.  Enter a **Server member** name for the selected node. Choose the default or enter a custom name.
 
-            **Note:** If you enter a custom server member name, the name must be unique across all nodes in your deployment.
+            !!! note
+    If you enter a custom server member name, the name must be unique across all nodes in your deployment.
 
         5.  Click **Next**.
     -   Large deployment:
         1.  Select the **Large deployment** topology.
         2.  Enter a **Cluster name** for each application.
 
-            **Note:** IBM Installation Manager creates servers and clusters when required.
+            !!! note
+    IBM Installation Manager creates servers and clusters when required.
 
         3.  Select a **Node** for each cluster. Accept the predefined node or select a different node.
 
-            **Note:** These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
+            !!! note
+    These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
 
         4.  Enter a **Server member** name for the selected node. Choose the default or enter a custom name.
 
-            **Note:** If you enter a custom server member name, the name must be unique across all nodes in your deployment.
+            !!! note
+    If you enter a custom server member name, the name must be unique across all nodes in your deployment.
 
         5.  Click **Next**.
 12. Enter the database information.
 
-    **Note:** The panel described in this step appears only if you selected new applications to install and if the new applications require database configuration.
+    !!! note
+    The panel described in this step appears only if you selected new applications to install and if the new applications require database configuration.
 
-    **Note:** The Connections Content Manager databases will not be shown if you have chosen to use an existing FileNet® deployment.
+    !!! note
+    The Connections Content Manager databases will not be shown if you have chosen to use an existing FileNet® deployment.
 
-    **Note:** Database information for Global Configuration Data and Object Store must be set correctly or installation will fail.
+    !!! note
+    Database information for Global Configuration Data and Object Store must be set correctly or installation will fail.
 
     1.  Use the same database server or instance: Select **Yes** or **No**.
 
-        **Note:** If allowed by your database configuration, you can select multiple database instances as well as different database servers.
+        !!! note
+    If allowed by your database configuration, you can select multiple database instances as well as different database servers.
 
     2.  Select a **Database type** from one of the following options:
 
@@ -100,7 +111,8 @@ To modify your installation, complete the following steps:
 
     4.  Enter the **Port** number of the database server. The default values are: 50000 or 25000 for DB2®, 1521 for Oracle, and 1433 for SQL Server.
 
-        **Note:** For DB2, 50000 is the default port number for DB2 v11.5.5 and earlier, and 25000 is the default for DB2 v11.5.6 and later.
+        !!! note
+    For DB2, 50000 is the default port number for DB2 v11.5.5 and earlier, and 25000 is the default for DB2 v11.5.6 and later.
 
         If your installed applications use different database servers or instances, enter the port number for each database server or instance.
 
@@ -123,7 +135,8 @@ To modify your installation, complete the following steps:
         DB2
         :   db2jcc4.jar and db2jcc\_license\_cu.jar
 
-            **Note:** Ensure that your user account has the necessary permissions to access the DB2 JDBC files.
+            !!! note
+    Ensure that your user account has the necessary permissions to access the DB2 JDBC files.
 
         Oracle
         :   ojdbc8.jar
@@ -145,13 +158,15 @@ To modify your installation, complete the following steps:
 
         IBM Installation Manager tests your database connection with the database values that you supplied. You can change the database configuration later in the WebSphere® Application Server Integrated Solutions Console.
 
-        **Note:** Usually you can continue even if the validation failed because you can change the database settings from WebSphere Application Server Integrated Solutions Console afterward.
+        !!! note
+    Usually you can continue even if the validation failed because you can change the database settings from WebSphere Application Server Integrated Solutions Console afterward.
 
 13. In the summary panel, confirm your selection and click **Modify**.
 
 14. When the modification process is complete, restart the Deployment Manager and all the nodes.
 
-    **Note:** Wait until the DM copies all the application EAR files to the installedApps directory on each of the nodes. This process can take up to 30 minutes.
+    !!! note
+    Wait until the DM copies all the application EAR files to the installedApps directory on each of the nodes. This process can take up to 30 minutes.
 
     To verify that the DM has distributed the application EAR files to the nodes, check the SystemOut.logfile of each node agent. The default path to the SystemOut.logfile on a node is [profile\_root](../plan/i_ovr_r_directory_conventions.md)/logs/nodeagent.
 

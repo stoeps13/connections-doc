@@ -32,7 +32,8 @@ You can skip these steps if you elect to use the default JDBC provider that Conn
 |
 |5
 
-|**Note:** Please make sure that the variables are set in the **Environment \> WebSphere variables**.
+|!!! note
+    Please make sure that the variables are set in the **Environment \> WebSphere variables**.
 
  Click **Next**
 

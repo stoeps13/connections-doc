@@ -41,7 +41,8 @@ Saving the style file in this location allows the Activities templates to pick u
 
         [http://freemarker.sourceforge.net/docs/index.html](http://freemarker.sourceforge.net/docs/index.html)
 
-        **Note:** The FreeMarker version currently used is 2.3.15.
+        !!! note
+    The FreeMarker version currently used is 2.3.15.
 
     2.  Save your changes and then close the files.
 

@@ -34,7 +34,8 @@ The mode setting of the ProfileConnector determines what role the connector carr
 -   distinguishedName
 -   managerUid
 
-**Note:** You can use sourceUrl in combination with one of these attributes.
+!!! note
+    You can use sourceUrl in combination with one of these attributes.
 
  For example, this mode is used by the dump photos assembly.
 
@@ -45,7 +46,8 @@ The mode setting of the ProfileConnector determines what role the connector carr
 
  The following attributes can be used for the search criteria:
 
-**Note:** You can use sourceUrl in combination with one of the following attributes.
+!!! note
+    You can use sourceUrl in combination with one of the following attributes.
 
 -   key
 -   uid

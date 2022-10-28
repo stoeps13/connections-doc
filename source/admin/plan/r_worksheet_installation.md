@@ -119,7 +119,8 @@ Refer to the [Detailed system requirements for HCL Connections](https://support.
 
 ## LDAP-Profiles mapping details { .section}
 
-**Note:** This table is derived from the map\_dbrepos\_from\_source.properties file.
+!!! note
+    This table is derived from the map\_dbrepos\_from\_source.properties file.
 
 |Profiles database attribute|LDAP attribute \(example\)|Profiles database column|
 |---------------------------|--------------------------|------------------------|
@@ -149,7 +150,8 @@ Refer to the [Detailed system requirements for HCL Connections](https://support.
 |jobResp|null|PROF\_JOBRESPONSIBILITIES|
 |loginId|employeenumber|PROF\_LOGIN and PROF\_LOGIN\_LOWER|
 |logins|mail|PROF\_LOGIN|
-|managerUid|$manager\_uid **Note:** This attribute represents a lookup of the UID of a manager using DN in the manager field.
+|managerUid|$manager\_uid !!! note
+    This attribute represents a lookup of the UID of a manager using DN in the manager field.
 
 |PROF\_MANAGER\_UID|
 |mobileNumber|mobile|PROF\_MOBILE|
@@ -165,7 +167,8 @@ Refer to the [Detailed system requirements for HCL Connections](https://support.
 |preferredLanguage|preferredlanguage|PROF\_PREFERRED\_LANGUAGE|
 |preferredLastName|null|PROF\_PROF\_PREFERRED\_LAST\_NAME|
 |profileType|null|PROF\_TYPE|
-|secretaryUid|$secretaryUid**Note:** This attribute represents a lookup of the UID of a secretary using DN in the secretary field.
+|secretaryUid|$secretaryUid!!! note
+    This attribute represents a lookup of the UID of a secretary using DN in the secretary field.
 
 |PROF\_SECRETARY\_UID|
 |shift|null|PROF\_SHIFT|
@@ -193,7 +196,8 @@ Refer to the [Detailed system requirements for HCL Connections](https://support.
 |User name and password for that server| |
 |Connections administrative user \(not connectionsAdmin user role, but admin user role for Blogs, Files, CCM, Wikis \)| |
 |global moderator| |
-|URL and ports for admin and user access**Note:** You can look up the URLs for each application in the text files that the installation wizard generates. These files are located under the [connections\_root](i_ovr_r_directory_conventions.md) directory.
+|URL and ports for admin and user access!!! note
+    You can look up the URLs for each application in the text files that the installation wizard generates. These files are located under the [connections\_root](i_ovr_r_directory_conventions.md) directory.
 
 | |
 |Activities server name| |

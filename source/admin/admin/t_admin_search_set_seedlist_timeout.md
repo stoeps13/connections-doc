@@ -14,7 +14,8 @@ By default, seedlist requests time out after 240 seconds. This default setting o
 
 5.  Enter a value in milliseconds in the **Value** field.
 
-    **Note:** **Value** is milliseconds, not seconds.
+    !!! note
+    **Value** is milliseconds, not seconds.
 
 6.  Enter a description of the variable in the **Description** field, and then click **OK**.
 
@@ -22,7 +23,8 @@ By default, seedlist requests time out after 240 seconds. This default setting o
 
     If the change you made affects a node, you must stop and restart all of the servers on that node. Similarly if the change you made affects a cell, you must stop and restart all of the servers in that cell.
 
-    **Note:** For a high-availability deployment, stop and start the servers in turn to ensure that the Search application is still available to your users.
+    !!! note
+    For a high-availability deployment, stop and start the servers in turn to ensure that the Search application is still available to your users.
 
 
 **Parent topic:**[Managing the Search application](../admin/c_admin_manage_search.md)

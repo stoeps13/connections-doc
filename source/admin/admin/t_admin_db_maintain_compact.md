@@ -28,7 +28,8 @@ You do not have to run this script frequently. Schedule this task during another
     -   profiles
     -   search
     -   wikis
-    **Note:** To improve access performance of the Communities forum database, copy the reorg\_forum.sql file from the communities subdirectory.
+    !!! note
+    To improve access performance of the Communities forum database, copy the reorg\_forum.sql file from the communities subdirectory.
 
 2.  From the WebSphere Application Server Integrated Solutions Console, stop the servers that host the application that you want to administer:
 

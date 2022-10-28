@@ -8,7 +8,8 @@ Use the following MBean commands to perform administrative tasks for Search. The
 
 To run the commands, you first need to initialize the Search configuration environment. For more information about initializing the Search configuration environment, see *Accessing the Search configuration environment*.
 
-**Note:** For the SearchCellConfig commands that create, update, or delete configuration data, you must also check out the search-config.xml file using the SearchCellConfig.checkOutConfig\(\) command. After making your edits, you need to check in your changes using the SearchCellConfig.checkInConfig\(\) command. When the server next restarts, your changes will take effect. Any of these changes require the indexes to be rebuilt.
+!!! note
+    For the SearchCellConfig commands that create, update, or delete configuration data, you must also check out the search-config.xml file using the SearchCellConfig.checkOutConfig\(\) command. After making your edits, you need to check in your changes using the SearchCellConfig.checkInConfig\(\) command. When the server next restarts, your changes will take effect. Any of these changes require the indexes to be rebuilt.
 
 SearchCellConfig.checkInConfig\(\)
 :   Checks in the Search configuration file. This command must be used after changes are made to the Search configuration file in order for those changes to take effect. As part of this operation , the edited copy of the Search configuration file, search-config.xml, is validated against the XSD schema definition file, search-config.xsd.
@@ -49,7 +50,8 @@ SearchCellConfig.disableDictionary\(String languageCode\)
 
         The language code typically comprises two letters conforming to the ISO standard 639-1:2002 that identifies the primary language of the dictionary. However, there are some codes that additionally define a country or variant, in which case these constituent parts are separated by an underscore. For example, Portuguese has two variants, one for Portugal \(pt\_PT\) and one for Brazil \(pt\_BR\).
 
-        **Note:** When using a code that also specifies a country, ensure that you use an underscore to separate the language code and the country code rather than a hyphen; otherwise an error will be generated.
+        !!! note
+    When using a code that also specifies a country, ensure that you use an underscore to separate the language code and the country code rather than a hyphen; otherwise an error will be generated.
 
 
     For example:
@@ -73,7 +75,8 @@ SearchCellConfig.disableVerboseLogging\(\)
 SearchCellConfig.enableAttachmentHandling\(\)
 :   Enables the indexing of file attachments in the Files and Wikis applications.
 
-    **Note:** If you already disabled the attachment handling of files during the last indexing, you need to rebuild the index again you enable attachment handling. Otherwise, this command does not take effect.
+    !!! note
+    If you already disabled the attachment handling of files during the last indexing, you need to rebuild the index again you enable attachment handling. Otherwise, this command does not take effect.
 
     This command does not take any input parameters.
 
@@ -86,7 +89,8 @@ SearchCellConfig.enableDictionary\(String languageCode, String dictionaryPath\)
 
         The language code typically comprises two letters conforming to the ISO standard 639-1:2002 that identifies the primary language of the dictionary. However, there are some codes that additionally define a country or variant, in which case these constituent parts are separated by an underscore. For example, Portuguese has two variants, one for Portugal \(pt\_PT\) and one for Brazil \(pt\_BR\).
 
-        **Note:** When using a code that also specifies a country, ensure that you use an underscore to separate the language code and the country code rather than a hyphen; otherwise an error will be generated.
+        !!! note
+    When using a code that also specifies a country, ensure that you use an underscore to separate the language code and the country code rather than a hyphen; otherwise an error will be generated.
 
     -   dictionaryPath. The path to the directory containing the dictionary file. This argument is a string value.
 
@@ -160,7 +164,8 @@ SearchCellConfig.setDefaultDictionary\(String languageCode\)
 
         This language code typically comprises two letters conforming to the ISO standard 639-1:2002 that identifies the primary language of the dictionary. However, there are some codes that additionally define a country or variant, in which case these constituent parts are separated by an underscore. For example, Portuguese has two variants, one for Portugal \(pt\_PT\) and one for Brazil \(pt\_BR\). When using a code that also specifies a country, ensure that you use an underscore to separate the language code and the country code rather than a hyphen; otherwise an error will be generated.
 
-        **Note:** A matching dictionary must exist in the list of configured dictionaries for the language that you specify as a parameter.
+        !!! note
+    A matching dictionary must exist in the list of configured dictionaries for the language that you specify as a parameter.
 
 
     For example:
@@ -263,7 +268,8 @@ SearchCellConfig.setEcmPostFiltering\(multiplier,maxGapSize,connectionTimeOutInM
     SearchCellConfig.setEcmPostFiltering(100,5100,30000,60000)
     ```
 
-    **Note:** This example would be suitable for a community library with approximately 500,000 ECM files. You may need to experiment with the parameters to find the optimum settings values that give the best search results.
+    !!! note
+    This example would be suitable for a community library with approximately 500,000 ECM files. You may need to experiment with the parameters to find the optimum settings values that give the best search results.
 
 SearchCellConfig.setEcmPostFilteringSocketDataTimeOut\(socketDataTimeOutInMillis\)
 :   Sets the socket data timeout value for post-filtering.

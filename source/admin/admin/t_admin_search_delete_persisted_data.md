@@ -38,11 +38,13 @@ You might also want to use the SearchService.flushPersistedCrawlContent command 
     SearchService.flushPersistedCrawlContent\(\)
     :   Deletes current persisted seedlists.
 
-        **Note:** This command only clears persisted seedlists in the default persistence location. Seedlists crawled using the startBackgroundCrawl, startBackgroundFileContentExtraction, or startBackgroundIndex commands must be deleted manually.
+        !!! note
+    This command only clears persisted seedlists in the default persistence location. Seedlists crawled using the startBackgroundCrawl, startBackgroundFileContentExtraction, or startBackgroundIndex commands must be deleted manually.
 
         This command does not take any input parameters.
 
-        **Note:** Do not run this command while a crawl is in progress.
+        !!! note
+    Do not run this command while a crawl is in progress.
 
         When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 

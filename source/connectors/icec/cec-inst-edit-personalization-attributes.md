@@ -4,7 +4,8 @@ You can change the personalization attributes to increase the usability for the 
 
 ## Personalizing { .section}
 
-**Note:** To personalize an Connections Engagement Center widget for HCL external users you have to choose the prof\_mode key with value 1 for external users and 0 for internal users.
+!!! note
+    To personalize an Connections Engagement Center widget for HCL external users you have to choose the prof\_mode key with value 1 for external users and 0 for internal users.
 
 |Step|Instructions|
 |----|------------|

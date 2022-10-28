@@ -8,7 +8,8 @@ Displays tags of a community. Frequently used tags are highlighted
 
 All tags of a community will be displayed.
 
-**Note:** The Tag Cloud widget is not available on mobile devices.
+!!! note
+    The Tag Cloud widget is not available on mobile devices.
 
 ## Expected format { .section}
 

@@ -35,7 +35,8 @@ To set up SSO using Security Access Manager, complete the following steps:
 
     5.  Click the link **Click here to review the changes or apply them to the system**; restart Security Access Manager components when prompted.
 
-        **Note:** If you have already imported other HTTP Server certificates into the WebSEAL certificate file, you must delete them before you can add a certificate.
+        !!! note
+    If you have already imported other HTTP Server certificates into the WebSEAL certificate file, you must delete them before you can add a certificate.
 
 3.  To support SSO with the Lightweight Third-Party Authentication \(LTPA\) key, the same keys and passwords must be shared by Security Access Manager and WebSphere Application Server. To export the keys from WebSphere Application Server, complete the following steps:
 
@@ -53,7 +54,8 @@ To set up SSO using Security Access Manager, complete the following steps:
 
     3.  Click **Export keys**.
 
-    **Note:** If you have modified your federated repository properties, such as the realm name of the federated repository, re-export your LTPA keys and copy them to the Security Access Manager server, to the same location that you used to create the Security Access Manager junctions. See [Step 4](t_secure_with_tam.md#StepUseTheExportedLTPAKeyToCo...) for more details.
+    !!! note
+    If you have modified your federated repository properties, such as the realm name of the federated repository, re-export your LTPA keys and copy them to the Security Access Manager server, to the same location that you used to create the Security Access Manager junctions. See [Step 4](t_secure_with_tam.md#StepUseTheExportedLTPAKeyToCo...) for more details.
 
 4.  Use the exported LTPA key to configure the transparent path junctions in Security Access Manager.
 
@@ -73,7 +75,8 @@ To set up SSO using Security Access Manager, complete the following steps:
 
     8.  Configure a transparent path junction for each installed application. Enter the following command once for each junction:
 
-        **Note:** Do not include the carriage returns in the command. They are added here for display purposes.
+        !!! note
+    Do not include the carriage returns in the command. They are added here for display purposes.
 
         server task WebSEAL-instance-name create -t ssl
 
@@ -245,7 +248,8 @@ To set up SSO using Security Access Manager, complete the following steps:
 
         where ic-bypass-acl is the name of the unprotected access control list; for example, connections-acl-bypass.
 
-        **Note:** The any-other parameter refers to authenticated users who are not defined by other parameters such as sec\_master or iv-admin.
+        !!! note
+    The any-other parameter refers to authenticated users who are not defined by other parameters such as sec\_master or iv-admin.
 
     2.  To attach the access control list to resources that do not require authentication, run the following command:
 
@@ -456,7 +460,8 @@ To set up SSO using Security Access Manager, complete the following steps:
         |Orient Me|/community-suggestions|
         |Profiles|/profiles/atom|
         |/profiles/atom2|
-        |/profiles/atom/forms/tagCloud.do **Note:** If you use case-insensitive junctions in your Security Access Manager configuration, specify tagcloud.do instead of tagCloud.do.
+        |/profiles/atom/forms/tagCloud.do !!! note
+    If you use case-insensitive junctions in your Security Access Manager configuration, specify tagcloud.do instead of tagCloud.do.
 
 |
         |/profiles/follow/atom|
@@ -486,7 +491,8 @@ To set up SSO using Security Access Manager, complete the following steps:
 
     1.  Navigate to **SSL certificate and key management** \> **Key stores and certificates** \> **CellDefaultTrustStore\> \\ signer certs**.
     2.  Restart the Homepage application.
-    **Note:** To get the ECM events to appear, the ISAM certs must be imported to the **NodeDefaultTrustStore**.
+    !!! note
+    To get the ECM events to appear, the ISAM certs must be imported to the **NodeDefaultTrustStore**.
 
     If the ISAM server and the WebSEAL server are different, you need to import the cert from the WebSEAL server.
 
@@ -527,7 +533,8 @@ To set up SSO using Security Access Manager, complete the following steps:
 
     forms-auth = https
 
-    **Note:** You cannot specify HTTP-only authentication. To specify both HTTP and HTTPS, add the following line: forms-auth = both.
+    !!! note
+    You cannot specify HTTP-only authentication. To specify both HTTP and HTTPS, add the following line: forms-auth = both.
 
 11. \(Do not complete this step for Security Access Manager with SPNEGO\) Add HCL Allow access to the Embedded Experience gadget by adding the following line to the \[ba\] stanza in the webseald-server-name.conf file:
 
@@ -586,7 +593,8 @@ To set up SSO using Security Access Manager, complete the following steps:
 
     RewriteRule ^/\(.\*\) /pkmslogout \[noescape,L,R\]
 
-    **Note:** You must add these rules to both the HTTP and HTTPS entries.
+    !!! note
+    You must add these rules to both the HTTP and HTTPS entries.
 
     Ensure that the line that enables mod\_rewrite is not commented out by removing the preceding \# symbol. For example:
 
@@ -632,7 +640,8 @@ To set up SSO using Security Access Manager, complete the following steps:
 
 20. The value of the cookie timeout attribute in the LotusConnections-config.xml file must be smaller than the values of the timeout and inactive-timeout attributes in the webseald-server-name.conf file. Check these values in the \[session\] stanza of the webseald-server-name.conf file and edit them if necessary.
 
-    **Note:** The values of the timeout parameters in the Security Access Manager configuration file are given in seconds but the CookieTimeout value in the LotusConnections-config.xml file is given in minutes.
+    !!! note
+    The values of the timeout parameters in the Security Access Manager configuration file are given in seconds but the CookieTimeout value in the LotusConnections-config.xml file is given in minutes.
 
     Use the following example as a guide:
 

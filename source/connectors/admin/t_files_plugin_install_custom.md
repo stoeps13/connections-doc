@@ -4,7 +4,8 @@ Customize the installer by editing the install.addon.xml file to install a custo
 
 **Attention:** Activities and Status Updates depend on the Business Card plug-in. Do not remove the Business Card plug-in if you are installing Activities or Status Updates.
 
-**Note:** Customizing the installation of the HCL Connections plug-ins is supported only for the Windows platform. Currently there is no plan to support the Mac platform.
+!!! note
+    Customizing the installation of the HCL Connections plug-ins is supported only for the Windows platform. Currently there is no plan to support the Mac platform.
 
 Customize the installer to install parts of the plug-ins so that they are integrated with the IBM Notes client. For example, if you do not want to deploy Status Updates, you can exclude that plug-in from the installation by commenting it out in the install.addon.xml file.
 

@@ -30,7 +30,8 @@ If the community owner specifies that files must be reviewed before they are upl
 
 10. Click **Create**. The file is now created and opened for editing in HCL Docs.
 
-    **Note:** The format of the file that is created depends on your HCL Docs file format preferences. For more information, see [http://help.hcltechsw.com/connections/v65/using/text/document/d\_changing\_the\_default\_file\_format.dita](http://help.hcltechsw.com/connections/v65/using/text/document/d_changing_the_default_file_format.dita).
+    !!! note
+    The format of the file that is created depends on your HCL Docs file format preferences. For more information, see [http://help.hcltechsw.com/connections/v65/using/text/document/d\_changing\_the\_default\_file\_format.dita](http://help.hcltechsw.com/connections/v65/using/text/document/d_changing_the_default_file_format.dita).
 
 
 If you saved your file as a draft, you must submit the file for review before it can be published to the library. Open the file summary page and click **Submit for Review**.

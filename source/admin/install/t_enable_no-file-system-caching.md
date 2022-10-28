@@ -15,7 +15,8 @@ To enable the NO FILE SYSTEM CACHING option, complete the following steps:
 
 1.  Log in to the DB2 database system with the user ID of the owner of the database instance. The user ID must have privileges to create a database, a table space, tables, and indexes.
 
-    **Note:** If you created multiple database instances, specify the user ID for the first instance.
+    !!! note
+    If you created multiple database instances, specify the user ID for the first instance.
 
 2.  Enable the NO FILE SYSTEM CACHING option for the Activities table space by entering the following commands:
 

@@ -116,7 +116,8 @@ Create a Customizer app by writing it in JSON and then importing the code into H
     -   search
     -   viewer
     -   wikis
-**Note:** The global path allows you to apply the Customizer app across all of the Connections components. Unlike the other path values, global does not represent a real URL path element. It is a keyword meaning "match all URLs."
+!!! note
+    The global path allows you to apply the Customizer app across all of the Connections components. Unlike the other path values, global does not represent a real URL path element. It is a keyword meaning "match all URLs."
 
 |    ```
 "path": "homepage",
@@ -132,7 +133,8 @@ Create a Customizer app by writing it in JSON and then importing the code into H
     -   match: user-id
     -   match: user-email
     -   match:profile-type
- **Note:** When testing your app, you can provide a list of specific users who will see the customization and verify it. When you are ready to deploy the app to your organization, update or remove the match property.
+ !!! note
+    When testing your app, you can provide a list of specific users who will see the customization and verify it. When you are ready to deploy the app to your organization, update or remove the match property.
 
  For information on the match property, see [Using "match: url" to refine the "path" property](custom_customizer_props_match_url.md).
 
@@ -158,7 +160,8 @@ In this example, there is a single JavaScript file, stored in the pv-connections
     ```
 
 |
-    |Payload \(for iFrame\)|**Note:** The type parameter must be set to "type": "com.ibm.customizer.ui.container" to inject iFrames
+    |Payload \(for iFrame\)|!!! note
+    The type parameter must be set to "type": "com.ibm.customizer.ui.container" to inject iFrames
 
  Supported iFrame parameters
 

@@ -17,7 +17,8 @@ Many of the product strings in the HCL Connections user interface are represente
     com.ibm.lconn.core.strings.templates.properties
     ```
 
-    **Note:** You must create the file with the full file name; that is, it must not be a series of directories containing the templates.properties file, such as, com/ibm/lconn/core/strings/templates.properties.
+    !!! note
+    You must create the file with the full file name; that is, it must not be a series of directories containing the templates.properties file, such as, com/ibm/lconn/core/strings/templates.properties.
 
     Also, specify a language code for the properties file in the file name. If you do not provide a \_language\_code value at the end of the properties file name, the value you specify for the key in the properties file is used despite the locale of the web browser accessing the application.
 
@@ -57,11 +58,13 @@ Many of the product strings in the HCL Connections user interface are represente
             -   AIX®, and Linux® only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
     3.  Enter the following command to increment the value of the versionStamp property:
 
-        **Note:** This command is required only when a change is made to the product user interface and the change is to a file checked out using LCConfigService.
+        !!! note
+    This command is required only when a change is made to the product user interface and the change is to a file checked out using LCConfigService.
 
         LCConfigService.updateConfig\("versionStamp","gmt\_timestamp"\) where gmt\_timestamp is the GMT time. You can specify an empty string for the time stamp or provide a GMT value string. When you specify an empty string, the client calculates the current GMT time and updates the version stamp with that value. If you choose to provide the time, specify it using the following format: `yyyyMMdd.HHmmss` and specify the time in GMT. It is best to provide an empty string and let the client format the time stamp. For example: LCConfigService.updateConfig\("versionStamp",""\).
 

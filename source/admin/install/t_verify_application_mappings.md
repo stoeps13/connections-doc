@@ -12,7 +12,8 @@ To verify whether the mappings exist, complete the following steps:
 
 3.  Click your web server again and then click **Propagate Plug-in**.
 
-    **Note:** If you have trouble propagating the plug-in on Linux™, restart IBM HTTP Server using the following commands:
+    !!! note
+    If you have trouble propagating the plug-in on Linux™, restart IBM HTTP Server using the following commands:
 
     ```
      ./adminctl start

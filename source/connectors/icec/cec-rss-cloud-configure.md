@@ -62,6 +62,7 @@ Perform the following steps to create a Customizer application. The [RSS Feed wi
     -   The "domain" parameter is optional. If you want all URLs under the domain to be whitelisted, enter the domain name, for example, ibm.com. If you do not want to set the domain URLs, remove the line "domain": "ibm.com".
 8.  Click **Save**.
 
-    **Note:** The `com.ibm.customizer.proxy` property value is an extension point that Customizer uses to define a proxy configuration. When a request is made to Customizer to proxy a request, it will check with the App Registry for any defined instances of this extension point and, if found, will retrieve and return the content from the whitelisted URL. Currently only GET methods are supported but the list of operations will expand in future releases.
+    !!! note
+    The `com.ibm.customizer.proxy` property value is an extension point that Customizer uses to define a proxy configuration. When a request is made to Customizer to proxy a request, it will check with the App Registry for any defined instances of this extension point and, if found, will retrieve and return the content from the whitelisted URL. Currently only GET methods are supported but the list of operations will expand in future releases.
 
 

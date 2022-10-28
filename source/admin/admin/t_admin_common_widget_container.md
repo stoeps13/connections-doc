@@ -4,7 +4,8 @@ The Widget Container is the HCL Connections-specific integration of the Common R
 
 The CRE is the successor to Mashup Enabler and adds the ability to render OpenSocial gadgets as well as iWidgets. Throughout the HCL Connections documentation, the Connections instance of CRE will be referred to as the *Widget Container.* This section of the documentation is specific to the administration of the Widget Container. More details on the CRE in general can be found in the [IBM® Social Business Development wiki](http://www-10.lotus.com/ldd/appdevwiki.nsf/xpViewCategories.xsp?lookupName=Common%20rendering%20engine).
 
-**Note:** If you wish to add gadgets deployed externally, such as iGoogle gadgets, you must configure locked domains. Locking domains isolates semi-trusted gadgets and prevents them from accessing SSO tokens or via DOM access to the parent page of the gadget iFrame that can be used to forward sensitive data to external sites. For more information on locked domains, refer to [Enabling locked domains](../install/t_post_install_cre11_conn_security_locked.md).
+!!! note
+    If you wish to add gadgets deployed externally, such as iGoogle gadgets, you must configure locked domains. Locking domains isolates semi-trusted gadgets and prevents them from accessing SSO tokens or via DOM access to the parent page of the gadget iFrame that can be used to forward sensitive data to external sites. For more information on locked domains, refer to [Enabling locked domains](../install/t_post_install_cre11_conn_security_locked.md).
 
 -   **[Administering gadgets for HCL Connections and widgets for Home page](../admin/c_admin_homepage_add_custom_widgets.md)**  
 You can extend the functionality of the Home page application by adding custom widgets and extend HCL Connections by adding OpenSocial gadgets. To make the widgets and gadgets available for use, you can add them from the Administration view and then enable them for use.

@@ -8,7 +8,8 @@ Complete the steps in [Adding an application in Azure AD for SSO with Connection
 
     ![WebSphere screen showing WebSphereOIDCRP associated with four cluster names](azure_websphere_example.jpg)
 
-    **Note:** The OIDC Replying Party TAI code is shipped as part of WebSphere Application Server. It is recommended that you are running WebSphere 8.5.5.18 which contains all required fixes. However, if you are running an earlier version of WebSphere, you must install at least version 1.3.0 of the OIDC jar. Find the latest version from https://www.ibm.com/support/pages/node/290565.
+    !!! note
+    The OIDC Replying Party TAI code is shipped as part of WebSphere Application Server. It is recommended that you are running WebSphere 8.5.5.18 which contains all required fixes. However, if you are running an earlier version of WebSphere, you must install at least version 1.3.0 of the OIDC jar. Find the latest version from https://www.ibm.com/support/pages/node/290565.
 
 2.  Apply a unique context root to each of the clusters. For example, for the Apps cluster, go to **Enterprise Applications** \> **WebSphereOIDCRP\_AppsCluster.ear** \> **Context Root For Web Modules**.
 
@@ -22,7 +23,8 @@ Complete the steps in [Adding an application in Azure AD for SSO with Connection
 
     |Property|Value|
     |--------|-----|
-    |com.ibm.websphere.security.disableGetTokenFromMBean**Note:** If this property doesn't exist, add it.
+    |com.ibm.websphere.security.disableGetTokenFromMBean!!! note
+    If this property doesn't exist, add it.
 
 |false|
     |com.ibm.websphere.security.DeferTAItoSSO|com.ibm.ws.security.oidc.client.RelyingParty|
@@ -35,7 +37,8 @@ Complete the steps in [Adding an application in Azure AD for SSO with Connection
 
 8.  Add the following properties and values.
 
-    **Note:** Use the values for \{client\_id\}, \{client\_secret\}, and \{tenant\} that you copied from steps 3 and 4 of the previous procedure.
+    !!! note
+    Use the values for \{client\_id\}, \{client\_secret\}, and \{tenant\} that you copied from steps 3 and 4 of the previous procedure.
 
     |Property|Value|
     |--------|-----|

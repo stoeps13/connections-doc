@@ -13,7 +13,8 @@ Make sure that the Profiles database is already populated with users. The assemb
 
 3.  Run the load\_photos\_from\_ldap assembly line command.
 
-    **Note:** You must run this command for each LDAP server and each LDAP branch that contains photos.
+    !!! note
+    You must run this command for each LDAP server and each LDAP branch that contains photos.
 
 
 **Parent topic:**[Populating the Profiles database](../install/t_prof_install_profiles_db.md)

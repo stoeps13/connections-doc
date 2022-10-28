@@ -60,7 +60,8 @@ The following tables list the application properties files that contain strings 
 
 If you cannot find a string, check the Activities resource bundle in installedApps/<cell\_name\>/Activities.ear/oawebui.war/WEB-INF/lib/oawebui.jar: com/ibm/openactivities/web/coreui/resources/resources.properties
 
-**Note:** For more information, see [Customizing strings sourced in JavaScript](t_customize_strings_via_javascript.md).
+!!! note
+    For more information, see [Customizing strings sourced in JavaScript](t_customize_strings_via_javascript.md).
 
 |customizationDir/strings/com.ibm.openactivities.web.coreui.resources.resources.properties|
 |Activities notification strings|Notification strings and some user interface strings are in  LotusConnections-config/notifications/activities/resources/nls/notification.properties where locale is the language code, for example notification \_en.properties. If no locale is specified, use notification.properties.|Edit and save the customized file in the source location.|
@@ -74,7 +75,8 @@ If you cannot find a string, check the Activities resource bundle in installedAp
 
 ## Bookmarklet { .section}
 
-**Note:** The bookmarklet is the window that displays when you add a bookmark. It is in the Common.ear file. The bookmarklet allows users to add bookmarks to different applications, such as Communities or Activities. Users can add a button to their browser that allows them to access the bookmarklet window. Every page in Connections has a **Bookmarking Tools** link in the page footer that allows users to install this toolbar button.
+!!! note
+    The bookmarklet is the window that displays when you add a bookmark. It is in the Common.ear file. The bookmarklet allows users to add bookmarks to different applications, such as Communities or Activities. Users can add a button to their browser that allows them to access the bookmarklet window. Every page in Connections has a **Bookmarking Tools** link in the page footer that allows users to install this toolbar button.
 
 |Description|Source location|Save customizations in|
 |-----------|---------------|----------------------|
@@ -150,18 +152,21 @@ If you cannot find a string, check the Activities resource bundle in installedAp
 |Description|Source location|Save customizations in|
 |-----------|---------------|----------------------|
 |Used in the Atom APIs for informational use only, not for the user|In installedApps/<cell\_name\>/Profiles.ear/lc.profiles.app.war/WEB-INF/lib/lc.profiles.web.app.jar: com/ibm/lconn/profiles/api/actions/resources.properties|customizationDir/strings/com.ibm.lconn.profiles.api.actions.resources.properties|
-|Main resource string file for user interface display in Profiles|In installedApps/<cell\_name\>/Profiles.ear/lc.profiles.app.war/WEB-INF/lib/lc.profiles.web.app.jar: com/ibm/lconn/profiles/strings/ui.properties**Note:** To update the Profiles user interface, you must change the appropriate template file. For example, profileDetails.ftl defines the custom section that is rendered when you view someone's profile. The business card template renders the same profile when you start someone's business card.
+|Main resource string file for user interface display in Profiles|In installedApps/<cell\_name\>/Profiles.ear/lc.profiles.app.war/WEB-INF/lib/lc.profiles.web.app.jar: com/ibm/lconn/profiles/strings/ui.properties!!! note
+    To update the Profiles user interface, you must change the appropriate template file. For example, profileDetails.ftl defines the custom section that is rendered when you view someone's profile. The business card template renders the same profile when you start someone's business card.
 
 The key to define a custom section to view a profile in profileDetails.ftl is as follows:
 
 `<nlsKey="label.displayName"/>`. Template files are in: <dmgr profilehome\>/config/cells/<cellname\>/LotusConnections-config/profiles/templates.
 
-**Note:** The Profiles advanced search page does not have a customization template. Update the advanced search page by using the strings folder customization directory. Create the following file: com.ibm.lconn.profiles.strings.uilabels.properties. Add, for example, the following property/string: `label.advanced.searchForm.attribute.telephoneNumber=Telephone:`.
+!!! note
+    The Profiles advanced search page does not have a customization template. Update the advanced search page by using the strings folder customization directory. Create the following file: com.ibm.lconn.profiles.strings.uilabels.properties. Add, for example, the following property/string: `label.advanced.searchForm.attribute.telephoneNumber=Telephone:`.
 
 |customizationDir/strings/com.ibm.lconn.profiles.strings.ui.properties|
 |Strings for profile field labels|In <dmgr profilehome\>: /config/cells/<cellname\>/LotusConnections-config/profiles/templates/template.properties|customizationDir/strings/com.ibm.lconn.profiles.strings.uilabels.properties|
 
-**Note:** To customize the Profile field labels take, the following steps:
+!!! note
+    To customize the Profile field labels take, the following steps:
 
 -   Stop Connections and shut down the Dmgr.
 -   Browse to C:\\IBM\\WebSphere\\AppServer\\profiles\\Dmgr01\\config\\cells\\Your\_Cell01\\LotusConnections-config\\profiles\\templates\\resources\\nls.
@@ -190,7 +195,8 @@ The key to define a custom section to view a profile in profileDetails.ftl is as
 |Help tooltips|In installedApps/<cell\_name\>/Wikis.ear/wikis.web.jar: com/ibm/lconn/wikis/strings/uihelp.properties|customizationDir/strings/com.ibm.lconn.wikis.strings.uihelp.properties|
 |About page and Server Metrics page|In installedApps/<cell\_name\>/Wikis.ear/wikis.web.jar: com/ibm/lconn/wikis/strings/uitemplates.properties|customizationDir/strings/com.ibm.lconn.wikis.strings.uitemplates.properties|
 
-**Note:** These resource bundles contain most of the Wikis user interface strings, but the strings for the Communities widget are provided in JavaScript. See [Customizing strings sourced in JavaScript](t_customize_strings_via_javascript.md) for more information.
+!!! note
+    These resource bundles contain most of the Wikis user interface strings, but the strings for the Communities widget are provided in JavaScript. See [Customizing strings sourced in JavaScript](t_customize_strings_via_javascript.md) for more information.
 
 **Parent topic:**[Customizing product strings](../customize/t_customize_strings_global.md)
 

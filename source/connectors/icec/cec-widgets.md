@@ -38,5 +38,6 @@ The different colors indicate which type of community the community is. Green ar
 -   Height of the widget
 -   widget title
 
-**Note:** For correct display of the content within the widgets of Connections Engagement Center the sources need to deliver valid HTML. If content is not displayed check the source for validity first. Sometimes HCL Connections lets users save invalid HTML code.
+!!! note
+    For correct display of the content within the widgets of Connections Engagement Center the sources need to deliver valid HTML. If content is not displayed check the source for validity first. Sometimes HCL Connections lets users save invalid HTML code.
 

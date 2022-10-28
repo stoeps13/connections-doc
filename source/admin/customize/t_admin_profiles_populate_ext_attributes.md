@@ -36,7 +36,8 @@ To map custom extension attributes to fields in your source LDAP directory, conf
       sourceKey="spokenLang"/>
     ```
 
-    **Note:** The formatting is compatible between the tdi-profiles-config.xml file and the profiles-config.xml file, allowing you to copy and paste configuration information between the files.
+    !!! note
+    The formatting is compatible between the tdi-profiles-config.xml file and the profiles-config.xml file, allowing you to copy and paste configuration information between the files.
 
 4.  Save your changes to tdi-profiles-config.xml and then close the file.
 

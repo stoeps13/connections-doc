@@ -29,7 +29,8 @@ Before you install the images, make sure that you have [set up persistent volume
     
     ```
 
-    **Note:** If you have changed the ICp credentials from the default, you can pass the new credentials in as arguments. For example:
+    !!! note
+    If you have changed the ICp credentials from the default, you can pass the new credentials in as arguments. For example:
 
     ```
      sudo hybrid/microservices/hybridcloud/install.sh -cu username -cp password
@@ -45,13 +46,15 @@ Before you install the images, make sure that you have [set up persistent volume
 
     ![Images listed in ICp client application](OM_images_ICp.png)
 
-    **Note:** It could take up to 10 minutes for this script to complete.
+    !!! note
+    It could take up to 10 minutes for this script to complete.
 
 4.  In ICp in the browser, from the menu click **Workloads** and then select **Applications** to see the installed applications.
 
     ![Apps listed in ICp client application](appScreenShot.jpg)
 
-    **Note:** It could take up to 10 minutes for the application to display.
+    !!! note
+    It could take up to 10 minutes for the application to display.
 
 
 Once the script has finished running, you will be returned to the command prompt. As you can see from the list of populated applications, you have successfully installed all of the images for Component Pack. Now you are ready to populate Component Pack with data from Profiles and Communities.

@@ -18,7 +18,8 @@ By default, WebSphere® Application Server reserves the following attributes as 
 
     dominoUNID
 
-    **Note:** If the bind ID for the Domino LDAP does not have sufficient manager access to the Domino directory, the Virtual Member Manager \(VMM\) does not return the correct attribute type for the Domino schema query; DN is returned as the VMM ID. To override VMM's default ID setting, add the following line to the <config:attributeConfiguration\> section of the wimconfig.xml file:
+    !!! note
+    If the bind ID for the Domino LDAP does not have sufficient manager access to the Domino directory, the Virtual Member Manager \(VMM\) does not return the correct attribute type for the Domino schema query; DN is returned as the VMM ID. To override VMM's default ID setting, add the following line to the <config:attributeConfiguration\> section of the wimconfig.xml file:
 
     <config:externalIdAttributes
 
@@ -48,7 +49,8 @@ Linux™
 Microsoft Windows™
 :   drive:\\IBM\\WebSphere\\AppServer\\profiles\\profile\_name\\config\\cells\\cell\_name\\wim\\config
 
-**Note:** HCL recommends that you do not allow the GUID of a user to change. If you change the GUID, the user will not have access to their data unless you re-synchronize the LDAP and Profiles database with the new GUID. When you change the GUID and run the sync\_all\_dns batch file, the user's GUID is initially changed in the Profiles database, and then propagated to the other components using the user life cycle commands. Be sure when you are running sync\_all\_dns that an unchanged field is used as the hash. See the *Synchronizing source changes such as LDAP with Profiles* and *Managing user data using Profiles administrative commands* topics for more information.
+!!! note
+    HCL recommends that you do not allow the GUID of a user to change. If you change the GUID, the user will not have access to their data unless you re-synchronize the LDAP and Profiles database with the new GUID. When you change the GUID and run the sync\_all\_dns batch file, the user's GUID is initially changed in the Profiles database, and then propagated to the other components using the user life cycle commands. Be sure when you are running sync\_all\_dns that an unchanged field is used as the hash. See the *Synchronizing source changes such as LDAP with Profiles* and *Managing user data using Profiles administrative commands* topics for more information.
 
 **Parent topic:**[Populating the Profiles database](../install/t_prof_install_profiles_db.md)
 

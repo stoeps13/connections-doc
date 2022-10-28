@@ -4,7 +4,8 @@ The section covers customizing the list of fonts provided for the font-picker in
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the property [`fonts`](r_config-js-sample.md#fonts) and modify the array to customize the fonts list configuration using the following resources:
 

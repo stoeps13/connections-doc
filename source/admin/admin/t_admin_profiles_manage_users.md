@@ -22,7 +22,8 @@ When you set a user's status to inactive, that user's name is displayed in itali
     app\_server\_root\profiles\dm\_profile\_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
 
 2.  Start the Profiles Jython script interpreter.
 
@@ -45,7 +46,8 @@ ProfilesService.inactivateUser("john.smith@example.com")
 |
     |ProfilesService.inactivateUserByUserId\(String userID\)|Inactivates the user with the specified user ID. This command has the same behavior as the ProfilesService.inactivateUser command, except that it takes a user ID instead of an email address as an argument.After you run this command, the user is no longer active in the system. The email address is removed from all member tables and the status of the user changes from active \(0\) to inactive \(1\). All the user's login values are removed from the login tables and the login values associated with the user in the PROFILE\_LOGIN table are removed. An event is created in which Profiles propagates these changes to the member and login tables of all installed applications to make sure the user's information is updated consistently across the application databases. The status of inactive users can be reactivated at a later time using the ProfilesService.activateUserByUserId command.
 
-**Note:** The userID parameter is defined in the profiles-config.xml file by the lconnUserIdField tag. The default value is guid, which is stored in Prof\_guid in the profiles database. The values for Prof\_guid must match the values for UserID.
+!!! note
+    The userID parameter is defined in the profiles-config.xml file by the lconnUserIdField tag. The default value is guid, which is stored in Prof\_guid in the profiles database. The values for Prof\_guid must match the values for UserID.
 
 For example:
 
@@ -123,7 +125,8 @@ ProfilesService.updateUser("john.smith@example.com",
     -   uid
 The properties are all optional and they must be specified using name-value pairs. The updated values are pushed out to all the applications in IBM Connections using a platform command.
 
-**Note:** The userID parameter is defined in the profiles-config.xml file by the lconnUserIdField tag. The default value is guid, which is stored in Prof\_guid in the profiles database. The values for Prof\_guid must match the values for UserID.
+!!! note
+    The userID parameter is defined in the profiles-config.xml file by the lconnUserIdField tag. The default value is guid, which is stored in Prof\_guid in the profiles database. The values for Prof\_guid must match the values for UserID.
 
 For example:
 
@@ -164,7 +167,8 @@ ProfilesService.publishUserData("john.smith@example.com")
 |
     |ProfilesService.publishUserDataByUserId\(String userID\)|Publishes an update command to all the IBM Connections applications for the user with the specified user ID. This command has the same behavior as the ProfilesService.publishUserData command, except that it takes a user ID instead of an email address as an argument.The command publishes the data that is currently stored for the user in the Profiles database \(email, displayName, logins, directoryId\). If one of the applications misses an update event for some reason and the incorrect email address or name is displaying for a user, for example, you can use this command to force all the applications to resynchronize their data.
 
-**Note:** The userID parameter is defined in the profiles-config.xml file by the lconnUserIdField tag. The default value is guid, which is stored in Prof\_guid in the profiles database. The values for Prof\_guid must match the values for UserID.
+!!! note
+    The userID parameter is defined in the profiles-config.xml file by the lconnUserIdField tag. The default value is guid, which is stored in Prof\_guid in the profiles database. The values for Prof\_guid must match the values for UserID.
 
 For example:
 

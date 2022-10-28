@@ -41,7 +41,8 @@ onfocus="dojo.require('lconn.core.header');lconn.core.header.menuFocus(this);" r
 
 |Add the following CSS to your Connections theme customization and copy the images for the Flyout page to the <THEME\_FOLDER\>/images folder of the <CUSTOMIZATION\_DIR\>.
 
-**Note:** For Right-to-Left languages such as Hebrew or Arabic, add the following CSS to the customRTL.css file.
+!!! note
+    For Right-to-Left languages such as Hebrew or Arabic, add the following CSS to the customRTL.css file.
 
  ```
 .xccTHIcon {

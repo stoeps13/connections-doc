@@ -18,7 +18,8 @@ Profile-types are managed in an object hierarchy with the following rules:
 -   A profile-type hierarchy cannot contain circular loops. The application will fail to start if any loops are detected in the configured hierarchy.
 -   A profile-type declaration that omits a parentId implicitly inherits from snx:personsnx:mtperson.
 
-    **Note:** There are important consideration when assigning profile type id values. These values will appear as URL parameters in the Profiles API, and should accordingly facilitate a valid URL encoding. The following rules will help avoid encoding issues in the API.
+    !!! note
+    There are important consideration when assigning profile type id values. These values will appear as URL parameters in the Profiles API, and should accordingly facilitate a valid URL encoding. The following rules will help avoid encoding issues in the API.
 
     -   Use ASCII characters and avoid special URL characters.
     -   Do not use spaces or plus symbols \(+\); there are known URL encoding problems specific to these characters.

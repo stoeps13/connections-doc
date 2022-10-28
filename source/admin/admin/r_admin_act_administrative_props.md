@@ -32,7 +32,8 @@ ActivitiesMemberService.fetchCommunitiesByName \(java.lang.String name\)
     name
     :   The name of a community. You can provide the first word or words and any communities with names that begin with that word or words is returned. For example, "Sales community".
 
-    **Note:** This command was added in version 2.5.
+    !!! note
+    This command was added in version 2.5.
 
 ActivitiesMemberService.fetchMemberByEmail\(java.lang.String mail\)
 :   Returns a member identified by the supplied email address. This command returns a java.util.Hashtable object that describes the member.
@@ -151,7 +152,8 @@ ActivityService.fetchActivitiesByCommunityExId \(java.lang.String communityUUID\
     communityUUID
     :   The unique ID of the community. For example, "f29b4e8e-6fad-44f4-9fca-58c46f29c38d". To find out the unique ID of a community, use ActivitiesMemberService.fetchCommunitiesByName to retrieve the community of interest, and then get the value of the externalId key of that community from the hashtable.
 
-    **Note:** This command was added in version 2.5.
+    !!! note
+    This command was added in version 2.5.
 
 ActivityService.fetchActivitiesByDate\(java.lang.String dateType, java.lang.String beginTime, java.lang.String endTime, java.lang.String lastUUID\)
 :   Gets a list of activities that were created or modified between a date range. The maximum number of activities in the returned list is 50. To obtain all of the activities that match the criteria if the number is greater than 50, call this method in a loop providing the UUID of the 50th activity from the previous list as the lastUUID parameter. Returns a java.util.Vector object. Each object in the vector is a java.util.Hashtable object that describes one activity.
@@ -176,7 +178,8 @@ ActivityService.fetchActivitiesByDate\(java.lang.String dateType, java.lang.Stri
     ActivityService.fetchActivitiesByDate("created","2008.03.01","2008.03.31","")
     ```
 
-    **Note:** This command does not return activity templates that were created during the specified date range. This command does include in the activities that it returns any activities present in the Trash view that were created during the specified date range.
+    !!! note
+    This command does not return activity templates that were created during the specified date range. This command does include in the activities that it returns any activities present in the Trash view that were created during the specified date range.
 
 ActivityService.fetchActivityById\(java.lang.String activityId\)
 :   Gets the activity identified by the given universal identifier. Returns a java.util.Hashtable object that describes the activity.
@@ -222,7 +225,8 @@ ActivityService.fetchDeletedActivities\(\)
 
 ## AccessControlService {#aclService .section}
 
-**Note:** You cannot use the AccessControlService commands to fetch, set, or delete access to community activities. See *Communities administrative commands* for information about the command you can use to add a person to a community.
+!!! note
+    You cannot use the AccessControlService commands to fetch, set, or delete access to community activities. See *Communities administrative commands* for information about the command you can use to add a person to a community.
 
 AccessControlService.deleteAccess\(java.util.Vector activities, java.util.Vector members\)
 :   Removes access privileges to the specified activities for the specified members. Returns a java.util.Vector object; each object in the vector is a java.util.Hashtable object that describes one activity whose access could not be deleted. A returned empty vector indicates success.
@@ -267,7 +271,8 @@ AccessControlService.setMembersAccess\(java.util.Vector activities, java.util.Ve
     members
     :   Vector of hash tables representing the members returned from the MemberService object.
 
-    **Note:** In 2.5, this command named changed from setMemberAccess to setMembersAccess.
+    !!! note
+    In 2.5, this command named changed from setMemberAccess to setMembersAccess.
 
 AccessControlService.setOwnerAccess\(java.util.Vector activities, java.util.Hashtable owner\)
 :   Sets the specified member as an owner of the specified activities. Returns a java.util.Vector object; each object in the vector is a java.util.Hashtable object that describes one activity whose access could not be modified. A returned empty vector indicates success.
@@ -291,7 +296,8 @@ AccessControlService.setOwnersAccess\(java.util.Vector activities, java.util.Vec
     owners
     :   Vector of hash tables representing the members to whom you want to give owner access.
 
-    **Note:** This command was added in version 2.5.
+    !!! note
+    This command was added in version 2.5.
 
 AccessControlService.setReadersAccess\(java.util.Vector activities, java.util.Vector members\)
 :   Sets the specified members as readers of the specified activities. Returns a java.util.Vector object; each object in the vector is a java.util.Hashtable object that describes one activity whose access could not be modified. A returned empty vector indicates success.
@@ -304,12 +310,14 @@ AccessControlService.setReadersAccess\(java.util.Vector activities, java.util.Ve
     members
     :   Vector of hash tables representing the members returned from the MemberService object.
 
-    **Note:** In 2.5, this command named changed from setReaderAccess to setReadersAccess.
+    !!! note
+    In 2.5, this command named changed from setReaderAccess to setReadersAccess.
 
 AccessControlService.syncAllCommunityShares\(\)
 :   Updates the Activities data store to reflect changes made to the name or access level of a community. If the community no longer exists, the membership of the activity is updated to remove the community.
 
-    **Note:** This command was added in version 3.
+    !!! note
+    This command was added in version 3.
 
 ## ActivitiesConfigService {#actConfigService .section}
 
@@ -319,7 +327,8 @@ ActivitiesConfigService.checkOutConfig\("working\_directory", "cell\_name"\)
     working\_directory
     :   Temporary working directory to which the configuration files are copied. The files are kept in this working directory while you make changes to them. When you specify a path to the working directory on a system running Microsoft™ Windows™, use a forward slash for the directory. For example: "C:/temp".
 
-        **Note:** AIX®, and Linux™: The working directory must grant write permissions or the command will not run successfully.
+        !!! note
+    AIX®, and Linux™: The working directory must grant write permissions or the command will not run successfully.
 
     cell\_name
     :   Name of the WebSphere® Application Server cell hosting the Lotus® Connections application. If you do not know the cell name, type the following command while in the wsadmin command processor:
@@ -459,7 +468,8 @@ ArchiveService.fetchActivitiesByMember\(java.lang.String directory , java.util.H
     member
     :   Hash table representing the members returned from the MemberService object. For example, paul\_smith.
 
-    **Note:** Do not use this command to fetch activities that were exported from a different deployment of HCL Connections. This commands uses the member ID to find the activities, and member IDs are not persisted across different deployments. Only use this command to collect activities when you are importing the activities to the same server from which they were exported. If you are importing the activities to a different server, use the ArchiveService.fetchActivities\(directory\) command instead.
+    !!! note
+    Do not use this command to fetch activities that were exported from a different deployment of HCL Connections. This commands uses the member ID to find the activities, and member IDs are not persisted across different deployments. Only use this command to collect activities when you are importing the activities to the same server from which they were exported. If you are importing the activities to a different server, use the ArchiveService.fetchActivities\(directory\) command instead.
 
 ArchiveService.fetchActivitiesByOwner\(java.lang.String directory , java.util.Hashtable member\)
 :   Gets a list of all archived activities in the specified directory that are owned by the specified member. Returns a java.util.Vector object; each object in the vector is a java.util.Hashtable objects describing an archived activity in the directory. This command does not return community activities.
@@ -472,7 +482,8 @@ ArchiveService.fetchActivitiesByOwner\(java.lang.String directory , java.util.Ha
     member
     :   Hash table representing the owners of archived activities returned from the MemberService object. For example, paul\_smith.
 
-    **Note:** Do not use this command to fetch activities that were exported from a different deployment of HCL Connections. This commands uses the member ID to find the activities, and member IDs are not persisted across different deployments. Only use this command to collect activities when you are importing the activities to the same server from which they were exported. If you are importing the activities to a different server, use the ArchiveService.fetchActivities\(directory\) command instead.
+    !!! note
+    Do not use this command to fetch activities that were exported from a different deployment of HCL Connections. This commands uses the member ID to find the activities, and member IDs are not persisted across different deployments. Only use this command to collect activities when you are importing the activities to the same server from which they were exported. If you are importing the activities to a different server, use the ArchiveService.fetchActivities\(directory\) command instead.
 
 ArchiveService.fetchActivitiesCreatedByMember\(java.lang.String directory, java.util.Hashtable member\)
 :   Gets list of all archived activities in the specified directory that were created by the specified member. Returns a java.util.Vector object; each object in the vector is a java.util.Hashtable object describing an archived activity in the directory. This command does not return community activities.
@@ -485,7 +496,8 @@ ArchiveService.fetchActivitiesCreatedByMember\(java.lang.String directory, java.
     member
     :   Hash table representing the member who created the archived activities returned from the MemberService object. For example, jane.
 
-    **Note:** Do not use this command to fetch activities that were exported from a different deployment of HCL Connections. This commands uses the member ID to find the activities, and member IDs are not persisted across different deployments. Only use this command to collect activities when you are importing the activities to the same server from which they were exported. If you are importing the activities to a different server, use the ArchiveService.fetchActivities\(directory\) command instead.
+    !!! note
+    Do not use this command to fetch activities that were exported from a different deployment of HCL Connections. This commands uses the member ID to find the activities, and member IDs are not persisted across different deployments. Only use this command to collect activities when you are importing the activities to the same server from which they were exported. If you are importing the activities to a different server, use the ArchiveService.fetchActivities\(directory\) command instead.
 
 ArchiveService.importActivities\(java.lang.String directory,
 java.util.Vector activities\)

@@ -6,7 +6,8 @@ Roles that you can define for users and groups on IBM® WebSphere® Application 
 
 Four roles are available across all HCL Connections applications: person, everyone, reader, and admin. Other roles are used by the applications for system administration.
 
-**Note:** The allAuthenticated role is mapped by default to the All Authenticated in Application's Realm special subject in WebSphere Application Server while the everyone role is mapped to the Everyone special subject. Avoid remapping these roles.
+!!! note
+    The allAuthenticated role is mapped by default to the All Authenticated in Application's Realm special subject in WebSphere Application Server while the everyone role is mapped to the Everyone special subject. Avoid remapping these roles.
 
 The global content administrator access for Libraries is configured in the FileNet® domain and object store. For more information, see the *Setting an LDAP group to be domain administrator instead of specific user* topic.
 

@@ -28,7 +28,8 @@ For supported versions of DB2, see the [HCL Connections system requirements](htt
         db2licm -a path\_to\_lic\_file/db2ese_u.lic
         ```
 
-        **Note:** For more information about using the license management tool command, see [db2licm](https://www.ibm.com/docs/db2/11.1?topic=licenses-db2licm-license-management-tool-command) in the IBM Db2 documentation.
+        !!! note
+    For more information about using the license management tool command, see [db2licm](https://www.ibm.com/docs/db2/11.1?topic=licenses-db2licm-license-management-tool-command) in the IBM Db2 documentation.
 
 6.  Verify that the license is registered by running the following command:
 

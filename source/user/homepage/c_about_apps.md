@@ -4,7 +4,8 @@ The **My Page** view is entirely devoted to apps. Move them around, customize th
 
 Click an app to learn more about it.
 
-**Note:** You might see fewer apps depending on how your administrator has configured the home page.
+!!! note
+    You might see fewer apps depending on how your administrator has configured the home page.
 
 -   [App overview](r_hp_widgets.md)
 -   [Using the Recommendations app on the home page](t_hp_using_recommended_items_widget.md)

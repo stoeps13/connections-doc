@@ -6,7 +6,8 @@ Settings you specify for the site control what users are allowed to do when they
 
 1.  From the Blogs home page, click the **Administration** tab.
 
-    **Note:** You must be logged in as an administrator to see the Administration tab.
+    !!! note
+    You must be logged in as an administrator to see the Administration tab.
 
 2.  Click the **Configuration** link.
 
@@ -19,7 +20,8 @@ Settings you specify for the site control what users are allowed to do when they
     |Site description \(for Blogs Homepage and feed\)|Enter a description that describes the purpose of the Blogs site.|<blank\>|
     |Handle of blog to serve as Blogs Homepage|The handle is a short name used in the URL for the Blogs site. The Homepage Blog is created automatically when Blogs is installed. The theme for this blog is Blogs Homepage Theme. You can customize the look of this theme from the Blogs Homepage Theme page.|homepage|
     |Enable active content filtering|When enabled, unsafe HTML is removed from Blog posts. Active content filtering does not scan attached files. Be sure to scan files before uploading. Disabling introduces vulnerability to malicious cross-site scripting \(XSS\) attacks.|Enabled|
-    |Automatic save when editing \(minutes\)|This option is to allow automatically save unsaved entries to prevent data loss. For new entries and draft entries, Blogs will save the current content in the editor every \# minutes according to this setting. **Note:** Make sure the autosave interval is less than the interval set for user session timeout or you will get an error notification that autosave failed.
+    |Automatic save when editing \(minutes\)|This option is to allow automatically save unsaved entries to prevent data loss. For new entries and draft entries, Blogs will save the current content in the editor every \# minutes according to this setting. !!! note
+    Make sure the autosave interval is less than the interval set for user session timeout or you will get an error notification that autosave failed.
 
 |15|
     |Number of entries to display in Blogs Homepage|This setting controls the maximum number of public blog entries that will be listed on the Blogs Homepage.|25|
@@ -28,7 +30,8 @@ Settings you specify for the site control what users are allowed to do when they
     |Allow blog comments|Allows any authenticated user to post a comment in response to a blog entry.|Enabled|
     |Allow blog trackbacks \(Inbound\)|Allows entries from other blogs to be posted to a blog on this site.|Enabled|
     |Allow blog trackbacks \(Outbound\)|Allows blog entries to be posted as comments in other blogs.|Enabled|
-    |Email notification of comments|Allows blog entry creators to receive notifications when a new comment has been posted to their entries. Rather than periodically checking their blog for new comments, the entry creator automatically receives an email. If comments for the blog are moderated, an email is sent to the blog entry creator when a new comment is posted. In addition to enabling this setting, mail must also be configured during installation. See the *Configuring Blogs* topic in the Installation section for details on configuring mail service. **Note:** If you enable this application, blog owners can still turn it off for their blogs, but if it is disabled, blog owners do not see an option for email notification of comments.
+    |Email notification of comments|Allows blog entry creators to receive notifications when a new comment has been posted to their entries. Rather than periodically checking their blog for new comments, the entry creator automatically receives an email. If comments for the blog are moderated, an email is sent to the blog entry creator when a new comment is posted. In addition to enabling this setting, mail must also be configured during installation. See the *Configuring Blogs* topic in the Installation section for details on configuring mail service. !!! note
+    If you enable this application, blog owners can still turn it off for their blogs, but if it is disabled, blog owners do not see an option for email notification of comments.
 
 |Disabled|
     |Enable file uploads|Allow a blog owner to upload files to be used on their blog. By default, Active Content Filtering scans file attachments that have a HTML, HTM or JS file extension. Be sure to scan files with other file extensions before uploading them.|Enabled|

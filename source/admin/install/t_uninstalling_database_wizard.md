@@ -39,13 +39,15 @@ To delete databases with the database wizard, complete the following steps:
 
     3.  Specify a database instance.
 
-        **Note:** The database instance that you specify must already exist on your system.
+        !!! note
+    The database instance that you specify must already exist on your system.
 
         For more detail about the database information, refer to [Creating databases using SQL scripts](t_install_databases_using_scripts.md).
 
 6.  Select the application databases that you want to delete and click **Next**.
 
-    **Note:** Application databases that are not installed are greyed out.
+    !!! note
+    Application databases that are not installed are greyed out.
 
 7.  Review the Pre-Configuration Task Summary to ensure that the values you entered on previous panels are correct. If you want to make a change, click **Back** to edit the value. Click **Delete** to begin deleting databases.
 

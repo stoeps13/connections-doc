@@ -26,7 +26,8 @@ You can enter a URL into your browser to display a standard set of indexing and 
     |File conversions per second|The average number of files downloaded and converted per second.|
     |File content retrieval|The average time in seconds taken to run the document conversion service.|
 
-    **Note:** The file content metrics display in the user interface only after each operation has been carried; you must index and run the document conversion service to view all the metrics.
+    !!! note
+    The file content metrics display in the user interface only after each operation has been carried; you must index and run the document conversion service to view all the metrics.
 
 -   To write internal metrics to a file, complete the following steps:
 

@@ -6,7 +6,8 @@ With Activities Plus, your users can view an activity as a board, giving them th
 
 Activities Plus uses the existing Component Pack infrastructure \(Docker/Kubernetes cluster\), and is seamlessly integrated with Connections on-premises applications such as Communities, Files, Homepage \(Orient Me\), and the Connections mobile application. Activities Plus uses the Mongo database already deployed inside the Component Pack.
 
-**Note:** Activities Plus is not integrated with the Connections Ideation Blog app used in Connections Communities. The Ideation Blog feature that generates a community activity when members "graduate" ideas from an ideation blog does not work in Activities Plus.
+!!! note
+    Activities Plus is not integrated with the Connections Ideation Blog app used in Connections Communities. The Ideation Blog feature that generates a community activity when members "graduate" ideas from an ideation blog does not work in Activities Plus.
 
 -   **[Installing Activities Plus services](../install/cp_3p_install_ap_services.md)**  
 Activities Plus in Connections Component Pack uses the existing Component Pack infrastructure, assuming that you have a working Component Pack environment.

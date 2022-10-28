@@ -15,7 +15,8 @@ The SearchService commands are used to access a service that provides an adminis
 -   Forums
 -   Profiles
 
-    **Note:** Profiles application results in two indexes: profiles and people\_finder.
+    !!! note
+    Profiles application results in two indexes: profiles and people\_finder.
 
 -   Wikis
 -   Status Updates
@@ -135,7 +136,8 @@ It is not possible to specify an end time for an indexing task. All tasks run fo
         -   all\_configured. Indicates that the operation is performed on all applications.
         -   optimizeFlag. A flag that indicates if an optimization step should be performed after indexing. This argument is a boolean value.
 
-            **Note:** The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
+            !!! note
+    The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
 
             Note that when you install HCL Connections, a search optimization task is set up to run every night by default. See *Search default tasks* for more information.
 
@@ -150,7 +152,8 @@ It is not possible to specify an end time for an indexing task. All tasks run fo
 
         When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
-        **Note:** The refreshTasks\(\) command should be used after this command for the new task definitions to take effect immediately. Otherwise, the changes take place when the Search application is next restarted.
+        !!! note
+    The refreshTasks\(\) command should be used after this command for the new task definitions to take effect immediately. Otherwise, the changes take place when the Search application is next restarted.
 
         You can also use the SearchService.addIndexingTask command to replace the 15min-search-indexing-task that is automatically configured when you install HCL Connections. By default, all installed HCL Connections applications are crawled and indexed every 15 minutes, except for a one-hour period between 01:00 and 02:00. To replace the default indexing task settings, first remove the existing indexing task using the SearchService.deleteTask\(String taskName\) command. Then, use the SearchService.addIndexingTask command to create a new indexing task with the values that you specify.
 
@@ -175,7 +178,8 @@ It is not possible to specify an end time for an indexing task. All tasks run fo
 
         All arguments are required.
 
-        **Note:** The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
+        !!! note
+    The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
 
         Note that when you install HCL Connections, a search optimization task is set up to run every night by default. See *Search default tasks* for more information.
 
@@ -188,7 +192,8 @@ It is not possible to specify an end time for an indexing task. All tasks run fo
 
         When the command runs successfully, 1 is printed to the wsadmin console. If the command does not run successfully, 0 is printed to the wsadmin console.
 
-        **Note:** The refreshTasks\(\) command should be used after this command for the new task definitions to take effect immediately. Otherwise, the changes take place when the Search application is next restarted.
+        !!! note
+    The refreshTasks\(\) command should be used after this command for the new task definitions to take effect immediately. Otherwise, the changes take place when the Search application is next restarted.
 
         You can also use the SearchService.addOptimizeTask command to replace the nightly-optimize-task that is automatically configured when you install HCL Connections. By default, this task runs nightly at 01:30. To replace the default optimize task settings, first remove the existing optimize task using the SearchService.deleteTask command. Then, use the SearchService.addOptimizeTask command to create a new optimize task with the values that you specify.
 

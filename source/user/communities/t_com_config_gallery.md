@@ -4,7 +4,8 @@ The Gallery app allows you to showcase files of any type, such as photos, videos
 
 Configure the Gallery to display content from community folders.
 
-**Note:** You cannot upload files to a community gallery. Instead, you upload files and add files to community folders using the Files app and then use a gallery to view these files. For information on community files and folders, see [Organizing content in community files](community_files_manage_frame.md).
+!!! note
+    You cannot upload files to a community gallery. Instead, you upload files and add files to community folders using the Files app and then use a gallery to view these files. For information on community files and folders, see [Organizing content in community files](community_files_manage_frame.md).
 
 1.  To configure a gallery:
 2.  Add the **Gallery** app to your community's Highlights page. For more information, see [Adding apps and widgets to the Highlights page](c_com_highlights_widgets.md).
@@ -16,7 +17,8 @@ Configure the Gallery to display content from community folders.
     -   To configure the gallery to display all community files, select **All Community Files**.
     -   To configure the gallery to display files from a single folder, select that folder.
 
-        **Note:** The folders that are listed include community folders and folders that are shared with the community.
+        !!! note
+    The folders that are listed include community folders and folders that are shared with the community.
 
 5.  Click **Set As Gallery**.
 

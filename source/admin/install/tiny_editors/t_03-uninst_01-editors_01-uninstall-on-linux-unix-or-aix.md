@@ -39,7 +39,8 @@ The following script makes numerous connections, and connection prompts for a pa
     ./uninstall.sh user@host\_name customization\_path provision\_path/webresources 
     ```
 
-    **Note:** This command will automatically backup any existing configuration it finds in
+    !!! note
+    This command will automatically backup any existing configuration it finds in
 
     -   customization\_path/javascript/tiny/editors/connections
     -   customization\_path/javascript/ephox/editors/connections
@@ -72,7 +73,8 @@ The following script makes numerous connections, and connection prompts for a pa
 
 5.  Verify the uninstall by browsing to the edit screen for a wiki or blog to verify that the Tiny editors are not being loaded and that it has reverted to the default editor.
 
-    **Note:** If after performing this step Tiny Editors for HCL Connections is still available then [restarting the Common enterprise application](t_restart-common-app.md) may be necessary to force a cache update.
+    !!! note
+    If after performing this step Tiny Editors for HCL Connections is still available then [restarting the Common enterprise application](t_restart-common-app.md) may be necessary to force a cache update.
 
 
 **Parent topic:**[Uninstalling Tiny Editors Integration](../../install/tiny_editors/t_03-uninst_01-editors_00-summary.md)

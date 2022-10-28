@@ -8,7 +8,8 @@ If trash is enabled, when community members remove files from a community, those
 
 Any community member can view the content of the trash, but you must be a community owner to restore files from the trash. Community owners can manage the trash content by checking it periodically and emptying it when files are no longer needed.
 
-**Note:** Trash can also be emptied automatically on a scheduled. The default period is 90 days. Once the trash is emptied, no content can be restored.
+!!! note
+    Trash can also be emptied automatically on a scheduled. The default period is 90 days. Once the trash is emptied, no content can be restored.
 
 To manage deleted files:
 

@@ -73,7 +73,8 @@ To create a response file, complete the following steps:
 
         -   To add applications, select the applications that you want to add in the Application Selection pane.
 
-            **Note:** Ensure that all the currently installed applications are also selected.
+            !!! note
+    Ensure that all the currently installed applications are also selected.
 
         -   To remove applications, clear the check boxes of the applications that you want to remove in the Application Selection pane.
         For more information, see the [Modifying the installation in interactive mode](t_modify_installation.md) topic.

@@ -20,7 +20,8 @@ To enable users to set their language preference, complete the following steps:
     app\_server\_root\profiles\dm\_profile\_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
 
 2.  Use the wsadmin client to access and check out the HCL Connections configuration files.
 
@@ -42,7 +43,8 @@ To enable users to set their language preference, complete the following steps:
             -   AIX, and Linux only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
 3.  Navigate to the working directory that you specified in the previous step and open the LotusConnections-config.xml file in a text editor.
 
@@ -52,7 +54,8 @@ To enable users to set their language preference, complete the following steps:
 
     2.  By default, the defaultLanguage attribute is blank and the product user interface is displayed in the language that is specified as the preferred language by each user's web browser. Use the defaultLanguage attribute to define a fallback language in which to display the user interface if the preferred language is not one that is supported by IBM Connections. The language that you specify here is displayed in the language selector in the product's navigation bar. Specify the language using the language code values in Table 1.
 
-        **Note:** Use the language code `iw` to specify Hebrew.
+        !!! note
+    Use the language code `iw` to specify Hebrew.
 
     3.  The default cookie name is lcLang. If you want to change it, specify a name in the cookieName attribute.
 

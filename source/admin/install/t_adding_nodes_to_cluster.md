@@ -59,7 +59,8 @@ db2jcc\_license\_cu.jar sql
         Member name
         :   The name of the server instance that is created for the cluster. The DM creates a server instance with this name.
 
-            **Note:** Each member name in the same cluster must be unique. The Integration Solutions Console prevents you from reusing the same member name in a cluster.
+            !!! note
+    Each member name in the same cluster must be unique. The Integration Solutions Console prevents you from reusing the same member name in a cluster.
 
         Select node
         :   The node where the server instance is located.
@@ -96,7 +97,8 @@ db2jcc\_license\_cu.jar sql
 
     JVM settings need to be adapted to equal the other existing application servers in the cluster. Refer to [Reviewing the JVM heap size](t_increase_jvm_heap.md). Other configuration settings to consider reviewing include **webcontainer** threads and **session timeouts** settings.
 
-    **Note:** Custom properties set on the existing application servers need to be reapplied to any new node and server post-installation. Find these properties in **WAS** \> **Application server** \> **\[server name\]** \> **Session management** \> **Custom properties**.
+    !!! note
+    Custom properties set on the existing application servers need to be reapplied to any new node and server post-installation. Find these properties in **WAS** \> **Application server** \> **\[server name\]** \> **Session management** \> **Custom properties**.
 
 6.  Enable the Startup beans service at server startup. Open the WebSphere Integrated Solutions Console.
 

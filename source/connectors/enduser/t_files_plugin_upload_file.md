@@ -29,7 +29,8 @@ Add files to Connections Files so that you can store them or share them with oth
 
     1.  Select **a Person** or **a Community**.
 
-**Note:** To share with a public community you must be using Connections 3.
+!!! note
+    To share with a public community you must be using Connections 3.
 
     2.  Select the **as Reader** or **as Editor** access level:
         -   Readers can read or download a file. They can add files to folders to which they have Contributor access, be notified of changes to the file, and share the file with other people.
@@ -38,14 +39,16 @@ Add files to Connections Files so that you can store them or share them with oth
         -   To share with people, click in the field to display the names of people you have recently shared files with. If the person you are looking for is displayed, select them. If they are not displayed, type a name or email address, and then select the person.
         -   To share with a community, start typing the name of the community, and then select the community when it displays.
 
-**Note:** When you share a file with a public community the file becomes public.
+!!! note
+    When you share a file with a public community the file becomes public.
 
 |
     |**Public \(visible to everyone\)
 
 **|Make the file visible to everyone, even people who have not logged in.
 
-**Note:** An administrator can configure the system so that everyone must log in, or only a certain group of people can log in. In this case public files are only available to users who are able to log in.
+!!! note
+    An administrator can configure the system so that everyone must log in, or only a certain group of people can log in. In this case public files are only available to users who are able to log in.
 
 |
 

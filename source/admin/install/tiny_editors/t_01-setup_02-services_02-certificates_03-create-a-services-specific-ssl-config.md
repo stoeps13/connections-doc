@@ -39,7 +39,8 @@ Before you begin:
 
 7.  Open the [Tiny Editors Services configuration file application.conf](t_01-setup_02-services_01-appconf_01-create-an-application-conf.md) in a text editor.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into application.conf. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into application.conf. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 8.  Under the `ephox` root element, define the SSL configuration for the Tiny Editors Services by adding the following elements:
 

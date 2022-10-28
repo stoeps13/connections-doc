@@ -21,7 +21,8 @@ There are four commands for synchronizing remote application data with the Commu
 -   CommunitiesRemoteAppService.resyncRemoteAppsForAllCommunities\("widgetDefId"\) synchronizes the specified remote application for all communities.
 -   CommunitiesRemoteAppService.restartResyncRemoteAppsForAllCommunities\("lastCommunityUuid", "widgetDefId"\) restarts the synchronization if a network or server outage causes resyncRemoteAppsForAllCommunities\(\) to fail.
 
-**Note:** These commands can result in a loss of data if misused. Therefore, use these commands under the following circumstances only:
+!!! note
+    These commands can result in a loss of data if misused. Therefore, use these commands under the following circumstances only:
 
 -   A remote application database is restored from backup and some Communities data is lost.
 -   A remote application is not synchronized with Communities data because of a software defect.
@@ -74,7 +75,8 @@ There are four commands for synchronizing remote application data with the Commu
     -   Library
     -   StatusUpdates
     -   Wiki
-    **Note:** widgetDefId values are case-sensitive, you must enter these values as shown.
+    !!! note
+    widgetDefId values are case-sensitive, you must enter these values as shown.
 
     For example:
 

@@ -8,7 +8,8 @@ Two HCL logos display in the product by default. The first logo contains the tex
 
 2.  Create a CSS file that is named custom.css and store it in the following subdirectory of the customization directory: customizationDir/themes/<theme\_name\>Theme.
 
-    **Note:** Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
+    !!! note
+    Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
 
     For information about how to find out where your customizationDir directory is located, see [Determining where to save your customizations](t_customize_find_custom_directory.md).
 
@@ -56,7 +57,8 @@ Two HCL logos display in the product by default. The first logo contains the tex
         -   ibmLogoOpaque16.png is the file name of your company logo.
         -   image\_height is the height of the logo.
         -   image\_width is the width of the logo.
-    **Note:** If you are supporting right-to-left languages, such as Arabic or Hebrew, you must make equivalent changes to the customRTL.css file and save that in the customizationDir/themes/<theme\_name\>Theme directory as well.
+    !!! note
+    If you are supporting right-to-left languages, such as Arabic or Hebrew, you must make equivalent changes to the customRTL.css file and save that in the customizationDir/themes/<theme\_name\>Theme directory as well.
 
 5.  Save and close the custom.css file.
 

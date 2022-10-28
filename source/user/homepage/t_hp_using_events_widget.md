@@ -11,7 +11,8 @@ The Events app lists the community events that you are following and the events 
 
 -   Click **Add to Personal Calendar** to add a feed from the app to your personal calendar.
 
-    **Note:** Your email application must support iCal or iCalendar feeds for this functionality to be available.
+    !!! note
+    Your email application must support iCal or iCalendar feeds for this functionality to be available.
 
 -   To configure display settings for the app:
 

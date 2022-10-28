@@ -84,7 +84,8 @@ Before you begin:
 
 8.  Verify the uninstall by browsing to the edit screen for a wiki or blog to verify that the Tiny editors are not being loaded and that it has reverted to the default editor.
 
-    **Note:** If after performing this step Tiny Editors for HCL Connections is still available then [restarting the Common enterprise application](t_restart-common-app.md) may be necessary to force a cache update.
+    !!! note
+    If after performing this step Tiny Editors for HCL Connections is still available then [restarting the Common enterprise application](t_restart-common-app.md) may be necessary to force a cache update.
 
 
 **Parent topic:**[Uninstalling Tiny Editors Integration](../../install/tiny_editors/t_03-uninst_01-editors_00-summary.md)

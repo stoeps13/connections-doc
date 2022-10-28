@@ -4,7 +4,8 @@ Enable round-trip editing for files so that users can check out a file and edit 
 
 Round-trip editing is not available by default. Being able to perform round-trip editing is dependent on the desktop plug-ins being installed on users' clients.
 
-**Note:** Round-trip editing should be configured before the desktop clients are configured. If round-trip editing is configured after the desktop client plug-ins, users will have to refresh their server configuration manually.
+!!! note
+    Round-trip editing should be configured before the desktop clients are configured. If round-trip editing is configured after the desktop client plug-ins, users will have to refresh their server configuration manually.
 
 To ensure that round-trip editing is enabled, perform the following steps:
 

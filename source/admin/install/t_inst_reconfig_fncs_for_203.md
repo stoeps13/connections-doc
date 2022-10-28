@@ -12,14 +12,16 @@ For an existing FileNet installation, refer to the FileNet Collaboration Service
 
 With Connections Content Manager and a new FileNet deployment, these configuration options are available in [<connections\_install\_root\>](../plan/r_install_prerqs.md)\\addons\\ccm\\FNCS\\configure\\profiles\\CCM. For example: [<connections\_install\_root\>](../plan/r_install_prerqs.md)/addons/ccm/FNCS/configure/profiles/CCM on Linux™.
 
-**Note:** The path might be <connections\_install\_root\>\\FNCS...
+!!! note
+    The path might be <connections\_install\_root\>\\FNCS...
 
 1.  Run the Enterprise Content Manager Client configuration and deployment tool \(Configuration Manager UI or CMUI\):
 
     -   For Windows™: connections\_root\\FNCS\\configure\\configmgr.exe
     -   For Linux or AIX®: /opt/IBM/Connections/FNCS/configure/configmgr.bin
 
-        **Note:** If you cannot run configmgr.bin because your system does not support a user interface, then you can change the XML files manually in <FNCS home\>/configure/profiles/CCM. You can then run them with the command as described in Step 3.
+        !!! note
+    If you cannot run configmgr.bin because your system does not support a user interface, then you can change the XML files manually in <FNCS home\>/configure/profiles/CCM. You can then run them with the command as described in Step 3.
 
     -   Select **Modify an existing deployment profile** from the list of deployment options.
 2.  Ensure that the Content Platform Engine is installed and running and then click **Next**.To verify that Content Platform Engine is installed and running, take the following steps:
@@ -53,7 +55,8 @@ With Connections Content Manager and a new FileNet deployment, these configurati
 
         Choose the new feature **Collocated with Content Engine** if FNCS runs on the same WebSphere Application Server server as CE and you want to use a local EJB connection.
 
-        **Note:** This option is recommended for most CCM deployments.
+        !!! note
+    This option is recommended for most CCM deployments.
 
         -   If you specify "True" for this value, you do not have to enter a CE URL. The field is hidden.
         -   If your FNCS is not collocated with CE, enter the CE EJB URL here. The typical format is `http://<hostname>:<ejb port>/FileNet/Engine`, for example:http://ccv01233.usca.example.com:2809/FileNet/Engine.
@@ -71,7 +74,8 @@ With Connections Content Manager and a new FileNet deployment, these configurati
 
         This task generates an .ear file based on the options you specified in the earlier tasks. The default application name is **navigator**, and the default ear name is navigatorEAR.ear. In a plain CCM profile, this .ear file contains the FNCS application only.
 
-        **Note:** Do not change the context root.
+        !!! note
+    Do not change the context root.
 
         -   Provide the correct Build script path, such as [connections\_root](../plan/i_ovr_r_directory_conventions.md)\\addons\\ccm\\FNCS\\configure\\explodedformat\\create\_ear.bat, and the correct tmp path, such as [connections\_root](../plan/i_ovr_r_directory_conventions.md)\\addons\\ccm\\FNCS\\configure\\tmp.
         -   When this task is finished, you have a completed .ear file that is ready for deployment to WebSphere Application Server. You can deploy it manually using the WebSphere Application Server administrative console or use the Deploy the web application task in CMUI. The navigatorEAR.ear file is located it in the [connections\_root](../plan/i_ovr_r_directory_conventions.md)\\addons\\ccm\\FNCS\\configure\\deploy directory.
@@ -106,22 +110,26 @@ With Connections Content Manager and a new FileNet deployment, these configurati
     1.  In WebSphere Application Server administrative console, browse to WebSphere Enterprise Applications.
     2.  Select the **FileNet Collaboration Services** option.
 
-        **Note:** With the 2.0.3 release, the default application name is **navigator**.
+        !!! note
+    With the 2.0.3 release, the default application name is **navigator**.
 
     3.  Click **Update**.
     4.  For **Application update** options, select the**Replace, add, or delete multiple files** option.
     5.  If you are running the browser on the Deployment Manager node, select local file system and then locate the auth\_filter\_patch.zip file.
 
-        **Note:** The auth\_filter\_patch.zip file is in one of two directories, depending on your system configuration:
+        !!! note
+    The auth\_filter\_patch.zip file is in one of two directories, depending on your system configuration:
 
         -   [connections\_root](../plan/i_ovr_r_directory_conventions.md)/ccm/ccm/ccm/auth\_filter\_patch/auth\_filter\_patch.zip
         -   [connections\_root](../plan/i_ovr_r_directory_conventions.md)/xkit/filenetConfig/auth\_filter\_patch.zip
-        **Note:** If the browser is not running on the Deployment Manager \(DM\) node, then select **remote** file system and choose the DM file system, locating the auth\_filter\_patch.zip file in the directory previously stated.
+        !!! note
+    If the browser is not running on the Deployment Manager \(DM\) node, then select **remote** file system and choose the DM file system, locating the auth\_filter\_patch.zip file in the directory previously stated.
 
     6.  Click **Next** and **OK** to update the application.
 10. Reset the OAuthClient security role to user/group mapping:
 
-    **Note:** You must reset the OAuthClient mapping every time FNCS is reconfigured.
+    !!! note
+    You must reset the OAuthClient mapping every time FNCS is reconfigured.
 
     1.  In the WebSphere Application Server administrative console, browse to WebSphere Enterprise Applications.
 

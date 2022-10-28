@@ -42,7 +42,8 @@ For example, customizationDir/strings/com.example.resources\_de.properties, wher
 |sv|Swedish|
 |th|Thai|
 |tr|Turkish|
-|zh|Simplified Chinese**Note:** If you provide translated strings in Simplified Chinese, be sure to also provide strings in Traditional Chinese. When the customer's language preference is set to Traditional Chinese, but that language is not provided, Simplified Chinese is displayed by default.
+|zh|Simplified Chinese!!! note
+    If you provide translated strings in Simplified Chinese, be sure to also provide strings in Traditional Chinese. When the customer's language preference is set to Traditional Chinese, but that language is not provided, Simplified Chinese is displayed by default.
 
 |
 |zh-TW|Traditional Chinese|

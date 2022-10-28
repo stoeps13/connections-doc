@@ -34,13 +34,15 @@ To uninstall HCL Connections in console mode, complete the following steps:
     -   Because some of these files might be used by other programs, it is possible that you are not allowed to remove all of the following files.
     1.  Connections installation files: [connections\_root](../plan/i_ovr_r_directory_conventions.md)
 
-        **Note:** If you did not install Connections in the default directory, delete the directory where you installed the product.
+        !!! note
+    If you did not install Connections in the default directory, delete the directory where you installed the product.
 
     2.  Connections shared data: Delete the directories that you specified for shared data when you installed Connections.
 
     3.  Connections local data: On each node, delete the directories that you specified for local data when you installed Connections.
 
-        **Note:** Deleting Connections data files makes the original deployment unrecoverable. If you plan to reinstall Connections and use your old data, do not delete the data files.
+        !!! note
+    Deleting Connections data files makes the original deployment unrecoverable. If you plan to reinstall Connections and use your old data, do not delete the data files.
 
     4.  Connections configuration files: Delete the [profile\_root](../plan/i_ovr_r_directory_conventions.md)/config/cells/cell\_name/LotusConnections-config directory, where cell\_name is the name of your WebSphere Application Server cell.
 

@@ -18,7 +18,8 @@ You can add community-owned files to community folders. Note that the following 
         3.  Enter the folder details, then click **Create**.
     -   If the Files app is added to the community **Highlights** page, click **Add Folders** in the **Files** area.
 
-**Note:** Want to change the folder name and description? Select the folder to open it, then click the folder action menu ![Folder action menu](images/folder_action.png) and select **Edit Properties**.
+!!! note
+    Want to change the folder name and description? Select the folder to open it, then click the folder action menu ![Folder action menu](images/folder_action.png) and select **Edit Properties**.
 
 ## Creating a nested subfolder {#section_gd4_1pv_f5b .section}
 
@@ -38,7 +39,8 @@ You can move personal folders or community folders, as long as you have editing 
 3.  Select the checkbox for the folder that you want to move, then click **Move To**.
 4.  Select the folder you'd like to move it into, then click **Move Here**.
 
-**Note:** Want an easier way? From the **Community Folders** tab, just click and drag the folder that you want to move to another folder.
+!!! note
+    Want an easier way? From the **Community Folders** tab, just click and drag the folder that you want to move to another folder.
 
 ## Adding a community-owned file to a folder {#section_yfr_y4v_f5b .section}
 

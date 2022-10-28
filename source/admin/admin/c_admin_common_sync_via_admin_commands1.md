@@ -6,7 +6,8 @@ Each Connections application has its own database with membership tables that co
 
 The following administrative commands synchronize user data between the application databases and the configured directory in your environment. They also log entries in the application\_nameUlcSyncCmd.log file that reports updated data items.
 
-**Note:** When Profiles is installed, do not generally use these commands. Profiles automatically synchronizes user data with the application databases. There is a set of Profiles administration commands for synchronizing user data. However, you can use the commands described here to resolve situations where an application database needs to be corrected. For example, if synchronization occurs for all but one application and you have a mismatch in that application's database.
+!!! note
+    When Profiles is installed, do not generally use these commands. Profiles automatically synchronizes user data with the application databases. There is a set of Profiles administration commands for synchronizing user data. However, you can use the commands described here to resolve situations where an application database needs to be corrected. For example, if synchronization occurs for all but one application and you have a mismatch in that application's database.
 
 Many of the synchronization commands have a matching preview command that shows you what the synchronization command does when you run it. For example, the FilesMemberService.previewSyncAllMembersByExtId command generates a log showing what the FilesMembersService.syncAllMemberByExtId command would do if you ran it.This preview can be useful when mismatches are suspected. The logs are in the standard logging directory for the server; for example, where the cluster'sSystemOut.log file is located. The log uses the following naming convention: application\_nameUlcSyncCmd.log. If the log file already exists, the new output is appended to the file.
 
@@ -68,7 +69,8 @@ The application\_name variable represents the name of the application. The follo
 -   Forums
 -   News
 
-    **Note:** The Home page, News repository, and Search applications share the same database, so that running the synchronization command against News applies to all three applications.
+    !!! note
+    The Home page, News repository, and Search applications share the same database, so that running the synchronization command against News applies to all three applications.
 
 -   Wikis
 -   Metrics
@@ -89,12 +91,14 @@ application\_nameMemberService.syncAllMembersByExtId\( \{"updateOnEmailLoginMatc
 
     -   If a match for the user's external ID is not found in the configured directory, nor is a match found for the user's email address and login names, then the state of the user is changed to inactive in the application database.
 
-    **Note:** When none of the credentials match, the Boolean \(true or false\) parameter is ignored; the user is always inactivated.
+    !!! note
+    When none of the credentials match, the Boolean \(true or false\) parameter is ignored; the user is always inactivated.
 
 application\_nameMemberService.syncMemberByExtId\("currentExternalId"\[, \{"newExtId" : "id-string" \[, "allowExtIdSwap" : \["true" \| "false"\] \] \} \] \)
 :   This determines whether the user identified by the first parameter, which is an eternal ID, should be is active or inactive by checking the configured directory for the external ID. The main purpose of this command is to reactivate a user.
 
-    **Note:** This is a complicated command that should be used carefully, particularly when swap is allowed.
+    !!! note
+    This is a complicated command that should be used carefully, particularly when swap is allowed.
 
     You can perform the following tasks with this command:
 
@@ -224,11 +228,13 @@ The application\_name variable represents the name of the application. The follo
 -   Forums
 -   News
 
-    **Note:** The Home page, News repository, and Search applications share the same database, so running the synchronization command against News applies to all three areas.
+    !!! note
+    The Home page, News repository, and Search applications share the same database, so running the synchronization command against News applies to all three areas.
 
 -   Wikis
 
-**Note:** The application\_nameMemberService.syncAllMemberExtIds\(\) command was deprecated in version 3.
+!!! note
+    The application\_nameMemberService.syncAllMemberExtIds\(\) command was deprecated in version 3.
 
 application\_nameMemberService.syncBatchMemberExtIdsByLogin\("loginFile" \[, \{"allowInactivate" : \["true" \| "false"\] \} \] \)
 :   The command application\_nameMemberService.syncBatchMemberExtIds\(filename\) was deprecated in version 2.5. Use this command or the application\_nameMemberService.syncBatchMemberExtIdsByEmail\(emailFile\) command instead.

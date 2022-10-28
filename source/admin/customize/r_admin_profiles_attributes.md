@@ -6,7 +6,8 @@ The Profiles application provides the social directory structure leveraged by al
 
 Each person in Profiles is described by a set of properties that are grouped into a type definition. The type definition can include standard properties that are defined by default, or you can add extension properties defined by you to meet your organization's needs.
 
-**Note:** Mapping from the LDAP directory \(or other source\) to the Profiles database can also be customized, as can mapping from the Profiles database to the user interface. For more information on mapping LDAP data to Profiles database fields, see [Mapping fields manually](../install/t_prof_tdi_mapfields.md).
+!!! note
+    Mapping from the LDAP directory \(or other source\) to the Profiles database can also be customized, as can mapping from the Profiles database to the user interface. For more information on mapping LDAP data to Profiles database fields, see [Mapping fields manually](../install/t_prof_tdi_mapfields.md).
 
 -   **[Standard properties in the data model](../customize/r_admin_profiles_attributes_std.md)**  
 The Profiles component defines a set of standard properties to support common organization directory needs.

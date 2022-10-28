@@ -8,7 +8,8 @@ You will have some limitations in the anonymous mode. E.g. you will not have Con
 
 It is not possible to like or comment on blog posts or wiki entries.
 
-**Note:** Anonymous access is not developed as an internet solution. Please use it only for your intranet solution.
+!!! note
+    Anonymous access is not developed as an internet solution. Please use it only for your intranet solution.
 
 **Parent topic:**[Page Management](../../connectors/icec/cec-page_management.md)
 

@@ -14,7 +14,8 @@ To perform a silent modification, complete the following steps:
 
 2.  Enter the following command: ./imcl -input response\_file -log log\_file -acceptLicense
 
-    **Note:** The [IM\_root](../plan/i_ovr_r_directory_conventions.md)/eclipse directory contains a similar file called IBMIM.exe but that file is not suitable for silent installation.
+    !!! note
+    The [IM\_root](../plan/i_ovr_r_directory_conventions.md)/eclipse directory contains a similar file called IBMIM.exe but that file is not suitable for silent installation.
 
     where response\_file is the full path and name of the response file and log\_file is the full path and name of the log file. The default name of the response file is LC.rsp. By default, the response file is in [connections\_root](../plan/i_ovr_r_directory_conventions.md)
 

@@ -6,7 +6,8 @@ HCL Connections administrators must be dedicated users. Their only purpose shoul
 
 Only a Home page administrator can add, remove, enable, or disable widgets on the Home page. For more information, see the *Administering the Home page from the user interface* topic.
 
-**Note:** You can also create global administrators for any of the applications, for the purpose of managing content. For more information, see the *Administering application content* topic.
+!!! note
+    You can also create global administrators for any of the applications, for the purpose of managing content. For more information, see the *Administering application content* topic.
 
 To configure administrative access to the Home page application, complete the following steps:
 

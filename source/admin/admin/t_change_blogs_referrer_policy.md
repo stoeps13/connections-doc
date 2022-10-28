@@ -26,7 +26,8 @@ Because some sites depend on the Referer HTTP Request Header for functionality, 
 
 2.  After you apply the change to the LCC.xml file, sync and restart the Blog application.
 
-    **Note:** For more information on the subject of the HTTP Referrer Policy Header, see [Referrer Policy, Latest published version](https://www.w3.org/TR/referrer-policy/) on the W3C website.
+    !!! note
+    For more information on the subject of the HTTP Referrer Policy Header, see [Referrer Policy, Latest published version](https://www.w3.org/TR/referrer-policy/) on the W3C website.
 
 
 **Parent topic:**[Administering Blogs](../admin/c_administering_blogs.md)

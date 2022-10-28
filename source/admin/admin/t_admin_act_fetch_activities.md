@@ -75,7 +75,8 @@ For more information about using the wsadmin client, see [Starting the wsadmin c
         ActivityService.fetchActivitiesByOwner\(java.util.Hashtable member\)
         :   List activities which the member owns.
 
-    **Note:** Results from fetchActivitiesByMember\(\) and fetchActivitiesByOwner\(\) do not include community activities.
+    !!! note
+    Results from fetchActivitiesByMember\(\) and fetchActivitiesByOwner\(\) do not include community activities.
 
 
 For information about how filter the list of results into a smaller subset, see *Narrowing down results*.

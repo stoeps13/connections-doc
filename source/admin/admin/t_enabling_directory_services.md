@@ -18,7 +18,8 @@ When you set the Profiles database to be the user directory, only authentication
     app\_server\_root\profiles\dm\_profile\_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
 
 2.  Use the wsadmin client to access and check out the HCL Connections configuration files.
 
@@ -40,7 +41,8 @@ When you set the Profiles database to be the user directory, only authentication
             -   AIX, and Linux only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
 3.  Use the following command to enable the Profiles directory service extension:
 

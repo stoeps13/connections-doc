@@ -6,7 +6,8 @@ To edit configuration files, you must use the wsadmin client. See [Starting the 
 
 Configure Profiles using scripts accessed with the wsadmin client. These scripts use the AdminConfig object available in the IBM® WebSphere® Application Server wsadmin client to interact with the Profiles configuration file. Changes to configuration settings require node synchronization and a restart of the Profiles server before they take effect.
 
-**Note:** There are no Profiles application administrative tools for adding or removing a user's profile. If you want to add or remove a profile for a person, you must add or remove that person's entry from the corporate LDAP directory system. Use that directory's native tools to create and delete user entries. When you perform standard synchronization tasks on the Profiles database, the profiles are updated. If you add a new user to the LDAP directory, a profile is created for that user. If you remove a user entry from the LDAP directory, that user's profile is removed. See *Synchronizing user data between Profiles and the LDAP directory* for more details.
+!!! note
+    There are no Profiles application administrative tools for adding or removing a user's profile. If you want to add or remove a profile for a person, you must add or remove that person's entry from the corporate LDAP directory system. Use that directory's native tools to create and delete user entries. When you perform standard synchronization tasks on the Profiles database, the profiles are updated. If you add a new user to the LDAP directory, a profile is created for that user. If you remove a user entry from the LDAP directory, that user's profile is removed. See *Synchronizing user data between Profiles and the LDAP directory* for more details.
 
 To change Profiles configuration settings, complete the following steps:
 
@@ -32,11 +33,13 @@ To change Profiles configuration settings, complete the following steps:
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes \(/\) to separate directories in the file path, regardless of your operating system.
 
-            **Note:** In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
+            !!! note
+    In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
 
             -   AIX
             -   Linux
-            **Note:** The directory must grant write permissions or the command does not complete successfully.
+            !!! note
+    The directory must grant write permissions or the command does not complete successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the Profiles application. This argument is required. It is also case-sensitive. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor: print AdminControl.getCell\(\)
         For example:

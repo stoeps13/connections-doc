@@ -25,7 +25,8 @@ Supported container runtimes
 Supported Kubernetes versions
 :   See [HCL Connections 8.0 System Requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073654). Component Pack for Connections follows the same Kubernetes support pattern that Kubernetes itself is following.
 
-    **Note:** Applications on which Component Pack relies, such as community ingress, have their own Kubernetes support pattern, and should be double-checked before beginning a Component Pack install or upgrade.
+    !!! note
+    Applications on which Component Pack relies, such as community ingress, have their own Kubernetes support pattern, and should be double-checked before beginning a Component Pack install or upgrade.
 
 Supported Kubernetes flavors
 :   Component Pack is designed to work with Kubernetes platforms that are using containerd as the container runtime. To ensure compatibility, all development and testing is done internally on the vanilla Kubernetes installations, without preference for any specific provider.

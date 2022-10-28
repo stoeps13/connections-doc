@@ -45,19 +45,23 @@ When the following feature is enabled, users can follow people and content that 
         -   self. Users with the specified profile type can follow themselves to subscribe to their own updates. Administrators can also follow users with the specified profile type.
         -   colleagues\_not\_self. Only people who belong to the network of the user with the specified profile type, and who have the person role, can follow the user. Users with the specified profile type cannot follow themselves.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   colleagues\_and\_self. People who belong to the network of the user with the specified profile type, and who have the person or self role, can follow the user. Users of the specified profile type can also follow themselves to subscribe to their own updates.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   person\_not\_self. Only users with the person J2EE role can post follow users with the specified profile type. Users with the specified profile type cannot follow themselves.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   person\_and\_self. Users with the person J2EE role can follow users with the specified profile type. Users of the specified profile type can also follow themselves to subscribe to their own updates.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
     For example:
 

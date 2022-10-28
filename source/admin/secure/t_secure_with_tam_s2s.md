@@ -8,7 +8,8 @@ To send all traffic through your WebSeal server, including server to server traf
 
         execfile\("app\_server\_root/profiles/DMGR/bin/connectionsConfig.py"\)LCConfigService.checkOutConfig\("working\_directory","cell\_name"\)
 
-        **Note:** If you are prompted to specify which server to connect to, type 1.
+        !!! note
+    If you are prompted to specify which server to connect to, type 1.
 
         where:
 
@@ -68,7 +69,8 @@ To send all traffic through your WebSeal server, including server to server traf
 
         LCConfigService.checkInConfig\(\)
 
-    **Note:** You can also complete this step by running the connectionsConfig.py script in the wsadmin client.
+    !!! note
+    You can also complete this step by running the connectionsConfig.py script in the wsadmin client.
 
 2.  \(Do not complete this step for Security Access Manager with SPNEGO\) Add a Security Access Manager authenticator property by editing the LotusConnections-config.xml file.
 
@@ -86,7 +88,8 @@ To send all traffic through your WebSeal server, including server to server traf
 
     2.  Set the value, in minutes, of the **CookieTimeout** attribute to be equal to or less than the maximum timeout and idle timeout [values that you configured in Security Access Manager](t_secure_with_tam.md#TheValueOfTheCookieTimeoutAttribut).
 
-        **Note:** If the parameter does not already exist in the LotusConnections-config.xml file, create it. Open the file in a text editor and add the parameter to the customAuthenticator element.
+        !!! note
+    If the parameter does not already exist in the LotusConnections-config.xml file, create it. Open the file in a text editor and add the parameter to the customAuthenticator element.
 
     3.  Save your changes.
 
@@ -94,7 +97,8 @@ To send all traffic through your WebSeal server, including server to server traf
 
         LCConfigService.checkInConfig\(\)
 
-        **Note:** The connectionsAdmin J2C alias that you specified during installation must correspond to a valid account that can authenticate with ISAM. It may map to a back-end administrative user account but is not intended to be used as a user account for Connections. This account must be capable of authenticating for single sign-on against ISAM. If you need to update the userid or credentials for this alias, see the [Changing references to administrative credentials](../admin/t_admin_common_changing_admin_passwords.md) topic.
+        !!! note
+    The connectionsAdmin J2C alias that you specified during installation must correspond to a valid account that can authenticate with ISAM. It may map to a back-end administrative user account but is not intended to be used as a user account for Connections. This account must be capable of authenticating for single sign-on against ISAM. If you need to update the userid or credentials for this alias, see the [Changing references to administrative credentials](../admin/t_admin_common_changing_admin_passwords.md) topic.
 
 
 **Parent topic:**[Enabling single sign-on for Security Access Manager](../secure/t_secure_with_tam.md)

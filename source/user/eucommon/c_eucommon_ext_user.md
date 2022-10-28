@@ -18,7 +18,8 @@ To invite one or more guests using a web client:
     -   Enter the name and email address of the person to invite. You can also personalize the invitation message.
     -   To invite multiple guests at once, click the **Import CSV** tab and click **Select file**. The entries in the file must have the following format: email address,Given name,Surname
 
-        **Note:** To import CSV files, you must first be assigned the Connections admin role.
+        !!! note
+    To import CSV files, you must first be assigned the Connections admin role.
 
 2.  Click **Send Invitation**. The person receives an email invitation that directs them to the registration web page, and then to the Connections login screen.
 3.  Optionally, click **Invite Another** to continue inviting more guests.
@@ -53,7 +54,8 @@ If you are an external user, you can do the following:
     -   A file is shared with you.
 -   Follow a file that is shared with you, so you receive email and Home page updates when the file is edited or updated with a new version.
 
-    **Note:** In general, which email notifications you receive and when you receive them depends on your notification settings. You can set up individual emails or daily or weekly digests. For more information, see [Getting browser and email notifications](../profiles/c_pers_getting_notifications.md).
+    !!! note
+    In general, which email notifications you receive and when you receive them depends on your notification settings. You can set up individual emails or daily or weekly digests. For more information, see [Getting browser and email notifications](../profiles/c_pers_getting_notifications.md).
 
 
 ## What external users cannot do {#section_npm_5pp_blb .section}
@@ -72,11 +74,13 @@ As an external user, you cannot see the following Connections items or perform t
 -   See or search the company directory \(including using type-ahead\) to find people.
 -   See recommended content or people.
 
-    **Note:** External users cannot see public recommendations but they can see private recommendations. For example, External users can see a file recommended to them within a community to which they are a member.
+    !!! note
+    External users cannot see public recommendations but they can see private recommendations. For example, External users can see a file recommended to them within a community to which they are a member.
 
 -   Access the **Profile** menu.
 
-    **Note:** External users can, however access their own profile by using the **Profile** view.
+    !!! note
+    External users can, however access their own profile by using the **Profile** view.
 
 -   Access other user profiles.
 -   See community metrics.

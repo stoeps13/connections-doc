@@ -6,7 +6,8 @@ To enable Touchpoint, see [Touchpoint configuration properties](tp_r_touchpoint_
 
 **Supported video file types:** Touchpoint currently supports the video formats MP4, WebM, and Ogg. It is best to use MP4 as it provides the best browser support. Other video file types might not play natively on your users' browsers and operating systems.
 
-**Note:** In step 1, you'll need to supply the URL to your video. The video source can be any video host that provides a URL to a video resource.
+!!! note
+    In step 1, you'll need to supply the URL to your video. The video source can be any video host that provides a URL to a video resource.
 
 1.  Update welcomeVideoUrl with the respective host name as follows:
 

@@ -29,11 +29,13 @@ If you want to load only a subset of files from a location, you edit this file.
 
 |
 
-    **Note:** When dumping multiple pronunciation files, there must be a period separator between each entry. If the separator is omitted, an error is generated when you use the load command to import the files into the profiles database.
+    !!! note
+    When dumping multiple pronunciation files, there must be a period separator between each entry. If the separator is omitted, an error is generated when you use the load command to import the files into the profiles database.
 
 3.  To populate the new database with the pronunciation files that you saved in the previous step, use the load\_pronounce\_from\_files.bat or load\_pronounce\_from\_files.sh command to read the files from disk and populate the profiles database with them
 
-    **Note:** The table in step 1 shows the properties that relate to this command.
+    !!! note
+    The table in step 1 shows the properties that relate to this command.
 
 
 Here is an example of an entry from the collect\_pronounce.in file:

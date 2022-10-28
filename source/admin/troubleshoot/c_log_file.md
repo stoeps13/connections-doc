@@ -35,7 +35,8 @@ where:
 
     |Connections application or component|Prefix|
     |------------------------------------|------|
-    |Activities**Note:** The Quartz Scheduler, a component of Activities does not use the Activities prefix, but its messages do include the string org.quartz.
+    |Activities!!! note
+    The Quartz Scheduler, a component of Activities does not use the Activities prefix, but its messages do include the string org.quartz.
 
 |CLFRA|
     |Blogs|CLFRS|

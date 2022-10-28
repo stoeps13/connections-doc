@@ -10,7 +10,8 @@ The update process changes several configuration files, including files that you
 
 You must manually migrate the files that are referenced in the **Migrate manually** column of the following table.
 
-**Note:** If you are upgrading to version 8.0 using the side-by-side approach, you must manually migrate ALL of files in the table.
+!!! note
+    If you are upgrading to version 8.0 using the side-by-side approach, you must manually migrate ALL of files in the table.
 
 |Customization|Automatically preserved by Update function|Migrate manually\*|
 |-------------|------------------------------------------|------------------|
@@ -58,7 +59,8 @@ The ui-extensions framework is deprecated, so you must manually migrate your 8.0
 |No|Yes|
 |TouchpointIf you modified parts of the Touchpoint application within the installedApps path in 7.0 \(like JSPs or language-related properties\), make sure you back up these modifications. After upgrading to Connections 8.0, modify the default product again based on your requirements.
 
-**Note:** This kind of customization is not recommended.
+!!! note
+    This kind of customization is not recommended.
 
 |No|Yes|
 |InviteIf the Invite feature is configured, transfer the settings from the configuration file \(selfregistration-config.xml\) to the new environment.

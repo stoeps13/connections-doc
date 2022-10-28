@@ -47,13 +47,15 @@ xxx=LDAPemployeeNumber
 employeeNumber={ func_employeeNumber_simple}
 ```
 
-**Note:** The purpose of the `xxx=LDAPemployeeNumberline` line is simply to make LDAPemployeeNumber available in the work entry.
+!!! note
+    The purpose of the `xxx=LDAPemployeeNumberline` line is simply to make LDAPemployeeNumber available in the work entry.
 
 Example 2:
 
 This example shows how to return multiple values, namely the employee number value and the correlating employee's short name value, a Domino attribute that also uniquely identifies a person. This example assumes that you want users be able to log in using their LDAPemployeeNumber and an LDAP attribute named shortName, in addition to the standard uid and email attributes. You also want all user login values to appear in the Profiles database EMPLOYEE or PROFILE\_LOGIN tables. If there were only one attribute, you could use the loginId= property in `map_dbrepos_from_source.properties`, but there are two so that method is not available.
 
-**Note:** The LDAPemployeeNumber and shortName attributes are single value attributes.
+!!! note
+    The LDAPemployeeNumber and shortName attributes are single value attributes.
 
 You'll need to create a function call that returns a list containing the employeeNumber and shortName; in this example the function call is created in profiles\_functions.js as usual as `func_logins_ext`. To simplify this example, the uid and email attributes are not shown in the list.
 

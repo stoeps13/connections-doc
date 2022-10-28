@@ -28,11 +28,13 @@ Use the searchResults.ftl template to customize the display of fields in either 
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes \(/\) to separate directories in the file path, regardless of your operating system.
 
-            **Note:** In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
+            !!! note
+    In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
 
             -   AIX
             -   Linux
-            **Note:** The directory must grant write permissions or the command does not complete successfully.
+            !!! note
+    The directory must grant write permissions or the command does not complete successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the Profiles application. This argument is required. It is also case-sensitive. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor: print AdminControl.getCell\(\)
         For example:
@@ -53,7 +55,8 @@ Use the searchResults.ftl template to customize the display of fields in either 
 
 4.  Modify the file contents to include any custom HTML or fields.
 
-    **Note:** The views that use this template are listed in the Section column in the following table.
+    !!! note
+    The views that use this template are listed in the Section column in the following table.
 
     |Section|Description|
     |-------|-----------|
@@ -68,7 +71,8 @@ Use the searchResults.ftl template to customize the display of fields in either 
 
 |
 
-    **Note:** By default, both views render the same results. To customize one of the view but not the other, use the supplied renderSection macro. For example, to customize only the directory results, the following macro should surround the code section being customized:
+    !!! note
+    By default, both views render the same results. To customize one of the view but not the other, use the supplied renderSection macro. For example, to customize only the directory results, the following macro should surround the code section being customized:
 
     ```
     <@util.renderSection sectionLabel="directory">

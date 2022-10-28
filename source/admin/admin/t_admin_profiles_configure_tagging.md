@@ -55,19 +55,23 @@ The tagging feature allows users to assign meaningful keywords to their own prof
         -   self. Users with the specified profile type can tag their own profiles. Administrators can also tag the profiles of users with the specified profile type.
         -   colleagues\_not\_self. Only people who belong to the network of the user with the specified profile type, and who have the person role, can tag the user's profile. Users with the specified profile type cannot tag their own profiles.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   colleagues\_and\_self. People who belong to the network of the user with the specified profile type, and who have the person role, can tag the user's profile. Users with the specified profile type can tag their own profiles.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   person\_not\_self. Users with the person J2EE role can tag the profile of users with the specified profile type. Users with the specified profile type cannot tag their own profiles.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   person\_and\_self. Users with the person J2EE role can tag the profile of users with the specified profile type. Users with the specified profile type can also tag their own profiles.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
     For example:
 

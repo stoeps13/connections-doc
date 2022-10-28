@@ -2,7 +2,8 @@
 
 You can use IBM® Tivoli® Directory Integrator assembly-line commands to add photo files and pronunciation files for your users to the Profiles database.
 
-**Note:** When xWindows is not installed on your system, the load\_pronunciation\_from\_files and load\_photo\_from\_files commands might not work. In this scenario, you must change the default value of the headless\_tdi\_scripts setting in the profile\_tdi.properties file from false to true as follows:
+!!! note
+    When xWindows is not installed on your system, the load\_pronunciation\_from\_files and load\_photo\_from\_files commands might not work. In this scenario, you must change the default value of the headless\_tdi\_scripts setting in the profile\_tdi.properties file from false to true as follows:
 
 ```
 headless_tdi_scripts=true

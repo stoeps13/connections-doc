@@ -2,7 +2,8 @@
 
 Create a backup of the Search index and save it to a secure location so that it can be used to restore the index in the event of loss or corruption.
 
-**Note:** When backing up and restoring data, refer to the product documentation for the database and file system that you are using.
+!!! note
+    When backing up and restoring data, refer to the product documentation for the database and file system that you are using.
 
 When indexing tasks are scheduled, it can be difficult to find a suitable time for backing up the Search index. Instead of creating an index backup manually, you can use the IBM® WebSphere® Application Server scheduler framework to create backup tasks that automatically block indexing tasks from starting and create suitable slots in the scheduled list of tasks for creating index backups. By leveraging the existing scheduler framework, you can implement a consistent method for scheduling and administering the Search application.
 

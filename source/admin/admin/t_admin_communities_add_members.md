@@ -4,7 +4,8 @@ Use scripts that are accessed by using the wsadmin command line to add owners an
 
 To use administrative commands, you must use the wsadmin client. See [Starting the wsadmin client](t_admin_wsadmin_starting.md) for details. The administrative commands for adding owners and members to a community do not require a server restart to take effect, and no file checkout is necessary.
 
-**Note:** You can also use the following commands to add owners and members to subcommunities.
+!!! note
+    You can also use the following commands to add owners and members to subcommunities.
 
 The config-admin Jython scripts that get and set properties use the implicit AdminConfig object available in IBM® WebSphere® Application Server Admin \(wsadmin\) to interact with the Communities server. If an error occurs when you are using the following MBean commands, you can determine what went wrong by examining the SystemOut.log file.
 
@@ -36,7 +37,8 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
     CommunitiesService.addMembersToCommunityByEmail\(String communityUuid, Integer memberRole, List emailAddresses, String orgId\)
     :   Adds members to an existing community or subcommunity.
 
-        **Note:** When you use this command to add owners or members to a subcommunity, the users that you are adding must belong to the parent community.
+        !!! note
+    When you use this command to add owners or members to a subcommunity, the users that you are adding must belong to the parent community.
 
         You cannot exceed the maximum number of members limit that is specified in the explicitMembershipEntityLimit property of the communities-config.xml file. See *Communities configuration properties*.
 
@@ -56,7 +58,8 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
         wsadmin>CommunitiesService.addMembersToCommunityByEmail("5742c4c8-0010-4e6e-abdb-65015e8a22e1",0,threemembers, "0000000043")
         ```
 
-        **Note:** You could use the communityName parameter instead of communityUuid. However, this is not recommended because the command fails if more than one community has the same community name. If the community name that you provide is not unique, an error similar to the following displays:
+        !!! note
+    You could use the communityName parameter instead of communityUuid. However, this is not recommended because the command fails if more than one community has the same community name. If the community name that you provide is not unique, an error similar to the following displays:
 
         ```
         WASX7015E: Exception running command: 
@@ -77,7 +80,8 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
     CommunitiesService.addMembersToCommunityByMemberUuid\(String communityUuid, Integer memberRole, List UUID of member, String orgId\)
     :   Adds members to an existing community or subcommunity. Use this command when you want to add users to a community's membership list, but they don't have an email address. The users that you are adding must belong to the parent community in order for them to be added to the subcommunity.
 
-        **Note:** The member's UUID is the external LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in the previous command:
+        !!! note
+    The member's UUID is the external LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in the previous command:
 
         -   CommunitiesMemberService.getMemberExtIdByEmail\("email"\)
         -   CommunitiesMemberService.getMemberExtIdByLogin\("login"\)
@@ -101,7 +105,8 @@ The config-admin Jython scripts that get and set properties use the implicit Adm
 
         The `onemember` parameter is the `extid(user)`.
 
-        **Note:** You could use the communityName parameter instead of communityUuid. However, this is not recommended because the command fails if more than one community has the same community name. If the community name that you provide is not unique, an error similar to the following displays:
+        !!! note
+    You could use the communityName parameter instead of communityUuid. However, this is not recommended because the command fails if more than one community has the same community name. If the community name that you provide is not unique, an error similar to the following displays:
 
         ```
         WASX7015E: Exception running command: 

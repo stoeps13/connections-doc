@@ -89,7 +89,8 @@ The Status Updates widget is automatically configured to provide feeds from all 
 
 6.  To remove an application feed, comment out or delete the <serviceNameResourceId\> and <serviceFeedUrl\> attributes.
 
-    **Note:** To comment out the attributes, use the `<!--` XML notation to open the comment and `-->` to close the comment.
+    !!! note
+    To comment out the attributes, use the `<!--` XML notation to open the comment and `-->` to close the comment.
 
     In the following example, feeds from the Activities and Files applications are removed from the widget:
 

@@ -16,7 +16,8 @@ You do not need to check any files out or restart any server to perform these ta
 
 4.  Generate the library thumbnails. LibraryAdminService.generatePreviews\(\).
 
-    **Note:** LibraryAdminService.generatePreviews\(\) is a long-running command that might take hours to complete. In this situation, the command might time out and send an exception to the console, however, if the command times out it still is running on the CCM server in the Extensions.ear. If there is a timeout, monitor SystemOut.log for the status of the command. Look for the SUCCESS or FAILURE messages.
+    !!! note
+    LibraryAdminService.generatePreviews\(\) is a long-running command that might take hours to complete. In this situation, the command might time out and send an exception to the console, however, if the command times out it still is running on the CCM server in the Extensions.ear. If there is a timeout, monitor SystemOut.log for the status of the command. Look for the SUCCESS or FAILURE messages.
 
     You can remove the exception by increasing the timeout. For more information, see *Troubleshooting connection timeouts when running a wsadmin script*
 

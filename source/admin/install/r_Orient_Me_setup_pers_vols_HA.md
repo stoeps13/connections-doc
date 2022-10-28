@@ -8,14 +8,16 @@ These guidelines and sample yml files describe how to set up all of the persiste
 
 In an high availability configuration, best practice is to maintain persistent storage away from the ICp Masters themselves, on a separate machine that all ICp Masters can access.  
 
-**Note:** The machine storing the persistent volumes in an HA configuration will not have Docker or Kubectl installed. 
+!!! note
+    The machine storing the persistent volumes in an HA configuration will not have Docker or Kubectl installed. 
 
 This procedure uses two nodes:
 
 -   Boot Node – to execute Kubectl commands
 -   Storage Node – to store the persistent data \(NFS\)
 
-**Note:**  Worker Nodes must be on the same subnet as the Storage machine.
+!!! note
+     Worker Nodes must be on the same subnet as the Storage machine.
 
 ## Configuring the persistent volumes { .section}
 
@@ -63,7 +65,8 @@ On the storage node, run the following commands to create all necessary folders 
         sudo sed -i "s/\/pv-connections\//\/nfs\/IBM\/iccontainers\//g" $HOME/nfsSetup/fullPVs_NFS.yml
         ```
 
-        **Note:** Use `\/` everywhere you want to look for or write in a /.For example, /nfs/IBM/iccontainers\\/ becomes \\/nfs\\/IBM\\/iccontainers\\/
+        !!! note
+    Use `\/` everywhere you want to look for or write in a /.For example, /nfs/IBM/iccontainers\\/ becomes \\/nfs\\/IBM\\/iccontainers\\/
 
     4.  Provide execution permission to nfsSetup.sh and run it in order to get NFS installed and configured:
 
@@ -95,7 +98,8 @@ Perform the following steps on the boot node.
     sudo sed -i "s/\/pv-connections\//\/nfs\/IBM\/iccontainers\//g" $HOME/nfsSetup/fullPVs_NFS.yml
     ```
 
-    **Note:** Use `\/` everywhere you want to look for or write in a / \(forward slash\). For example, /nfs/IBM/iccontainers\\/ becomes \\/nfs\\/IBM\\/iccontainers\\/
+    !!! note
+    Use `\/` everywhere you want to look for or write in a / \(forward slash\). For example, /nfs/IBM/iccontainers\\/ becomes \\/nfs\\/IBM\\/iccontainers\\/
 
 4.  Validate the NFS mount and write permissions as follows:
     1.  Test the NFS mount and write permissions by running the following script:
@@ -138,7 +142,8 @@ Perform the following steps on the boot node.
     sudo /usr/local/bin/kubectl create -f fullPVCs.yml
     ```
 
-    **Note:** You can find a sample fullPVCs.yml in the install ZIP file at the following extracted location: <extractedFolder\>/microservices/hybridcloud/doc/samples/
+    !!! note
+    You can find a sample fullPVCs.yml in the install ZIP file at the following extracted location: <extractedFolder\>/microservices/hybridcloud/doc/samples/
 
 7.  Verify that both the persistent volumes and persistent volume claims are created successfully.
     1.  Ensure the status bound is listed after running the following command on the boot node :

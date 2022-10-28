@@ -60,7 +60,8 @@ To use SearchService administrative commands, you must use the wsadmin client. S
             -   wikis.
         Use all\_configured instead of listing all indexable services when you want to index all the applications.
 
-        **Note:** An optimize operation is not run at the end of the indexing operation.
+        !!! note
+    An optimize operation is not run at the end of the indexing operation.
 
         For example:
 
@@ -100,7 +101,8 @@ To use SearchService administrative commands, you must use the wsadmin client. S
             -   profiles
             -   status\_updates
             -   wikis.
-        **Note:** The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
+        !!! note
+    The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
 
         Note that when you install HCL Connections, a search optimization task is set up to run every night by default. See *Search default tasks* for more information.
 
@@ -113,7 +115,8 @@ To use SearchService administrative commands, you must use the wsadmin client. S
     SearchService.optimizeNow\(\)
     :   Creates a one-off task that performs an optimize operation on the search index, 30 seconds after being called.
 
-        **Note:** The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
+        !!! note
+    The optimization operation is both CPU and I/O intensive. For this reason, the operation should be performed infrequently and, if possible, during off-peak hours. For more information, refer to the following web page: [http://lucene.apache.org/core/old\_versioned\_docs/versions/3\_0\_3/api/all/org/apache/lucene/index/IndexWriter.html\#optimize%28%29](http://lucene.apache.org/core/old_versioned_docs/versions/3_0_3/api/all/org/apache/lucene/index/IndexWriter.html#optimize%28%29)
 
         Note that when you install HCL Connections, a search optimization task is set up to run every night by default. See *Search default tasks* for more information.
 

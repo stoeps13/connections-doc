@@ -60,7 +60,8 @@ Edit configuration settings in widgets-config.xml to change the mandatory and de
     </templates>
     ```
 
-    **Note:** Only one instance of a widget for a widget definition is is supported.
+    !!! note
+    Only one instance of a widget for a widget definition is is supported.
 
 6.  Apply your changes by doing the following:
 

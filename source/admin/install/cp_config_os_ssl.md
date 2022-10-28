@@ -4,7 +4,8 @@ Temporarily remove SSL settings that were configured for type-ahead search in an
 
 If you already enabled type-ahead search with OpenSearch, remove the SSL settings before you enable Metrics. When you configure Metrics, the SSL settings will be recreated and both features will share the certificate information.
 
-**Note:** If you did not enable type-ahead search with OpenSearch yet, skip this task.
+!!! note
+    If you did not enable type-ahead search with OpenSearch yet, skip this task.
 
 1.  Log in to the WebSphere® Integrated Solutions Console for the type-ahead search cluster.
 

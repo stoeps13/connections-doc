@@ -32,7 +32,8 @@ With release 4, the Java object that is used to define the content store changed
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes to separate directories in the file path, even if you are using the Microsoft™ Windows™ operating system.
 
-            **Note:** AIX, and Linux™: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX, and Linux™: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere® Application Server cell hosting the HCL Connections application. This argument is case-sensitive, so type it with care. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 
@@ -66,7 +67,8 @@ With release 4, the Java object that is used to define the content store changed
 
 6.  Make the new content store active by setting the value of the default attribute to true.
 
-    **Note:** Only one <store\> can have a default attribute that is set to true. When you set the default attribute of a content store to true, new content is saved to that content store. Existing content remains in the old content store and is read-only.
+    !!! note
+    Only one <store\> can have a default attribute that is set to true. When you set the default attribute of a content store to true, new content is saved to that content store. Existing content remains in the old content store and is read-only.
 
 7.  Modify the new <store\> to point to the new file system location.
 

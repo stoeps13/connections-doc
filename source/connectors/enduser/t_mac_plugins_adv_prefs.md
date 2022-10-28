@@ -18,7 +18,8 @@ After you connect to HCL Connections or Connections Multi-tenant site, you can i
 
 6.  Click **Enable Beta Features** to access features that are available for preview but are not yet fully supported.
 
-    **Note:** This feature might be disabled by your administrator.
+    !!! note
+    This feature might be disabled by your administrator.
 
 
 **Parent topic:**[Using file sync for HCL Connections for Mac](../../connectors/enduser/mac_desktop_plugin_filesync_gs2.md)

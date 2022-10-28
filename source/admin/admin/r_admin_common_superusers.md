@@ -146,7 +146,8 @@ Use the Profiles REST ATOM API to edit core user attributes. For more informatio
 1.  Find or create a user who is assigned to this purpose.
 2.  Add the user to the Wikis Java EE **admin** role. For more information, see *Roles*.
 
-**Note:** When a user creates a wiki, they are the owner of that wiki. An administrator can add new owners to the wiki, but the creator of the wiki cannot be removed from the membership. Direct SQL manipulation on the database is required to reassign the creator and remove them from the membership.
+!!! note
+    When a user creates a wiki, they are the owner of that wiki. An administrator can add new owners to the wiki, but the creator of the wiki cannot be removed from the membership. Direct SQL manipulation on the database is required to reassign the creator and remove them from the membership.
 
 |
 

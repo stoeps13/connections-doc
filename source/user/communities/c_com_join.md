@@ -8,7 +8,8 @@ Share what you know and inspire others by joining a community that interests you
     -   To join a moderated community, open the community and click **Request to Join this Community**. Then, make a request to join.
     -   To join a restricted community, you must be invited. To see if you are invited to any restricted communities, click the **Invited** tab, then accept or decline the invitation.
 
-**Note:** Want to keep tabs on a community? Consider following the community to get notified of updates. For more information, see [Viewing updates in your community](c_com_view_status_updates.md).
+!!! note
+    Want to keep tabs on a community? Consider following the community to get notified of updates. For more information, see [Viewing updates in your community](c_com_view_status_updates.md).
 
 ## What happens next? { .section}
 

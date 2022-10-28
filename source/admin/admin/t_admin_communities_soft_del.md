@@ -73,7 +73,8 @@ If a community no longer has a purpose or is inactive, the community owner might
         
         ```
 
-        **Note:** If the community you are restoring has subcommunities that are also in trash, only the parent community is restored. You must restore the subcommunities separately. If the community you are restoring is a subcommunity and its parent community is also in trash, the subcommunity is not restored. You must restore the parent community before any of its child subcommunities.
+        !!! note
+    If the community you are restoring has subcommunities that are also in trash, only the parent community is restored. You must restore the subcommunities separately. If the community you are restoring is a subcommunity and its parent community is also in trash, the subcommunity is not restored. You must restore the parent community before any of its child subcommunities.
 
 
 **Parent topic:**[Working with Community trash](../admin/c_admin_communities_trash.md)

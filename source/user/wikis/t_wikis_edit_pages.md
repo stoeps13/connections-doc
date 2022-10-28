@@ -5,7 +5,8 @@ To edit wiki pages, you must have Owner or Editor access to the wiki. If you hav
 1.  From the navigation bar, click **Wikis** and select the wiki you want to work on.
 2.  Select the page you want to edit in the side panel, then click **Edit**.
 
-    **Note:** If the Edit button is disabled, see [Working with wiki pages](../communities/t_com_wiki_pages.md) for more information.
+    !!! note
+    If the Edit button is disabled, see [Working with wiki pages](../communities/t_com_wiki_pages.md) for more information.
 
 3.  Edit the content in either the **Rich Text** tab or **HTML Source** tab. To use the HTML editor, you must be familiar with HTML code.
 

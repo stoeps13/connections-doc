@@ -4,7 +4,8 @@ Add files to the Files application so that you can store them or share them with
 
 Upload files from your desktop to the Files application, where you can make them public, keep them private or share them with people or communities you specify. You can upload a file directly to a community so that all members of the community can access the file. You can also upload to an activity to make it available to activity members or to a wiki to make it available to wiki members.
 
-**Note:** If you get an error when you upload PDF files, check with your administrator. If Connections is running in a Tivoli Access Manager or Tivoli Access Manager and SPNEGO security environment, the administrator must make sure that the parameter suppress-dynurl-parsing-of-posts is set to yes on the TAM server to allow for the proper uploading of PDF documents.
+!!! note
+    If you get an error when you upload PDF files, check with your administrator. If Connections is running in a Tivoli Access Manager or Tivoli Access Manager and SPNEGO security environment, the administrator must make sure that the parameter suppress-dynurl-parsing-of-posts is set to yes on the TAM server to allow for the proper uploading of PDF documents.
 
 -   **[Uploading a file to the Files application](../../connectors/enduser/t_files_windows_upload.md)**  
 Add files to the Files application so that you can store them or share them with others.

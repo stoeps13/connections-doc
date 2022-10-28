@@ -38,7 +38,8 @@ In the Files database context, a library is a set of files owned by a person or 
 
     The itemsPerPage parameter is the maximum number of policies to list per page. The default value is 20.
 
-    **Note:** To print the results of this command to a text file, see the topic *Printing information returned by commands*.
+    !!! note
+    To print the results of this command to a text file, see the topic *Printing information returned by commands*.
 
 5.  Run one of these commands to delete libraries:
 

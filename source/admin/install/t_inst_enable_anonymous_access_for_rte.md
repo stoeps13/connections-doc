@@ -6,7 +6,8 @@ To enable anonymous access for Rich Content Widget optionally in an environment 
 
 1.  Define a new system user in your user repository who can log in to Connections. Create a LDAP non-administrative account that is dedicated to the `rteJAASAuth` alias.
 
-    **Note:** In the next steps, the Rich Content Widget component is configured to log in as this system user when performing HTTP request against Connections resources. To avoid leaking private resources from Connections, it is important to ensure that this user does not have access to any private resource on the Connections environment such as not being a member of a community, or a participant in an activity.
+    !!! note
+    In the next steps, the Rich Content Widget component is configured to log in as this system user when performing HTTP request against Connections resources. To avoid leaking private resources from Connections, it is important to ensure that this user does not have access to any private resource on the Connections environment such as not being a member of a community, or a participant in an activity.
 
     -   This system user only should be used for accessing public information stored in File AppData by public communities instead of an actual user on the platform.
     -   Do not use the default admin user, since administrative users have access to all Connections content, including private content.

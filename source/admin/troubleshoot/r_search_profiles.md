@@ -31,7 +31,8 @@ The following search types are supported:
     -   Search by Name from the **search** drop-down menu.
     -   Clicking a tag from a user's Profile page.
     -   Tag type-ahead, such as the hints of tags when user is creating a new tag
-    **Note:** Some special notes for database searches:
+    !!! note
+    Some special notes for database searches:
 
     -   Because the database search is performed on the Profiles database directly, there is no delay for any new/updated/deleted data. For example, if a user's name is updated by the TDI scripts, then searching against the new name finds the user immediately. In the meantime, searching against the old name would not find the user.
     -   All user queries are appended with a wildcard at the end of each word. For example, if a user types a search term: "Amy Jones", this query would search for names like: `"amy% jones%"`.
@@ -48,7 +49,8 @@ The following search types are supported:
     -   Organization tag cloud on the Profiles Directory page.
     -   Clicking a tag from the Organization tag cloud
     -   Name type-ahead search from the Directory page without Full search options.
-    **Note:** Special notes on index searches:
+    !!! note
+    Special notes on index searches:
 
     -   The indexes are rebuilt on a scheduled basis \(every 15 minutes by default\), therefore expect a delay to find new contents/changes when you perform searches with index search.
     -   Other than those special fields related to names, all user queries are expected to be an exact match. For example wildcards are not automatically appended to the search queries as is done in the database searches.
@@ -113,7 +115,8 @@ Profiles data for names holds information only for a user's last name and first 
 
     Internally, database searches for names are performed against two tables: `GIVEN_NAME` and `SURNAME`. These tables hold names and their alias. The data in these tables is used for search purposes only; they are not exposed in the user interface.
 
-    **Note:** Database searches do not find matches resident in the `EMPLOYEE` table. For example, the Display Name from the `EMPLOYEE` table is not searched during a database search, even though **Display Name** is what you see in the user interface.
+    !!! note
+    Database searches do not find matches resident in the `EMPLOYEE` table. For example, the Display Name from the `EMPLOYEE` table is not searched during a database search, even though **Display Name** is what you see in the user interface.
 
     Data in these two name tables is expressed in lowercase. During data population by using TDI or Administration APIs, the values are converted to lowercase for these tables. It is not recommended to directly insert or update content in these tables. If you are using the tables for testing purposes, make sure that contents entered are in lowercase. User queries are converted to lowercase when matching up with the values in the names table.
 
@@ -169,14 +172,16 @@ Profiles data for names holds information only for a user's last name and first 
         -   A phone number query can be entered with a mixture of numbers and letters. For example, user input such as 1-800-HCL-HELP could find users with the phone number record 1-800-426-4357.
         -   A phone number query can omit the leading 1. For example, user input such as 123-456-7890 finds users with the phone number record 1-123-456-7890.
 
-            **Note:** The leading international phone prefix 011 must be specified to match users with phone number records that contain the leading 011 characters
+            !!! note
+    The leading international phone prefix 011 must be specified to match users with phone number records that contain the leading 011 characters
 
         -   A phone number that is entered in the user interface search form with the full search options searches all available phone number fields, such as `mobileNumber`, `ipTelephoneNumber`, and `faxNumber`.
 -   Search by keywords
 
     Users can enter keywords from the search drop-down menu in the **Search by keyword**, or **Keyword** fields in the Directory search page with the Full search options. The keyword search field is the only field for which search operators can be used for composing complex search queries. That means that special terms and characters are reserved for search operators. For example, terms like AND, OR, NOT, and characters like: +, -, ~, :, are reserved. Double quotes are required to include those special terms and characters if they are not intended to be search operators. Refer to external Lucene syntax sites and documentation for details about using search operators.
 
-    **Note:** The "Search by keyword" function is performed against all indexed contents.
+    !!! note
+    The "Search by keyword" function is performed against all indexed contents.
 
 -   The logical operation among the fields that are entered in the Directory search with full options form is AND.
 

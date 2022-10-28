@@ -48,7 +48,8 @@ To export activities, complete the following steps:
         sept=ActivityService.fetchActivitiesByDate("created", "2008.09.01", "2008.09.30", "")
         ```
 
-        **Note:** This command does not return activity templates that were created during the specified date range, but does include in the activities that it returns any activities present in the Trash view that were created during the specified date range.
+        !!! note
+    This command does not return activity templates that were created during the specified date range, but does include in the activities that it returns any activities present in the Trash view that were created during the specified date range.
 
     -   To filter the activities that you want to export to a subset based on their members, complete the following steps:
         1.  Identify the member of interest and save the member information to a variable using the following command:

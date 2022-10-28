@@ -140,7 +140,8 @@ After you finish adding the widget to the widget-config.xml file, you must regis
 
     -   [Gadget Registration Commands](r_admin_gadget_reg_ws_commands.md#) explains how to register gadgets and widgets from a command line.
     -   [Configuring Home page widgets](t_admin_homepage_add_widgets_homepage.md) explains how to register gadgets and widgets from the administration interface.
-    **Note:** When you register a Profiles widget, the `prereqs` setting should be set to "`profiles`" as in the following example:
+    !!! note
+    When you register a Profiles widget, the `prereqs` setting should be set to "`profiles`" as in the following example:
 
     ```
     NewsWidgetCatalogService.addWidget(title="helloworld", text="Hello World Widget.", url="https://serverName.ibm.com/helloworld/helloworld.xml", categoryName=WidgetCategories.NONE, isGadget=FALSE,appContexts=[WidgetContexts.EMBEDXP], policyFlags=[GadgetPolicyFlags.TRUSTED], prereqs=["profiles"])

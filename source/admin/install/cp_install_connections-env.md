@@ -21,7 +21,8 @@ Install the connections-env Helm chart using the appropriate command for your SS
 Install when SSL is enforced
 :   If `forceConfidentialCommunications` flag is set to `true`, run the following command to install connections-env, replacing the `ic.host` value with the FQDN of your Connections front door address \(for example, the load balancer\), and replacing `ic.internal` with the FQDN of your Connections HTTP server.
 
-    **Note:** By default, deployment is done to the `connections` namespace. If you created a namespace with a different name and would like to deploy there, the following extra value must be included in the helm install command: `namespace=namespace`
+    !!! note
+    By default, deployment is done to the `connections` namespace. If you created a namespace with a different name and would like to deploy there, the following extra value must be included in the helm install command: `namespace=namespace`
 
     ```
     helm install \
@@ -41,7 +42,8 @@ Install when SSL is enforced
 Install when SSL is not enforced
 :   If `forceConfidentialCommunications` flag is set to `false`, run the following command to install connections-env, replacing the `ic.host` value with the FQDN of your Connections front door address \(for example, the load balancer\), and `ic.internal` with the FQDN of your Connections HTTP server.
 
-    **Note:** By default, deployment is done to the `connections` namespace. If you created a namespace with a different name and would like to deploy there, the following extra value must be included in the helm install command: `namespace=namespace`
+    !!! note
+    By default, deployment is done to the `connections` namespace. If you created a namespace with a different name and would like to deploy there, the following extra value must be included in the helm install command: `namespace=namespace`
 
     ```
     helm install \
@@ -69,7 +71,8 @@ However, if you deploy connections-env in an environment where the `forceConfide
 
 If you installed connections-env without enforcing SSL communication and now want to enforce SSL communication, you can do so by running a helm upgrade with the following command.
 
-**Note:** By default, deployment is done to the `connections` namespace. If you created a namespace with a different name and would like to deploy there, the following extra value must be included in the helm install command: `namespace=namespace`
+!!! note
+    By default, deployment is done to the `connections` namespace. If you created a namespace with a different name and would like to deploy there, the following extra value must be included in the helm install command: `namespace=namespace`
 
 ```
 helm upgrade \

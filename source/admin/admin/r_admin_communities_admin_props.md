@@ -405,7 +405,8 @@ CommunitiesService.addMembersToCommunityByEmail\(String communityUuid, Integer m
 CommunitiesService.addMembersToCommunityByEmail\(String communityUuid, Integer memberRole, List emailAddresses, String orgId\)
 :   Adds members to an existing community or subcommunity.
 
-    **Note:** When you use this command to add owners or members to a subcommunity, the users that you are adding must belong to the parent community.
+    !!! note
+    When you use this command to add owners or members to a subcommunity, the users that you are adding must belong to the parent community.
 
     You cannot exceed the maximum number of members limit that is specified in the explicitMembershipEntityLimit property of the communities-config.xml file. See *Communities configuration properties*.
 
@@ -425,7 +426,8 @@ CommunitiesService.addMembersToCommunityByEmail\(String communityUuid, Integer m
     wsadmin>CommunitiesService.addMembersToCommunityByEmail("5742c4c8-0010-4e6e-abdb-65015e8a22e1",0,threemembers, "0000000043")
     ```
 
-    **Note:** You could use the communityName parameter instead of communityUuid. However, this is not recommended because the command fails if more than one community has the same community name. If the community name that you provide is not unique, an error similar to the following displays:
+    !!! note
+    You could use the communityName parameter instead of communityUuid. However, this is not recommended because the command fails if more than one community has the same community name. If the community name that you provide is not unique, an error similar to the following displays:
 
     ```
     WASX7015E: Exception running command: 
@@ -446,7 +448,8 @@ CommunitiesService.addMembersToCommunityByMemberUuid\(String communityUuid, Inte
 CommunitiesService.addMembersToCommunityByMemberUuid\(String communityUuid, Integer memberRole, List UUID of member, String orgId\)
 :   Adds members to an existing community or subcommunity. Use this command when you want to add users to a community's membership list, but they don't have an email address. The users that you are adding must belong to the parent community in order for them to be added to the subcommunity.
 
-    **Note:** The member's UUID is the external LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in the previous command:
+    !!! note
+    The member's UUID is the external LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in the previous command:
 
     -   CommunitiesMemberService.getMemberExtIdByEmail\("email"\)
     -   CommunitiesMemberService.getMemberExtIdByLogin\("login"\)
@@ -471,7 +474,8 @@ CommunitiesService.addMembersToCommunityByMemberUuid\(String communityUuid, Inte
 
     The `onemember` parameter is the `extid(user)`.
 
-    **Note:** You could use the communityName parameter instead of communityUuid. However, this is not recommended because the command fails if more than one community has the same community name. If the community name that you provide is not unique, an error similar to the following displays:
+    !!! note
+    You could use the communityName parameter instead of communityUuid. However, this is not recommended because the command fails if more than one community has the same community name. If the community name that you provide is not unique, an error similar to the following displays:
 
     ```
     WASX7015E: Exception running command: 
@@ -625,7 +629,8 @@ CommunitiesService.fetchCommByMemberUuid\(String uuid, String orgId\)
     CommunitiesService.fetchCommByMemberUuid("193F1CE8-E10A-4B9A-B933-C8ECD6C072E4", "0000000042")
     ```
 
-    **Note:** The Member's UUID is the External LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in this command.
+    !!! note
+    The Member's UUID is the External LDAP identifier for a specific user. Use one of the following commands to return the user's external ID for use in this command.
 
     -   CommunitiesMemberService.getMemberExtIdByEmail\("email"\)
     -   CommunitiesMemberService.getMemberExtIdByLogin\("login"\)
@@ -634,7 +639,8 @@ CommunitiesService.fetchCommByName\(String name\)
 CommunitiesService.fetchCommByName\(String name, String orgId\)
 :   Returns the community or subcommunity with the specified name in the specified organization.
 
-    **Note:** There is a maximum of one community in the list, but that list can be used in the other methods that use a list input. If no match is found, the list will be empty.
+    !!! note
+    There is a maximum of one community in the list, but that list can be used in the other methods that use a list input. If no match is found, the list will be empty.
 
     For example:
 
@@ -850,7 +856,8 @@ CommunitiesService.updateCommunityName\(String communityName, String newName\)
     CommunitiesService.updateCommunityName("JDs Community", "JDs New Name")
     ```
 
-    **Note:** When you use this command, if you get an error telling you that the community or subcommunity name is not unique, enter the UUID instead.
+    !!! note
+    When you use this command, if you get an error telling you that the community or subcommunity name is not unique, enter the UUID instead.
 
     You can obtain the UUID for a community or subcommunity by doing one of the following:
 
@@ -873,7 +880,8 @@ CommunitiesService.updateCommunityDescription\(String communityName, String newD
 CommunitiesService.removeWidgetsByWidgetDefIdForAllComm\(String widgetDefId\)
 :   Allows you to remove the specified widget from all communities and subcommunities. widgetDefId corresponds to the defId attribute on <widgetDef\> elements in widgets-config.xml.
 
-    **Note:** Use this command with caution, it can delete a lot of data for many widgets. Backup your databases before running.
+    !!! note
+    Use this command with caution, it can delete a lot of data for many widgets. Backup your databases before running.
 
     widgetDefId is a string and must be enclosed in double quotation marks \("\).
 
@@ -915,7 +923,8 @@ CommunitiesService.removeReferencesByUri\(String communityName, List referenceUR
 CommunitiesService.removeTagsFromCommunity\(String communityName, List tagNames\)
 :   Allows you to remove tags from an existing community or subcommunity. This command is a two-step process. First, create a comma-separated list of the tags that you want to remove. This list of tags is saved to a variable and the variable is used as input for the removeTagsFromCommunity command.
 
-    **Note:** You can remove tags on a community or subcommunity, but you cannot remove tags associated with bookmarks or feeds within a community.
+    !!! note
+    You can remove tags on a community or subcommunity, but you cannot remove tags associated with bookmarks or feeds within a community.
 
     Because the tags are specified as a list, each tag must be enclosed in double quotation marks and separated by commas. All tags must be enclosed within brackets.
 
@@ -964,7 +973,8 @@ CommunitiesService.moveSubcommunityToCommunity\("subCommunityUuid"\)
     -   Original start page setting
     -   Any existing web addresses
 
-        **Note:** The URL to access this community changes slightly because the parent handle no longer exists.
+        !!! note
+    The URL to access this community changes slightly because the parent handle no longer exists.
 
 
 CommunitiesService.moveCommunityToSubcommunity\("parentCommunityUuid", "communityToMoveUuid"\)
@@ -1005,7 +1015,8 @@ CommunitiesService.moveCommunityToSubcommunity\("parentCommunityUuid", "communit
     -   Community owners in the parent are copied to the new subcommunity as owners.
     -   Subcommunity members and owners are copied to the new parent as members.
 
-    **Note:** Using moveCommunityToSubcommunity generates an error if you attempt the following reparenting actions:
+    !!! note
+    Using moveCommunityToSubcommunity generates an error if you attempt the following reparenting actions:
 
     -   Reparent a community that has subcommunities.
     -   Reparent a community that is already a subcommunity
@@ -1052,7 +1063,8 @@ CommunitiesService.unDeleteCommunity\("communityUuid"\)
     
     ```
 
-    **Note:** If the community you are restoring has subcommunities that are also in trash, only the parent community is restored. You must restore the subcommunities separately. If the community you are restoring is a subcommunity and its parent community is also in trash, the subcommunity is not restored. You must restore the parent community before any of its child subcommunities.
+    !!! note
+    If the community you are restoring has subcommunities that are also in trash, only the parent community is restored. You must restore the subcommunities separately. If the community you are restoring is a subcommunity and its parent community is also in trash, the subcommunity is not restored. You must restore the parent community before any of its child subcommunities.
 
 **Parent topic:**[Running Communities administrative commands](../admin/t_admin_communities_changing_admin.md)
 

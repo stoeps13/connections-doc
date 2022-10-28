@@ -21,7 +21,8 @@ Ensure that you have given the necessary permissions to the user IDs that need t
 
     gtk2-2.10.6, pango-1.14.5, fontconfig-2.4.2, pkg-config-0.19, libjpeg-6b, freetype2-2.3.9, expat-2.0.1, zlib-1.2.3, xft-2.1.6, xcursor-1.1.7, glib-1.2.10, glib2-2.12.4, atk-1.12.3, gettext-0.10.40, libpng-1.2.32, and libtiff-3.8.2
 
-    **Note:** Some of these packages have dependencies on other packages. The AIX package installer alerts you to any additional packages that might be required.
+    !!! note
+    Some of these packages have dependencies on other packages. The AIX package installer alerts you to any additional packages that might be required.
 
 -   HCL Connections does not support Pluggable Databases \(PDB\).
 
@@ -33,7 +34,8 @@ To prepare the database wizard, complete the following steps:
 
     xhost + // Grant display authority to other users
 
-    **Note:** If granting display authority to all users is a security concern for you, change the command to grant display authority to a specific user or users. For more information about this command, consult your AIX or Linux administrator guide.
+    !!! note
+    If granting display authority to all users is a security concern for you, change the command to grant display authority to a specific user or users. For more information about this command, consult your AIX or Linux administrator guide.
 
     echo $DISPLAY // Echo the value of DISPLAY under the root user
 
@@ -41,7 +43,8 @@ To prepare the database wizard, complete the following steps:
 
     -   Oracle
 
-        **Note:** Before running the database wizard, you must create an Oracle database instance.
+        !!! note
+    Before running the database wizard, you must create an Oracle database instance.
 
         su - oracle // oracle is the Oracle database administrator
 
@@ -53,11 +56,13 @@ To prepare the database wizard, complete the following steps:
 
         where hostname:displaynumber.screennumber represents the client system, monitor number, and window number. For example: localhost:0.0
 
-    **Note:** If you can see the xclock application running after issuing the xclock command, then you have permission to run the database wizard. If you cannot see the xclock application, run the xhost + command as root user and then run the su command.
+    !!! note
+    If you can see the xclock application running after issuing the xclock command, then you have permission to run the database wizard. If you cannot see the xclock application, run the xhost + command as root user and then run the su command.
 
 4.  Start the database instance:
 
-    **Note:** Run the database commands under the user account that has administrative access to the database.
+    !!! note
+    Run the database commands under the user account that has administrative access to the database.
 
     -   AIX or Linux:
         -   Oracle \(login as oracle or use the su oracle command to change to oracle\)
@@ -74,7 +79,8 @@ To prepare the database wizard, complete the following steps:
 
     -   Microsoft™ Windows™:
 
-        **Note:** Windows registers most database instances as a service. You can start or stop a database service manually if necessary.
+        !!! note
+    Windows registers most database instances as a service. You can start or stop a database service manually if necessary.
 
         -   Oracle
             1.  Open the Windows Services panel: Click **Start** \> **All Programs** \> **Administrative Tools** \> **Services.**

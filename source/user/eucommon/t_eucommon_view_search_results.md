@@ -8,7 +8,8 @@ From the search results page, choose one or more of the following options to fil
 
 -   Search within a specific application, or for status updates. **All Contents** is selected by default. To filter results to one or more applications, select the app name, for example **Communities**, **People**, or **Bookmarks**. For status updates, select **Status Updates**.
 
-    **Note:** If your organization has not deployed Component Pack, you cannot filter to more than one application at the same time.
+    !!! note
+    If your organization has not deployed Component Pack, you cannot filter to more than one application at the same time.
 
 -   Use the drop-down filters to further refine your search. The filters available vary depending on the app or apps that you select.
 -   Click **People** to display only the results that are associated with a given person.
@@ -24,7 +25,8 @@ From the search results page, choose one or more of the following options to fil
 
 -   In whatever app or apps you're filtering on, if you want to limit search results to people or things whose names contain your term, select the **Find in Title/Name only** checkbox.
 
-**Note:** These tips apply only if your deployment includes Component Pack.
+!!! note
+    These tips apply only if your deployment includes Component Pack.
 
 ## Still can't find it? {#section_np2_gqm_5tb .section}
 

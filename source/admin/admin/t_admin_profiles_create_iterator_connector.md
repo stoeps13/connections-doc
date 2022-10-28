@@ -9,11 +9,13 @@ If you are using a source other than an LDAP, you must provide an iterator that 
 
     You must populate the $dn attribute in the work entry. You can populate all the data from the source by mapping all attributes. You can use the mapping functionality to map fields from their names in your source into the fields expected by Profiles; you do not have to perform that mapping in your connector. The $dn attribute is the only required attribute name you must provide at this point in the process.
 
-    **Note:** To help get started with Security Directory Integrator, go to the [Learning TDI](http://www.tdi-users.org/twiki/bin/view/Integrator/LearningTDI) site. You can also refer to the [Security Directory Integrator product documentation](https://www.ibm.com/docs/sdi/7.2.0) for more information.
+    !!! note
+    To help get started with Security Directory Integrator, go to the [Learning TDI](http://www.tdi-users.org/twiki/bin/view/Integrator/LearningTDI) site. You can also refer to the [Security Directory Integrator product documentation](https://www.ibm.com/docs/sdi/7.2.0) for more information.
 
 3.  Export your iterator solution by completing the following steps:
 
-    **Note:** You can package the iterator connector together with the lookup assembly line, which is best practice although not a required step.
+    !!! note
+    You can package the iterator connector together with the lookup assembly line, which is best practice although not a required step.
 
     1.  Shift-click the assembly lines that comprise your iterator solution in the Security Directory Integrator Config Editor.
 
@@ -39,7 +41,8 @@ If you are using a source other than an LDAP, you must provide an iterator that 
         source_repository_iterator_assemblyline={name-of-your-adapter.xml}:/AssemblyLines/{name-of-your-ITERATOR-al}
         ```
 
-        **Note:** This property may already be present and commented out in the file. If so, remove the comment character \(hash sign\) and make the edits.
+        !!! note
+    This property may already be present and commented out in the file. If so, remove the comment character \(hash sign\) and make the edits.
 
     3.  Substitute `{name-of-your-adapter.xml}` with the package ID that you entered in step 2c.
 

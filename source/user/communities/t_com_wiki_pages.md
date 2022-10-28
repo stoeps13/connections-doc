@@ -9,7 +9,8 @@ After you create some wiki pages, you can work with them in many ways.
 3.  Only one person at a time can edit a page. To edit:
     1.  Click **Edit**. The page automatically locks while you edit, disabling the Edit button for others. Your changes are autosaved to a draft as you work.
 
-        **Note:** For more details on using the editing features, see [Using the rich text editor](../eucommon/eucommon_ckeditor.md).
+        !!! note
+    For more details on using the editing features, see [Using the rich text editor](../eucommon/eucommon_ckeditor.md).
 
     2.  When you are finished editing, click **Save**. This saves your work as an official version, and unlocks the page \(re-enables the **Edit** button\) for future editors.
 

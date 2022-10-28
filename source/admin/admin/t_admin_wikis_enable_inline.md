@@ -30,7 +30,8 @@ Important: Wikis uses the attachment disposition for security reasons. Specifica
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied. The files are kept in this working directory while you make changes to them.
 
-            **Note:** AIX® and Linux™ only: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX® and Linux™ only: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the HCL Connections application. This argument is required. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 
@@ -50,7 +51,8 @@ Important: Wikis uses the attachment disposition for security reasons. Specifica
 
 4.  Check in the configuration file.
 
-    **Note:** You must check in the file during the same wsadmin session in which you checked it out. For more information, see *Applying Wikis property changes*.
+    !!! note
+    You must check in the file during the same wsadmin session in which you checked it out. For more information, see *Applying Wikis property changes*.
 
 5.  Change your attachment URLs to use the inline parameter.
 

@@ -12,7 +12,8 @@ enabled
 interval
 :   Specifies the interval at which the task runs. This property is a string value that must be specified in Cron format. For more information about the Cron schedule, see *Scheduling tasks*.
 
-**Note:** If you disable the database clean-up tasks, you run the risk of rapidly reaching your file system storage limit as the database increases in size. Disabling these tasks can also result in poor data access performance.
+!!! note
+    If you disable the database clean-up tasks, you run the risk of rapidly reaching your file system storage limit as the database increases in size. Disabling these tasks can also result in poor data access performance.
 
 1.  To configure database clean-up tasks, complete the following steps.
 2.  Start the wsadmin client from the following directory of the system on which you installed the Deployment Manager:
@@ -47,7 +48,8 @@ interval
 
         -   working\_dir is the temporary directory to which you want to check out the cell-level configuration file. This directory must exist on the server where you are running wsadmin.
 
-            **Note:** AIX, and Linux only: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX, and Linux only: The directory must grant write permissions or the command will not run successfully.
 
         -   cellName is the name of the cell that the home page node belongs to. This argument is required. It is also case-sensitive, so type it with care. If you do not know the cell name, type the following command in the wsadmin command processor to determine it:
 

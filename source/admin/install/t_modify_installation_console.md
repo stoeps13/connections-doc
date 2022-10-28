@@ -29,7 +29,8 @@ To modify your installation, complete the following steps:
     -   All installed applications are selected by default.
 8.  Enter the administrative ID and password of the Deployment Manager.
 
-    **Note:** This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java™ EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Tivoli® Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
+    !!! note
+    This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java™ EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Tivoli® Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
 
 9.  Configure your topology. For more information about each option, see [Deployment options](../plan/c_planning_the_installation.md).
 
@@ -43,15 +44,18 @@ To modify your installation, complete the following steps:
         1.  Type 2 to select the **Medium deployment** topology.
         2.  Select the default value or enter a **Cluster name** for each application or for groups of applications. For example, use Cluster1 for Activities, Communities, and Forums.
 
-            **Note:** IBM Installation Manager creates servers and clusters when required.
+            !!! note
+    IBM Installation Manager creates servers and clusters when required.
 
         3.  Select a **Node** for each cluster. Accept the predefined node or select a different node.
 
-            **Note:** These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
+            !!! note
+    These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
 
         4.  Enter a **Server member** name for the selected node. Choose the default or enter a custom name.
 
-            **Note:** If you enter a custom server member name, the name must be unique across all nodes in your deployment.
+            !!! note
+    If you enter a custom server member name, the name must be unique across all nodes in your deployment.
 
         5.  The topology that you specified is displayed. To re-specify any details, type the number that corresponds to the application; for example, type 1 for Activities.
         6.  Type N to proceed.
@@ -59,15 +63,18 @@ To modify your installation, complete the following steps:
         1.  Type 3 to select the **Large deployment** topology.
         2.  Enter a **Cluster name** for each application.
 
-            **Note:** IBM Installation Manager creates servers and clusters when required.
+            !!! note
+    IBM Installation Manager creates servers and clusters when required.
 
         3.  Select a **Node** for each cluster. Accept the predefined node or select a different node.
 
-            **Note:** These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
+            !!! note
+    These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
 
         4.  Enter a **Server member** name for the selected node. Choose the default or enter a custom name.
 
-            **Note:** If you enter a custom server member name, the name must be unique across all nodes in your deployment.
+            !!! note
+    If you enter a custom server member name, the name must be unique across all nodes in your deployment.
 
         5.  The topology that you specified is displayed. To re-specify any details, type the number that corresponds to the application; for example, type 1 for Activities.
         6.  Type N to proceed.
@@ -75,7 +82,8 @@ To modify your installation, complete the following steps:
 
     1.  Specify whether the installed applications use the same database server or instance: Type 1 to specify that the applications use same database server or instance; type 2 to specify that they use different database servers or instances.
 
-        **Note:** If allowed by your database configuration, you can select multiple database instances as well as different database servers.
+        !!! note
+    If allowed by your database configuration, you can select multiple database instances as well as different database servers.
 
     2.  Select a **Database type** from one of the following options:
 
@@ -111,7 +119,8 @@ To modify your installation, complete the following steps:
         DB2
         :   db2jcc4.jar and db2jcc\_license\_cu.jar
 
-            **Note:** Ensure that your user account has the necessary permissions to access the DB2 JDBC files.
+            !!! note
+    Ensure that your user account has the necessary permissions to access the DB2 JDBC files.
 
         Oracle
         :   ojdbc8.jar
@@ -135,7 +144,8 @@ To modify your installation, complete the following steps:
 
         IBM Installation Manager tests your database connection with the database values that you supplied. You can change the database configuration later in the WebSphere Application Server Integrated Solutions Console.
 
-        **Note:** Usually you can continue even if the validation failed because you can change the database settings from WebSphere Application Server Integrated Solutions Console afterward.
+        !!! note
+    Usually you can continue even if the validation failed because you can change the database settings from WebSphere Application Server Integrated Solutions Console afterward.
 
 11. Review the information that you have entered. To revise your selections, press B. To finish modifying, press M.
 
@@ -175,7 +185,8 @@ To modify your installation, complete the following steps:
 
     6.  At the bottom of the file find the following line: `LoadModule was_ap22_module /opt/IBM/WebSphere/Plugins/bin/64bits/mod_was_ap22_http.so WebSpherePluginConfig /opt/IBM/WebSphere/Plugins/config/webserver1/plugin-cfg.xml`.
 
-        **Note:** Make sure the value for `WebSpherePluginConfig` matches where the `plugin-cfg.xml` was propagated. If they don't match, either manually copy the `plugin-cfg.xml` to the location specified in `httpd.conf`, or update`httpd.conf` to look in the correct location.
+        !!! note
+    Make sure the value for `WebSpherePluginConfig` matches where the `plugin-cfg.xml` was propagated. If they don't match, either manually copy the `plugin-cfg.xml` to the location specified in `httpd.conf`, or update`httpd.conf` to look in the correct location.
 
     7.  Close the `httpd.conf`.
 
@@ -187,7 +198,8 @@ To modify your installation, complete the following steps:
 
     2.  Select the nodes and click **Full Resynchronize**.
 
-    **Note:** Wait until the DM copies all the application EAR files to the installedApps directory on each of the nodes. This process can take up to 30 minutes.
+    !!! note
+    Wait until the DM copies all the application EAR files to the installedApps directory on each of the nodes. This process can take up to 30 minutes.
 
     To verify that the DM has distributed the application EAR files to the nodes, check the SystemOut.logfile of each node agent. The default path to the SystemOut.logfile on a node is [profile\_root](../plan/i_ovr_r_directory_conventions.md)/logs/nodeagent.
 
@@ -201,7 +213,8 @@ To modify your installation, complete the following steps:
 
     3.  Select the HCL Connections clusters and click **Start**.
 
-    **Note:** If some applications do not start, the file-copying process might not have completed. Wait a few minutes and start the applications. In case the Connections applications are installed on different clusters, the cluster start order should start with the core features, then move to the other features:
+    !!! note
+    If some applications do not start, the file-copying process might not have completed. Wait a few minutes and start the applications. In case the Connections applications are installed on different clusters, the cluster start order should start with the core features, then move to the other features:
 
     -   Hompage cluster
     -   News cluster

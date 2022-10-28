@@ -18,7 +18,8 @@ You can modify the following configuration properties. The location of the touch
 uiEnabled
 :   Determines whether the Touchpoint onboarding feature is displayed to users when they first log in to Connections. The default value is `false`. Setting this value to `true` enables the onboarding experience: users are either directed to set up their profiles, or \(if enabled\) first asked to read and acknowledge the company privacy policy and guidelines.
 
-    **Note:** This is the only property change required to start Touchpoint for users if you are keeping all of the defaults for other properties.
+    !!! note
+    This is the only property change required to start Touchpoint for users if you are keeping all of the defaults for other properties.
 
 contentDirectory
 :   The directory that stores Touchpoint-related data. The default value is `${placeholder}`.

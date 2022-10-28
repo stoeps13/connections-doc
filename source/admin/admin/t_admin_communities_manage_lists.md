@@ -29,7 +29,8 @@ To use administrative commands, you must use the wsadmin client. See [Starting t
 
 4.  Use the following commands to filter the information in community lists and generate new lists.
 
-    **Note:** The commands can also be used on application lists.
+    !!! note
+    The commands can also be used on application lists.
 
     CommunitiesListService.filterListByName\(List list, String filter\)
     :   Returns a new list containing only the communities and subcommunities whose names match the regular expression filter.

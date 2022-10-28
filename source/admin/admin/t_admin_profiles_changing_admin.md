@@ -4,7 +4,8 @@ Scripts are used to administer the Profiles application. These scripts use the A
 
 To run administrative commands, you must use the wsadmin client. See [Starting the wsadmin client](t_admin_wsadmin_starting.md) for information about how to start the wsadmin command-line tool.
 
-**Note:** You cannot use administrative tools to add or remove a profile from your LDAP directory system. You must use that directory's native tools to create and delete profiles.
+!!! note
+    You cannot use administrative tools to add or remove a profile from your LDAP directory system. You must use that directory's native tools to create and delete profiles.
 
 The scripts used to administer Profiles give an administrator \(who otherwise would not have access to edit a user's profile data\), the ability to edit various fields in a user's profile. For example, one use of the capability is to remove unwanted or inappropriate content.
 

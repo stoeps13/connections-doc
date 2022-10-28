@@ -2,7 +2,8 @@
 
 Use the rich text editor to create visually interesting blog posts, wiki articles, forum topics, and activity entries. The rich text editor is also used in Communities, Events, and Profiles.
 
-**Note:** This topic describes the default rich text editor in Connections, but your organization might have implemented one of the Ephox editors, EditLive! or Textbox.io.
+!!! note
+    This topic describes the default rich text editor in Connections, but your organization might have implemented one of the Ephox editors, EditLive! or Textbox.io.
 
 Use the rich text editor to enter and format text or to insert images and links. Depending on the application that you are using and how it is configured, some features of the editor might not be available. For example, you can insert an Adobe™ Flash movie into a blog entry but this capability is not available in a forum topic.
 
@@ -34,7 +35,8 @@ In the editor, hover your mouse cursor over an icon for a label that describes t
 
 |Insert an image. Browse for an image on your computer, select an image that you already uploaded, or enter the URL for an image on the web. For more information, see the *Inserting an image with the rich text editor* topic. In some applications, you can paste an image instead of inserting it. For more information, see the *Pasting an image*topic.
 
- **Note:** This function differs across applications. In most applications, for example, it is not possible to upload an image from your computer, paste an image, nor use an attached image that you already uploaded. Those abilities are supported in Blogs, Forums, and Wikis only. Moreover, pasting an image is supported in the Chrome, Firefox, and Safari browsers only; it is not supported in Internet Explorer. For more information, see the *Adding an image to a wiki page*, *Adding forum topics*, and *Adding an image to a blog posting* topics.
+ !!! note
+    This function differs across applications. In most applications, for example, it is not possible to upload an image from your computer, paste an image, nor use an attached image that you already uploaded. Those abilities are supported in Blogs, Forums, and Wikis only. Moreover, pasting an image is supported in the Chrome, Firefox, and Safari browsers only; it is not supported in Internet Explorer. For more information, see the *Adding an image to a wiki page*, *Adding forum topics*, and *Adding an image to a blog posting* topics.
 
 |
 |![Insert image](images/Perm_Pen_image.PNG)
@@ -72,14 +74,16 @@ In the editor, hover your mouse cursor over an icon for a label that describes t
 
 |Insert an iFrame or edit an existing iFrame. Use an iFrame to embed content such as webpages or videos within your wiki page or blog entry. For more information, see the*Inserting an iFrame with the rich text editor* topic.
 
-**Note:** This feature is available in Blogs, Forums, and Wikis only.
+!!! note
+    This feature is available in Blogs, Forums, and Wikis only.
 
 |
 |![Insert Flash Move](images/flash.png)
 
 |Insert an Adobe Flash movie. For more information, see the *Adding a video to your wiki page* and *Adding a video to your blog posting* topics.
 
-**Note:** This feature is available in Blogs, Forums, and Wikis only.
+!!! note
+    This feature is available in Blogs, Forums, and Wikis only.
 
 |
 |![Insert page break](images/page_break.png)

@@ -7,7 +7,8 @@ If HCL Connections is configured so that email notification is disabled, the aut
 -   When an entry is flagged as inappropriate, the reviewers will not receive email indicating there is a potentially offensive posting. Reviewers will have to periodically visit the Flagged Content section of the Moderation interface to see what content needs action and then manually send confirmation notification messages to the user who flagged the content.
 -   If the reviewer quarantines an item, the owner will not receive email notifications. The reviewer will have to manually send a notification message to the content owner.
 
-**Note:** If your organization includes people with no email, the automatic notifications used for this workflow are disabled. The following activities would require manual intervention:
+!!! note
+    If your organization includes people with no email, the automatic notifications used for this workflow are disabled. The following activities would require manual intervention:
 
 -   If a reviewer has no email, when an entry or comment is flagged as inappropriate, the reviewer will not receive email indicating there is a potentially offensive posting. Reviewers will have to periodically visit the Flagged Entries or Flagged Comments pages of the Moderation interface to see what entries need action.
 -   If the content owner has no email, and the reviewer quarantines an item, the content owner will not receive email notifications.

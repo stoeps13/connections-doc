@@ -2,7 +2,8 @@
 
 If you want to expand the use of Connections Engagement Center throughout Connections by upgrading to a full version of the Engagement Center, follow these steps. This upgrade installs a license and adjusts a setting to provide the necessary configuration.
 
-**Note:** You must first purchase a license for the full version of HCL Connections Engagement Center.
+!!! note
+    You must first purchase a license for the full version of HCL Connections Engagement Center.
 
 1.  Download and extract the [HCL Connections Engagement Center Update Package](https://hclsoftware.flexnetoperations.com/flexnet/operationsportal/DownloadSearchPage.action?search=cec-installer-6.5.0.0.zip&resultType=Files&sortBy=relevance&listButton=Search) from the HCL License & Delivery Portal.
 
@@ -18,7 +19,8 @@ If you want to expand the use of Connections Engagement Center throughout Connec
 
 4.  Verify that Deployment Manager is running and that the SOAP port that connects it to wasadmin is correct. By default the installer uses port 8879 to connect wsadmin to the deployment manager. This port may vary in some environments.
 
-    **Note:** If your environment uses a different SOAP port, the installer will fail with the following error: **WASX7023E**: Error creating "SOAP" connection to host "HOST"; exception information: com.ibm.websphere.management.exception.ConnectorNotAvailableException: \[SOAPException: faultCode=SOAP-ENV:Client; msg=Unable to find a valid IP for host localhost\]
+    !!! note
+    If your environment uses a different SOAP port, the installer will fail with the following error: **WASX7023E**: Error creating "SOAP" connection to host "HOST"; exception information: com.ibm.websphere.management.exception.ConnectorNotAvailableException: \[SOAPException: faultCode=SOAP-ENV:Client; msg=Unable to find a valid IP for host localhost\]
 
     .
 

@@ -12,7 +12,8 @@ You can change the values of the properties in either one of the following ways:
 
 -   Edit the configuration file by using a text editor. You still must use the checkOutConfig wsadmin command to check out the configuration file and the checkInConfig wsadmin command to check the file back in. When you check in the file, validation runs on the edited file and you are informed if you introduced any errors. Fix any errors, save the file, and try to check it in again.
 
-    **Note:** This method of editing properties is more error-prone than using the wsadmin client because you might inadvertently edit other content in the file.
+    !!! note
+    This method of editing properties is more error-prone than using the wsadmin client because you might inadvertently edit other content in the file.
 
 
 -   **[Properties that you can edit by using the wsadmin client](../admin/r_admin_common_props_wsadmin.md)**  

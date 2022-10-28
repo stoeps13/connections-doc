@@ -2,7 +2,8 @@
 
 The Tiny editors are alternative rich-text editors which can be installed for HCL Connections™. They provide additional features and extensive customization options not available with the default editor.
 
-**Note:** TinyMCE editor is currently only supported in Connections 8.0. It will be fully supported in the Connections 8.0 in CR1 release.
+!!! note
+    TinyMCE editor is currently only supported in Connections 8.0. It will be fully supported in the Connections 8.0 in CR1 release.
 
 -   **[Installing Tiny Editors for HCL Connections](../../install/tiny_editors/t_01-setup_00-summary.md)**  
 Install the Tiny editors, TinyMCE, to get a powerful editing experience inside HCL Connections with a streamlined user-interface and unparalleled customization.

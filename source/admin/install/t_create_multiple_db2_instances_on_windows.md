@@ -4,7 +4,8 @@ Complete these steps for each instance that you plan to create:
 
 1.  Create a new user and add it to the Administrators group.
 
-    **Note:** If you are using DB2®, also add the new user to the DB2ADMNS group.
+    !!! note
+    If you are using DB2®, also add the new user to the DB2ADMNS group.
 
 2.  Remove the user account from the Users group.
 3.  Grant rights to the new user:

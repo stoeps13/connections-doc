@@ -16,7 +16,8 @@ allowCommonInlineFormattingElements
 allowCommonBlockElements
 :   Allows the following common block-type elements: `<p>, <div>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <ul>, <ol>, <li>, <blockquote>`
 
-    **Note:** Although some of the elements allowed in this rule can take attributes, the attributes are not allowed by default; you must specify which attributes to allow using other rules, such as allowAttributesGlobally.
+    !!! note
+    Although some of the elements allowed in this rule can take attributes, the attributes are not allowed by default; you must specify which attributes to allow using other rules, such as allowAttributesGlobally.
 
     Usage:
 
@@ -27,7 +28,8 @@ allowCommonBlockElements
 allowElements
 :   Allows only the specified elements.
 
-    **Note:** Although some elements can take attributes, attributes are not included in this rule and are not allowed by default; you must specify which attributes to allow using other rules, such as allowAttributesGlobally.
+    !!! note
+    Although some elements can take attributes, attributes are not included in this rule and are not allowed by default; you must specify which attributes to allow using other rules, such as allowAttributesGlobally.
 
     Usage:
 

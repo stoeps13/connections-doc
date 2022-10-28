@@ -29,7 +29,8 @@ The following tables list the widget elements that you can configure when enabli
 |loginRequired|Specifies that the widget displays only when users are logged in.|No|
 |bundleRefId|The resource bundle reference ID that is defined in the LotusConnections-config.xml file. This ID is used to determine the bundle strings for the widget category, widget description, and widget title. For more information about adding widget strings, see *Adding custom strings for widgets and other specified scenarios*.|No|
 
-**Note:** The url, navBarLink, and item or @value XML attributes can be parameterized using substitution variables. For more information about the substitution variables that you can use, see *Profiles widget configuration variables*.
+!!! note
+    The url, navBarLink, and item or @value XML attributes can be parameterized using substitution variables. For more information about the substitution variables that you can use, see *Profiles widget configuration variables*.
 
 |Attribute|Description|
 |---------|-----------|

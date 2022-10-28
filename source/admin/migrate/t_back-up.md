@@ -4,7 +4,8 @@ Before you upgrade or update HCL Connections, back up your databases and applica
 
 Follow these steps to back up your Connections deployment. You can use this backup to restore your existing deployment if the upgrade or update fails. This procedure backs up your entire deployment, you cannot use it to back up individual applications within Connections.
 
-**Note:** Pay attention to the version of Connections you are backing up. If you must restore the backup later, it can be restored only to the same version of Connections, as described in the following details:
+!!! note
+    Pay attention to the version of Connections you are backing up. If you must restore the backup later, it can be restored only to the same version of Connections, as described in the following details:
 
 -   Content can be restored only to the same major/minor release that it was backed up from. For example, Cumulative Refresh \(CR\) releases for Connections 6 CR6 are considered part of the Connections 6.5 release.
 -   Content cannot be restored to a later release \(for example, Connections 5.5\) if it was backed up on an earlier release \(for example, Connections 5.0 \(CRx\)\).
@@ -18,7 +19,8 @@ Follow these steps to back up your Connections deployment. You can use this back
 
     -   For Linux™, AIX®, or Linux on System z®: [<shared\_data\_directory\_root\>](../plan/i_ovr_r_directory_conventions.md)/ccm
     -   For Windows: [<shared\_data\_directory\_root\>](../plan/i_ovr_r_directory_conventions.md)\\ccm
-    **Note:** You need to back up FileNet Storage Area if it is reconfigured outside of <shared\_data\_directory\_root\> only.
+    !!! note
+    You need to back up FileNet Storage Area if it is reconfigured outside of <shared\_data\_directory\_root\> only.
 
     By default, the Engine-ws.ear is in the following directory:
 
@@ -82,7 +84,8 @@ Follow these steps to back up your Connections deployment. You can use this back
 
     2.  Create a backup of the WebSphere Application Server profile directory: [profile\_root](../plan/i_ovr_r_directory_conventions.md)
 
-        **Note:** If Connections applications are deployed on separate profiles, archive each profile.
+        !!! note
+    If Connections applications are deployed on separate profiles, archive each profile.
 
     3.  Create a backup of the profileRegistry.xmlfile that is located under [app\_server\_root/properties](../plan/i_ovr_r_directory_conventions.md).
 
@@ -94,11 +97,13 @@ Follow these steps to back up your Connections deployment. You can use this back
 
     -   AIX or Linux: [shared\_resources\_root](../plan/i_ovr_r_directory_conventions.md)
     -   Windows: [shared\_resources\_root](../plan/i_ovr_r_directory_conventions.md)
-    **Note:** For shared and remote network file system requirements, be sure to review the footnotes for each supported operating system in the detailed [system requirements](https://support.hcltechsw.com/csm?sys_kb_id=2010cc82db30acd0a45ad9fcd3961971&id=kb_article_view).
+    !!! note
+    For shared and remote network file system requirements, be sure to review the footnotes for each supported operating system in the detailed [system requirements](https://support.hcltechsw.com/csm?sys_kb_id=2010cc82db30acd0a45ad9fcd3961971&id=kb_article_view).
 
 8.  Back up the HCL Installation Manager data directory:
 
-    **Note:** This step is necessary only if you are planning an in-place migration of Connections. That is, where you use the same systems to host the new deployment.
+    !!! note
+    This step is necessary only if you are planning an in-place migration of Connections. That is, where you use the same systems to host the new deployment.
 
     -   AIX or Linux: /var/ibm/InstallationManager
     -   AIX or Linux \(non-root user\): /home/user/var/ibm/Installation Manager

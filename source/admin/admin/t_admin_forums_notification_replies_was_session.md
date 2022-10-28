@@ -8,7 +8,8 @@ The steps in this topic are required to configure Forums so that users can reply
 
 A mail server uses a rule or trigger to direct reply emails to a mailbox dedicated for this purpose. The HCL Connections server uses a WebSphere Application Server mail session to process this mailbox periodically, adding content to the forums. This topic documents how to create the mail session.
 
-**Note:** The ReplyTo mailbox should be different from a Connections user's regular mailbox. It is better to have a mailbox set aside just to handle ReplyTo replies to avoid the risk of having notifications sent to that user being read back in as ReplyTo replies.
+!!! note
+    The ReplyTo mailbox should be different from a Connections user's regular mailbox. It is better to have a mailbox set aside just to handle ReplyTo replies to avoid the risk of having notifications sent to that user being read back in as ReplyTo replies.
 
 1.  Open the IBM WebSphere Administrative Console.
 

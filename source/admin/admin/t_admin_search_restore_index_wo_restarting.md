@@ -4,7 +4,8 @@ Complete the following procedure when you want to restore a Search index in a mu
 
 For information about how to create a backup copy of the Search index, see *Backing up the Search index*.
 
-**Note:** HCL Connections applications maintain delete and access-control update information for a maximum of 30 days. Indexes that are more than 30 days old are not considered suitable for restoration because they might contain obsolete or orphan content.
+!!! note
+    HCL Connections applications maintain delete and access-control update information for a maximum of 30 days. Indexes that are more than 30 days old are not considered suitable for restoration because they might contain obsolete or orphan content.
 
 You can use a backup copy of the Search index to restore the index in the event of loss or corruption. You must restore the backup consistently for all the nodes in your deployment.
 
@@ -59,7 +60,8 @@ You can use a backup copy of the Search index to restore the index in the event 
     SearchService.enableAllTasks()
     ```
 
-    **Note:** If you don't want to enable all tasks \(for example, if some tasks were disabled before you started these steps and you want to keep them disabled\), use the SearchService.enableTask\(String taskName\) command instead to enable one task at a time.
+    !!! note
+    If you don't want to enable all tasks \(for example, if some tasks were disabled before you started these steps and you want to keep them disabled\), use the SearchService.enableTask\(String taskName\) command instead to enable one task at a time.
 
     The next indexing task to run resumes indexing at the point at which the restored index was last successfully indexed.
 

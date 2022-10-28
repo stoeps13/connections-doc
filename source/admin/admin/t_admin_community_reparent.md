@@ -66,7 +66,8 @@ Some communities might need to become subcommunities of other communities. Use t
         -   Original start page setting
         -   Any existing web addresses
 
-            **Note:** The URL to access this community changes slightly because the parent handle no longer exists.
+            !!! note
+    The URL to access this community changes slightly because the parent handle no longer exists.
 
     CommunitiesService.moveCommunityToSubcommunity\("parentCommunityUuid", "communityToMoveUuid"\)
     :   Reparents a community to be the subcommunity of another community.
@@ -103,7 +104,8 @@ Some communities might need to become subcommunities of other communities. Use t
 
         -   Community owners in the parent are copied to the new subcommunity as owners.
         -   Subcommunity members and owners are copied to the new parent as members.
-        **Note:** Using moveCommunityToSubcommunity generates an error if you attempt the following reparenting actions:
+        !!! note
+    Using moveCommunityToSubcommunity generates an error if you attempt the following reparenting actions:
 
         -   Reparent a community that has subcommunities.
         -   Reparent a community that is already a subcommunity

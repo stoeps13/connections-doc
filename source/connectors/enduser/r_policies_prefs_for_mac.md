@@ -10,15 +10,18 @@ There are three ways to set a property in a plist.
 
 -   A user can edit the plist in /Users/\{USER\_NAME\}/Library/Preferences/com.ibm.AutoSyncMonitor.plist" using an editor such as xcode or plistBuddy. Create a dictionary with the name of "Policies" and add policies to the dictionary XML file to enable them.
 
-    **Note:** the debugMode and LogEnabled keys must be added to /Root not /Policies.
+    !!! note
+    the debugMode and LogEnabled keys must be added to /Root not /Policies.
 
 -   If you are a local administrator, you can create a new plist namedcom.ibm.AutoSyncMonitor.plist and add it to /Library/Preferences. Add policies to this plist that will apply for users of this computer.
 
-    **Note:** Once the plist is in this directory the only way to edit it is with plist Buddy and you must authenticate using your administrator password.
+    !!! note
+    Once the plist is in this directory the only way to edit it is with plist Buddy and you must authenticate using your administrator password.
 
 -   If you are a server administrator, you can use a program such as OS X Server to distribute custom plists with policies that you set. Add a plist to /Library/Managed Preferences/\{USER\_NAME\}/. The policies apply for each user that you specify. These settings can not be changed locally.
 
-**Note:** If there is a conflict between the plists, the Managed Preference list on the server override the library and user preferences, and library preferences override user preferences.
+!!! note
+    If there is a conflict between the plists, the Managed Preference list on the server override the library and user preferences, and library preferences override user preferences.
 
 |Key/SubKey  
 
@@ -120,7 +123,8 @@ There are three ways to set a property in a plist.
 
 |http://www-01.ibm.com/support/knowledgecenter/SSYGQH\_5.0.0/connectors/admin/msdesktop\_mac\_over.dita \(Default\)
 
-**Note:** "http://" or "https://" is required as part of the url
+!!! note
+    "http://" or "https://" is required as part of the url
 
 |The URL for help for the product.
 
@@ -166,7 +170,8 @@ There are three ways to set a property in a plist.
 
 |<Dictionary of extensions\>|List of extensions to ignore changes on; for example: gif, jpeg, mpg. This list will be merged with any user preferences unless the policy is set to Disable.
 
- **Note:** Setting this option requires a reboot.
+ !!! note
+    Setting this option requires a reboot.
 
 |
 |Root/Policies
@@ -240,7 +245,8 @@ There are three ways to set a property in a plist.
 
 |Setting this policy will enable the application to create a physical log that is located in: /Users/\{USERNAME\}/Library/Application Support/com.ibm.AutoSyncMonitor/Logs
 
- **Note:** Log files are kept for one week, then the oldest is automatically removed each day as a new log file is created.
+ !!! note
+    Log files are kept for one week, then the oldest is automatically removed each day as a new log file is created.
 
 |
 |Root/Policies

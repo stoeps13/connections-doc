@@ -11,12 +11,14 @@ activeContentFilter.enabled
 
     This property takes a Boolean value: true or false.
 
-    **Note:** Disabling this filter introduces vulnerability to cross-site scripting \(XSS\) and other type of malicious attacks. For more information, see *Securing applications from malicious attack*.
+    !!! note
+    Disabling this filter introduces vulnerability to cross-site scripting \(XSS\) and other type of malicious attacks. For more information, see *Securing applications from malicious attack*.
 
 descriptionSummary.size
 :   This property determines the maximum number of characters in a community description to display in the My Organization Communities or My Communities view. It gets this information through the seedlist.
 
-    **Note:** You must reindex the catalog to get the old content updated. For more information, see *Restoring the Communities catalog index*.
+    !!! note
+    You must reindex the catalog to get the old content updated. For more information, see *Restoring the Communities catalog index*.
 
     This property takes an integer value.
 

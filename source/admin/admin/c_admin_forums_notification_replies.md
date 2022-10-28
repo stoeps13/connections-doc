@@ -12,7 +12,8 @@ Configuring the mail session requires performing some simple steps in the WebSph
 
 HCL Connections supports the Simple Mail Transfer Protocol \(SMTP\) for sending notifications, and the Internet message access protocol \(IMAP\) and secure Internet message access protocol \(IMAPS\) for notification replies. Any mail server using these protocols can direct notifications and notification replies. This documentation provides information on configuring HCL Domino servers to direct notification replies to a dedicated mailbox. See the [HCL Connections system requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073654) for supported email applications.
 
-**Note:** In deployments with multiple HCL Connections servers, the different servers cannot use the same mailbox. However, they can use different mailboxes on the same mail server, in which case each would require its own direction rules.
+!!! note
+    In deployments with multiple HCL Connections servers, the different servers cannot use the same mailbox. However, they can use different mailboxes on the same mail server, in which case each would require its own direction rules.
 
 -   **[Configuring HCL Domino for email notification replies](../admin/t_admin_forums_notification_replies_domino.md)**  
 Configure HCL Domino to direct email notification replies to a dedicated mailbox.

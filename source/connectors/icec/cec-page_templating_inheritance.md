@@ -12,7 +12,8 @@ After you have added content to your Connections Engagement Center template, you
 
 Finally, if you have added content to your template and chose the pages that will inherit from your template, you start the transmission by clicking the **Full Resynchronize** button once.You can find this button below the **Inherit from** dropdown in your Connections Engagement Center template. The chosen pages should now have inherited.
 
-**Note:** Only grid, layout, and widgets are inherited.
+!!! note
+    Only grid, layout, and widgets are inherited.
 
 **Parent topic:**[Admin panel](../../connectors/icec/cec-admin_panel.md)
 

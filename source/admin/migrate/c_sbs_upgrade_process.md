@@ -20,7 +20,8 @@ To review all tasks that typically precede a Connections installation, see the [
 5.  [Install IBM WebSphere Application Server](../install/t_install_was.md).
 6.  Configure WebSphere security by choosing the LDAP and SSO settings that you used for Connections 6.5 as you follow the steps in [Setting up federated repositories](../install/t_inst_federated_repositories.md).
 
-    **Note:** If you are making significant changes between your Connections 6.5 CR1 and Connections 7 security configuration, consider the dependencies described in [Considerations for a side-by-side upgrade](c_sbs_upgrade_considerations.md).
+    !!! note
+    If you are making significant changes between your Connections 6.5 CR1 and Connections 7 security configuration, consider the dependencies described in [Considerations for a side-by-side upgrade](c_sbs_upgrade_considerations.md).
 
 7.  [Install and configure IBM HTTP Server](../install/t_create_webserver1_node.md).
 

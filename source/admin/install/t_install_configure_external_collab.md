@@ -12,7 +12,8 @@ To configure external collaboration, complete the following steps:
 
     -   Configure the self-registration feature to have external users added to your LDAP directory as they register. For more information, see [Configuring self-registration for external users](t_install_config_self-registration_for_external_users.md).
 
-        **Note:** Self-registration requires that users have anonymous access to be able to register and reset their guest password. If an access manager solution such as IBM Security Access Manager is in place, a junction for the following context route has to be created/whitelisted: **/selfservice/**
+        !!! note
+    Self-registration requires that users have anonymous access to be able to register and reset their guest password. If an access manager solution such as IBM Security Access Manager is in place, a junction for the following context route has to be created/whitelisted: **/selfservice/**
 
     -   Add external users to your LDAP directory. The managed registration process differs for each organization and cannot be described here. For more information, see your organization's registration guidelines.
 3.  If you did NOT configure self-registration in step 2, synchronize your LDAP with the Profiles database. For more information, see [Registering external users with Profiles](../admin/t_admin_profiles_external_user_script.md).

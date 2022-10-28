@@ -6,7 +6,8 @@ Manually update settings in tdi-profiles-config.xml on your Tivoli® Directory I
 
 1.  Manually update settings in tdi-profiles-config.xml by completing the following steps:
 
-    **Note:** Update tdi-profiles-config.xml on all servers that are running the TDI process. Refer to the TDI configuration related topics such as [Developing custom TDI assembly lines for Profiles](../admin/c_admin_profiles_develop_custom_tdi_scripts.md) or [Populating the Profiles database](t_prof_install_profiles_db.md) to validate the locations you need to target for those changes.
+    !!! note
+    Update tdi-profiles-config.xml on all servers that are running the TDI process. Refer to the TDI configuration related topics such as [Developing custom TDI assembly lines for Profiles](../admin/c_admin_profiles_develop_custom_tdi_scripts.md) or [Populating the Profiles database](t_prof_install_profiles_db.md) to validate the locations you need to target for those changes.
 
     1.  Using a text editor, open te tdi-profiles-config.xml file.
 
@@ -98,7 +99,8 @@ Manually update settings in tdi-profiles-config.xml on your Tivoli® Directory I
     <property name="com.ibm.lconn.profiles.config.EnableTDIEventOverride" value="true"/>
     ```
 
-    **Note:** You can remove the `profiles.events.system.publish` property because it is no longer needed.
+    !!! note
+    You can remove the `profiles.events.system.publish` property because it is no longer needed.
 
 8.  After you make changes, check the configuration files in by running the following command in the wsadmin session that you left open:
 

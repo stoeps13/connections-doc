@@ -2,7 +2,8 @@
 
 Manage the access that people from outside your organization \(external users\) have to your HCL Connections implementation.
 
-**Note:** If internal users and external users access IBM® Connections through the same caching proxy server, then you must disable the public cache to avoid serving public content to external users. To disable public cache, edit LotusConnections-config.xml and add: `"<genericProperty name="publicCacheEnabled">false</genericProperty>"`.
+!!! note
+    If internal users and external users access IBM® Connections through the same caching proxy server, then you must disable the public cache to avoid serving public content to external users. To disable public cache, edit LotusConnections-config.xml and add: `"<genericProperty name="publicCacheEnabled">false</genericProperty>"`.
 
 **Note:**
 
@@ -34,7 +35,8 @@ Complete these tasks to enable external user access:
 
 -   Disabling anonymous access for all Connections users
 
-    **Note:** If external users are not forced to authenticate through a mechanism such as Security Access Manager \(SAM\), then you must disable anonymous access for all Connections users. Perform the steps in *Forcing users to log in before they can access an application*. If anonymous access is enabled and external users are allowed to access your HCL Connections implementation, then external users might anonymously access all public data in HCL Connections. This access includes profiles and public files and communities that were not intended to be shared externally.
+    !!! note
+    If external users are not forced to authenticate through a mechanism such as Security Access Manager \(SAM\), then you must disable anonymous access for all Connections users. Perform the steps in *Forcing users to log in before they can access an application*. If anonymous access is enabled and external users are allowed to access your HCL Connections implementation, then external users might anonymously access all public data in HCL Connections. This access includes profiles and public files and communities that were not intended to be shared externally.
 
 
 -   **[Configuring self-registration for external users](../admin/t_install_config_self-registration_for_external_users.md)**  

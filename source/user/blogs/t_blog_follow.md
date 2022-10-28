@@ -12,7 +12,8 @@ Follow a blog to stay up-to-date on new posts and announcements. The notificatio
 1.  From the navigation bar, click **Communities** then select the community that contains the blog that you want to follow. You can select a blog from the **My Communities** or **Discover** page.
 2.  In the community menu, click **Follow this Community**. To stop following, click **Stop Following this Community**.
 
-**Note:** When you follow a community, you automatically follow community blog entries.
+!!! note
+    When you follow a community, you automatically follow community blog entries.
 
 ## Monitoring blog activity {#section_qxl_ntp_35b .section}
 

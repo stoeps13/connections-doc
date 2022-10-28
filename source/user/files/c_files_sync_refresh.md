@@ -20,7 +20,8 @@ You might occasionally be alerted if there is an issue with syncing. For example
 
 To edit a file that is in My Drive, open it from anywhere, edit the content, and save the changes. That’s it!
 
-**Note:** If you were already using the Desktop plug-in before Connections Release 6, the name of the folder will remain <server-name\> sync, or whatever you renamed it, instead of My Drive. Content will still be synced between the desktop sync folder and My Drive in the Files app.
+!!! note
+    If you were already using the Desktop plug-in before Connections Release 6, the name of the folder will remain <server-name\> sync, or whatever you renamed it, instead of My Drive. Content will still be synced between the desktop sync folder and My Drive in the Files app.
 
 **Parent topic:**[Files](../files/fframe.md)
 

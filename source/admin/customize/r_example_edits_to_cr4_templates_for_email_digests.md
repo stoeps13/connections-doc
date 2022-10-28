@@ -52,7 +52,8 @@ For the daily digest \(dailyDigest.flt\), the title is defined by the 'NEWSLETTE
 
 For the weekly digest \(weeklyDigest.flt\), the title is defined by the 'NEWSLETTER\_TITLE\_WEEKLY' entry.
 
-**Note:** The value is sanitized by commonUtil \(comUtil\) convertHtmlStructuresToText function.
+!!! note
+    The value is sanitized by commonUtil \(comUtil\) convertHtmlStructuresToText function.
 
 ## Changing the headline message of a notification {#section_j4q_ljj_qgb .section}
 

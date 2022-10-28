@@ -30,7 +30,8 @@ For information on setting up persistent volumes, see [Set up persistent volumes
         /opt/elasticsearch-7.10.1/probe/sendRequest.sh GET /_cat/indices
         ```
 
-        **Note:** Any green or yellow index status is fine. Fix the Elasticsearch 7 cluster first if you find any red status.
+        !!! note
+    Any green or yellow index status is fine. Fix the Elasticsearch 7 cluster first if you find any red status.
 
         Disconnect from the pod \(press Ctrl+D, or type `exit` and press Enter\).
 
@@ -91,7 +92,8 @@ For information on setting up persistent volumes, see [Set up persistent volumes
 
 3.  Copy the snapshot from the old Elasticsearch 7 cluster to the new OpenSearch cluster.
 
-    **Note:** The following steps do not include specific commands, as file systems might vary between users \(NFS, EFS, and the like\).
+    !!! note
+    The following steps do not include specific commands, as file systems might vary between users \(NFS, EFS, and the like\).
 
     1.  Ensure that you have the necessary permissions to complete this step.
     2.  Go to the location which was configured as the backup storage of your old Elasticsearch 7 cluster \(for example /mnt/pv-connections or the NFS master location / /pv-connections/example\).
@@ -113,7 +115,8 @@ For information on setting up persistent volumes, see [Set up persistent volumes
 
         Disconnect from the pod \(press Ctrl+D, or type `exit` and press Enter\).
 
-        **Note:** If you don’t want the default or automatically created indexes or the ones that are already created here because you are planning to migrate them from ElasticSearch 7, it is best to delete those here \(either delete all or choose the ones you want to delete\):
+        !!! note
+    If you don’t want the default or automatically created indexes or the ones that are already created here because you are planning to migrate them from ElasticSearch 7, it is best to delete those here \(either delete all or choose the ones you want to delete\):
 
         ``` {#codeblock_rbw_vjs_z5b}
         kubectl exec -ti -n connections $(kubectl get pods -n connections -o

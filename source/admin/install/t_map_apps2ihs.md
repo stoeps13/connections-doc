@@ -16,7 +16,8 @@ To map your HCL Connections applications to IBM HTTP Server and regenerate the p
 
 3.  Map an HCL Connections application to IBM HTTP Server:
 
-    **Note:** This step instructs you to select webserver1. Ensure that you have defined this web server before you attempt to complete these steps. For more information, see the *Defining IBM HTTP Server* topic.
+    !!! note
+    This step instructs you to select webserver1. Ensure that you have defined this web server before you attempt to complete these steps. For more information, see the *Defining IBM HTTP Server* topic.
 
     1.  Select the cluster on which the application was installed and the web server that will be servicing the application.
 
@@ -36,7 +37,8 @@ To map your HCL Connections applications to IBM HTTP Server and regenerate the p
 
 6.  Click your web server again and then click **Propagate Plug-in**.
 
-    **Note:** If you have trouble propagating the plug-in on Linux™, restart IBM HTTP Server using the following commands:
+    !!! note
+    If you have trouble propagating the plug-in on Linux™, restart IBM HTTP Server using the following commands:
 
     ```
      ./adminctl start

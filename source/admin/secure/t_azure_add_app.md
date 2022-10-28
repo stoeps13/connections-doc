@@ -32,7 +32,8 @@ Part of setting up single sign-on with OIDC involves registering an application 
 
     ![](azure_new_secret.jpg)
 
-    **Note:** Remember to copy the secret for use later when configuring WebSphere.
+    !!! note
+    Remember to copy the secret for use later when configuring WebSphere.
 
 5.  Provide information on token configuration:
 

@@ -11,7 +11,8 @@ In addition to specifying access levels and enabling a document review cycle, co
 
     -   To change the level of access that community members have to library files, select a role from the **Roles** section.
 
-        **Note:** Community members have at least reader and contributor access to all files and folders respectively, by default, but file authors and community owners can change sharing settings for individual files. For more information, see [Sharing library files and folders](t_com_library_sharing.md).
+        !!! note
+    Community members have at least reader and contributor access to all files and folders respectively, by default, but file authors and community owners can change sharing settings for individual files. For more information, see [Sharing library files and folders](t_com_library_sharing.md).
 
     -   To change the sorting order of the compact display, select a column order and sort order in the **Document list sort section**.
     -   To change the default document type set for the library, click **Change** in the **Document types** section, select a document type, and then click **OK**.

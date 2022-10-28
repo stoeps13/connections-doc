@@ -13,7 +13,8 @@ The tdisettings.properties file collects the values that are described in the fo
 |Property|Description|Value|
 |--------|-----------|-----|
 |db.hostname|Host name of the database server.| |
-|db.jdbcdriver|Location of the JDBC driver.|Example: C\\:\\\\IBM\\\\SQLLIB\\\\java**Note:** The extra "\\" symbol is an escape character.
+|db.jdbcdriver|Location of the JDBC driver.|Example: C\\:\\\\IBM\\\\SQLLIB\\\\java!!! note
+    The extra "\\" symbol is an escape character.
 
 |
 |db.name|Name of the Profiles database.|Default: PEOPLEDB|
@@ -44,26 +45,33 @@ The tdisettings.properties file collects the values that are described in the fo
 |task.list|Tasks that the Profiles population wizard can perform. You can choose from the following options: LDAP\_OPTIONAL\_TASK\_MARK\_MANAGER, LDAP\_OPTIONAL\_TASK\_FILL\_COUNTRIES, LDAP\_OPTIONAL\_TASK\_FILL\_DEPARTMENT, LDAP\_OPTIONAL\_TASK\_FILL\_ORGANIZATION, LDAP\_OPTIONAL\_TASK\_FILL\_EMPLOYEE, and LDAP\_OPTIONAL\_TASK\_FILL\_WORK\_LOCATIONTo execute multiple tasks, separate the tasks with the comma symbol.
 
 |Example: LDAP\_OPTIONAL\_TASK\_MARK \_MANAGER,LDAP\_OPTIONAL \_TASK\_FILL\_COUNTRIES|
-|task.country.csv|File path to the isocc.csv file. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_COUNTRIES in the task.list property.|Example: C\\:\\\\build\\\\isocc.csv**Note:** The extra "\\" symbol is an escape character.
+|task.country.csv|File path to the isocc.csv file. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_COUNTRIES in the task.list property.|Example: C\\:\\\\build\\\\isocc.csv!!! note
+    The extra "\\" symbol is an escape character.
 
 |
-|task.department.csv|File path to the deptinfo.csv file. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_DEPARTMENT in the task.list property.|Example: C\\:\\\\build\\\\deptinfo.csv**Note:** The extra "\\" symbol is an escape character.
+|task.department.csv|File path to the deptinfo.csv file. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_DEPARTMENT in the task.list property.|Example: C\\:\\\\build\\\\deptinfo.csv!!! note
+    The extra "\\" symbol is an escape character.
 
 |
-|task.empoyeetype.csv|File path to the emptype.csv file. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_EMPLOYEE in the task.list property.|Example: C\\:\\\\build\\\\emptype.csv**Note:** The extra "\\" symbol is an escape character.
+|task.empoyeetype.csv|File path to the emptype.csv file. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_EMPLOYEE in the task.list property.|Example: C\\:\\\\build\\\\emptype.csv!!! note
+    The extra "\\" symbol is an escape character.
 
 |
-|task.organization.csv|File path to the orginfo.csv file. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_ORGANIZATION in the task.list property.|Example: C\\:\\\\build\\\\orginfo.csv**Note:** The extra "\\" symbol is an escape character.
+|task.organization.csv|File path to the orginfo.csv file. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_ORGANIZATION in the task.list property.|Example: C\\:\\\\build\\\\orginfo.csv!!! note
+    The extra "\\" symbol is an escape character.
 
 |
-|task.worklocation.csv|File path to the workloc.csvfile. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_ORGANIZATION in the task.list property.|Example: C\\:\\\\build\\\\workloc.csv**Note:** The extra "\\" symbol is an escape character.
+|task.worklocation.csv|File path to the workloc.csvfile. Required if you specify LDAP\_OPTIONAL\_TASK\_FILL\_ORGANIZATION in the task.list property.|Example: C\\:\\\\build\\\\workloc.csv!!! note
+    The extra "\\" symbol is an escape character.
 
 |
-|TDI.dir|Installation location of Tivoli® Directory Integrator.|Example: C\\:\\\\IBM\\\\TDI\\\\V7.1.1**Note:** The extra "\\" symbol is an escape character.
+|TDI.dir|Installation location of Tivoli® Directory Integrator.|Example: C\\:\\\\IBM\\\\TDI\\\\V7.1.1!!! note
+    The extra "\\" symbol is an escape character.
 
 |
 
-**Note:** For more information about using CSV files to provide additional data for Profiles, see the *Supplemental user data for Profiles* topic. For information about Tivoli Directory Integrator properties, see *IBM® Tivoli Directory Integrator solution properties for Profiles*.
+!!! note
+    For more information about using CSV files to provide additional data for Profiles, see the *Supplemental user data for Profiles* topic. For information about Tivoli Directory Integrator properties, see *IBM® Tivoli Directory Integrator solution properties for Profiles*.
 
 **Parent topic:**[Using the Profiles population wizard in silent mode](../install/t_silent_population_wizard.md)
 

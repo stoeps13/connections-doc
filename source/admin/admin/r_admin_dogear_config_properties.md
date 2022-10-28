@@ -8,7 +8,8 @@ The following table lists the configuration settings that you can check out and 
 
 |Configuration property|Description|
 |----------------------|-----------|
-|activeContentFilter.enabled|Bookmarks provides a filter that prevents users from using rich text descriptions with malicious scripts that are executed when other users visit bookmarks. You can disable this filter to provide richer options for content in any Bookmarks text input field. **Note:** Disabling this filter introduces vulnerability to XSS and other types of malicious attack. See *Securing applications from malicious attack* for additional information.
+|activeContentFilter.enabled|Bookmarks provides a filter that prevents users from using rich text descriptions with malicious scripts that are executed when other users visit bookmarks. You can disable this filter to provide richer options for content in any Bookmarks text input field. !!! note
+    Disabling this filter introduces vulnerability to XSS and other types of malicious attack. See *Securing applications from malicious attack* for additional information.
 
 The default value is "true" and can be set to "false" if you wish not to filter active content.|
 |bookmark.openInNewWindow|Controls the window behavior when users click on a bookmark. When the value is True, clicking a bookmark will open the URL in a new window. When False, the bookmark opens in the same window.|
@@ -27,7 +28,8 @@ The default value is "true" and can be set to "false" if you wish not to filter 
 
 |
 |favicon.ajaxproxy.intranet.enabled|If set to True, Bookmarks will load the intranet bookmark favicons via the AJAX proxy; if set to False it will load bookmark favicons via direct network access.|
-|favIconService.favicon.directory|Determines where the favicon image caches will be stored on the file system. This will be located on the local file system of each node machine.**Note:** Although you can change this setting in the configuration file, the recommended approach is to set this location from the websphere Application Server administrator console. For more information, see the topic "Changing the location of the favicon cache or full-text index."
+|favIconService.favicon.directory|Determines where the favicon image caches will be stored on the file system. This will be located on the local file system of each node machine.!!! note
+    Although you can change this setting in the configuration file, the recommended approach is to set this location from the websphere Application Server administrator console. For more information, see the topic "Changing the location of the favicon cache or full-text index."
 
 |
 |favIconService.favicon.maxAge|Small \(fav\) icons are displayed to end users next to each bookmark. Bookmarks downloads and caches these icons from the hosts servers for each URL. This setting determines length of time \(in days\) an icon remains cached locally before an updated copy is retrieved.|

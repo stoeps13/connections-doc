@@ -4,7 +4,8 @@ You must be the current business owner to transfer business ownership of a commu
 
 The person who creates a community is the business owner of the community and any subcommunities with the community. Each community must have a business owner and it can have only one business owner. The business owner can perform any of the actions that a community owner can. The business owner can also transfer the business owner role to another community member with an active account. The member must be a member of the same organization.
 
-**Note:** You cannot transfer business ownership to a guest member of the community, and a guest who is a business owner cannot transfer business ownership.
+!!! note
+    You cannot transfer business ownership to a guest member of the community, and a guest who is a business owner cannot transfer business ownership.
 
 1.  From the navigation bar, click **Communities** and select the community that you want to manage.
 

@@ -31,13 +31,15 @@ The Wikis\_communityDifferences.html reports might indicate that there are diffe
 
 4.  Repeat step 3 for each remote application where you want to restore data.
 
-    **Note:** Potentially, you might need to run the command seven times, once for each remote application \(Activities, Blogs, Files, Forums, Ideation Blogs, Status Updates, and Wikis\) that is integrated with Communities.
+    !!! note
+    Potentially, you might need to run the command seven times, once for each remote application \(Activities, Blogs, Files, Forums, Ideation Blogs, Status Updates, and Wikis\) that is integrated with Communities.
 
 5.  Check the application\_orphanedRemoteApplications.html files. To keep the data identified in those files, follow the steps in the topic *Assigning orphaned data to a new community*. To delete the data, follow the steps in the topic *Deleting orphaned data*.
 
 6.  Check the application\_communityDifferences.html files. Contact the community owners for all the communities that are listed in the file. To ensure that the applications are synchronized, community owners can toggle the community privacy settings after any required data scrubbing is completed. Community owners can temporarily modify the community settings. For example, they can set a community's access to restricted, save it, change the access back to public, and then save it again to alert all remote applications that the community's content should be publicly visible.
 
-    **Note:** For Community Trash, some of the Communities that are listed in the application\_communityDifferences.html file with "visibility" differences could be caused by a Community that is deleted and is now placed in Trash. Communities in the Trash are changed to have "private" as the visibility type. If so, synchronize the Community and the external widget by restoring the Community from the Trash temporarily. This action restores the Community's original visibility. You can then delete the Community again. Both Communities and the external widget now have the same visibility and both are now in Trash.
+    !!! note
+    For Community Trash, some of the Communities that are listed in the application\_communityDifferences.html file with "visibility" differences could be caused by a Community that is deleted and is now placed in Trash. Communities in the Trash are changed to have "private" as the visibility type. If so, synchronize the Community and the external widget by restoring the Community from the Trash temporarily. This action restores the Community's original visibility. You can then delete the Community again. Both Communities and the external widget now have the same visibility and both are now in Trash.
 
 
 **Parent topic:**[Recovering from a database failure](../admin/c_admin_communities_backup_and_restore.md)

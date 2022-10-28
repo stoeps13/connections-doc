@@ -9,7 +9,8 @@ You can choose whether to check out a file before you edit it or whether you wan
 
 -   Right-click the name of a library file and choose **Open** to open with the default associated application or **Open with** to choose an application.
 
-    **Note:** This method does not lock the file so you might encounter conflicts when you upload your changes.
+    !!! note
+    This method does not lock the file so you might encounter conflicts when you upload your changes.
 
 -   Right-click the name of a library file and choose **Edit**. The file will be locked until you check it back in or cancel the check out.
 

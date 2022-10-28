@@ -4,7 +4,8 @@ Install fixes with the update wizard in interactive mode.
 
 For information about prerequisites, see [Installing fixes](c_installing_interim_fixes.md).
 
-**Note:** Ensure the node agent is running before installing fixes.
+!!! note
+    Ensure the node agent is running before installing fixes.
 
 This topic describes the steps to install fixes; it does not include information about how to prepare the production environment before you install fixes.
 
@@ -14,7 +15,8 @@ You can install multiple fixes in this procedure, by copying all fixes to a sing
 
 To install a fix in interactive mode, complete the following steps:
 
-**Note:** A WAS admin user and password with a word space is not supported. You need to use a WebSphere Application Server admin user and password without a word space to install fixes.
+!!! note
+    A WAS admin user and password with a word space is not supported. You need to use a WebSphere Application Server admin user and password without a word space to install fixes.
 
 1.  Stop all the clusters that host HCL Connections™ applications.
 
@@ -50,11 +52,13 @@ To install a fix in interactive mode, complete the following steps:
 
 The log files that are created by the wizard are located under the [connections\_root](../plan/i_ovr_r_directory_conventions.md)/version/log directory.
 
-**Note:** Check the <timestamp\>\_<fix name\>\_<feature name\>\_install.log to find the `Build Successful` message near the end of the file. If this message exists, you installed fixes successfully. Otherwise, uninstall the fix and then install again.
+!!! note
+    Check the <timestamp\>\_<fix name\>\_<feature name\>\_install.log to find the `Build Successful` message near the end of the file. If this message exists, you installed fixes successfully. Otherwise, uninstall the fix and then install again.
 
 Your Connections deployment was updated. To check the logs, go to the [IM\_root](../plan/i_ovr_r_directory_conventions.md) directory and open the applicationUpdate.log file, where application is the name of an Connections application.
 
-**Note:** If you receive an installation failed message for any of the components in the summary screen, check the installation logs. Next, resynchronize the nodes, and then rerun the updateInstaller wizard. The components that were previously marked as `failed` should be eligible for upgrade. Processing this upgrade for the components should succeed on the second attempt. If it fails a second time, contact your HCL vendor.
+!!! note
+    If you receive an installation failed message for any of the components in the summary screen, check the installation logs. Next, resynchronize the nodes, and then rerun the updateInstaller wizard. The components that were previously marked as `failed` should be eligible for upgrade. Processing this upgrade for the components should succeed on the second attempt. If it fails a second time, contact your HCL vendor.
 
 **Parent topic:**[Installing fixes](../migrate/c_installing_interim_fixes.md)
 

@@ -18,7 +18,8 @@ You might want to see different kinds of updates at different times. Here are so
 
     ![](images/latest_filter_updates.png)
 
-    **Note:** You might see a different list depending on what apps your organization deploys from Connections and other products.
+    !!! note
+    You might see a different list depending on what apps your organization deploys from Connections and other products.
 
 -   Make use of the To Do List, Events, and Recommendations apps next to the stream. Learn how by clicking the **Actions** icon ![](images/hamburger_icon.png) next to each app and select **Help**. If you remove one of these apps and want to add it back, click **Customize**.
 -   Within an update, click any linked text or graphics to go to its source in Connections.

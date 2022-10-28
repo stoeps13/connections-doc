@@ -8,7 +8,8 @@ In the news-config.xml file you must enable support for the reply feature, and a
 
 For users to be able to reply to emails, certain of their HCL Connections settings must be selected. They must click **Settings**, and then the **Email Preferences** tab. They must make sure **Receive notifications from other people by email** and **Allow me to reply to notifications by email** \(this option is only available if mail-in is enabled in the news-config.xml file\) are selected. In the **Content that I am following** section, they must make sure **Forums** is set to **Individual Emails**.
 
-**Note:** Users will not see **Allow me to reply to notifications by email** until you perform the steps in this topic to enable notification replies.
+!!! note
+    Users will not see **Allow me to reply to notifications by email** until you perform the steps in this topic to enable notification replies.
 
 1.  To configure the data synchronization task, complete the following steps.
 2.  Start the wsadmin client from the following directory of the system on which you installed the Deployment Manager:
@@ -43,7 +44,8 @@ For users to be able to reply to emails, certain of their HCL Connections settin
 
         -   working\_dir is the temporary directory to which you want to check out the cell-level configuration file. This directory must exist on the server where you are running wsadmin.
 
-            **Note:** AIX, and Linux only: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX, and Linux only: The directory must grant write permissions or the command will not run successfully.
 
         -   cellName is the name of the cell that the home page node belongs to. This argument is required. It is also case-sensitive, so type it with care. If you do not know the cell name, type the following command in the wsadmin command processor to determine it:
 

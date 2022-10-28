@@ -13,7 +13,8 @@ For example, to configure a Files widget to include files from another community
 1.  Click **Edit** from the widget menu \(ellipsis\).
 2.  In the side pane under **Files settings**, expand the **Content sources** section.
 
-    **Note:** At this time you cannot configure widgets to display personalized information, where the logged-in user sees content specific to them, for example the "My Files" widget.
+    !!! note
+    At this time you cannot configure widgets to display personalized information, where the logged-in user sees content specific to them, for example the "My Files" widget.
 
 3.  Under **Channel 1**, the containing community is identified as the source, or channel, for files. You can overwrite that community or add a new channel to bring in files from a community in addition to the containing community. Start typing a community name to see matching results.
 4.  Pick a community. The image beside the configuration pane is a preview of how the widget will look, and updates on the fly. You can also edit the channel name and change how much to show in the widget. When the you're satisfied with the preview, save the changes.

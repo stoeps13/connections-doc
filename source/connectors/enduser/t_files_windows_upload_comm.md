@@ -16,7 +16,8 @@ A special case for adding files to a community has to do with adding files to Co
 
     Alternatively, you can drag a file from Windows Explorer or from the desktop and drop it into the File folder for the target community, or paste a file to the same destination.
 
-    **Note:** Dragging a file or pasting a file into a community directly uploads the file into the community instead of sharing it with the community.
+    !!! note
+    Dragging a file or pasting a file into a community directly uploads the file into the community instead of sharing it with the community.
 
 3.  If you connect to more than one site, select the site to which you want to upload the file.
 
@@ -34,7 +35,8 @@ A special case for adding files to a community has to do with adding files to Co
 
     When you open the activity in Connections, your file is in the community.
 
-    **Note:** A file that is shared with or uploaded to a community inherits the visibility of that community. For example, if the community is public all files within the community are also automatically public.
+    !!! note
+    A file that is shared with or uploaded to a community inherits the visibility of that community. For example, if the community is public all files within the community are also automatically public.
 
 
 If you want to add a file to a community that already displays in your HCL Connections navigation pane, expand the community list so you can see the Files folder for the target community and drag in a file to upload it to the community.

@@ -53,11 +53,13 @@ When networking is enabled, users can invite other users to join their network. 
 
         -   none. No one can invite a user with the specified profile type to join their network. If the user has an existing network of colleagues, it is not available.
 
-            **Note:** Setting the scope to none does not make a user's network read-only. If you need to lock the state of a user, note that users can still remove contacts from their network when you set the scope to none.
+            !!! note
+    Setting the scope to none does not make a user's network read-only. If you need to lock the state of a user, note that users can still remove contacts from their network when you set the scope to none.
 
         -   person\_not\_self. Only users with the person J2EE role can invite users with the specified profile type to join their network. The profile owner cannot invite themselves to join their own network.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the admin role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the admin role.
 
     For example:
 

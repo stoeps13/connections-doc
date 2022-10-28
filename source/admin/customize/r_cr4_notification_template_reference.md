@@ -51,7 +51,8 @@ Saving the style file in this location allows the Activities templates to pick u
 
 2.  Make your customizations to the template as needed.
 
-    **Note:** For information about editing the templates, refer to the FreeMarker documentation on the following web page:
+    !!! note
+    For information about editing the templates, refer to the FreeMarker documentation on the following web page:
 
     [http://freemarker.sourceforge.net/docs/index.html](http://freemarker.sourceforge.net/docs/index.html)
 
@@ -76,7 +77,8 @@ Saving the style file in this location allows the Activities templates to pick u
 
 The commonHeader.ftl file under shared resources includes common templates and provides more convenient variable alias names.
 
-**Note:** FreeMarker file acquisition rules apply.
+!!! note
+    FreeMarker file acquisition rules apply.
 
 Included resources, with alias, are as follows:
 
@@ -106,7 +108,8 @@ The content blocks are generated using a set of shared FreeMarker template macro
 
 The following list identifies the common structure macros and the content or functionality they provide.
 
-**Note:** The @ symbol identifies a call to another macro.
+!!! note
+    The @ symbol identifies a call to another macro.
 
 \#nested content is provided to a macro between its tags. See [https://freemarker.apache.org/docs/ref\_directive\_macro.html](http://freemarker.sourceforge.net/docs/index.html).
 
@@ -130,7 +133,8 @@ The following list identifies the common structure macros and the content or fun
     -   subject container table row
     -   \#nested content \(subject line\)
 
-        **Note:** \#nested content is converted to text and long words are broken with word separator hints.
+        !!! note
+    \#nested content is converted to text and long words are broken with word separator hints.
 
         -   See commonUtil.ftl convertHtmlStructuresToText function in this topic.
         -   See commonUtil.ftl breakLongWords function in this topic.
@@ -139,7 +143,8 @@ The following list identifies the common structure macros and the content or fun
     -   message container table row
     -   \#nested content \(message body\)
 
-        **Note:** \#nested content is processed to discover plain-text URL strings and formatted to sanitize HTML structure, and long words are broken with word separator hints.
+        !!! note
+    \#nested content is processed to discover plain-text URL strings and formatted to sanitize HTML structure, and long words are broken with word separator hints.
 
         -   See commonUtil.ftl discoverUrls function in this topic.
         -   See commonUtil.ftl formatHtmlContent function in this topic.
@@ -171,7 +176,8 @@ The following list identifies the common structure macros and the content or fun
     -   value = url
     Mobile links are added from arguments or generated from primary action, if allowed.
 
-    **Note:** Action links can be generated using commonUrlUtil.ftl linkify functions.
+    !!! note
+    Action links can be generated using commonUrlUtil.ftl linkify functions.
 
 -   linklist macro
     -   @contentDivider row if content is present
@@ -187,7 +193,8 @@ The following list identifies the common structure macros and the content or fun
     -   value = url
     Appends unsubscribe link by default.
 
-    **Note:** Footer links can be generated using commonUrlUtil.ftl linkify functions.
+    !!! note
+    Footer links can be generated using commonUrlUtil.ftl linkify functions.
 
 -   contentDivider
     -   simple empty row divider with enforced height
@@ -274,7 +281,8 @@ The following list identifies the common structure macros and the content or fun
 
     -   discovered, string looks like a URL with valid protocol \(http://, https://, and so on\)
     -   discovered-nolink, string may be a URL but lacks protocol
-    **Note:** This function was created to ensure that any strings that might be auto-discovered by an email client are already safely enclosed in a valid HTML anchor. This allows more complete control to be maintained over the styling of the notification.
+    !!! note
+    This function was created to ensure that any strings that might be auto-discovered by an email client are already safely enclosed in a valid HTML anchor. This allows more complete control to be maintained over the styling of the notification.
 
 -   truncateHtmlContent
 
@@ -327,7 +335,8 @@ The @ symbol identifies a call to another macro. \#nested content is provided to
 
     Generate a link to view all notification updates in the web client when the digest contains more items than the defined limit.
 
-    **Note:** See "activityMax" in commonProperties.json.
+    !!! note
+    See "activityMax" in commonProperties.json.
 
     -   @contentDivider row
     -   container row and table

@@ -2,7 +2,8 @@
 
 If you are upgrading from previous versions of Connections to 8.0, the new user experience is initially disabled. This allows you to adopt the infrastructural benefits of Connections 8.0 – such as updated platform versions and security fixes – without any user disruption.
 
-**Note:** You can choose between the Connections 7.0 and 8.0 experience only during the transition period. For details, see [What's new in HCL Connections](../overview/i_ovr_r_whats_new.md#8.0_transition).
+!!! note
+    You can choose between the Connections 7.0 and 8.0 experience only during the transition period. For details, see [What's new in HCL Connections](../overview/i_ovr_r_whats_new.md#8.0_transition).
 
 ## About this task {#section_w1q_pbl_2vb .section}
 

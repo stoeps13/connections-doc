@@ -4,7 +4,8 @@ The section covers customizing the Tiny Editors toolbar \(not including contextu
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the property [`toolbar`](r_config-js-sample.md#toolbar) and modify the array to customize the toolbar configuration using the following resources:
 

@@ -52,7 +52,8 @@ The two valid values for mode are the strings internal and external. If the valu
 
     3.  Customize the string that gets added to the display name. Modify the value of `decorateVisitorDisplayName` by replacing the string `- External User` with your custom string.
 
-        **Note:** The string is not translated into other languages. If your installation of Connections supports more than one language, use a string that works in all languages.
+        !!! note
+    The string is not translated into other languages. If your installation of Connections supports more than one language, use a string that works in all languages.
 
 
 **Parent topic:**[Registering external users with Profiles](../admin/t_admin_profiles_external_user_script.md)

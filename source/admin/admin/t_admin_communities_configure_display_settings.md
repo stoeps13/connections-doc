@@ -37,7 +37,8 @@ To edit configuration files, you must use the IBM® WebSphere® Application Serv
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied. The files are kept in this working directory while you make changes to them.
 
-            **Note:** AIX and Linux only: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX and Linux only: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the HCL Connections application. This argument is required. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 
@@ -53,7 +54,8 @@ To edit configuration files, you must use the IBM® WebSphere® Application Serv
 
     CommunitiesConfigService.showConfig\(\)
 
-    **Note:** After you update any of the configuration settings, you can use this command again to display your updates.
+    !!! note
+    After you update any of the configuration settings, you can use this command again to display your updates.
 
 5.  To change display settings for Communities, use the following command:
 

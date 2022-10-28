@@ -4,7 +4,8 @@ Add a file or folder from your desktop to your My Drive folder so updates made t
 
 When you add a file from your desktop to your local My Drive folder, a copy is made on the corresponding server. The files are synced so that changes made to one copy of the file are also made to the other. If you add a folder, all content in the folder is automatically synced.
 
-**Note:** Syncing is designed for content that you own, or for personal or community files that are shared with you, so the **Add to My Drive** option is not available for community-owned files \(that is, files that are uploaded directly to a community rather than shared with a community\) or library files in a community.
+!!! note
+    Syncing is designed for content that you own, or for personal or community files that are shared with you, so the **Add to My Drive** option is not available for community-owned files \(that is, files that are uploaded directly to a community rather than shared with a community\) or library files in a community.
 
 -   Drag and drop a file or folder into your local **My Drive** folder.
 

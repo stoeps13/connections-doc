@@ -26,7 +26,8 @@ The following steps are to validate that traffic is flowing from Connections to 
 3.  Subscribe to the `connections.events` channel.
 4.  To subscribe to the Redis `connections.events` channel you must first connect and authenticate with the password \(secret\) set during [bootstrap installation](cp_install_bootstrap.md).
 
-    **Note:** If you configured SSH tunnelling, validate that the SSH Tunnel is working before you connect to the running Redis pod on the master server.
+    !!! note
+    If you configured SSH tunnelling, validate that the SSH Tunnel is working before you connect to the running Redis pod on the master server.
 
     1.  Connect to the Redis server:
 

@@ -51,7 +51,8 @@ You can integrate a custom widget as part of HCL Connections and you can also in
 
 5.  Open the widgets\_config.xml file and define the custom widget by specifying a resource type of community and adding a <widgetDef\> element by using the following attributes and parameters:
 
-    **Note:** Do not use the following attributes, they are intended for IBM development only:
+    !!! note
+    Do not use the following attributes, they are intended for IBM development only:
 
     -   showIfConfigSet
     -   showIfCookieSet
@@ -59,7 +60,8 @@ You can integrate a custom widget as part of HCL Connections and you can also in
     |Attribute|Description|Required?|
     |---------|-----------|---------|
     |defId|The widget name. The defId attribute is also used as a title or a resource bundle key.|Yes|
-    |primaryWidget|Specifies that the widget displays in the center column of the page. The default value is true.**Note:** The value of primaryWidget must be true for Library widgets in Communities.
+    |primaryWidget|Specifies that the widget displays in the center column of the page. The default value is true.!!! note
+    The value of primaryWidget must be true for Library widgets in Communities.
 
 |No|
     |description|Description of the widget that displays in the widget palette. This attribute uses the custom string framework. For information about how to add a string that contains the widget description, see *Adding custom strings for widgets and other specified scenarios*.|No|
@@ -79,7 +81,8 @@ You can integrate a custom widget as part of HCL Connections and you can also in
     |loginRequired|Specifies that the widget displays only when users are logged in.|No|
     |bundleRefId|The resource bundle reference ID that is defined in the LotusConnections-config.xml file. This ID is used to determine the bundle strings for the widget category, widget description, and widget title. For more information about adding custom strings for widgets, see *Adding custom strings for widgets and other specified scenarios*.|No|
 
-    |**Note:** For bidi languages, the horizontal arrangement of columns is reversed.
+    |!!! note
+    For bidi languages, the horizontal arrangement of columns is reversed.
 
 Attribute|Description|
     |-------------------------------------------------------------------------------------------|-----------|
@@ -169,7 +172,8 @@ After you finish adding the widget to the widget-config.xml file, you must regis
 
     -   [Gadget Registration Commands](r_admin_gadget_reg_ws_commands.md#) explains how to register gadgets and widgets from a command line.
     -   [Configuring Home page widgets](t_admin_homepage_add_widgets_homepage.md) explains how to register gadgets and widgets from the administration interface.
-    **Note:** When you register a Communities widget, the `prereqs` setting should be set to "`communities`" as in the following example:
+    !!! note
+    When you register a Communities widget, the `prereqs` setting should be set to "`communities`" as in the following example:
 
     ```
     NewsWidgetCatalogService.addWidget(title="helloworld", text="Hello World Widget.", url="https://serverName.ibm.com/helloworld/helloworld.xml", categoryName=WidgetCategories.NONE, isGadget=FALSE,appContexts=[WidgetContexts.EMBEDXP], policyFlags=[GadgetPolicyFlags.TRUSTED], prereqs=["communities"]) 

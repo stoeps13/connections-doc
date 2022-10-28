@@ -8,7 +8,8 @@ The Widget shows only empty profile fields, plus any fields that are user prefer
 
 In the edit area you can select all fields that you want users to populate in the widget. These fields can be a select box or an input field.
 
-**Note:** If you select a field that reflects a user preference, such as **Time zone**, the field is shown in the widget even when it is not empty, giving the user a chance to change it.
+!!! note
+    If you select a field that reflects a user preference, such as **Time zone**, the field is shown in the widget even when it is not empty, giving the user a chance to change it.
 
 ![image](images/image102.png)
 

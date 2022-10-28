@@ -30,7 +30,8 @@ To change the scheduled SEO task, complete the following steps:
 
 8.  Change the number of URLs per sitemap by changing the value of the **WIKI\_SITEMAP\_URLS\_PER\_SITEMAP** parameter.
 
-    **Note:** You can provide multiple sitemap files but each file must have no more than 50,000 URLs and must be no larger than 10 MB. For more information, go to the [Sitemaps XML format](http://www.sitemaps.org/protocol.html) webpage.
+    !!! note
+    You can provide multiple sitemap files but each file must have no more than 50,000 URLs and must be no larger than 10 MB. For more information, go to the [Sitemaps XML format](http://www.sitemaps.org/protocol.html) webpage.
 
 9.  Save and close the web.xml file.
 

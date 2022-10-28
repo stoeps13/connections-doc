@@ -6,7 +6,8 @@ HCL Connections administrators must be dedicated users. Their only purpose shoul
 
 Only a Blogs administrator can configure a Blogs Homepage blog, which is required for Blogs. See *Managing the Homepage blog*.
 
-**Note:** You can also create administrators to managing application content. See the topic *Administering application content*.
+!!! note
+    You can also create administrators to managing application content. See the topic *Administering application content*.
 
 Create administrators in the WebSphere® Application Server Integrated Solutions Console.
 

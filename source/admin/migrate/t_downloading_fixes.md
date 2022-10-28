@@ -32,7 +32,8 @@ To download fixes, complete the following steps.
 
 1.  Refer to the [What's New in HCL Connections](../overview/i_ovr_r_whats_new.md) to review the latest new features in a release, gather download links, and look over update strategy information.
 
-    **Note:** Refer to the Knowledge Article, [**Road map for Upgrading Connections**](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0076286) for additional information.
+    !!! note
+    Refer to the Knowledge Article, [**Road map for Upgrading Connections**](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0076286) for additional information.
 
 2.  From the HCL License & Download Portal, find or select the product **Connections**.
 
@@ -46,7 +47,8 @@ To download fixes, complete the following steps.
 
     -   AIX or Linux: [connections\_root](../plan/i_ovr_r_directory_conventions.md)/updateInstaller/fixes
     -   Microsoft Windows: [connections\_root](../plan/i_ovr_r_directory_conventions.md)\\updateInstaller\\fixes
-    **Note:** If a fixes subdirectory does not already exist in the update directory, create it. You need to specify this directory when you install fixes.
+    !!! note
+    If a fixes subdirectory does not already exist in the update directory, create it. You need to specify this directory when you install fixes.
 
 
 **Parent topic:**[Updating Connections 8.0 with the latest fixes](../migrate/c_updating_interim_fixes.md)

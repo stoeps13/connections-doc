@@ -18,7 +18,8 @@ If you want to change a file in the JAR file, stop the Common.ear file, update t
 
     http://public.dhe.ibm.com/software/dw/lotus/connections/4/reference/com.mycompany.example\_1.0.0.jar
 
-    **Note:** The JAR version format must be "\_x.x.x" to be correctly recognized by Connections.
+    !!! note
+    The JAR version format must be "\_x.x.x" to be correctly recognized by Connections.
 
 3.  Deploy the sample bundle.
 
@@ -72,7 +73,8 @@ If you want to change a file in the JAR file, stop the Common.ear file, update t
 
     1.  In the META-INF/MANIFEST.MF file, change Bundle-SymbolicName and, optionally, Bundle-Name.
 
-        **Note:** Do not remove the `;singleton:=true` text at the end of the line. This text is necessary for the plugin.xml file to get parsed and your JavaScript to be loaded.
+        !!! note
+    Do not remove the `;singleton:=true` text at the end of the line. This text is necessary for the plugin.xml file to get parsed and your JavaScript to be loaded.
 
     2.  Change each Dojo JavaScript module in the resources/ folder to have a different base package. Alternatively, you can change the <alias\> in plugin.xml to define an arbitrary base package.
 

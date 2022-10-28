@@ -12,7 +12,8 @@ The help system enables users to navigate from the help for one application to a
     [app\_server\_root](../plan/i_ovr_r_directory_conventions.md)\profiles\dm_profile_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. See *Starting the wsadmin client* for more details.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. See *Starting the wsadmin client* for more details.
 
 2.  Enter the following command to access the HCL Connections configuration files:
 

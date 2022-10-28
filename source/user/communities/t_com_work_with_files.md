@@ -11,12 +11,14 @@ You can restore and download versions of a file and view the change summary of a
 3.  To view available versions, click **Versions**. Then perform any of the following tasks:
     -   **To upload a new version:** Click **Upload New Version** and select the file that you want to upload from your local system. You can also provide a brief description of the change.
 
-        **Note:** Uploading a new version does not apply to HCL Docs files.
+        !!! note
+    Uploading a new version does not apply to HCL Docs files.
 
     -   **To download a version:** Hover your cursor over the version you want to download, then click the download icon ![Download icon](../files/images/download_icon.png) beside it.
     -   **To restore a previous version:** Hover your cursor over the version you want to restore, then click the restore icon ![Restore file version icon](images/restore_version.png)
 
-        **Note:** Restoring a previous version does not apply to HCL Connections™ Docs files.
+        !!! note
+    Restoring a previous version does not apply to HCL Connections™ Docs files.
 
     -   **Delete a version:** Hover your cursor over the version you want to delete, then click the delete icon ![Delete file version icon](images/delete_file_version.png).
 
@@ -53,7 +55,8 @@ Deleting a file only moves it to the trash and makes it unavailable to people wi
         1.  In the side panel, click **Trash**.
         2.  Click the arrow next to the file that you want to restore or delete, and select either **Restore** or **Delete** from the list.
 
-            **Note:** If you permanently delete a file, you cannot undo the action.
+            !!! note
+    If you permanently delete a file, you cannot undo the action.
 
 
 ## Locking a file { .section}

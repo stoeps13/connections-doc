@@ -29,7 +29,8 @@ Incremental crawls must be left at the default schedule.
             -   AIX®, and Linux® only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
 3.  If you want to find out the current value of a property, you can list the current configuration settings and values by using the following command:
 

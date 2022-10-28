@@ -28,7 +28,8 @@ When you enable presence awareness by using the Sametime Proxy server, a person'
     app\_server\_root\profiles\dm\_profile\_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
 
 2.  Use the wsadmin client to access and check out the HCL Connections extension configuration files.
 

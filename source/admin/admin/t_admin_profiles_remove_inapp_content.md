@@ -51,7 +51,8 @@ Profiles provides a number of administrative commands that allow you to remove o
         "Text to display in Background field for Ann",orgId="0000000045")
         ```
 
-        **Note:** Rich text cannot be entered with this command.
+        !!! note
+    Rich text cannot be entered with this command.
 
     ProfilesService.updateDescription\(String user\_email\_addr, String new\_content\_for\_description\_field\)
     ProfilesService.updateDescription\(String user\_email\_addr, String new\_content\_for\_description\_field, String orgId\)
@@ -71,7 +72,8 @@ Profiles provides a number of administrative commands that allow you to remove o
         "Text to display in About Me tab for Ann",orgId="0000000045")
         ```
 
-        **Note:** Rich text cannot be entered with this command.
+        !!! note
+    Rich text cannot be entered with this command.
 
     ProfilesService.deletePhoto\(String user\_email\_addr\)
     ProfilesService.deletePhoto\(String user\_email\_addr, String orgId\)

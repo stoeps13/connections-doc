@@ -10,5 +10,6 @@ The following are the various ways users and owners can access blogs:
 -   If you create a blog for a restricted community, but then change the community to a public community, the blog then displays on the Public Blogs page and is available for all to read.
 -   A blog that is created for a moderated community is a public blog. It is displayed on the Public Blogs page and is available for all to read. A moderated community is a public community, but users must ask to join.
 
-**Note:** In all of these cases, comment moderation for the blog is disabled by default unless it is configured by the blog owner or an administrator. To turn on comment moderation so that you or an approved reviewer reads and approves comments before they are posted, access the settings for your blog. Then, enable the **Moderate comments** option.
+!!! note
+    In all of these cases, comment moderation for the blog is disabled by default unless it is configured by the blog owner or an administrator. To turn on comment moderation so that you or an approved reviewer reads and approves comments before they are posted, access the settings for your blog. Then, enable the **Moderate comments** option.
 

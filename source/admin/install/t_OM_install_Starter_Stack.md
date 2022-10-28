@@ -9,7 +9,8 @@ Before installing a Starter Stack, check that the following are in place:
 -   Any required persistent volumes for the Starter Stack chosen are created. You can check persistent volumes at https://ipaddressofmaster:/8443/\#/storage/pvcs/
 -   Hybridcloud zip file is extracted.
 
-    **Note:** The path to the install file is in the extracted folder at /microservices/hybridcloud/install.sh. If you extracted the zip to a folder called hybrid, the path to the installer would be hybrid/microservices/hybridcloud/install.sh. For this section, we will use hybrid/microservices/hybridcloud/install.sh in examples.
+    !!! note
+    The path to the install file is in the extracted folder at /microservices/hybridcloud/install.sh. If you extracted the zip to a folder called hybrid, the path to the installer would be hybrid/microservices/hybridcloud/install.sh. For this section, we will use hybrid/microservices/hybridcloud/install.sh in examples.
 
 
 1.  On the ICp master server, provide the Starter Stack you want to install to the installation script to install the images needed for your services. Starter stack components are listed in the topic [Installing Component Pack services](c_OM_install_starter_stacks.md).
@@ -39,9 +40,11 @@ Before installing a Starter Stack, check that the following are in place:
     
     ```
 
-    **Note:** You can only install one Starter Stack at a time. It is not possible to uninstall a single Starter Stack. An uninstall will uninstall all components.
+    !!! note
+    You can only install one Starter Stack at a time. It is not possible to uninstall a single Starter Stack. An uninstall will uninstall all components.
 
-    **Note:** If you have changed the ICp credentials from the default, you can pass the new credentials in as arguments like so:
+    !!! note
+    If you have changed the ICp credentials from the default, you can pass the new credentials in as arguments like so:
 
     ```
     sudo hybrid/microservices/hybridcloud/install.sh -ip <StarterStack> -cu username -cp password
@@ -59,6 +62,7 @@ Before installing a Starter Stack, check that the following are in place:
 
     ![Apps listed in ICp client application](appScreenShot.jpg)
 
-    **Note:** It could take up to 10 minutes for the application to display.
+    !!! note
+    It could take up to 10 minutes for the application to display.
 
 

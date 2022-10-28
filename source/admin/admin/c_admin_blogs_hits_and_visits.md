@@ -13,7 +13,8 @@ Starting with HCL Connections 3.0, hits and visits are counted the same way. Thi
 2.  Set referrer.ignoreSelfReferer to true.
 3.  Save your changes and restart the Blogs server for changes to take effect.
 
-**Note:** if you modify roller.properties, the counts for visits and hits will differ.
+!!! note
+    if you modify roller.properties, the counts for visits and hits will differ.
 
 ## Referrer hits { .section}
 

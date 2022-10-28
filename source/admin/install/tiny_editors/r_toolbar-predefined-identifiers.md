@@ -68,7 +68,8 @@ Some commands described below are not available in all editors or are only avail
 |`alignment`|![](resource/tmce/item_alignment.png)|Opens the modify element alignment menu.|
 |`ul`|![](resource/tmce/item_ul.png)|Changes the selection to an unordered list.|
 |`ol`|![](resource/tmce/item_ol.png)|Changes the selection to an ordered list.|
-|`checklist`|![](resource/tmce/item_checklist.png)|Inserts a checklist. **Note:** This feature is unavailable in Textbox.io.
+|`checklist`|![](resource/tmce/item_checklist.png)|Inserts a checklist. !!! note
+    This feature is unavailable in Textbox.io.
 
 |
 |`indent`|![](resource/tmce/item_indent.png)|Adds an indent to the selection.|
@@ -77,19 +78,24 @@ Some commands described below are not available in all editors or are only avail
 |`font-face`|![](resource/tmce/item_font-face.png)|Select the font-face value from a list.|
 |`font-size`|![](resource/tmce/item_font-size.png)|Controls for changing the font size.|
 |`font-color`|![](resource/tmce/item_font-color.png)|Shows the font color options. For TinyMCE this is displayed as two items, one for the text color and one for highlight color. Note that the color list is configurable.|
-|`lineheight`|![](resource/tmce/item_lineheight.png)|Select the line height value from a list. **Note:** This feature is unavailable in Textbox.io.
+|`lineheight`|![](resource/tmce/item_lineheight.png)|Select the line height value from a list. !!! note
+    This feature is unavailable in Textbox.io.
 
 |
-|`formatpainter`|![](resource/tmce/item_formatpainter.png)|Copies the formatting from the cursor location and applies the formatting to the selection made afterwards. **Note:** This feature is unavailable in Textbox.io.
+|`formatpainter`|![](resource/tmce/item_formatpainter.png)|Copies the formatting from the cursor location and applies the formatting to the selection made afterwards. !!! note
+    This feature is unavailable in Textbox.io.
 
 |
-|`permanentpen`|![](resource/tmce/item_permanentpen.png)|Applies a preset format. **Note:** This feature is unavailable in Textbox.io.
+|`permanentpen`|![](resource/tmce/item_permanentpen.png)|Applies a preset format. !!! note
+    This feature is unavailable in Textbox.io.
 
 |
-|`pageembed`|![](resource/tmce/item_pageembed.png)|Inserts a configurable iframe into the content. **Note:** This feature is unavailable in Textbox.io.
+|`pageembed`|![](resource/tmce/item_pageembed.png)|Inserts a configurable iframe into the content. !!! note
+    This feature is unavailable in Textbox.io.
 
 |
-|`casechange`|![](resource/tmce/item_casechange.png)|Sets the capitalization of the selected text to upper-case, lower-case, or title-case. **Note:** This feature is unavailable in Textbox.io.
+|`casechange`|![](resource/tmce/item_casechange.png)|Sets the capitalization of the selected text to upper-case, lower-case, or title-case. !!! note
+    This feature is unavailable in Textbox.io.
 
 |
 |`removeformat`|![](resource/tmce/item_removeformat.png)|Removes all formatting from the selection.|
@@ -97,17 +103,22 @@ Some commands described below are not available in all editors or are only avail
 |`accessibility`|![](resource/tmce/item_accessibility.png)|Opens the accessibility checker dialog.|
 |`fullscreen`|![](resource/tmce/item_fullscreen.png)|Toggles full-screen mode.|
 |`wordcount`|![](resource/tmce/item_wordcount.png)|Opens the word count dialog.|
-|`spellchecker`|![](resource/tmce/item_spellchecker.png)|Select the language used by the spellchecker. **Note:** This feature requires the spelling service to be enabled.
+|`spellchecker`|![](resource/tmce/item_spellchecker.png)|Select the language used by the spellchecker. !!! note
+    This feature requires the spelling service to be enabled.
 
 |
-|`autocorrect`|See `usersettings` menu.|Toggles auto-correction of commonly misspelled words. **Note:** This feature requires the spelling service to be enabled.
+|`autocorrect`|See `usersettings` menu.|Toggles auto-correction of commonly misspelled words. !!! note
+    This feature requires the spelling service to be enabled.
 
- **Note:** This feature is only available as an item in the `usersettings` menu.
+ !!! note
+    This feature is only available as an item in the `usersettings` menu.
 
 |
-|`capitalization`|See `usersettings` menu.|Toggles auto-capitalization. **Note:** This feature requires the spelling service to be enabled.
+|`capitalization`|See `usersettings` menu.|Toggles auto-capitalization. !!! note
+    This feature requires the spelling service to be enabled.
 
- **Note:** This feature is only available as an item in the `usersettings` menu.
+ !!! note
+    This feature is only available as an item in the `usersettings` menu.
 
 |
 |`help`|![](resource/tmce/item_help.png)|Shows the help dialog.|

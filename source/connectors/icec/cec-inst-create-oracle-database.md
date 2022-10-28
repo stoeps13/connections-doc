@@ -21,7 +21,8 @@ An SQL script file is included for each supported RDBMS in the Connections Engag
 
  ![image](images/image63.png)
 
- **Note:** If you do not want to use the SQL script, make sure that the user "XCC" has the necessary access rights to the database.
+ !!! note
+    If you do not want to use the SQL script, make sure that the user "XCC" has the necessary access rights to the database.
 
  Close the command window.
 

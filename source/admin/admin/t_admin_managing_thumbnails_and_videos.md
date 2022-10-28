@@ -20,7 +20,8 @@ The file-preview-config.xml file controls the size of thumbnails and supports th
     </preview>
     ```
 
-    **Note:** The supported file formats are listed in this file and appear to be editable; however any changes to the formats specified here will be ignored and the standard set of formats will still be supported.
+    !!! note
+    The supported file formats are listed in this file and appear to be editable; however any changes to the formats specified here will be ignored and the standard set of formats will still be supported.
 
 5.  Be sure to save your changes.
 

@@ -4,7 +4,8 @@ Update your HCL Connections 7.0 databases to version 8.0 in a WebSphere® Applic
 
 All deployments that upgrade from Connections 7.0\(whether the upgrade is side by side, in-place, or hybrid\) are required to manually run a script to update the Homepage database schema.
 
-**Note:** Do not use the database wizard to do this update.
+!!! note
+    Do not use the database wizard to do this update.
 
 After you've upgraded Connections to version 8.0, see one of the following topics according to your database environment.
 

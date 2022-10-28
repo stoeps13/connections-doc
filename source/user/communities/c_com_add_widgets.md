@@ -21,7 +21,8 @@ Add apps to your community so that members can benefit from them.
 |Recent Updates|Keep up-to-date on news stories and status updates on your community.|
 |Related Communities|Links to other communities that might be doing work of interest to your community.|
 |Rich Content|Create rich content pages; including text, links, images, and more.|
-|SharePoint Library|Access SharePoint files with ease.**Note:** Available only when the Microsoft SharePoint app is enabled for your Connections deployment. For more information, see [Adding the SharePoint app to a community](t_com_add_sharepoint_widget.md).
+|SharePoint Library|Access SharePoint files with ease.!!! note
+    Available only when the Microsoft SharePoint app is enabled for your Connections deployment. For more information, see [Adding the SharePoint app to a community](t_com_add_sharepoint_widget.md).
 
 |
 |Status Updates|Post messages to your community and view posts by community members.|

@@ -55,7 +55,8 @@ In addition to the properties supported by all applications and extensions, Conn
 
 |
 
-**Note:** These are the only payload properties that are specific to Connections Customizer; your Customizer app can also use the general properties supported in Connections apps and extensions.
+!!! note
+    These are the only payload properties that are specific to Connections Customizer; your Customizer app can also use the general properties supported in Connections apps and extensions.
 
 -   **[Using "match: url" to refine the "path" property](../customize/custom_customizer_props_match_url.md)**  
 You can refine the extension's path property to target a specific portion of a component's display for customization.

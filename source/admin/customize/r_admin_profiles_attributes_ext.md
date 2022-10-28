@@ -68,7 +68,8 @@ You can also add a new extension field. In the following example a new extension
 
 3.  Modify the profiles-types.xml file to add preferredFirstName and the extension field to the default profile-type as in the following example:
 
-    **Note:** If you are using TDI, you must make this update to the profiles-types.xml file in your TDI solution directory.
+    !!! note
+    If you are using TDI, you must make this update to the profiles-types.xml file in your TDI solution directory.
 
     ```
             <property>

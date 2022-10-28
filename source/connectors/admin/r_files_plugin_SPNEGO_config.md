@@ -27,7 +27,8 @@ By default, Windows does not allow access to the TGT session key. This registry 
 
 There is a known issue that if an ActiveDirectory account is also added into a local administrator group on the client computer, Microsoft restricts such clients from getting the session key for tickets, even if you set the allowtgtsessionkey registry key to 1. For more detail, consult Microsoft support.
 
-**Note:** If the user has administrator rights on that client they must start Notes as an administrator \(right-click on the Notes icon and choose **Run as administrator**.\) The only alternative is to revoke administrator rights for that user.
+!!! note
+    If the user has administrator rights on that client they must start Notes as an administrator \(right-click on the Notes icon and choose **Run as administrator**.\) The only alternative is to revoke administrator rights for that user.
 
 ## Make sure initial url is protected by SPNEGO { .section}
 
@@ -35,7 +36,8 @@ URLs accessed from the Notes client need to be protected by SPNEGO. The server m
 
 Notes looks for the negotiate header of the server response:`www-authenticate: Negotiate`. If this header does not show up as part of the initial server responses, SPNEGO will not work with Notes.
 
-**Note:** By default, there is no authentication URL specified for the OS Credential authentication type, specified in the Connections section of the Notes Preferences page. Depending on the configuration, an authentication URL might be required to access a SPNEGO protected URL. To specify an authentication URL,
+!!! note
+    By default, there is no authentication URL specified for the OS Credential authentication type, specified in the Connections section of the Notes Preferences page. Depending on the configuration, an authentication URL might be required to access a SPNEGO protected URL. To specify an authentication URL,
 
 1.  Open the Notes Preferences page and navigate to the Connections section.
 2.  On the Advanced Server settings dialog, chose **OS Credential**.
@@ -73,7 +75,8 @@ Incorrect proxy settings will also have an impact on connectivity. The Notes cli
 
 The minimum requirements for this configuration are Notes 8.5.3 and HCL Connections for Notes plug-in 4.0. For best results, use the latest Connections plug-ins for Notes, available on the [HCL Connections catalog](https://xspy.mybluemix.net).
 
-**Note:** You can deliver configuration settings via Domino managed settings, which is the preferred method. For information on delivering account configuration settings via Domino managed settings, see the article on [Using Notes.ini setting to configure Connections integration](http://www-10.lotus.com/ldd/lcwiki.nsf/dx/Using_NotesINI_settings_to_configure_Connections_integration).
+!!! note
+    You can deliver configuration settings via Domino managed settings, which is the preferred method. For information on delivering account configuration settings via Domino managed settings, see the article on [Using Notes.ini setting to configure Connections integration](http://www-10.lotus.com/ldd/lcwiki.nsf/dx/Using_NotesINI_settings_to_configure_Connections_integration).
 
 ## Configuration requires cross-realm authentication, but single-realm authentication is in use { .section}
 
@@ -83,7 +86,8 @@ The easiest way to determine if cross-realm authentication is needed is to deter
 
 To do so, create a krb5.ini file that corresponds with your Active Directory configuration. This file must be placed in the<Notes\_Install\_Dir\>\\framework\\rcp\\deploy\\extras directory. Alternatively, the file can be placed in the <Notes\_Install\_Dir\>\\deploy\\extras directory of the Notes install package for global deployment. Alternatively, this configuration file can be pushed to the Notes client from Domino server by policy. This requires the version of Domino template should be equal or later than 8.5.3.
 
-**Note:** The krb5.ini file can be pushed down to all clients via Domino policy. The following shows a sample krb5.ini used in cross-realms, CLIENT.IBM.COM and SERVER.IBM.COM. Change sample names based on your actual environment:
+!!! note
+    The krb5.ini file can be pushed down to all clients via Domino policy. The following shows a sample krb5.ini used in cross-realms, CLIENT.IBM.COM and SERVER.IBM.COM. Change sample names based on your actual environment:
 
 ```
 [libdefaults]
@@ -139,7 +143,8 @@ For more information, see this article on setting up [Kerberos security](http://
 
 -   If none of these troubleshooting steps help to get you connected, examine the logs and traces.
 
-    **Note:** When you collect logs, only perform basic steps. For example, start Notes, try to connect Activities, and so on. Otherwise, the log files will get too big.
+    !!! note
+    When you collect logs, only perform basic steps. For example, start Notes, try to connect Activities, and so on. Otherwise, the log files will get too big.
 
 -   To share logs with IBM, zip up the logs folder and include the Fiddler trace.
 

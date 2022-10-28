@@ -4,7 +4,8 @@ Monitor and control the content of blogs using the moderation tools.
 
 Moderation allows you to review and manage content so that you can approve content before it gets published or you can review published content and remove content you find inappropriate.
 
-**Note:** If the Moderation service is installed and enabled, then Blogs are moderated from a central interface, along with content from forums and community files. In that case, the Blogs moderation page is unavailable and notification is disabled. If the Moderation service is not enabled, you can moderate Blogs content from a page in the Blogs interface.
+!!! note
+    If the Moderation service is installed and enabled, then Blogs are moderated from a central interface, along with content from forums and community files. In that case, the Blogs moderation page is unavailable and notification is disabled. If the Moderation service is not enabled, you can moderate Blogs content from a page in the Blogs interface.
 
 ## Who manages moderation? { .section}
 

@@ -6,7 +6,8 @@ Add an image to an entry in an HCL Connections™ application.
 
 You can add any image file format that is supported by your browser. The most widely supported image formats are BMP, GIF, JPG, JPEG, PNG, and RAW
 
-**Note:** This function differs across applications. In most applications, for example, it is not possible to upload an image from your computer, paste an image, nor use an attached image that you already uploaded. Those abilities are supported in Blogs, Forums, and Wikis only. Moreover, pasting an image is supported in the Chrome, Firefox, and Safari browsers only; it is not supported in Internet Explorer.
+!!! note
+    This function differs across applications. In most applications, for example, it is not possible to upload an image from your computer, paste an image, nor use an attached image that you already uploaded. Those abilities are supported in Blogs, Forums, and Wikis only. Moreover, pasting an image is supported in the Chrome, Firefox, and Safari browsers only; it is not supported in Internet Explorer.
 
 ## Insert an image {#section_unp_4ts_sy .section}
 

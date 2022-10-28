@@ -24,7 +24,8 @@ Follow these steps to denote a site as an intranet.
 
     You might need to update this value after initially installing Bookmarks with no IP ranges or if you want to add a range after installation. This might be the case due to a corporate merger or acquisitions that result in added or deleted IP ranges.
 
-    **Note:** Any change to IP ranges will require an update to the intranet settings of bookmarks in the database.
+    !!! note
+    Any change to IP ranges will require an update to the intranet settings of bookmarks in the database.
 
     See the topic *Assigning URLs to intranet sites* for more information.
 

@@ -36,7 +36,8 @@ If a failure occurs when you are trying to index content from the HCL Connection
     SearchService.retryIndexing\(String service, String id\)
     :   Attempts to index an item of content that was not indexed successfully during initial or incremental indexing.
 
-        **Note:** retryIndexing does not work for ecm\_files.
+        !!! note
+    retryIndexing does not work for ecm\_files.
 
         This command takes two parameters:
 

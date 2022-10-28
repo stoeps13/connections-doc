@@ -7,7 +7,8 @@ You can remove nodes from a cluster using the IBM® WebSphere® Application Serv
 
 3.  Select the check box next to the node that you want to delete and click **Remove Node**.
 
-    **Note:** If you cannot remove the node by clicking **Remove Node**, remove the node from the configuration by clicking **Force Delete**.
+    !!! note
+    If you cannot remove the node by clicking **Remove Node**, remove the node from the configuration by clicking **Force Delete**.
 
 4.  Restart WebSphere Application Server.
 

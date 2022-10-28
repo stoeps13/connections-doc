@@ -30,7 +30,8 @@ Ensure containerd is up and running on Kubernetes master and worker nodes. Follo
 
 Watch out for the --network-plugin flag. You will need to remove it from /var/lib/kubelet/kubeadm-flags.env, otherwise kublet won't start after upgrading to v1.24. For details, view the [GitHub issue](https://github.com/kubernetes/website/issues/33640).
 
-**Note:** Since we switched the container runtime from Docker to containerd, there is a possibility that all pods will show status as 'ImagePullBackOff'.
+!!! note
+    Since we switched the container runtime from Docker to containerd, there is a possibility that all pods will show status as 'ImagePullBackOff'.
 
 ## Kubernetes {#section_avm_v5x_bvb .section}
 
@@ -48,7 +49,8 @@ See [HCL Connections 8.0 System Requirements](https://support.hcltechsw.com/csm?
 
 Connections 8 defines OpenSearch 1.3.0 as the default backend for Orient Me, search and Metrics – this is what we'll deploy and configure in our installation scenario. Previous Connections releases used an older Elasticsearch 7 version, which is no longer needed.
 
-**Note:** In case you already have Metrics deployed and its data collected, and you do not want to start Metrics from scratch, you will have to migrate these data into the new release. [Steps to install or upgrade to Component Pack 8](cp_install_services_tasks.md) covers both scenarios.
+!!! note
+    In case you already have Metrics deployed and its data collected, and you do not want to start Metrics from scratch, you will have to migrate these data into the new release. [Steps to install or upgrade to Component Pack 8](cp_install_services_tasks.md) covers both scenarios.
 
 **Parent topic:**[Installation and upgrade](../install/cp_install_upgrade_container.md)
 

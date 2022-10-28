@@ -4,7 +4,8 @@ Use SearchService administrative commands to define scheduled backup tasks for t
 
 To use SearchService administrative commands, you must use the wsadmin client. See [Starting the wsadmin client](t_admin_wsadmin_starting.md) for information about how to start the wsadmin command-line tool.
 
-**Note:** Backups are written to the location specified in the IBM® WebSphere® Application Server environment variable, SEARCH\_INDEX\_BACKUP\_DIR. When backing up the index, ensure that multiple nodes are not sharing the same backup location.
+!!! note
+    Backups are written to the location specified in the IBM® WebSphere® Application Server environment variable, SEARCH\_INDEX\_BACKUP\_DIR. When backing up the index, ensure that multiple nodes are not sharing the same backup location.
 
 1.  To back up the Search index, complete the following tasks.
 2.  Start the wsadmin client from one of the following directories on the system on which you installed the Deployment Manager:

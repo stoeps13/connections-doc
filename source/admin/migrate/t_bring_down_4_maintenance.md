@@ -34,7 +34,8 @@ To bring down Connections in preparation for upgrading or updating, complete the
 
             </Location\>
 
-            **Note:** You must have an Allow element for every instance of WebSphere® Application Server in your deployment.
+            !!! note
+    You must have an Allow element for every instance of WebSphere® Application Server in your deployment.
 
     **Important:** When your deployment of Connections uses plug-ins, this approach returns a `403 HTTP` "Forbidden" response code. However, the Connections plug-ins cannot handle the 403 HTTP response code and display a userid/password prompt, but providing the user credentials fails. To avoid this situation, use the following approach, which returns a `500 HTTP` "Internal Server Error" response code. Add the following lines to the end of the httpd.conf file:
 

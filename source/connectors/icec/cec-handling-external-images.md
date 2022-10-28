@@ -6,7 +6,8 @@ From **Global Settings** in the Admin Dashboard, you can select how to handle ex
 
 -   With the **Enforce HTTPS** option \(default\), images originating in HTTP are pulled by Engagement Center using its security context \(HTTPS\). This option prevents the browser from warning users about insecure content.
 
-    **Note:** With this option, sometimes HTTP images fail to load.
+    !!! note
+    With this option, sometimes HTTP images fail to load.
 
 -   With **Use Proxy**, if your environment has a proxy server, the proxy loads the images, maintaining the browser's security context.
 

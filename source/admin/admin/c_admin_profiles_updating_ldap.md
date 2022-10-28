@@ -2,7 +2,8 @@
 
 There are a number of scenarios in which you might want to synchronize changes between the Profiles database and the LDAP directory, using IBM® Tivoli® Directory Integrator.
 
-**Note:** Before running any of the SDI Solutions \(tdisol\) scripts,ensure you have [Set up the Security Directory Integrator Solutions directory \(tdisol\)](../install/t_setting_up_security_dir_integ_solutions_dir.md).
+!!! note
+    Before running any of the SDI Solutions \(tdisol\) scripts,ensure you have [Set up the Security Directory Integrator Solutions directory \(tdisol\)](../install/t_setting_up_security_dir_integ_solutions_dir.md).
 
 When you want to update user information in the Profiles database, the model typically used is to update the information in the LDAP directory and then synchronize the changes back to the Profiles database. For example, if your organization has taken over a new division, you can add new employees to Profiles by importing their details into the LDAP directory and then synchronizing the changes to the Profiles database. One way to keep your profiles data synchronized with changes to the LDAP directory is to use the sync\_all\_dns task. For more information, see *Synchronizing source changes such as LDAP with Profiles*.
 

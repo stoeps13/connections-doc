@@ -4,7 +4,8 @@ System Requirements for HCL Connections Add-in for Microsoft Outlook.
 
 The HCL Connections Add-in for Microsoft Outlook standalone docker image supports the following Outlook rich clients:
 
-**Note:** Alternatively, the Outlook Add-in is available in Component Pack for HCL Connections 7.0.
+!!! note
+    Alternatively, the Outlook Add-in is available in Component Pack for HCL Connections 7.0.
 
 |**Client**|**Supported versions**|
 |Microsoft Outlook for Windows|Component pack: Outlook 2016 or later

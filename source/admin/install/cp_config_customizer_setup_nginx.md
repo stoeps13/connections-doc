@@ -36,7 +36,8 @@ There are two general approaches for setting up NGINX as a reverse proxy server 
 
 2.  Update the Connections dynamic host with NGINX server.
 
-    **Note:** Keep in mind that you must add the `isExternal` attribute to the Sametime configuration in LotusConnections-config.xml if you configured Sametime awareness through the Sametime server as described in [Adding Sametime awareness through the Sametime server](../admin/t_admin_common_add_st_awareness_via_proxy.md).
+    !!! note
+    Keep in mind that you must add the `isExternal` attribute to the Sametime configuration in LotusConnections-config.xml if you configured Sametime awareness through the Sametime server as described in [Adding Sametime awareness through the Sametime server](../admin/t_admin_common_add_st_awareness_via_proxy.md).
 
     If you will use NGINX as a stand-alone server, then first you must update the `dynamicHosts` attribute in the LotusConnections-config.xml file to reflect the URL of the proxy server. On the Deployment Manager, update the LotusConnections-config.xml file with the following setting:
 
@@ -84,7 +85,8 @@ There are two general approaches for setting up NGINX as a reverse proxy server 
 
     2.  Update the nginx.conf file and add the MW\_PROXY\_SERVICE and MW\_PROXY\_PORT values as shown in the following example.
 
-    **Note:** If you are using HA, then `MW_PROXY_SERVICE` represents the fronting Kubernetes master address \(for example, the load balancer or a virtual IP address\). Otherwise, it represents the IP address of the Master node.
+    !!! note
+    If you are using HA, then `MW_PROXY_SERVICE` represents the fronting Kubernetes master address \(for example, the load balancer or a virtual IP address\). Otherwise, it represents the IP address of the Master node.
 
     ```
     worker_processes  1;

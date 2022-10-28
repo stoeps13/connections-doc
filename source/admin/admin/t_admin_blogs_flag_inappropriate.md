@@ -15,7 +15,8 @@ If moderation is enabled, moderators can review and approve blog comments and en
 
 You can also configure the flag inappropriate content feature to specify categories for what type of content to flag, and to specify designated reviewers who will receive email notifications when content is flagged. There are two default categories for inappropriate content: **Legal issue** and **Human resources issue**. You can edit those categories, add new ones, or remove all categories. Configure automatic quarantine if you want flagged content automatically removed from Files, Blogs, Ideation Blogs, or Forums after an item is flagged a specified number of times. The file is also configured with placeholders for the email addresses of designated reviewers. Change those to actual email addresses for users assigned the moderator role who can review flagged content.
 
-**Note:** When you enable moderation, users cannot upload thumbnail images in Media Gallery widgets.
+!!! note
+    When you enable moderation, users cannot upload thumbnail images in Media Gallery widgets.
 
 To change moderation configuration settings, complete the following steps:
 
@@ -74,7 +75,8 @@ To change moderation configuration settings, complete the following steps:
 
 3.  From the temporary directory to which you just checked out the HCL Connections configuration files, open the contentreview-config.xml file in a Unicode text editor using the encoding mode of UTF-8 without BOM.
 
-    **Note:** Editing the file using a standard text editor that does not support Unicode could corrupt the file.
+    !!! note
+    Editing the file using a standard text editor that does not support Unicode could corrupt the file.
 
 4.  To configure settings for managing content in the pre-moderated state, that is, before it is published or when it is updated, set the following options for each application:
 
@@ -84,7 +86,8 @@ To change moderation configuration settings, complete the following steps:
     ownerModerate
     :   Set to "true" to specify that blog owners and community owners can moderate content in blogs or communities they own. By default this is set to "false" so that only users assigned the J2EE moderator role in the WAS console can moderate content. For information on assigning users to the moderator role, see the topic *Roles*.
 
-        **Note:** The **ownerModerate** referred to in this step is the one nested under **contentApproval**.
+        !!! note
+    The **ownerModerate** referred to in this step is the one nested under **contentApproval**.
 
     In the following example, moderation is enforced for blogs so that all content must be approved by a moderator before it is published or updated in a blog. Each blog owner can moderate content for the blogs they own.
 
@@ -104,12 +107,14 @@ To change moderation configuration settings, complete the following steps:
     ownerModerate
     :   Set to "true" to specify that forum users can moderate their own flagged content. By default this is set to "false" so that only users assigned the J2EE moderator role in the WAS console can moderate. For information on assigning users to the moderator role, see the topic *Roles*.
 
-        **Note:** The **ownerModerate** referred to in this step is the one nested under **contentFlagging**.
+        !!! note
+    The **ownerModerate** referred to in this step is the one nested under **contentFlagging**.
 
     IssueCategorization
     :   Set to "true" to display a list of categories so that users can choose one when flagging content. By default this is set to "false."
 
-        **Note:** This feature is not available for Files.
+        !!! note
+    This feature is not available for Files.
 
     automaticQuarantine
     :   Set to "true" and specify an integer as a value for threshold. When the content in Files, Blogs, Ideation Blogs, or Forums is flagged the number of times specified for the threshold value \(by unique users\), the post is automatically quarantined and removed from the forum. By default this is set to "false."
@@ -120,7 +125,8 @@ To change moderation configuration settings, complete the following steps:
     reviewer email
     :   To add designated reviewers who will receive notification email when content is flagged, replace the placeholder email names for each category with the email addresses of designated reviewers who are assigned the moderator role.
 
-        **Note:** You can also configure a group email here, but each member of the group must be assigned the moderator role.
+        !!! note
+    You can also configure a group email here, but each member of the group must be assigned the moderator role.
 
     In the following example, flagging is enabled for forums and each forum owner can moderate flagged content for the forums they own. Issue categorization is enabled so that users can select a category when flagging content. If ten users flag a forum post, it is automatically quarantined and removed from the forum.
 

@@ -4,7 +4,8 @@ Perform management tasks for the Communities catalog by using the options availa
 
 To manage the Communities catalog, you must log in as the catalog administrator. For more information about this role, see *Configuring the Communities catalog administrator*.
 
-**Note:** In clustered environments, Communities catalog administration is on the primary node. If you see a message that says that the primary node is not available, you can switch the catalog administration to a secondary node.
+!!! note
+    In clustered environments, Communities catalog administration is on the primary node. If you see a message that says that the primary node is not available, you can switch the catalog administration to a secondary node.
 
 1.  Log in to HCL Connections as the catalog administrator.
 

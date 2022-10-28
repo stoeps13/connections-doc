@@ -32,7 +32,8 @@ If you want to change default email addresses from what you assigned in install,
     app\_server\_root\profiles\dm\_profile\_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
 
 2.  Use the following command to access the HCL Connections configuration files:
 
@@ -50,7 +51,8 @@ If you want to change default email addresses from what you assigned in install,
 
     where temp\_dir is a temporary directory and cell\_name is the WebSphere® Application Server cell to which you installed Activities. When you specify a path to the working directory on a system running Microsoft Windows, use a forward slash for the directory. For example: "C:/temp".
 
-    **Note:** AIX and Linux: The directory you specify as the temporary directory must grant write permissions.
+    !!! note
+    AIX and Linux: The directory you specify as the temporary directory must grant write permissions.
 
 4.  From the temporary directory to which you checked out the notification-config.xml file, open it in a text editor.
 
@@ -79,7 +81,8 @@ If you want to change default email addresses from what you assigned in install,
 
 8.  To specify different administrator email addresses for different notifications types per application, search for the notification types you want to change, and then change the value of the sender properties. If there is no sender property, add one.
 
-    **Note:** If a type element is present, the email address specified for it is used instead of the global administrator address. If you want the global sender address to be used instead of the address specified here, comment out the associated type element. For example, if you want to change the address from which notifications that inform people that they have been added to an activity are sent, edit the value of the sender property in the following notification type:
+    !!! note
+    If a type element is present, the email address specified for it is used instead of the global administrator address. If you want the global sender address to be used instead of the address specified here, comment out the associated type element. For example, if you want to change the address from which notifications that inform people that they have been added to an activity are sent, edit the value of the sender property in the following notification type:
 
     add-member
     :   For example:
@@ -94,7 +97,8 @@ If you want to change default email addresses from what you assigned in install,
          </type>
         ```
 
-    **Note:** No notifications are sent from the Home page application.
+    !!! note
+    No notifications are sent from the Home page application.
 
 9.  Save and close the notification-config.xml file.
 

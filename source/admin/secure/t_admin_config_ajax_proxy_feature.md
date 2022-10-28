@@ -196,7 +196,8 @@ To configure the AJAX proxy for a specific application, complete the following s
         </proxy:policy>
         ```
 
-    **Note:** Specify the headers using regular expressions. If no cookies are specified, the proxy will pass all of them. To prevent it from passing any cookies, specify <proxy:cookies/\>.
+    !!! note
+    Specify the headers using regular expressions. If no cookies are specified, the proxy will pass all of them. To prevent it from passing any cookies, specify <proxy:cookies/\>.
 
     -   To allow a particular service to run on your network configured with SSO, and to pass cookies for LTPA tokens and ISAM or Siteminder to the service, use the following <proxy:cookies\> pattern:
 
@@ -254,7 +255,8 @@ To configure the AJAX proxy for a specific application, complete the following s
     </proxy:policy**--**>
     ```
 
-    **Note:** Do not enable this policy on internet-facing deployments because it can allow unauthorized access to internal servers.
+    !!! note
+    Do not enable this policy on internet-facing deployments because it can allow unauthorized access to internal servers.
 
 6.  You can optionally specify values for the following proxy:meta-data properties. Add any custom configurations before these proxy:meta-data elements.
 

@@ -15,7 +15,8 @@ URLService.<command_name>(<arguments>)
 
 ```
 
-**Note:** These commands apply to bookmarks created within the Bookmarks app; they do not apply to community bookmarks.
+!!! note
+    These commands apply to bookmarks created within the Bookmarks app; they do not apply to community bookmarks.
 
 1.  **To update the Bookmarks database** - If there is an LDAP change that requires member IDs in the Bookmarks database to be updated, you must use the DogearMemberService command. For example, if users are migrated to a new LDAP or a user is removed and re-entered in the LDAP and their unique identifier changes, these users will not be able to login to Bookmarks until the user record is updated with the DogearMemberService MBean. The following methods are available to make these database changes:
 

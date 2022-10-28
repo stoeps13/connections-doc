@@ -8,7 +8,8 @@ The synchronization process is controlled by properties in the profiles\_tdi.pro
 
 It is recommended that you use the sync\_all\_dns command to transfer changes in your organization's user data repository to the Profiles database. If you want to keep the Profiles database in a close synchronized state with your LDAP directory, run this task nightly or at another frequency that suits you.
 
-**Note:** An alternative approach is to synchronize by using a change log that is maintained by the LDAP. However, there are significant challenges to getting this approach to work, and it is not recommended. For more information about using this approach, see *Synchronizing IBM Tivoli Directory Server and Microsoft Active Directory LDAP changes*.
+!!! note
+    An alternative approach is to synchronize by using a change log that is maintained by the LDAP. However, there are significant challenges to getting this approach to work, and it is not recommended. For more information about using this approach, see *Synchronizing IBM Tivoli Directory Server and Microsoft Active Directory LDAP changes*.
 
 During synchronization, the values of attributes that are mapped from the LDAP directory to the Profiles database in the file map\_dbrepos\_from\_source.properties are evaluated to determine which users need updating. In the Profiles database, existing users are updated, deleted, or deactivated, and new users are created. If you configure extension attributes, that data is also compared and synchronized. The comparison includes all user data within the search scope, including extension data.
 
@@ -41,7 +42,8 @@ For more information about how the sync\_all\_dns command works, see *Understand
 
  If the value of the hash field in the source does change, you must set this property to a different field that has not changed, for at least one run of sync\_all\_dns. For example, if the value for uid changes in the source, you must set the property to either guid or email. After one run of sync\_all\_dns, you can change the property back to uid.
 
- **Note:** If the value is guid and you change LDAP providers, you must change the value to uid or email temporarily because guid is LDAP-specific.
+ !!! note
+    If the value is guid and you change LDAP providers, you must change the value to uid or email temporarily because guid is LDAP-specific.
 
 |
     |**perform\_deletion\_or\_inactivate\_for\_sync
@@ -86,7 +88,8 @@ For more information about how the sync\_all\_dns command works, see *Understand
 
 **|The default value is false. When set to true, the assembly line that is defined by the sync\_check\_if\_remove property runs.
 
-**Note:** This property applies to delete/inactivate only.
+!!! note
+    This property applies to delete/inactivate only.
 
 |
     |**sync\_check\_if\_remove
@@ -131,7 +134,8 @@ For more information about how the sync\_all\_dns command works, see *Understand
 
 3.  If you are storing data from multiple LDAP branches or multiple LDAP directories in the same Profiles database, you must synchronize each LDAP branch or LDAP directory separately. To accomplish this task, you can set the following properties in the profiles\_tdi.properties file.
 
-    **Note:** These properties can only be used with the sync\_all\_dns command. They cannot be used with the process\_tds\_changes and process\_ad\_changes commands.
+    !!! note
+    These properties can only be used with the sync\_all\_dns command. They cannot be used with the process\_tds\_changes and process\_ad\_changes commands.
 
         |**sync\_source\_url\_enforce
 
@@ -155,7 +159,8 @@ For more information about how the sync\_all\_dns command works, see *Understand
 
 4.  Run the sync\_all\_dns command. The command name is either sync\_all\_dns.sh or sync\_all\_dns.bat, depending on your operating system.
 
-    **Note:** When the sync\_all\_dns command runs, a lock file is created in the TDI solution directory. The lock file prevents others from starting a sync\_all\_dns process in the same TDI solution directory. The name of the lock file is sync\_all\_dns.lck. The lock file is deleted after the sync\_all\_dns command completes. If the command does not complete, the lock file is not deleted. You can delete it yourself, or you can run the clearLock.sh or the clearLock.bat script, located in the TDI solution directory.
+    !!! note
+    When the sync\_all\_dns command runs, a lock file is created in the TDI solution directory. The lock file prevents others from starting a sync\_all\_dns process in the same TDI solution directory. The name of the lock file is sync\_all\_dns.lck. The lock file is deleted after the sync\_all\_dns command completes. If the command does not complete, the lock file is not deleted. You can delete it yourself, or you can run the clearLock.sh or the clearLock.bat script, located in the TDI solution directory.
 
 
 ## Example employee tables { .example}

@@ -26,7 +26,8 @@ To allow SSO between Connections and Lotus Quickr, complete the following steps:
 
         .
 
-        **Note:** Ensure that the domain name that you enter is valid: On the node where Lotus Quickr is installed, log into the WebSphere Application Server Integrated Solutions Console as an administrator, click **Security** \> **Global security** \> **Web and SIP security** \> **Single sign-on \(SSO\)** and verify that the domain name is present.
+        !!! note
+    Ensure that the domain name that you enter is valid: On the node where Lotus Quickr is installed, log into the WebSphere Application Server Integrated Solutions Console as an administrator, click **Security** \> **Global security** \> **Web and SIP security** \> **Single sign-on \(SSO\)** and verify that the domain name is present.
 
 2.  On the node where Lotus Quickr is installed, complete the following steps:
 
@@ -36,7 +37,8 @@ To allow SSO between Connections and Lotus Quickr, complete the following steps:
 
         -   Password – Type a secure password that you will remember. You will need to provide this password later, when you configure to the keys you are exporting.
 
-            **Note:** Confirm the password.
+            !!! note
+    Confirm the password.
 
         -   Fully qualified key file name – Specify a valid path and name for the file that will hold the exported keys.
     3.  Click **Export keys**
@@ -49,7 +51,8 @@ To allow SSO between Connections and Lotus Quickr, complete the following steps:
 
         -   Password – Type the password that you used for the Lotus Quickr key file that you exported.
 
-            **Note:** Confirm the password.
+            !!! note
+    Confirm the password.
 
         -   Fully qualified key file name – Specify the path and name of the Lotus Quickr key file that you exported.
     3.  Click **Import keys**.

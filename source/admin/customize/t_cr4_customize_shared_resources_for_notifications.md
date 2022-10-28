@@ -60,7 +60,8 @@ To edit the notification template files \(\*.ftl\) or for further details, see t
 
         where `key` is the key of a translated string in the resource bundle notification\_language\_code.properties files.
 
-        **Note:** The notification framework will look in the local application resource folder before moving to the shared strings in the shared resources folder.
+        !!! note
+    The notification framework will look in the local application resource folder before moving to the shared strings in the shared resources folder.
 
     2.  Save your changes and then close the files.
 

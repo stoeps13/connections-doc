@@ -19,7 +19,8 @@ To prevent errors caused by using the wrong version of IBM Installation Manager,
 <offering id='com.ibm.cic.agent' version='1.7.1000.20131119_2219' profile='IBM Installation Manager' features='agent_core,agent_jre' installFixes='none'/>
 ```
 
-**Note:** Installation Manager might ask you to upgrade the Installation Manager. HCL Connections bundles only the 64-bit, version 1.8.5.1 of Installation Manager. If you have an earlier version of Installation Manager that is 32-bit, you must upgrade it to version 1.8.5.1. To download that version, see [Installation Manager 1.8.5.1](http://www-01.ibm.com/support/docview.wss?uid=swg24042905).
+!!! note
+    Installation Manager might ask you to upgrade the Installation Manager. HCL Connections bundles only the 64-bit, version 1.8.5.1 of Installation Manager. If you have an earlier version of Installation Manager that is 32-bit, you must upgrade it to version 1.8.5.1. To download that version, see [Installation Manager 1.8.5.1](http://www-01.ibm.com/support/docview.wss?uid=swg24042905).
 
 To create a customized version of the default response file, run the installation wizard in interactive mode. For more information, see the [The default response file](r_installresponse_file.md) topic. Response files are provided for silent installations on AIX and Linux. On Windows, refer to the topics [Installing in console mode](t_install_console-mode.md) and [Modifying the installation in console mode](t_modify_installation_console.md) mode.
 
@@ -31,7 +32,8 @@ To perform a silent installation, complete the following steps:
 
 2.  Enter the following command: ./imcl -input response\_file -log log\_file -acceptLicense
 
-    **Note:** The [IM\_root](../plan/i_ovr_r_directory_conventions.md)/eclipse directory contains a similar file called IBMIM.exe but that file is not suitable for silent installation.
+    !!! note
+    The [IM\_root](../plan/i_ovr_r_directory_conventions.md)/eclipse directory contains a similar file called IBMIM.exe but that file is not suitable for silent installation.
 
     where response\_file is the full path and name of the response file and log\_file is the full path and name of the log file. The default name of the response file is LC.rsp. By default, the response file is in [connections\_root](../plan/i_ovr_r_directory_conventions.md)
 

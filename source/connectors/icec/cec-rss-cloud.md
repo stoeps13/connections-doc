@@ -2,7 +2,8 @@
 
 This widget allows you to include elements from other web sites. You can show RSS or ATOM Feeds from external sites within that widget.
 
-**Note:** Be sure to configure the RSS Feed widget to work with the Connections Cloud approved proxies. For more information, see [Configuring a whitelist for the proxy server](cec-rss-cloud-configure.md).
+!!! note
+    Be sure to configure the RSS Feed widget to work with the Connections Cloud approved proxies. For more information, see [Configuring a whitelist for the proxy server](cec-rss-cloud-configure.md).
 
 The RSS widget includes a Rich RSS option that allows displaying images from the target resources within the RSS widget. The Rich RSS option will not work for all RSS widgets.
 

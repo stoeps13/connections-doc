@@ -4,7 +4,8 @@ Set preferences and policies to control how users interact with the HCL Connecti
 
 The following table shows preference and policy settings that control the behavior of the HCL Connections Desktop plug-in for Microsoft Windows. These registry values are not created during installation. You must create the keys/values as needed. If a key/value does not exist, the appropriate default is assumed. Setting values to anything other than the values listed in the table produces unpredictable results.
 
-**Note:** Note: For 64-bit computers, the registry settings are stored in HKLM/SOFTWARE/Wow6432Node/IBM instead of in HKLM/SOFTWARE/IBM \(used for 32-bit computers\).
+!!! note
+    Note: For 64-bit computers, the registry settings are stored in HKLM/SOFTWARE/Wow6432Node/IBM instead of in HKLM/SOFTWARE/IBM \(used for 32-bit computers\).
 
 |Key/SubKey:   
  \(HKLM/SOFTWARE/IBM\) or   
@@ -216,7 +217,8 @@ The following table shows preference and policy settings that control the behavi
 
  Example: gif, jpeg, mpg
 
- **Note:** Changing this setting requires that you restart your computer for the changes to take effect.
+ !!! note
+    Changing this setting requires that you restart your computer for the changes to take effect.
 
 |
 |Social Connectors/Settings
@@ -305,7 +307,8 @@ The following table shows preference and policy settings that control the behavi
 
 |Default root directory for downloaded files. This must be set to a non-shared local directory on the client system. Once set, it only affects newly added servers, communities, or people. Make sure you designate a valid URL. For example, do not specify a path to a removable device. Test the path to make sure it is accessible for your users.
 
- **Note:** Changing this setting requires that you restart your computer for the changes to take effect.
+ !!! note
+    Changing this setting requires that you restart your computer for the changes to take effect.
 
 |
 |Social Connectors/Settings
@@ -322,7 +325,8 @@ The following table shows preference and policy settings that control the behavi
 
 |When support is enabled for metrics, usage data about certain operations is gathered from the client. Operations such as displaying a View, for example, the "My Files" view, provides metrics that display in the HCL Connections server metrics reports.
 
- **Note:** Metrics are not available for Connections Cloud.
+ !!! note
+    Metrics are not available for Connections Cloud.
 
 |
 |Social Connectors/Settings
@@ -656,7 +660,8 @@ The following table shows preference and policy settings that control the behavi
 
 |https://apps.na.collabserv.com/help/index.jsp?topic=/com.ibm.imb.msplugin.doc/c\_files\_window\_install\_ovr.html \(Default\)
 
-**Note:** "http://" or "https://" is required as part of the url
+!!! note
+    "http://" or "https://" is required as part of the url
 
 |The url for help for the entire product.
 
@@ -667,7 +672,8 @@ The following table shows preference and policy settings that control the behavi
 
 |https://apps.na.collabserv.com/help/index.jsp?topic=/com.ibm.imb.msplugin.doc/c\_files\_window\_install\_ovr.html \(Default\)
 
-**Note:** "http://" or "https://" is required as part of the url
+!!! note
+    "http://" or "https://" is required as part of the url
 
 |The URL for help on the Connect to Site dialog. This setting overrides the setting for HelpURL
 
@@ -758,7 +764,8 @@ The following table shows preference and policy settings that control the behavi
 
 |Controls whether user is able to use sync. When sync is disabled, users will not get a local My Drive folder in Windows Explorer.
 
- **Note:** Setting the registry value does not disable sync for sites which were already syncing when the registry value was set. Sync will be disabled for these sites once they either stop using sync or disconnect from the site.
+ !!! note
+    Setting the registry value does not disable sync for sites which were already syncing when the registry value was set. Sync will be disabled for these sites once they either stop using sync or disconnect from the site.
 
 |
 |Social Connectors\\Settings
@@ -886,7 +893,8 @@ The following table shows preference and policy settings that control the behavi
 
 **Restriction:** CCM libraries are not supported on HCL Connections Cloud.
 
-**Note:** Note: For 64-bit computers, the registry settings are stored in HKLM/SOFTWARE/Wow6432Node/IBM instead of in HKLM/SOFTWARE/IBM \(used for 32-bit computers\).
+!!! note
+    Note: For 64-bit computers, the registry settings are stored in HKLM/SOFTWARE/Wow6432Node/IBM instead of in HKLM/SOFTWARE/IBM \(used for 32-bit computers\).
 
 |Key/SubKey \(HKLM/SOFTWARE/IBM\) or \(HKLM/SOFTWARE/Wow6432Node/IBM on 64-bit\)|Name \(Type = String\)|Values|Description|
 |-------------------------------------------------------------------------------|----------------------|------|-----------|
@@ -958,7 +966,8 @@ The following table shows preference and policy settings that control the behavi
 
 |Default root directory for downloaded library files. This must be set to a non-shared local directory on the client system. Once set, it only affects newly added servers, communities, or people. Make sure you designate a valid URL. For example, do not specify a path to a removable device. Test the path to make sure it is accessible for your users.
 
- **Note:** Changing this setting requires that you restart your computer for the changes to take effect.
+ !!! note
+    Changing this setting requires that you restart your computer for the changes to take effect.
 
 |
 |Social Connectors\\Settings|Enable CCM Library Trash

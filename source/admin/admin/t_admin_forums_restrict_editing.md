@@ -85,7 +85,8 @@ To restrict the editing of forum topics to the users who created them, you must 
 
     1.  Update the value of the version stamp configuration property to force users' browsers to pick up this change. Enter the following command to increment the value of the versionStamp property:
 
-        **Note:** This command is required only when a change is made to the product user interface and the change is to a file checked out using LCConfigService.
+        !!! note
+    This command is required only when a change is made to the product user interface and the change is to a file checked out using LCConfigService.
 
         LCConfigService.updateConfig\("versionStamp","gmt\_timestamp"\) where gmt\_timestamp is the GMT time. You can specify an empty string for the time stamp or provide a GMT value string. When you specify an empty string, the client calculates the current GMT time and updates the version stamp with that value. If you choose to provide the time, specify it using the following format: `yyyyMMdd.HHmmss` and specify the time in GMT. It is best to provide an empty string and let the client format the time stamp. For example: LCConfigService.updateConfig\("versionStamp",""\).
 

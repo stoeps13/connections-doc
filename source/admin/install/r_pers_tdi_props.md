@@ -8,7 +8,8 @@ These properties are in the profiles\_tdi.properties file.
 
 The SDI parameter column in the tables contains the name of the parameter in the LDAP connector. For more information, see [Security Directory Integrator V7.2.0 documentation](https://www.ibm.com/support/knowledgecenter/SSCQGF_7.2.0.3/com.ibm.IBMDI.doc_7.2.0.3/welcome.html).
 
-**Note:** All file paths that are specified are relative to the Security Directory Integrator solution directory.
+!!! note
+    All file paths that are specified are relative to the Security Directory Integrator solution directory.
 
 ## Property mappings { .section}
 
@@ -24,7 +25,8 @@ Express this value in the form of `ldap://host:port`. For example: ldap://myserv
 
 If you are using the population wizard, this property is configured with the **LDAP server name** and **LDAP server port** on the LDAP server connection page.
 
-**Note:** The LDAP query constructed from the source URL, search base, and search filter are stored in a source url property, which can be used to segment the Profiles database user set during synchronization. Using different values for this property, which may be equivalent \(for example referencing the LDAP server by IP address or DNS name\) is not advised.
+!!! note
+    The LDAP query constructed from the source URL, search base, and search filter are stored in a source url property, which can be used to segment the Profiles database user set during synchronization. Using different values for this property, which may be equivalent \(for example referencing the LDAP server by IP address or DNS name\) is not advised.
 
 The default value is ldap://localhost:389.
 
@@ -52,7 +54,8 @@ If you are using the population wizard, this property is configured in the **Bin
 |
 |source\_ldap\_search\_base or source\_ldap\_user\_search\_base|Search Base|The search base \(the location from where the search begins\) of the iterating directory. The search begins at this point in the LDAP directory structure and searches all records underneath. This must be a distinguished name.
 
-**Note:** Most directories require a search base, and as such it must be a valid distinguished name. Some directory services allow you to specify a blank string, which defaults to whatever the server is configured to do.
+!!! note
+    Most directories require a search base, and as such it must be a valid distinguished name. Some directory services allow you to specify a blank string, which defaults to whatever the server is configured to do.
 
 A default value is not specified.
 
@@ -63,7 +66,8 @@ If you are using the population wizard, this property is configured in the **LDA
 
 This filter determines which objects are included or excluded in the search. If you are using the search base and the specified search filter properties do not allow you to adequately construct your search set, use the source\_ldap\_required\_dn\_regex property.
 
-**Note:** Search filters are used by those directories to select entries from which data is retrieved from a search operation. Search filters as they can affect performance of the directory that is being searched, so choose carefully. The directory server schema that is being queried can affect performance.
+!!! note
+    Search filters are used by those directories to select entries from which data is retrieved from a search operation. Search filters as they can affect performance of the directory that is being searched, so choose carefully. The directory server schema that is being queried can affect performance.
 
 A default value is not specified.
 
@@ -203,7 +207,8 @@ Many properties in the IBM Security Directory Integrator LDAP connector are not 
 
 The following properties are associated with the Profiles database repository.
 
-**Note:** Set the following properties in profiles\_tdi.properties, even if you are developing your own assembly lines with the connectors provided in the Profiles IBM Security Directory Integrator solution directory. These properties are not configured in the Connector panels, but rather in the profiles\_tdi.properties file. For more information, see *Developing custom Security Directory Integrator assembly lines*.
+!!! note
+    Set the following properties in profiles\_tdi.properties, even if you are developing your own assembly lines with the connectors provided in the Profiles IBM Security Directory Integrator solution directory. These properties are not configured in the Connector panels, but rather in the profiles\_tdi.properties file. For more information, see *Developing custom Security Directory Integrator assembly lines*.
 
 |Property|SDI parameter|Definition|
 |--------|-------------|----------|
@@ -240,7 +245,8 @@ dbrepos_jdbc_driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
 
  You must modify the host name portion and port number to reference your server information.
 
-**Note:** You can find this information by accessing the WebSphere® Application Server Administration Console \(http://yourhost:9060\), and then selecting **Resources** \> **JDBC** \> **Data sources** \> **profiles**.
+!!! note
+    You can find this information by accessing the WebSphere® Application Server Administration Console \(http://yourhost:9060\), and then selecting **Resources** \> **JDBC** \> **Data sources** \> **profiles**.
 
  The default syntax is for DB2, unless using the wizard, but the default uses a local host. If the DB2 is not on the same system as the SDI solution directory, update the URL with the host name.
 
@@ -398,13 +404,15 @@ ldap://host:port
 
 The following properties are available in the profiles\_tdi.properties file and are associated with Security Directory Integrator debug activities.
 
-**Note:** The debug properties enable Security Directory Integrator debugging for an entire assembly. In addition, enabling debug\_update\_profile, which enables debugging for the commands that use the Profiles Connector, also enables Java debugging for the following packages.
+!!! note
+    The debug properties enable Security Directory Integrator debugging for an entire assembly. In addition, enabling debug\_update\_profile, which enables debugging for the commands that use the Profiles Connector, also enables Java debugging for the following packages.
 
 -   log4j.logger.com.ibm.lconn.profiles.api.tdi=ALL
 -   log4j.logger.com.ibm.lconn.profiles.internal.service=ALL
 -   log4j.logger.java.sql=ALL
 
-**Note:** The following properties are not configurable when you use the population wizard.
+!!! note
+    The following properties are not configurable when you use the population wizard.
 
 |Property|Security Directory Integrator parameter|Definition|
 |--------|---------------------------------------|----------|

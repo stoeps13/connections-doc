@@ -23,11 +23,13 @@ Check out gallery-config.xml, edit the gallery configuration properties, and the
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you change them. Use forward slashes to separate directories in the file path, even if you are using the Microsoft™ Windows™ operating system.
 
-            **Note:** AIX®, and Linux™ only: The directory must grant write permissions or the command does not run successfully.
+            !!! note
+    AIX®, and Linux™ only: The directory must grant write permissions or the command does not run successfully.
 
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, type the following command while in the wsadmin command processor: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
         For example:
 
@@ -39,7 +41,8 @@ Check out gallery-config.xml, edit the gallery configuration properties, and the
     |----------------------|-----------|---------------|-------|
     |maxNumberOfEntries|The maximum number of thumbnails to show in the Gallery.|Any positive integer.|12|
     |maxNumberOfRows|The maximum number of rows of thumbnails to show in the Gallery.|Any positive integer.|2|
-    |sources|The types of folders to show in the gallery. If sources is set to communityFolders, only folders that are created in this community can be displayed in the Gallery. If sources is set tocommunityFolders,personalFolders, personal folders that are shared with the community can also be displayed in the Gallery. **Note:** If personal folders can be displayed in the Gallery, then community folders must also be displayed in the Gallery
+    |sources|The types of folders to show in the gallery. If sources is set to communityFolders, only folders that are created in this community can be displayed in the Gallery. If sources is set tocommunityFolders,personalFolders, personal folders that are shared with the community can also be displayed in the Gallery. !!! note
+    If personal folders can be displayed in the Gallery, then community folders must also be displayed in the Gallery
 
 |communityFolders or communityFolders,personalFolders|communityFolders,personalFolders|
 

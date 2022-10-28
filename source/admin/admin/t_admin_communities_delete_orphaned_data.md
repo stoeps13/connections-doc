@@ -67,7 +67,8 @@ As part of your backup and restore operation, you can run the CommunitiesRemoteA
 
         ActivityService.deleteActivities\(vector activities\)
 
-        **Note:** The Activities widget can contain multiple activities associated with a single community. You can use the oldCommunityId as an identifier to query for a vector of all orphaned activities and delete them.
+        !!! note
+    The Activities widget can contain multiple activities associated with a single community. You can use the oldCommunityId as an identifier to query for a vector of all orphaned activities and delete them.
 
         Use the following commands to generate the vector, and then delete the orphaned activities.
 
@@ -93,7 +94,8 @@ As part of your backup and restore operation, you can run the CommunitiesRemoteA
 
         ForumsService.deleteForums\(Vector Hashtable\)
 
-        **Note:** The Forums widget can contain multiple forums associated with a single community. You can use the forum name to query for a vector of forums and delete them.
+        !!! note
+    The Forums widget can contain multiple forums associated with a single community. You can use the forum name to query for a vector of forums and delete them.
 
         Use the following commands to generate the vector, and then delete the orphaned forums.
 

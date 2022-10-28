@@ -20,7 +20,8 @@ When you have a local draft, you can upload the changes to update the server cop
 
 -   Right-click a draft and choose **Upload** \> **Check in as new version** to upload the updated file with a new name and make it available to library users.
 
-    **Note:** If review workflow is enabled for this library, use the **Upload** \> **Check in as new version** option to submit a draft for review.
+    !!! note
+    If review workflow is enabled for this library, use the **Upload** \> **Check in as new version** option to submit a draft for review.
 
 -   **Delete draft** permanently removes the draft and the corresponding local draft \(if one exists\) if you no longer want to update the file. Deleting a draft does not affect the published version of the library file but it will no longer be in a checked-out state.
 

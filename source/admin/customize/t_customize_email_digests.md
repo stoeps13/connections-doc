@@ -26,7 +26,8 @@ The property named emailDigestBean is passed to the daily and weekly email diges
 
         For information about editing the templates, refer to the FreeMarker documentation on the following web page: [http://freemarker.sourceforge.net/docs/index.html](http://freemarker.sourceforge.net/docs/index.html)
 
-        **Note:** The Freemarker version currently used is 2.3.15.
+        !!! note
+    The Freemarker version currently used is 2.3.15.
 
         The main templates used are dailyDigest.ftl and weeklyDigest.ftl. To change the styles and structure of both weekly and daily digests, make your customizations to the style.ftl file in the aggregated folder.
 
@@ -66,7 +67,8 @@ The property named emailDigestBean is passed to the daily and weekly email diges
 
         [http://freemarker.sourceforge.net/docs/index.html](http://freemarker.sourceforge.net/docs/index.html)
 
-        **Note:** The Freemarker version currently used is 2.3.15.
+        !!! note
+    The Freemarker version currently used is 2.3.15.
 
     2.  Save the templates in the following directory:
 
@@ -141,7 +143,8 @@ The property named emailDigestBean is passed to the daily and weekly email diges
 
             -   temp\_dir is the temporary directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes to separate directories in the file path, even if you are using the Microsoft Windows operating system.
 
-                **Note:** AIX and Linux, only: The temporary directory must grant write permissions or the command will not run successfully.
+                !!! note
+    AIX and Linux, only: The temporary directory must grant write permissions or the command will not run successfully.
 
             -   cell\_name is the WebSphere Application Server cell to which you installed the application for which you are enabling mail. This argument is case-sensitive, so type it with care.
         5.  Using a text editor, open the notification-config.xml file from the temporary directory to which you checked it out.
@@ -208,7 +211,8 @@ The property named emailDigestBean is passed to the daily and weekly email diges
 
 -   To customize the images used in the email digest:
 
-    **Note:** Email digests include an Connections logo image and individual application icons.
+    !!! note
+    Email digests include an Connections logo image and individual application icons.
 
     1.  Locate the images in the following directory:
 

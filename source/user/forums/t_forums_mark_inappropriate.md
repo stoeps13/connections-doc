@@ -15,7 +15,8 @@ The standards that determine whether forum content is inappropriate depend on yo
 
 4.  Select a category for the issue that you are reporting.
 
-    **Note:** This option is displayed only if the IBM® Connections administrator categorized issues that are of concern to your organization. These categories might include Inappropriate business content or Security risk.
+    !!! note
+    This option is displayed only if the IBM® Connections administrator categorized issues that are of concern to your organization. These categories might include Inappropriate business content or Security risk.
 
 5.  Enter your reason for flagging the content and then click **Flag**.
 

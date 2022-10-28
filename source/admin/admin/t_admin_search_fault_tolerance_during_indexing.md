@@ -8,7 +8,8 @@ New functionality has been added to the Search service to build and copy an init
 
 2.  If an exception is found when crawling content from one or more services, the information that is needed to debug the problem is saved in the log file in the SEARCH\_INDEX\_DIR directory. The name of this file starts with "InitialIndexBuildLog" and the file extension is .json.
 
-    **Note:** The information from this file is displayed on the serverStatus web page, for more information, see *Analyzing results from the search serverStatus page*.
+    !!! note
+    The information from this file is displayed on the serverStatus web page, for more information, see *Analyzing results from the search serverStatus page*.
 
 3.  When index building completes, the index is copied automatically to each node in the cluster.
 

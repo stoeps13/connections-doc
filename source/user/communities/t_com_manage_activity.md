@@ -2,7 +2,8 @@
 
 Edit the details of your community activities to reflect your current goals and tasks.
 
-**Note:** Community owners cannot manage tasks for any activities that are shared with a community. Only the activity owner who shared the activity with the community can manage that activity.
+!!! note
+    Community owners cannot manage tasks for any activities that are shared with a community. Only the activity owner who shared the activity with the community can manage that activity.
 
 You can manage activities in many ways, for example assigning a priority, editing its details, or using it as a template for a new activity:
 

@@ -29,7 +29,8 @@ The following table lists the widgets you can add to the Highlights page. For de
 **Attention:** Some of the widgets include options to configure them for personalization, so that the logged-in user will see content relating specifically to them. The personalization options are not currently supported for the Highlights widgets. Additionally, mobile users of the News widgets in the Highlights app cannot create content in the widgets. These include the News, News - Channel, News - List, News - Overview, and News - Slider widgets.
 
 |**Widget name**|**Description**|
-|[../../connectors/icec/cec-activity-stream.dita](../../connectors/icec/cec-activity-stream.dita)|Include activity stream content from a specified source. **Note:** If the activity stream is configured to use a Sharebox, users will not be able to enter @mentions in a post.
+|[../../connectors/icec/cec-activity-stream.dita](../../connectors/icec/cec-activity-stream.dita)|Include activity stream content from a specified source. !!! note
+    If the activity stream is configured to use a Sharebox, users will not be able to enter @mentions in a post.
 
 |
 |[../../connectors/icec/cec-atom\_rss.dita](../../connectors/icec/cec-atom_rss.dita)|Display RSS or ATOM feeds from external sites within that widget.|
@@ -48,7 +49,8 @@ The following table lists the widgets you can add to the Highlights page. For de
 |[My Communities](../../connectors/icec/cec-my-communities.dita)|Personalize to display the logged-in user's communities.|
 |[My Files](../../connectors/icec/cec-my-files.dita)|Personalize to display the logged-in user's files.|
 |[My Links](../../connectors/icec/cec-my_links.dita)|Personalize to display the logged-in user's bookmarks.|
-|[My Notes](../../connectors/icec/cec-my-notes.dita)|Display your to-dos and notes for just you to see.**Note:** The My Notes widget is not available to external users.
+|[My Notes](../../connectors/icec/cec-my-notes.dita)|Display your to-dos and notes for just you to see.!!! note
+    The My Notes widget is not available to external users.
 
 |
 |[My Pinned Files](../../connectors/icec/cec-pinned-files.dita)|Include links to files pinned in the specified Files app.|

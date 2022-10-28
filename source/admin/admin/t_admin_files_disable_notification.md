@@ -41,7 +41,8 @@ Email notifications can also be enabled or disabled for all applications. See th
         FilesConfigService.checkOutConfig("c:/temp","foo01Cell01")
         ```
 
-    **Note:** To check out email templates with the configuration files you can add the includeEmailTemplates parameter, and set it to "true". For example:
+    !!! note
+    To check out email templates with the configuration files you can add the includeEmailTemplates parameter, and set it to "true". For example:
 
     ```
     FilesConfigService.checkOutConfig("/opt/my_temp_dir", "CommServerNode01Cell", includeEmailTemplates = "true")
@@ -57,7 +58,8 @@ Email notifications can also be enabled or disabled for all applications. See th
 
 5.  You must check the configuration files back in after making changes, and they must be checked in during the same wsadmin session in which they were checked out for the changes to take effect. See the topic *Applying Files property changes* for details.
 
-    **Note:** If you checked out the email templates, use `FilesConfigService.checkInConfig(includeEmailTemplates = "true")` to check them back in as well.
+    !!! note
+    If you checked out the email templates, use `FilesConfigService.checkInConfig(includeEmailTemplates = "true")` to check them back in as well.
 
 
 **Parent topic:**[Administering Files](../admin/c_admin_files_overview.md)

@@ -14,7 +14,8 @@ The Share functionality is based on the OpenSocial API. It uses Activity Stream 
 
 Which Share Dialog window that is displayed upon clicking the Share icon consists of three \(3\) elements: A member or Community name picker, an optional message which appears in the notification as well as a corresponding link either to the Connections page or to specific content.
 
-**Note:** Sharing a link to restricted connections content will not automatically enable users access to content and the access would need to be manually enabled.
+!!! note
+    Sharing a link to restricted connections content will not automatically enable users access to content and the access would need to be manually enabled.
 
 Users are notified in corresponding Activity Streams like Top Updates and Latest Updates, on the Homepage and on the Community page and they are alerted in the Notification panel on the left side navigation.
 

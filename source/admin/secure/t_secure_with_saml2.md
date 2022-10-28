@@ -8,7 +8,8 @@ Complete the following prerequisite conditions:
 -   Ensure that you can access Connections applications from a web browser.
 -   Each href attribute in the LotusConnections-config.xml file is case-sensitive and must specify a fully-qualified domain name.
 
-    **Note:** Lowercase is required for URLs. Many modern browsers will set the domain to lowercase before making a request. For URLs to match with those browsers, lowercase must be used when specifying domain names.
+    !!! note
+    Lowercase is required for URLs. Many modern browsers will set the domain to lowercase before making a request. For URLs to match with those browsers, lowercase must be used when specifying domain names.
 
 -   The connectionsAdmin J2C alias that you specified during installation must correspond to a valid account that can authenticate with SAML. It may map to a backend administrative user account. This account must be capable of authenticating for single sign-on against SAML. If you need to update the user ID or credentials for this alias, see the [Changing references to administrative credentials](../admin/t_admin_common_changing_admin_passwords.md) topic.
 

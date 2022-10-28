@@ -16,7 +16,8 @@ If your Code needs external Images or CSS/JS-Sources, you have to edit the link 
 
 /communities/ajaxProxy/https/google.de
 
-**Note:** Be sure that you configured the AJAX-Proxy \(Connections Engagement Center - Installation Instructions\).
+!!! note
+    Be sure that you configured the AJAX-Proxy \(Connections Engagement Center - Installation Instructions\).
 
 ![image](images/image058.png)
 

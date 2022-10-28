@@ -4,9 +4,11 @@ Populate the Profiles database with information from the source server by using 
 
 The Profiles population wizard provides an interface to make it easier for you to populate the Profiles database with information from your LDAP directory. Alternatively, if you do not want to use the wizard, you can populate the database manually by manually updating the profiles\_tdi.properties file in the TDI directory.
 
-**Note:** Although LDAP is the default source, and the only source supported by the Profiles population wizard, other sources are available if you are manually populating the Profiles database. See [Manually populating the Profiles database](t_prof_populate_manual.md) for more information.
+!!! note
+    Although LDAP is the default source, and the only source supported by the Profiles population wizard, other sources are available if you are manually populating the Profiles database. See [Manually populating the Profiles database](t_prof_populate_manual.md) for more information.
 
-**Note:** You can create custom TDI connectors to add, update, and synchronize your source data and Profiles database content. See topics such as [Developing custom Tivoli Security Integrator assembly lines for Profiles](../admin/c_admin_profiles_develop_custom_tdi_scripts.md) and [Using the ProfileConnector](../admin/t_admin_profiles_using_profile_connector.md) for more information.
+!!! note
+    You can create custom TDI connectors to add, update, and synchronize your source data and Profiles database content. See topics such as [Developing custom Tivoli Security Integrator assembly lines for Profiles](../admin/c_admin_profiles_develop_custom_tdi_scripts.md) and [Using the ProfileConnector](../admin/t_admin_profiles_using_profile_connector.md) for more information.
 
 1.  To populate the Profiles database with information from the LDAP server, do one of the following:
 

@@ -4,7 +4,8 @@ You can customize the look of the HCL Connections™ pages by adding new style d
 
 To add a custom style to the HCL Connections style sheet, you need to create a CSS file that contains your customized styles and store it in the customizationDir/themes/<theme\_name\>Theme folder.
 
-**Note:** Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
+!!! note
+    Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
 
 1.  Turn on the customization debugging capability. For more information, see [Enabling live user interface customization editing mode](t_customize_enable_custom_debugging.md).
 

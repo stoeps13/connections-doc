@@ -10,23 +10,28 @@ Without multiple dictionary support, for languages other than English, Search re
 
 Adding extra dictionaries is a mandatory post-installation step that you perform before you start the HCL Connections Search server for the first time.
 
-**Note:** You can still add or remove dictionaries later, but to do so you must rebuild the index from scratch and restart the server. However, re-indexing can be done in the background.
+!!! note
+    You can still add or remove dictionaries later, but to do so you must rebuild the index from scratch and restart the server. However, re-indexing can be done in the background.
 
 ## How does search choose the right language dictionary to index content with? { .section}
 
 When content is analyzed at indexing time, Search attempts to guess \(or detect\) which of the enabled IBM® LanguageWare® dictionaries to use when applying the text analysis process. If the attempt is unsuccessful or if the language guessed does not have a corresponding dictionary enabled, the default dictionary is used.
 
-**Note:** The browser location, the language of the operating system and the location of the user's computer have no effect on the language guessing process at the indexing time.
+!!! note
+    The browser location, the language of the operating system and the location of the user's computer have no effect on the language guessing process at the indexing time.
 
-**Note:** The defined default dictionary in Connections is not related to the location of the operating system or to the browser location. For more information, see *Setting the default dictionary*.
+!!! note
+    The defined default dictionary in Connections is not related to the location of the operating system or to the browser location. For more information, see *Setting the default dictionary*.
 
 ## How does search choose the language dictionary to analyze the users search queries with? { .section}
 
 The language is taken from the user browser settings \(the `Accept-Language` HTTP header\). If there is a problem when loading the dictionary corresponding to the language specified or if there is no corresponding dictionary enabled, then the default dictionary is used.
 
-**Note:** To change the language of the browser, refer to the browser's documentation.
+!!! note
+    To change the language of the browser, refer to the browser's documentation.
 
-**Note:** The defined default dictionary in Connections is not related to the location of the operating system or to the browser location. For more information, see *Setting the default dictionary*.
+!!! note
+    The defined default dictionary in Connections is not related to the location of the operating system or to the browser location. For more information, see *Setting the default dictionary*.
 
 ## Choosing languages and setting the default dictionary { .section}
 

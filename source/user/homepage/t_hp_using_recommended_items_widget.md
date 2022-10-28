@@ -10,7 +10,8 @@ The Recommendations app suggests content that might interest you based on your e
 |![Blogs icon](Blogs.png)|Blogs|
 |![Bookmarks icon](Bookmarks.png)|Bookmarks|
 |![Communities icon](Communities.png)|Communities|
-|![File icon](file_type.png)|Files**Note:** The icon shown here represents just one file type. The icon next to a recommended file from the Files app changes depending on the type of file. For more information, see *File type icons*.
+|![File icon](file_type.png)|Files!!! note
+    The icon shown here represents just one file type. The icon next to a recommended file from the Files app changes depending on the type of file. For more information, see *File type icons*.
 
 |
 |![Forums icon](Forums.png)|Forums|

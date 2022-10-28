@@ -12,7 +12,8 @@ Influence the ranking of search results by configuring a boost to the relevance 
 
 2.  Use any of the following commands to configure boosting applied on different fields in search queries.
 
-    **Note:** Except for the deleteBoostSettings, the boostname parameter in all commands is "content" when you are referring to global search boosting.
+    !!! note
+    Except for the deleteBoostSettings, the boostname parameter in all commands is "content" when you are referring to global search boosting.
 
     SearchCellConfig.addFieldBoost\(string boostName, string fieldName, float boost\)
     :   Adds a field with a specific boost to be taken into account in query time.

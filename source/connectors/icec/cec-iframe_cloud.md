@@ -20,7 +20,8 @@ Personalization
 
 Use Proxy
 
-**Note:** If you select the Use Proxy option, the proxy returns only HTML, so some additional content \(such as referenced images\) will not be returned.
+!!! note
+    If you select the Use Proxy option, the proxy returns only HTML, so some additional content \(such as referenced images\) will not be returned.
 
 ## Other { .section}
 

@@ -6,7 +6,8 @@ To run administrative commands, you must use the wsadmin client. See [Starting t
 
 You can extend the scope of the Home page activity stream to include updates from third-party applications using the JSON APIs provided with HCL Connections. If you want third-party applications to display in the filter list in the product user interface, you must register the applications.
 
-**Note:** You can still post third-party events to the activity stream if the corresponding application is not registered, but you must register the application if you want it to be available from the filter list.
+!!! note
+    You can still post third-party events to the activity stream if the corresponding application is not registered, but you must register the application if you want it to be available from the filter list.
 
 You can also update applications that have already been registered to enable them for email digest functionality. Enabled applications are included on the Email Preferences page, and email notifications are sent to the intended recipients of activities. Users can select the frequency with which they want to be notified about updates, as with the standard HCL Connections applications. Depending on the user's choice, an email notification is sent either immediately or grouped in a daily or weekly newsletter.
 
@@ -50,7 +51,8 @@ You can also update applications that have already been registered to enable the
         -   secureImageUrl. The secure web address for an image to display for the application.
         -   summary. A short description of the application.
         -   isEnabled. A Boolean string that specifies whether the registration is enabled or disabled.
-        **Note:** You must include the appId and isEnabled parameters, but the remaining parameters are optional. After registering an application, you might also need to restart the Home page application for the application to display in the filter list.
+        !!! note
+    You must include the appId and isEnabled parameters, but the remaining parameters are optional. After registering an application, you might also need to restart the Home page application for the application to display in the filter list.
 
         For example:
 
@@ -89,14 +91,16 @@ You can also update applications that have already been registered to enable the
 
         This command takes the following parameters:
 
-        **Note:** You must run the command every time a parameter update is required.
+        !!! note
+    You must run the command every time a parameter update is required.
 
         -   appId. The ID of the application that you want to update.
         -   isEnabled. A Boolean string that specifies whether the registration is enabled or disabled for email digest sending.
         -   defaultFollowFrequency. A value that specifies the default frequency with which application updates are notified. The following values are valid: NONE, INDIVIDUAL, DAILY, and WEEKLY.
         -   isLocked. A Boolean string that specifies whether email settings for the application are locked or unlocked.
 
-            **Note:** Setting this parameter to true enforces the defaultFollowFrequency parameter for all users, and individual user settings for the application are overridden. When isLocked is set to true, a lock icon displays next to the application name on the Email Preferences page, and the radio buttons for selecting the notification frequency for the application are disabled. When isLocked is set to false, users can specify notification frequency settings for the application, and any settings that were previously specified are restored.
+            !!! note
+    Setting this parameter to true enforces the defaultFollowFrequency parameter for all users, and individual user settings for the application are overridden. When isLocked is set to true, a lock icon displays next to the application name on the Email Preferences page, and the radio buttons for selecting the notification frequency for the application are disabled. When isLocked is set to false, users can specify notification frequency settings for the application, and any settings that were previously specified are restored.
 
         For example:
 

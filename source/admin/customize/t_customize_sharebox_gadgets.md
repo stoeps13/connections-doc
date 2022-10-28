@@ -25,7 +25,8 @@ You can add the following features to your gadget:
     <Require feature="ibm.connections.sharedialog" />
     ```
 
-    **Note:** This feature should be used by gadgets that are rendered in the Share dialog.
+    !!! note
+    This feature should be used by gadgets that are rendered in the Share dialog.
 
 3.  Include the actions feature and define an action with a path of "container/sharebox".
 
@@ -79,9 +80,11 @@ You can add the following features to your gadget:
     </script>
     ```
 
-    **Note:** The selection object will consist of a**type** and **dataObject** attribute. When an action is invoked in the Share dialog, a selection object will be provided to the action callback \(*updateContext* in this case\) and the object will have a **type** of com.ibm.social.sharebox.context. If the **type** value is not com.ibm.social.sharebox.context, then this selection did not come from *Sharebox*. The actual *context* object is available via the **dataObject** attribute. Example selection.dataObject: \{type: "global"\}
+    !!! note
+    The selection object will consist of a**type** and **dataObject** attribute. When an action is invoked in the Share dialog, a selection object will be provided to the action callback \(*updateContext* in this case\) and the object will have a **type** of com.ibm.social.sharebox.context. If the **type** value is not com.ibm.social.sharebox.context, then this selection did not come from *Sharebox*. The actual *context* object is available via the **dataObject** attribute. Example selection.dataObject: \{type: "global"\}
 
-    **Note:** The callback defined for your action \( "updateContext" function in this example\) will get called each time the user visits your gadget's tab in the Share dialog. The following scenarios will result in the callback being called:
+    !!! note
+    The callback defined for your action \( "updateContext" function in this example\) will get called each time the user visits your gadget's tab in the Share dialog. The following scenarios will result in the callback being called:
 
     1.  User visits tab of gadget. The first time this happens, you will want to initialize your gadget contents. Each additional time, you will only want to do an update if desired.
     2.  User closes the Share dialog while your tab is in focus and then reopens the Share dialog without leaving the current page or performing a page refresh. The callback will get called when the Share dialog is opened.

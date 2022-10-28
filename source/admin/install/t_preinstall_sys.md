@@ -40,7 +40,8 @@ On all operating systems, ensure that you have 6 GB of temporary disk space. On 
         non-root\_account hard nofile 40000
         ```
 
-    **Note:** On small deployments were the database server is on the same machine, the limit might need to be higher as specified by the database's requirements.
+    !!! note
+    On small deployments were the database server is on the same machine, the limit might need to be higher as specified by the database's requirements.
 
 
 **Parent topic:**[Pre-installation tasks](../install/c_preinstall_actions.md)

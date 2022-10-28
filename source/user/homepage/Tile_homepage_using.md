@@ -24,7 +24,8 @@ Updates from people and communities that you add to the "Important to Me" bar ar
 
 From Top Updates, you can also like, comment, and act on updates from people in your personal network, or click any linked text or graphics to go to the source of the content. When applicable in your deployment, click the ![Icon to link to app](om_open_app_icon.png) icon in an update to open an app from a source other than Connections.
 
-**Note:** The **Important to Me** bar's filtering action is available only on the **Top Updates** tab. When you are on other home page tabs, you can use **Important to Me** for easy access to a person's contact details, or a community.
+!!! note
+    The **Important to Me** bar's filtering action is available only on the **Top Updates** tab. When you are on other home page tabs, you can use **Important to Me** for easy access to a person's contact details, or a community.
 
 **Parent topic:**[Using Connections 8.0](../welcome/welcome_end_user.md)
 

@@ -112,7 +112,8 @@ To specify a different system user for widget life-cycle POSTs, you must first c
         3.  Restart the Communities application using the WebSphere Application Server Integrated Solutions Console.
 3.  Map the user in the alias to the widget-admin role.
 
-    **Note:** Note that for Activities, the user mapped to the widget-admin role must also be mapped to the person role. For more information, see *Roles*.
+    !!! note
+    Note that for Activities, the user mapped to the widget-admin role must also be mapped to the person role. For more information, see *Roles*.
 
     1.  From the WebSphere Application Server Integrated Solutions Console, select **Applications** \> **Application types**, select **WebSphere enterprise applications**, and then select the application that you want to configure.
 

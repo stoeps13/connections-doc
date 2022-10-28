@@ -70,7 +70,8 @@ There is a configuration which can prevent users from uploading, downloading, or
 
 1.  Open the plugin\_customization.ini file for the Notes client in a text editor. The file is stored in the following directory: <Notes Install\>/framework/rcp/plugin\_customization.ini
 
-    **Note:** On Mac, your path might be different depending on where you installed Notes. For example, your path might be:
+    !!! note
+    On Mac, your path might be different depending on where you installed Notes. For example, your path might be:
 
     /Applications/Notes.app\(or or Lotus Notes.app, IBM Notes.app or HCL Notes.app\)/Contents/MacOS/rcp/eclipse/features/plugin\_customization.ini
 

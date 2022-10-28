@@ -4,7 +4,8 @@ Edit the profiles-config.xml file to configure template reloading.
 
 When developing your presentation templates, it is useful to see your changes immediately reflected in the user interface without stopping and starting the application. This enables you to make updates to any of the template files, and see the changes immediately in the application without requiring restarts.
 
-**Note:** In a production environment, set this value to 0 so templates are compiled once and performance is optimal.
+!!! note
+    In a production environment, set this value to 0 so templates are compiled once and performance is optimal.
 
 1.  Open the profiles-config.xml file using a text editor.
 

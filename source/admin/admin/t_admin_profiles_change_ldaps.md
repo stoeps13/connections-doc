@@ -4,7 +4,8 @@ When you change to a new LDAP directory with the same users, you must synchroniz
 
 You must ensure that the values of either the uid or the email address in the existing data source match those in the new deployment LDAP directory. If neither of these properties have matching values, you cannot use the scripts provided with IBM® Connections to synchronize.
 
-**Note:** Changing a user's identifier in Connections Content Manager \(CCM\) results in the user record being viewed by the system as a completely new user, and access will be lost, which can be a particular concern when administrative access is lost.
+!!! note
+    Changing a user's identifier in Connections Content Manager \(CCM\) results in the user record being viewed by the system as a completely new user, and access will be lost, which can be a particular concern when administrative access is lost.
 
 1.  To use the scripts provided with HCL Connections to synchronize the IDs and update Profiles, complete the following steps:
 2.  Open the profiles\_tdi.properties file from the IBM Tivoli® Directory Integrator solution directory on the system that hosts the Profiles application in a text editor, and edit the following properties to match the values of the corresponding properties in the LDAP system:

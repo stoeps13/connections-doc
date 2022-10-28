@@ -8,7 +8,8 @@ Plugins are bundled with TinyMCE in a location relative to the main editor scrip
 
 The Tiny Editors integration also provides the ability to selectively load these external plugins based on the editor location. For example: Only loading a track-changes plugin on Wiki pages where multiple users can collaborate. The plugins can be selectively turned on in certain locations or simply loaded everywhere but certain locations.
 
-**Note:** If multiple external plugins are provided their load order is browser dependent and may not be in the order listed.
+!!! note
+    If multiple external plugins are provided their load order is browser dependent and may not be in the order listed.
 
 The following example shows the properties of an external plugin which would be one entry in a list.
 

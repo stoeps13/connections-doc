@@ -26,7 +26,8 @@ To populate the Profiles database, complete the following steps:
     xhost +
     ```
 
-    **Note:** If granting display authority to all users is a security concern for you, change the command to grant display authority to a specific user or users. For more information about this command, consult with your AIX or Linux administrator guide.
+    !!! note
+    If granting display authority to all users is a security concern for you, change the command to grant display authority to a specific user or users. For more information about this command, consult with your AIX or Linux administrator guide.
 
     ```
     echo $DISPLAY
@@ -45,18 +46,21 @@ To populate the Profiles database, complete the following steps:
     -   AIX: ./populationWizard.sh
     -   Linux: ./populationWizard.sh
 
-        **Note:** If the wizard does not run correctly, you might need to edit the populationWizard.sh file and enter the correct JRE/JVM path for your system The populationWizard.sh file expects the path to be jvm/linux/jre/bin.
+        !!! note
+    If the wizard does not run correctly, you might need to edit the populationWizard.sh file and enter the correct JRE/JVM path for your system The populationWizard.sh file expects the path to be jvm/linux/jre/bin.
 
     -   Microsoft Windows: populationWizard.bat
 7.  On the Welcome page of the wizard, click **Launch Information Center** to open the HCL Connections Information Center in a browser window. Click **Next** to continue.
 
 8.  Select **Default settings**or, if you are resuming an earlier session, click **Last successful default settings** and click **Next**.
 
-    **Note:** This page is shown only if you have already used the wizard to populate the Profiles database.
+    !!! note
+    This page is shown only if you have already used the wizard to populate the Profiles database.
 
 9.  Enter the location of Tivoli Directory Integrator and then click **Next**.
 
-    **Note:** This page is shown only if the wizard cannot automatically detect your Tivoli Directory Integrator directory.
+    !!! note
+    This page is shown only if the wizard cannot automatically detect your Tivoli Directory Integrator directory.
 
 10. Select a database type and click **Next**.
 
@@ -80,7 +84,8 @@ To populate the Profiles database, complete the following steps:
     Database name
     :   The default name of the database is PEOPLEDB.
 
-        **Note:** There is no default name for the Oracle database, Instead, enter the name of the database instance.
+        !!! note
+    There is no default name for the Oracle database, Instead, enter the name of the database instance.
 
     JDBC driver library path
     :   Enter the path to the JDBC driver on the host machine. For example: IBM/sqllib/java.
@@ -119,7 +124,8 @@ To populate the Profiles database, complete the following steps:
         -   Windows: TDI\_Install\_directory\\jvm\\jre\\bin\\ikeyman.exe
         where TDI\_Install\_directory is the directory where Tivoli Directory Integrator is installed.
 
-        **Note:** On the Windows 2008 and Windows 2012 operating systems, right-click **ikeyman.exe** and select **Run as administrator**.
+        !!! note
+    On the Windows 2008 and Windows 2012 operating systems, right-click **ikeyman.exe** and select **Run as administrator**.
 
     2.  Click **Key Database File** from the menu bar and then click **New**.
 
@@ -129,7 +135,8 @@ To populate the Profiles database, complete the following steps:
 
     5.  Enter a password in the **Password Prompt** dialog box and then confirm the password. Click **OK**.
 
-        **Note:** You need this password when you use the Profiles population wizard.
+        !!! note
+    You need this password when you use the Profiles population wizard.
 
     6.  Exit the iKeyman utility.
 
@@ -148,11 +155,13 @@ To populate the Profiles database, complete the following steps:
 
     If the LDAP server certificate is not in the truststore, a message appears that asks you to permanently accept the certificate in the truststore file. If you do not accept it, the wizard cannot connect to the LDAP server with SSL and will not continue with the population task.
 
-    **Note:** Ensure that the global.properties file in Security Directory Integrator is configured with the file trust store name, password and type you just created. For further instructions, see [Client SSL configuration of IBM Security Directory Integrator components](https://www.ibm.com/docs/en/sdi/7.2.0?topic=SSCQGF_7.2.0/com.ibm.IBMDI.doc_7.2/adminguide69.htm#sslclientside) in the IBM documentation.
+    !!! note
+    Ensure that the global.properties file in Security Directory Integrator is configured with the file trust store name, password and type you just created. For further instructions, see [Client SSL configuration of IBM Security Directory Integrator components](https://www.ibm.com/docs/en/sdi/7.2.0?topic=SSCQGF_7.2.0/com.ibm.IBMDI.doc_7.2/adminguide69.htm#sslclientside) in the IBM documentation.
 
 15. Enter the authentication details for the **Bind distinguished name \(DN\)** and **Bind password**, and then click **Next**.
 
-    **Note:** The Profiles population wizard does not support anonymous binding for LDAP. To populate the Profiles database using anonymous binding, you must populate the database manually.
+    !!! note
+    The Profiles population wizard does not support anonymous binding for LDAP. To populate the Profiles database using anonymous binding, you must populate the database manually.
 
 16. Enter the details of the **Base distinguished name \(LDAP user search base\)**and **LDAP user search filter**, and then click **Next**.
 

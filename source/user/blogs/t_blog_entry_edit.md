@@ -11,7 +11,8 @@ With Owner permission, you can manage all blog entries, regardless of whether yo
 
 3.  To delete, select the checkbox beside the entry and click **Delete**.
 
-**Note:** As you create or edit an entry, your work is automatically saved every 15 minutes, unless the site administrator changes the interval. If you leave an entry in an unsaved state when you log out of Blogs, you are notified the next time you log in. From that notification message, you can click **Edit** to open the entry and resume work on it, or **Discard** to delete the entry.
+!!! note
+    As you create or edit an entry, your work is automatically saved every 15 minutes, unless the site administrator changes the interval. If you leave an entry in an unsaved state when you log out of Blogs, you are notified the next time you log in. From that notification message, you can click **Edit** to open the entry and resume work on it, or **Discard** to delete the entry.
 
 ## Next steps {#section_jfn_fzz_ny .section}
 

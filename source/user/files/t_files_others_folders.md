@@ -14,12 +14,14 @@ To see what access you have for a folder, open the folder page and click the **S
 
 |**Option**|Reader|**Editor**|**Owner**|
 |----------|------|----------|---------|
-|**Create and delete a subfolder****Note:** You must have Editor or Owner access to the top-level folder.
+|**Create and delete a subfolder**!!! note
+    You must have Editor or Owner access to the top-level folder.
 
 |❌|✔|✔|
 |**Add files to a folder**|❌|✔|✔|
 |**Share a folder**|❌|✔|✔|
-|**Edit folder or subfolder properties****Note:** You must have Editor or Owner access to the top-level folder.
+|**Edit folder or subfolder properties**!!! note
+    You must have Editor or Owner access to the top-level folder.
 
 |❌|✔|✔|
 |**Delete a folder**|❌|✔|✔|

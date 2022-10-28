@@ -2,7 +2,8 @@
 
 You can make a custom field a required field by editing the validation.xml file. You must declare a maximum length definition for all custom fields.
 
-**Note:** When upgrading to a newer HCL Connections™ release, be aware that custom fields are not included in the migration tools for the standard Connections configuration files. As well, the validation.xml file is also not automatically migrated when you upgrade from an earlier release of Connections. This file is needed by the Struts validation framework and is accessed at Connections startup. To ensure that your custom fields and files are usable after a release upgrade, see [Saving your customizations](../migrate/c_configuration_changes_after_update.md).
+!!! note
+    When upgrading to a newer HCL Connections™ release, be aware that custom fields are not included in the migration tools for the standard Connections configuration files. As well, the validation.xml file is also not automatically migrated when you upgrade from an earlier release of Connections. This file is needed by the Struts validation framework and is accessed at Connections startup. To ensure that your custom fields and files are usable after a release upgrade, see [Saving your customizations](../migrate/c_configuration_changes_after_update.md).
 
 HCL Connections is built on Struts, allowing you to leverage the Struts validation framework to validate form data. The files validation.xml and validation-rules.xml are both part of the Struts validation framework. The validation.xml file defines the validation types that are applied to form fields; validation-rules.xml defines a set of standard validation routines. Validation routines, such as required and maximum length, are included in the validation framework.
 
@@ -94,7 +95,8 @@ All custom extension attributes must have a maximum length definition to ensure 
        </field>
     ```
 
-    **Note:** These section identifiers also relate to the profileEdit.ftl display template as described in [Customizing edit display fields](t_admin_profiles_tbl_fields.md). The display sections specified in the profileEdit.ftl file must correspond to the section name defined in the validator attributes.
+    !!! note
+    These section identifiers also relate to the profileEdit.ftl display template as described in [Customizing edit display fields](t_admin_profiles_tbl_fields.md). The display sections specified in the profileEdit.ftl file must correspond to the section name defined in the validator attributes.
 
 5.  Define a label for the required field. To do so, make a note of the ID of the extension, which is the value after .extrattr. in the attribute definition for the field.
 
@@ -106,7 +108,8 @@ All custom extension attributes must have a maximum length definition to ensure 
 
     Set the extensionIdRef attribute of the <extensionAttribute\> element to define the field in the profiles-config.xml file equal to the value you noted here. See [Enabling custom extension attributes for Profiles](t_admin_profiles_enable_custom_fields.md) for more details.
 
-    **Note:** Do not hide any required attribute fields; if a user edits their profile contact information and required field information is hidden for that user type, the edited profile form cannot be saved.
+    !!! note
+    Do not hide any required attribute fields; if a user edits their profile contact information and required field information is hidden for that user type, the edited profile form cannot be saved.
 
     You should define a label for any custom fields that you add, but it is especially important to define a label for a required field because if the user does not enter a value in the field, but tries to save the form, a message is displayed telling them that x is required, where x is the field label. If you do not define a label for the field, the term null is used instead. As a result, users will see a null is required message when they try to save the page, and will not know which field to fill in before they can save the page successfully.
 

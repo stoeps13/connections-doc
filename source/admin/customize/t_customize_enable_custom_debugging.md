@@ -22,7 +22,8 @@ You can force applications to reload override files every time a browser request
 
 2.  Enable a trace string to get customization debug information as follows:
 
-    **Note:** Perform these steps for each server to which the trace string must be added.
+    !!! note
+    Perform these steps for each server to which the trace string must be added.
 
     1.  Open the IBMWebSphere Application Server Integrated Solutions Console, browse to **Troubleshooting** \> **Logs and trace** and select the server to be customized.
 
@@ -36,7 +37,8 @@ You can force applications to reload override files every time a browser request
 
 3.  When you have gathered the logging information, disable the trace string as follows:
 
-    **Note:** Perform these steps for each server to which the trace string was added.
+    !!! note
+    Perform these steps for each server to which the trace string was added.
 
     1.  Open the IBMWebSphere Application Server Integrated Solutions Console, browse to **Troubleshooting** \> **Logs and trace** and select the server where trace was enabled.
 

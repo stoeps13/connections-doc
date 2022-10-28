@@ -25,7 +25,8 @@ SearchService.updatePersonNameInDatabaseById("org\_id","userID","pseudonym")
         SearchService.updatePersonEmailInDatabase("org\_id","email","pseudo\_email")
         ```
 
-    **Note:** org\_id is blank except in multitenant environments. For example, in a standard environment, when you know the user's ID, a command would look like `SearchService.updatePersonNameInDatabaseById("","87326487243726384","Former Empl71")`
+    !!! note
+    org\_id is blank except in multitenant environments. For example, in a standard environment, when you know the user's ID, a command would look like `SearchService.updatePersonNameInDatabaseById("","87326487243726384","Former Empl71")`
 
 3.  Check whether any PI remains in Connections by following the steps in [Deleting or correcting user PI](t_common_erase_or_correct_data_in_body_text.md).
 
@@ -55,7 +56,8 @@ SearchService.updatePersonNameInDatabaseById("org\_id","userID","pseudonym")
         SearchService.updatePersonEmailInDatabase(org\_id,email,pseudo\_email)
         ```
 
-    **Note:** org\_id is blank except in multitenant environments. For example, in a standard environment, when you know the user's ID, a command would look like `SearchService.updatePersonNameInDatabaseById("","87326487243726384","Former Empl71")`
+    !!! note
+    org\_id is blank except in multitenant environments. For example, in a standard environment, when you know the user's ID, a command would look like `SearchService.updatePersonNameInDatabaseById("","87326487243726384","Former Empl71")`
 
 3.  Check whether any PI remains in Connections by following the steps in [Deleting or correcting user PI](t_common_erase_or_correct_data_in_body_text.md).
 
@@ -82,7 +84,8 @@ SearchService.updatePersonNameInDatabaseById("org\_id","userID","pseudonym")
         SearchService.updatePersonEmailInDatabase(org\_id,email,pseudo\_email)
         ```
 
-    **Note:** org\_id is blank except in multitenant environments. For example, in a standard environment, when you know the user's ID, a command would look like `SearchService.updatePersonNameInDatabaseById("","87326487243726384","Former Empl71")`
+    !!! note
+    org\_id is blank except in multitenant environments. For example, in a standard environment, when you know the user's ID, a command would look like `SearchService.updatePersonNameInDatabaseById("","87326487243726384","Former Empl71")`
 
 3.  Check whether any PI remains in Connections by following the steps in [Deleting or correcting user PI](t_common_erase_or_correct_data_in_body_text.md).
 
@@ -111,7 +114,8 @@ SearchService.updatePersonNameInDatabaseById("org\_id","userID","pseudonym")
         SearchService.updatePersonEmailInDatabase(org\_id,email,pseudo\_email)
         ```
 
-    **Note:** org\_id is blank except in multitenant environments. For example, in a standard environment, when you know the user's ID, a command would look like `SearchService.updatePersonNameInDatabaseById("","87326487243726384","Former Empl71")`
+    !!! note
+    org\_id is blank except in multitenant environments. For example, in a standard environment, when you know the user's ID, a command would look like `SearchService.updatePersonNameInDatabaseById("","87326487243726384","Former Empl71")`
 
 5.  Check whether any PI remains in Connections by following the steps in [Deleting or correcting user PI](t_common_erase_or_correct_data_in_body_text.md).
 

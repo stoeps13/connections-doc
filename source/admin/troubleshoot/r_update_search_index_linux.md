@@ -20,7 +20,8 @@ As the user who updates the Connections Search index, enter the following comman
 
 1.  vi .bashrc
 
-    **Note:** .bashrc is in the user's home directory.
+    !!! note
+    .bashrc is in the user's home directory.
 
 2.  Add the line: `ulimit -n 8192`.
 3.  Save and exit file.

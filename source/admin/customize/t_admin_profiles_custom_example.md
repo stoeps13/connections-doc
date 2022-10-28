@@ -18,7 +18,8 @@ For more information about the wsadmin client that is used to change these setti
     	<widgetBundle prefix="customBundle" name="com.example.resources.customBundle"/>
     ```
 
-    **Note:** For related information, see [Extension properties in the data model](r_admin_profiles_attributes_ext.md).
+    !!! note
+    For related information, see [Extension properties in the data model](r_admin_profiles_attributes_ext.md).
 
 2.  Declare the new extension properties in the profiles-config.xml file.
 
@@ -31,7 +32,8 @@ For more information about the wsadmin client that is used to change these setti
     		 </profileExtensionAttributes>
     ```
 
-    **Note:** For related information, see [Profile-types](r_admin_profiles_ovr_types.md).
+    !!! note
+    For related information, see [Profile-types](r_admin_profiles_ovr_types.md).
 
 3.  Declare the usage of a custom resource bundle in the profiles-config.xml file that is used for custom property labels in your template files.
 
@@ -39,7 +41,8 @@ For more information about the wsadmin client that is used to change these setti
     <templateNlsBundles>customBundle</templateNlsBundles>
     ```
 
-    **Note:** For related information, see [Customizing profile page display](t_admin_profiles_tbl_layout.md).
+    !!! note
+    For related information, see [Customizing profile page display](t_admin_profiles_tbl_layout.md).
 
 4.  Create a file in IBM\_Connections\_Customization\_Dir/stringscalled com.example.resources.customBundle.properties and add the following key/value pairs.
 
@@ -50,7 +53,8 @@ For more information about the wsadmin client that is used to change these setti
     label.publications=Publications:
     ```
 
-    **Note:** For related information, see [Configuring template custom resource bundles for processing](t_admin_profiles_template_crbundles.md).
+    !!! note
+    For related information, see [Configuring template custom resource bundles for processing](t_admin_profiles_template_crbundles.md).
 
 5.  Add properties to the associated profile-type definition by editing profiles-types.xml. For example, add the following to the default profile type definition.
 
@@ -75,7 +79,8 @@ For more information about the wsadmin client that is used to change these setti
     		 </property>   
     ```
 
-    **Note:** For related information, see [Configuring profile types for widget layout](t_admin_profiles_add_profile_type.md).
+    !!! note
+    For related information, see [Configuring profile types for widget layout](t_admin_profiles_add_profile_type.md).
 
 6.  Modify profileDetails.ftl to define a custom section for the new information that renders the fields with labels from your custom resource bundle.
 
@@ -125,11 +130,13 @@ For more information about the wsadmin client that is used to change these setti
     </@util.renderSection>
     ```
 
-    **Note:** For related information, see [Customizing edit display fields](t_admin_profiles_tbl_fields.md).
+    !!! note
+    For related information, see [Customizing edit display fields](t_admin_profiles_tbl_fields.md).
 
 7.  Edit widgets-config.xml to define the new widget definition to present the data, associate it with your custom resource bundle, and add the widget to the profileView page.
 
-    **Note:** The widget definition and reference ID cannot be repeated.
+    !!! note
+    The widget definition and reference ID cannot be repeated.
 
     ```
     ...

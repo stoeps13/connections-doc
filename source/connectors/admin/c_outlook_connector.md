@@ -15,7 +15,8 @@ The Outlook Add-in is available as part of Connections Component Pack or as a st
 
 The HCL Connections Add-in for Microsoft-based add-in platform. The Connections Add-in does not have any code physically installed on the user’s Outlook client. For more information on the Outlook add-in framework, see [Outlook add-ins overview](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/outlook-add-ins-overview)
 
-**Note:** The Connections Add-in is not available from the Microsoft Outlook Add-ins store. Your administrator will make the Connections Add-in available to you within Outlook, or provide instructions on how to load the add-in.
+!!! note
+    The Connections Add-in is not available from the Microsoft Outlook Add-ins store. Your administrator will make the Connections Add-in available to you within Outlook, or provide instructions on how to load the add-in.
 
 -   **[HCL Connections Add-in for Microsoft Outlook System Requirements](../../connectors/admin/c_outlook_connector_addin_sys_req.md)**  
 System Requirements for HCL Connections Add-in for Microsoft Outlook.

@@ -76,7 +76,8 @@ To define IBM HTTP Server, complete the following steps:
 
 20. Click **Plug-in properties** and then click **Copy to Web Server key store directory**.
 
-    **Note:** If the plugin-key.kdb file is on a different system from the IBM HTTP Server system, copy it manually from the WebSphere Application Server system to the IBM HTTP Server system.
+    !!! note
+    If the plugin-key.kdb file is on a different system from the IBM HTTP Server system, copy it manually from the WebSphere Application Server system to the IBM HTTP Server system.
 
 21. Restart IBM HTTP Server.
 

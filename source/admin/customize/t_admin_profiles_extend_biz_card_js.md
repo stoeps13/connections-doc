@@ -6,7 +6,8 @@ In addition to defining services in the LotusConnections-config.xml file, you ca
 
 To extend the Profiles business card using JavaScript, see [Integrating the Profiles business card](t_admin_profiles_include_biz_card.md).
 
-**Note:** If you added third-party links to the Profiles business card and those links are no longer needed, you can remove them by modifying the LotusConnections-config.xml configuration file to undo or comment out what was done to add them. You cannot remove third-party links using JavaScript.
+!!! note
+    If you added third-party links to the Profiles business card and those links are no longer needed, you can remove them by modifying the LotusConnections-config.xml configuration file to undo or comment out what was done to add them. You cannot remove third-party links using JavaScript.
 
 **Parent topic:**[Customizing the Profiles business card](../customize/c_admin_profiles_customize_biz_card_links.md)
 

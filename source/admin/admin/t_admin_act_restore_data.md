@@ -10,7 +10,8 @@ This procedure assumes that you have been backing up the Activities database and
 
 3.  Restore the OPNACT database from the latest backed up version according to the database documentation provided by your database vendor.
 
-    **Note:** Restore the database before restoring the content store on the file system.
+    !!! note
+    Restore the database before restoring the content store on the file system.
 
 4.  Restore the data in the directory on the file system that contains the Activities data according to the documentation provided by your file system vendor.
 

@@ -41,13 +41,15 @@ To determine the location of your customization directory, check the value of th
         |customizationDir/search|Stores files to be applied to the Advanced Search user interface only.|
         |customizationDir/wikis|Stores files to be applied to the Wikis user interface only.|
 
-        **Note:** Footers for Community widgets are controlled within the Communities subdirectory. With the exception of Blogs and Wikis which are controlled from their respective application subdirectories.
+        !!! note
+    Footers for Community widgets are controlled within the Communities subdirectory. With the exception of Blogs and Wikis which are controlled from their respective application subdirectories.
 
         The following table identifies where to store customized versions of files when the customizations apply to all the applications.
 
         |Directory path|Description|
         |--------------|-----------|
-        |customizationDir/themes/<theme\_name\>Theme/custom.css**Note:** Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
+        |customizationDir/themes/<theme\_name\>Theme/custom.css!!! note
+    Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
 
 |Customized styles|
         |customizationDir/themes/<theme\_name\>Theme/defaultTheme.css|Customized themes|

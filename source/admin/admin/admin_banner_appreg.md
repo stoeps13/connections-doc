@@ -59,7 +59,10 @@ Or complex messages that contain text formatting, for example:```
 message={['A message with ', '<strong>bold</strong>', ' and ', '<i>italic</i>', ' text']}
 ```
 
-This component internally evaluates the given HTML and turns it into the corresponding elements.**Note:** Although this method is implemented to be XSS-safe and to prevent script execution, it is intended only for simple HTML. Complex HTML should work, but use it at your own discretion.
+This component internally evaluates the given HTML and turns it into the corresponding elements.
+
+!!! note
+Although this method is implemented to be XSS-safe and to prevent script execution, it is intended only for simple HTML. Complex HTML should work, but use it at your own discretion.
 
 |
 |**severity**|Defines how your message looks on the banner based on your selection from the following types:-   **Info**: Shows an info icon, with a violet background

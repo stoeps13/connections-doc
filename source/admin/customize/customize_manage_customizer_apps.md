@@ -51,7 +51,8 @@ To register a Customizer app, make sure that you have the following files availa
 
 You can verify that the app is available by refreshing the page where you expect it to appear.
 
-**Note:** Customizer uses a proxy server \(such as NGINX\); to use Customizer apps, users must access Connections through the proxy server's URL. You can configure the URL as explained in [Configuring the NGINX proxy server for Customizer](../install/cp_config_customizer_setup_nginx.md)
+!!! note
+    Customizer uses a proxy server \(such as NGINX\); to use Customizer apps, users must access Connections through the proxy server's URL. You can configure the URL as explained in [Configuring the NGINX proxy server for Customizer](../install/cp_config_customizer_setup_nginx.md)
 
 ## Delete an app { .section}
 

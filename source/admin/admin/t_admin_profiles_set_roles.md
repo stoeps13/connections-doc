@@ -8,7 +8,8 @@ The user whose role you set must be registered with Profiles via IBM® Tivoli® 
 
 By default, internal users cannot create content that is visible to external users. To allow collaboration between internal users and external users, you must assign the EMPLOYEE\_EXTENDED role to the internal users. Only users with the EMPLOYEE\_EXTENDED role can create content that can be shared with external users. However, the content can be shared by any internal user.
 
-**Note:** To remove the EMPLOYEE\_EXTENDED role from a user, assign the EMPLOYEE role or the DEFAULT\_ROLE role to that user. See *Profiles administrative commands* for more information about roles and the commands that you use for setting roles.
+!!! note
+    To remove the EMPLOYEE\_EXTENDED role from a user, assign the EMPLOYEE role or the DEFAULT\_ROLE role to that user. See *Profiles administrative commands* for more information about roles and the commands that you use for setting roles.
 
 -   Set a role for an individual user.
 
@@ -39,7 +40,8 @@ setRole Command processed user role 'employee.extended' for user 8e88c240
     -   role: The role to assign to each user in the list.
     -   filename: The name of the text file that contains the list of users. The file must be locally accessible from the client environment.
 
-        **Note:** If you are processing several hundreds of users, create several files and run them in separate commands.
+        !!! note
+    If you are processing several hundreds of users, create several files and run them in separate commands.
 
         |**ProfilesService.setBatchRole\(String role, String filename\)**|Assign the specified role to each user whose email address is listed in the text file. The text file must contain one valid email address per line.    ```
 ProfilesService.setBatchRole(EMPLOYEE_EXTENDED, "profiles-roles-by-email.txt")

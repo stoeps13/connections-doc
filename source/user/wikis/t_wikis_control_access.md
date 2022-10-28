@@ -2,7 +2,8 @@
 
 When you create a wiki, you are the wiki owner. As an Owner, you can control who can read, edit, and manage the wiki.
 
-**Note:** Access to a community wiki is managed by community owners. Community owners can grant either an Editor or Reader role to community members. For further details, see [Assigning app roles for community members](../communities/managing_roles_for_community_members.md).
+!!! note
+    Access to a community wiki is managed by community owners. Community owners can grant either an Editor or Reader role to community members. For further details, see [Assigning app roles for community members](../communities/managing_roles_for_community_members.md).
 
 1.  From the navigation bar, click **Wikis** and select the wiki you want to work on.
 

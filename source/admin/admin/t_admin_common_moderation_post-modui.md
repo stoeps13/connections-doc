@@ -14,7 +14,8 @@ When a user flags content as inappropriate, it sets in motion a workflow for rev
 
 1.  Notification is sent to the moderator that content has been flagged. The notification includes information about the person flagging the content, and a link to the content in the Moderation interface. The entry or comment is posted to the Flagged Content section in the Moderation interface for viewing and managing flagged content.
 
-    **Note:** There is a setting in the contentreview-config.xml file which determines whether notification is sent to a moderator or content reviewer as follows:
+    !!! note
+    There is a setting in the contentreview-config.xml file which determines whether notification is sent to a moderator or content reviewer as follows:
 
     -   If issueCategorization is disabled, then notification is sent to all the moderators.
     -   If issueCategorization is enabled, then the notification will only be sent to the reviewers defined under each issue category, but if reviewer information is not provided, the notification will still be sent to all the moderators.

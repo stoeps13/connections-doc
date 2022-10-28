@@ -4,7 +4,8 @@ You can use an IBM® Tivoli® Directory Integrator command to delete or inactiva
 
 Use the delete\_or\_inactivate\_employees command to either delete or inactivate users from the Profiles database. When you delete users, only their data that's in the Profiles database is removed; their data in other Connections applications is not removed. When you inactivate users, their Profile is flagged as inactive, and only their email address and login ids are removed from the Profiles database. In both cases, whether delete or inactivate, users are marked as inactivated in the other Connections applications.
 
-**Note:** When you use the delete\_or\_inactivate\_employees command, remember that the user data is still in LDAP or other sources. You must remove that data otherwise the users will be re-populated in Profiles at the next synchronization.
+!!! note
+    When you use the delete\_or\_inactivate\_employees command, remember that the user data is still in LDAP or other sources. You must remove that data otherwise the users will be re-populated in Profiles at the next synchronization.
 
 1.  To delete or inactivate specific users from the Profiles database:
 2.  Create a text file named delete\_or\_inactivate\_employees.in that contains the distinguished names and user IDs for the users that you want to delete from the database. Use the following format to represent a user:
@@ -19,9 +20,11 @@ Use the delete\_or\_inactivate\_employees command to either delete or inactivate
 
     -   user\_dn corresponds to the PROF\_SOURCE\_UID in the Profiles database.
     -   user\_uid corresponds to the PROF\_UID in the Profiles database.
-    **Note:** When deleting multiple users, there must be a period separator \(.\) between each entry. The period must be on its own line, after the line containing the user's UID. If the separator is omitted, an error occurs when you use the delete command.
+    !!! note
+    When deleting multiple users, there must be a period separator \(.\) between each entry. The period must be on its own line, after the line containing the user's UID. If the separator is omitted, an error occurs when you use the delete command.
 
-    **Note:** The $dn value is not used, but it must be formatted correctly. Do not add a space after the colon and before the value.
+    !!! note
+    The $dn value is not used, but it must be formatted correctly. Do not add a space after the colon and before the value.
 
     Here is an example of an entry from the delete\_or\_inactivate\_employees.in file:
 

@@ -17,7 +17,8 @@ Enable traces in IBM® WebSphere® Application Server so that you can access det
 
 When a user is updated, a message is sent over the event infrastructure to the HCL Connections™ applications.
 
-**Note:** The `ProfilesService.updateUser("ajones141@example.com", displayName="Updated Sample Name")` command updates the specified profile data in the Profiles database and then generates a JMS Message event. This message is received by the News application, which sends out separate messages to each application. For each message that is sent out, the News application receives an `ACK`message. To ensure that each update message is processed by each application, check the event data in the log.
+!!! note
+    The `ProfilesService.updateUser("ajones141@example.com", displayName="Updated Sample Name")` command updates the specified profile data in the Profiles database and then generates a JMS Message event. This message is received by the News application, which sends out separate messages to each application. For each message that is sent out, the News application receives an `ACK`message. To ensure that each update message is processed by each application, check the event data in the log.
 
 The following sample log shows the update that was triggered when the following command ran:
 

@@ -14,7 +14,8 @@ To import bookmarks from a web browser, follow these steps.
 
 5.  Enter any tags that you want to apply in the **Add Tags** field.
 
-    **Note:** Tags that you add during the import operation are displayed by all imported bookmarks. If the browser bookmark was stored in a folder, the folder name is automatically applied to the bookmark as a tag.
+    !!! note
+    Tags that you add during the import operation are displayed by all imported bookmarks. If the browser bookmark was stored in a folder, the folder name is automatically applied to the bookmark as a tag.
 
 6.  Click **Import**.
 

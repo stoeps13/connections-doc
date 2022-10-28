@@ -6,7 +6,8 @@ The sync\_all\_dns command is a long running command that is comprised of five p
 
 As each phase of the sync\_all\_dns command runs, console output indicates progress every 10,000 records, including a time stamp, so that you call tell how far along the process is. The number of records in the LDAP source and in the Profiles database enable you to estimate the running time of the process.
 
-**Note:** All properties mentioned in this topic reside in the profiles\_tdi.properties file.
+!!! note
+    All properties mentioned in this topic reside in the profiles\_tdi.properties file.
 
 A hash value is defined as a unique integer that is generated from a string. The term hash used here means that each user is assigned to one of n-1 partitions based on the hash of an attribute value. The attribute is determined by the property named sync\_updates\_hash\_field, and the number of partitions bysync\_updates\_hash\_partitions. The default value for sync\_updates\_hash\_field is uid, and the default value for sync\_updates\_hash\_partitions is 10. The main purpose of partitions is to control the maximum amount of memory that is required at any one time in Phase 3 where all the data in each partition is held in memory. A key concept is that both the database and the LDAP are being hashed on the same attribute, for example uid, and thus the Profiles database and the LDAP representations of a user end up in the same partition.
 
@@ -83,7 +84,8 @@ The exact course of this phase is determined by the following properties:
 -   perform\_deletion\_or\_inactivate\_for\_sync - If the value of this property is true, then the system looks at the sync\_delete\_or\_inactivate property to determine which action to perform. If the value of this property is false, then the system performs no action.
 -   sync\_delete\_or\_inactivate - Determines the action to be performed if a record is no longer found in the source LDAP but is present in the Profiles database. The value must be either delete or inactivate.
 
-    **Note:** If you want to perform additional processing during this phase, you can create and configure a custom delete option. See *Customizing the logic used for the delete operation* for details.
+    !!! note
+    If you want to perform additional processing during this phase, you can create and configure a custom delete option. See *Customizing the logic used for the delete operation* for details.
 
 -   sync\_updates\_double\_check - If set to true, the assembly named by sync\_check\_if\_remove is run if a delete is to be performed. When users are inactivated, their email and login attributes are set to null. If you want to set other attributes to null at the same time, this is the best place to do it.
 -   sync\_check\_if\_remove=\{name-of-your-adapter.xml\}:/AssemblyLines/\{name-of-your-custom-delete-all\}. The default value is sync\_all\_dns\_check\_if\_remove.

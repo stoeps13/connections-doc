@@ -10,7 +10,8 @@ As an HCL Connections administrator you create and manage a list of registered c
 
 When users open the consumer application they are prompted to give or deny the application permission to access the user's HCL Connections data. Permission is granted by a token which expires in six months if not renewed by the user. When a permission expires users must visit the consumer application again and go through the authorization process. Users also can remove an application's permission at any time in Connections by clicking **Settings** \> **Application Access**. This authorization management interface is customizable.
 
-**Note:** If you wish to add gadgets deployed externally, such as iGoogle gadgets, you must configure locked domains. Locking domains isolates semi-trusted gadgets and prevents them from accessing SSO tokens or via DOM access to the parent page of the gadget iFrame that can be used to forward sensitive data to external sites. For more information on locked domains, refer to [Enabling locked domains](../install/t_post_install_cre11_conn_security_locked.md).
+!!! note
+    If you wish to add gadgets deployed externally, such as iGoogle gadgets, you must configure locked domains. Locking domains isolates semi-trusted gadgets and prevents them from accessing SSO tokens or via DOM access to the parent page of the gadget iFrame that can be used to forward sensitive data to external sites. For more information on locked domains, refer to [Enabling locked domains](../install/t_post_install_cre11_conn_security_locked.md).
 
 To connect an OAuth 2 client with HCL Connections using HCL Connections APIs with the Open Authentication 2 protocol the supported flow is as follows:
 
@@ -24,7 +25,8 @@ Token endpoint URL:
 
 https://www.connections.example.com/oauth2/endpoint/connectionsProvider/token
 
-**Note:** The /oauth2 context root is configurable as is any other Connections application via the IBM console. The change should be applied to the LotusConnections-config.xml in the `"oauthprovider"` service as follows:
+!!! note
+    The /oauth2 context root is configurable as is any other Connections application via the IBM console. The change should be applied to the LotusConnections-config.xml in the `"oauthprovider"` service as follows:
 
 ```
 <sloc:serviceReference serviceName="oauthprovider"

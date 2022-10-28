@@ -80,13 +80,15 @@ To enable SSO for Domino, complete the following steps:
         1.  In the user Person document, click **Administration**.
         2.  Under **Client Information**, enter the user name DN that is expected by WebSphere Application Server in the **LTPA user name** field.
 
-            **Note:** Typically, this name is the user's LDAP distinguished name \(DN\). Separate the name components with slashes. For example, if the DN is uid=jdoe,cn=sales,dc=example, dc=com, enter the following value: uid=jdoe/cn=sales/dc=example/dc=com.
+            !!! note
+    Typically, this name is the user's LDAP distinguished name \(DN\). Separate the name components with slashes. For example, if the DN is uid=jdoe,cn=sales,dc=example, dc=com, enter the following value: uid=jdoe/cn=sales/dc=example/dc=com.
 
     -   If user names are present in the LDAP directory only:
         1.  Open the Directory Assistance document for the LDAP directory. Alternatively, create a directory assistance database and configure the Domino server to use this database.
         2.  In the **SSO Configuration** section, enter an LDAP attribute for the name in an SSO token.
 
-            **Note:** This attribute is used in the LTPA token when the LTPA\_UserNm field is requested. Ensure that the selected field contains the user name that WebSphere Application Server expects. Options for this field include:
+            !!! note
+    This attribute is used in the LTPA token when the LTPA\_UserNm field is requested. Ensure that the selected field contains the user name that WebSphere Application Server expects. Options for this field include:
 
             -   To use the LDAP distinguished name, enter a value of $DN. This is the most common configuration; it indicates that the user's LDAP DN is the name expected by WebSphere Application Server, rather than a name in an arbitrary LDAP field.
             -   Use any appropriate LDAP attribute, provided it uniquely identifies the user.
@@ -111,7 +113,8 @@ To enable SSO for Domino, complete the following steps:
 
         load http
 
-        **Note:** The tell http restart and restart task http commands cannot read the updated SSO configuration
+        !!! note
+    The tell http restart and restart task http commands cannot read the updated SSO configuration
 
 
 Verify that you can switch between Connections applications without needing to authenticate more than once.

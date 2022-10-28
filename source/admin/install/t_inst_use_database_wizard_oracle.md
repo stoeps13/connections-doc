@@ -14,7 +14,8 @@ Use the HCL Connections database wizard to create, update, and remove databases.
 
 You can review the scripts that the wizard runs by looking in the connections.sql directory in the installation media. On Oracle, the log shows the results of the commands.
 
-**Note:** On windows, if you set ORACLE\_HOME from the command prompt, do not add quotations to the ORACLE\_HOME path. For example, do not set:
+!!! note
+    On windows, if you set ORACLE\_HOME from the command prompt, do not add quotations to the ORACLE\_HOME path. For example, do not set:
 
 ```
 Set ORACLE_HOME="C:\app\oracu\product\12.1.0\dbhome_1"
@@ -39,7 +40,8 @@ To create databases with the wizard, complete the following steps:
 
 3.  Select the option to **Create** a database and click **Next**.
 
-    **Note:** On the option selection page, you can choose **Export SQL commands list only**. This option exports the create command list for you. It does not validate database connectivity or perform any create tasks.
+    !!! note
+    On the option selection page, you can choose **Export SQL commands list only**. This option exports the create command list for you. It does not validate database connectivity or perform any create tasks.
 
 4.  Enter the details of the database you want to create and then click **Next**:
 

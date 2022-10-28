@@ -41,7 +41,8 @@ The default dictionary is also used at search time. Language guessing is not use
 
     -   working\_dir is the temporary directory to which you want to check out the cell level configuration file. This directory must exist on the server where you are running the wsadmin client. Use forward slashes to separate directories in the file path, even if you are using the Microsoft Windows operating system.
 
-        **Note:** AIX, and Linux only: The directory must grant write permissions or the command does not run successfully.
+        !!! note
+    AIX, and Linux only: The directory must grant write permissions or the command does not run successfully.
 
     -   cellName is the name of the cell that the Search node belongs to. The command is case-sensitive. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 
@@ -64,7 +65,8 @@ The default dictionary is also used at search time. Language guessing is not use
 
             This language code typically comprises two letters conforming to the ISO standard 639-1:2002 that identifies the primary language of the dictionary. However, there are some codes that additionally define a country or variant, in which case these constituent parts are separated by an underscore. For example, Portuguese has two variants, one for Portugal \(pt\_PT\) and one for Brazil \(pt\_BR\). When using a code that also specifies a country, ensure that you use an underscore to separate the language code and the country code rather than a hyphen; otherwise an error will be generated.
 
-            **Note:** A matching dictionary must exist in the list of configured dictionaries for the language that you specify as a parameter.
+            !!! note
+    A matching dictionary must exist in the list of configured dictionaries for the language that you specify as a parameter.
 
         For example:
 

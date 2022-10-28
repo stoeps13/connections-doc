@@ -8,7 +8,8 @@ Disabling certificate validation should only be used for testing. Using these se
 
 1.  Open the [service configuration file application.conf](t_01-setup_02-services_01-appconf_01-create-an-application-conf.md) in a text editor.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into application.conf. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into application.conf. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Set the value for the key `ephox.http.websphere.use-ssl-config` to false and `ephox.http.trust-all-cert` to true.
 

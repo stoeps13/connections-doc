@@ -44,7 +44,8 @@ To specify which fields are indexed for search, complete the following steps:
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes \(/\) to separate directories in the file path, even if you are using the Microsoft™ Windows™ operating system.
 
-            **Note:** AIX® and Linux™: The directory must grant write permissions or the command does not complete successfully.
+            !!! note
+    AIX® and Linux™: The directory must grant write permissions or the command does not complete successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the Profiles application. This argument is required and is case-sensitive. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor: 
 

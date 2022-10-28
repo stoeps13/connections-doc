@@ -6,7 +6,8 @@ Before you begin: The Tiny Editors Services must be installed.
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the property [`linkServiceUrl`](r_config-js-sample.md#linkServiceUrl) such as `linkServiceUrl: '',` and change the string to the hyperlinking service URL.
 

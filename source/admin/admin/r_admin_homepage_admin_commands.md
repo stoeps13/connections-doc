@@ -19,7 +19,8 @@ HomepageCellConfig.checkOutGettingstartedConfig\("working\_directory","cell\_nam
 
     -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you change them. Use forward slashes to separate directories in the file path, even if you are using the Microsoft™ Windows™ operating system.
 
-        **Note:** AIX®, and Linux™ only: The directory must grant write permissions or the command does not run successfully.
+        !!! note
+    AIX®, and Linux™ only: The directory must grant write permissions or the command does not run successfully.
 
     -   cell\_name is the name of the WebSphere® Application Server cell that hosts the IBM® Connections application. This argument is case-sensitive, so type it with care. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 

@@ -4,7 +4,8 @@ Customizing the look of HCL Connections™ using custom CSS.
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the property [`cssUrl`](r_config-js-sample.md#cssUrl) such as `cssUrl: dojo.moduleUrl('tiny.editors.connections', 'tiny-editors.css'),` and change to the URL for the custom CSS.
 

@@ -31,7 +31,8 @@ Some features are not available when you are connecting to a Connections Cloud s
 -   Type-ahead is not available to assist you in entering the names of external users in the Add to File dialog and the Share dialog.
 -   If you are uploading a file or email to Activities, the option to create a new activity is not available.
 
-**Note:** If you previously installed any version of the HCL Connections Plug-in for Microsoft Office and Microsoft Windows, installing this plug-in silently removes the Microsoft Explorer features from the older plug-ins.
+!!! note
+    If you previously installed any version of the HCL Connections Plug-in for Microsoft Office and Microsoft Windows, installing this plug-in silently removes the Microsoft Explorer features from the older plug-ins.
 
 You have two options for installing the plug-in. Individual users can install the plug-in, or you can perform a silent installation to install the plug-in for a group of users.
 

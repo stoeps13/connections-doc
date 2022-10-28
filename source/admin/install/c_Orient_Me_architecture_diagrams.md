@@ -33,7 +33,8 @@ The architecture components are deployed across a range of nodes from a single V
 |
 |Master node|A master node provides management services and controls the worker nodes in a cluster. Master nodes host processes that are responsible for resource allocation, state maintenance, scheduling, and monitoring.
 
- **Note:** Multiple master nodes are required in a high availability \(HA\) environment to allow for failover if the leading master host fails. Host that can act as the master are called master candidates.
+ !!! note
+    Multiple master nodes are required in a high availability \(HA\) environment to allow for failover if the leading master host fails. Host that can act as the master are called master candidates.
 
 |
 |Worker node|A worker node is a node that provides a containerized environment for running tasks. As demands increase, more worker nodes can easily be added to your cluster to improve performance and efficiency. A cluster can contain any number of worker nodes, but a minimum of one worker node is required.

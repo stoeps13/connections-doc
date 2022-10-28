@@ -35,7 +35,8 @@ Files that are placed in this directory override the JavaScript that is loaded f
 
     3.  Copy SearchBar.js to the following directory: customizationDir/javascript/lconn/core/
 
-        **Note:** Ensure that you use the correct case in case-sensitive file systems.
+        !!! note
+    Ensure that you use the correct case in case-sensitive file systems.
 
 4.  Change the file.
 

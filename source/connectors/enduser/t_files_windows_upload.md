@@ -23,7 +23,8 @@ Add files to the Files application so that you can store them or share them with
 
     1.  Select **a Person** or **a Community**.
 
-**Note:** To share with a public community, you must be using Connections 3 or higher.
+!!! note
+    To share with a public community, you must be using Connections 3 or higher.
 
     2.  Select the **as Reader** or **as Editor** access level:
         -   Readers can read or download a file. They can add files to folders to which they have Editor access, be notified of changes to the file, and share the file with other people.
@@ -31,22 +32,27 @@ Add files to the Files application so that you can store them or share them with
     3.  Perform one of the following tasks:
         -   To share with people, click in the field to display the names of people you recently shared files with. If the person you are looking for is displayed, select them. If they are not displayed, type a name or email address, and then select the person.
 
-**Note:** If you are connecting to Connections Cloud, type-ahead is not available when you are searching for someone external to your organization.
+!!! note
+    If you are connecting to Connections Cloud, type-ahead is not available when you are searching for someone external to your organization.
 
         -   To share with a community, start typing the name of the community, and then select the community when it displays.
 
-**Note:** When you share a file with a public community the file becomes public.
+!!! note
+    When you share a file with a public community the file becomes public.
 
-**Note:** When you share a file with people or a community, the option **Allow others to share this file** is enabled by default. You can disable this if you do not want others to share the file. This option is not available if you make a file public.
+!!! note
+    When you share a file with people or a community, the option **Allow others to share this file** is enabled by default. You can disable this if you do not want others to share the file. This option is not available if you make a file public.
 
 |
     |**Public \(visible to everyone\)
 
-**Note:** If you are connecting to a Connections Cloud server this option is **Everyone in organization**.
+!!! note
+    If you are connecting to a Connections Cloud server this option is **Everyone in organization**.
 
 **|Make the file visible to everyone, even people who are not logged in.
 
-**Note:** An administrator can configure the system so that everyone must log in, or only a certain group of people can log in. In this case public files are only available to users who are able to log in.
+!!! note
+    An administrator can configure the system so that everyone must log in, or only a certain group of people can log in. In this case public files are only available to users who are able to log in.
 
 |
 

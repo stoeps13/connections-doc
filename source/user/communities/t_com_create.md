@@ -14,7 +14,8 @@ With the Create Community wizard, you can start a community very quickly. It hel
     |**Restricted and unlisted**|People must be invited to join|Hidden from anyone who is not a member|Multiple restricted communities can have the same name.|
     |**Restricted but listed**|People must be invited to join|Anyone in my organization can see only the community's logo, name, description, and owners|Multiple restricted communities can have the same name.|
 
-    **Note:** There are a few more limitations with user access:
+    !!! note
+    There are a few more limitations with user access:
 
     -   Restricted communities that allow external users are identified by an icon ![This community can have members from outside your organization.](images/ext_user.jpg). If you select to create a restricted community and do not select the **Allow external users** check box, the community will be internal and no external users can be added to it.
     -   You can't invite external users to join public communities.

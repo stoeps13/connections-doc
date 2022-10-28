@@ -18,7 +18,8 @@ For advanced users, it is possible to describe complex personalization use cases
 
 ![image](images/image127.png)
 
-**Note:** Uusing the advanced option is very powerful. Using this option incorrectly may cause logical misconfigurations and even damage to the logical personalization data model. Handle with care.
+!!! note
+    Uusing the advanced option is very powerful. Using this option incorrectly may cause logical misconfigurations and even damage to the logical personalization data model. Handle with care.
 
 ## Content source { .section}
 

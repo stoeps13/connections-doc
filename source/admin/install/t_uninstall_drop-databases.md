@@ -16,7 +16,8 @@ Complete the following steps for your database type:
 
     1.  Log in to the database server with an authorized administrator account.
 
-        **Note:** The default administrator account is db2inst1 on AIX® and Linux™, and db2admin on Windows™.
+        !!! note
+    The default administrator account is db2inst1 on AIX® and Linux™, and db2admin on Windows™.
 
     2.  Run the following command for Communities:
 
@@ -43,7 +44,8 @@ Complete the following steps for your database type:
 
     1.  Log in to the database server with an authorized administrator account.
 
-        **Note:** The default administrator account is oracle.
+        !!! note
+    The default administrator account is oracle.
 
     2.  Set the ORACLE\_SID.
 

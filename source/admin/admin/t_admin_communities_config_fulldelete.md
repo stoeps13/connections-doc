@@ -39,7 +39,8 @@ Communities in the trash area are purged after 90 days by default. Also, the tas
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied. The files are kept in this working directory while you make changes to them.
 
-            **Note:** AIX and Linux only: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX and Linux only: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the HCL Connections application. This argument is required. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 
@@ -74,7 +75,8 @@ Communities in the trash area are purged after 90 days by default. Also, the tas
 
 8.  Communities in the trash area are purged after 90 days by default. To change number of days after which a community in trash is fully deleted, change the `<comm:daysToDelete>` property.
 
-    **Note:** If you set `<comm:daysToDelete>0</comm:daysToDelete>`, communities are not deleted immediately and remain in the trash for at least one day. This is because the background task purges any communities in trash older than `comm:daysToDelete` days. At least 24 hours has to pass for a Community to be in the trash for one day \(which is \> 0\) days.
+    !!! note
+    If you set `<comm:daysToDelete>0</comm:daysToDelete>`, communities are not deleted immediately and remain in the trash for at least one day. This is because the background task purges any communities in trash older than `comm:daysToDelete` days. At least 24 hours has to pass for a Community to be in the trash for one day \(which is \> 0\) days.
 
 9.  After making changes, you must check the configuration files back in, and you must do so during the same wsadmin session in which you checked them out for the changes to take effect. See *Applying property changes in Communities* for information about how to save and apply your changes.
 

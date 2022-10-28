@@ -23,7 +23,8 @@ You must have Owner or Editor access to the top-level folder.
 
 ## Adding uploaded files to a folder { .section}
 
-**Note:** If you add a private file to a public folder, the file will become public.
+!!! note
+    If you add a private file to a public folder, the file will become public.
 
 1.  From the navigation bar, click **Files**.
 2.  In the sidebar, select the folder or subfolder that you want to edit.

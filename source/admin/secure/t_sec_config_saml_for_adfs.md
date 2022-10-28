@@ -15,7 +15,8 @@ Configure SAML for Microsoft Active Directory Federation Services in IBM WebSphe
         wsadmin>AdminTask.exportSAMLSpMetadata('-spMetadataFileName /tmp/spdata.xml -ssoId 1')
         ```
 
-        **Note:** This command creates the /tmp/spdata.xml SP metadata file.
+        !!! note
+    This command creates the /tmp/spdata.xml SP metadata file.
 
     2.  Copy /tmp/spdata.xml to the IdP server and then import it into the IdP.
     3.  Restart the IdP.

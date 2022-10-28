@@ -9,7 +9,8 @@ To access the Administration Console:
 1.  Log into Connections with your Connections administrator credentials.
 2.  Once logged in, change the url to be `https://your\_connections\_host\_name/cnxadmin/`
 
-    **Note:** The ending slash \(/\) is required.
+    !!! note
+    The ending slash \(/\) is required.
 
     Go to the Template Administration user interface to preview, create, update, import, export, and delete community templates.
 

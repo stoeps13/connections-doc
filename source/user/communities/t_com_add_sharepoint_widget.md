@@ -23,7 +23,8 @@ To add the SharePoint app to your community:
 
 Community members can access the documents from the **SharePoint Library** tab.
 
-**Note:** If members are using incognito mode in Google Chrome, they must update cookie settings to allow all cookies to enable the SharePoint app in incognito mode.
+!!! note
+    If members are using incognito mode in Google Chrome, they must update cookie settings to allow all cookies to enable the SharePoint app in incognito mode.
 
 **Parent topic:**[Adding apps to increase capabilities](../communities/c_com_add_widgets.md)
 

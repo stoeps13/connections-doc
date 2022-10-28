@@ -4,13 +4,15 @@ Configure the IBM® HTTP Server to manage file uploads from Activities and Files
 
 All Activities and Files data must first be stored on a shared file system as described in [Deployment options](../plan/c_planning_the_installation.md). The IBM HTTP Servers in the deployment must also have READ and WRITE access to the files and folders, and the WebSphere Application Servers must have WRITE access.
 
-**Note:** For shared and remote network file system requirements, review the footnotes for each supported operating system in the detailed system requirements.
+!!! note
+    For shared and remote network file system requirements, review the footnotes for each supported operating system in the detailed system requirements.
 
 The default deployment for the IBM HTTP Server passes file upload requests from the IBM HTTP Server to the WebSphere Application Server. The WebSphere Application Server then saves the files in a data directory on the file system. When too many users upload large files this deployment becomes inefficient because the WebSphere Application Server has a limited thread pool that is tuned for short-lived transactions. Configuring the IBM HTTP Server to upload large files allows the WebSphere Application Server to run tasks such as security checking and quota validation. During the upload of a large file, the WebSphere Application Server can serve other requests while the HTTP server is receiving file content.
 
 Installing an add-on module that directs the IBM HTTP Server to upload files is the first step in configuring the environment. When the module is installed, upload requests are intercepted by the IBM HTTP Server. The add-on module then communicates with the WebSphere Application Server and saves file content to the data directory. After the whole file content is saved, the add-on module tells the WebSphere Application Server to save the information to the database and complete the upload process.
 
-**Note:** If you use the add-on module, you must use an IBM HTTP Server address for the HCL Connections inter-service URL. For information on setting an inter-service URL, see *Troubleshooting inter-server communication*.
+!!! note
+    If you use the add-on module, you must use an IBM HTTP Server address for the HCL Connections inter-service URL. For information on setting an inter-service URL, see *Troubleshooting inter-server communication*.
 
 1.  Install the HCL Connections applications that you plan to configure for file uploads. These can be Activities or Files or both.
 
@@ -44,7 +46,8 @@ Installing an add-on module that directs the IBM HTTP Server to upload files is 
     LoadModule ibm_upload_module modules/mod_ibm_upload.so
     ```
 
-    **Note:** By default the **mod\_rewrite** module is installed in the /modules directory. It might already be loaded, or it might be a commented-out line that you can edit.
+    !!! note
+    By default the **mod\_rewrite** module is installed in the /modules directory. It might already be loaded, or it might be a commented-out line that you can edit.
 
 5.  Grant access to the data directory root as follows:
 
@@ -223,7 +226,8 @@ Installing an add-on module that directs the IBM HTTP Server to upload files is 
     </IfModule>
     ```
 
-    **Note:** You can put rules for Activities and Files only between the `<IfModule>` and `</IfModule>` elements.
+    !!! note
+    You can put rules for Activities and Files only between the `<IfModule>` and `</IfModule>` elements.
 
 7.  Configure the upload module as follows:
 
@@ -302,7 +306,8 @@ Installing an add-on module that directs the IBM HTTP Server to upload files is 
     </api>
     ```
 
-    **Note:** The upload module can be used only when WebSphere Application Server is not run as user root. Otherwise, file permissions prevent the application server and the IBM HTTP Server from exchanging files. For security reasons, do not run the application server as root, but if that is not an option, then large files still can be uploaded. If WebSphere Application Server is run as root, consider making the following change to the `maximumSizeInKb` property for thesimpleUploadAPI file:
+    !!! note
+    The upload module can be used only when WebSphere Application Server is not run as user root. Otherwise, file permissions prevent the application server and the IBM HTTP Server from exchanging files. For security reasons, do not run the application server as root, but if that is not an option, then large files still can be uploaded. If WebSphere Application Server is run as root, consider making the following change to the `maximumSizeInKb` property for thesimpleUploadAPI file:
 
     ```
     <api>   

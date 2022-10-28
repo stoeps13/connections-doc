@@ -22,7 +22,8 @@ To assign the role:
 2.  Navigate to **Resource environment entries** \> **ic360** \> **Custom properties**.
 3.  Record the value for the property ic360.configpath to help you in step 5.
 
-    **Note:** The ic360 location refers to certain Connections foundation features set to be included the Connections installation by default under the "Feature Foundation" option.
+    !!! note
+    The ic360 location refers to certain Connections foundation features set to be included the Connections installation by default under the "Feature Foundation" option.
 
 4.  Log in to the system where the Connections applications are installed. In a multi-node deployment, log in to any node.
 5.  Find the folder similar to $\{ic360.configpath\}, for example /opt/IBM/SharedArea/icxt/config, where $\{ic360.configpath\} is typically on the same path as all other Connections configuration and data folders.

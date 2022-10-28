@@ -14,7 +14,8 @@ You can edit the files that control the content of the HCL Connections™ naviga
 
         The header.jsp file is the same for each application so you only need to make a copy of one of the header.jsp files.
 
-        **Note:** You might want to copy your header changes to the login.jsp and error.jsp files for consistency across your deployment. See [Customizing the login page](t_admin_common_customize_login_screen.md) and [Customizing error page](t_customize_error_page.md) for more information.
+        !!! note
+    You might want to copy your header changes to the login.jsp and error.jsp files for consistency across your deployment. See [Customizing the login page](t_admin_common_customize_login_screen.md) and [Customizing error page](t_customize_error_page.md) for more information.
 
     2.  Paste the copy of the `header.jsp` file into the appropriate subdirectory in the customization directory, most likely the common directory. See [Determining where to save your customizations](t_customize_find_custom_directory.md) for more details about customization subdirectories.
 
@@ -89,7 +90,8 @@ You can edit the files that control the content of the HCL Connections™ naviga
 
     4.  Save and close the customized file.
 
-    **Note:** The **Apps** menu is always visible by default. If you remove all the applications that are listed by this menu, you also need to comment out this section in the header.jsp file:
+    !!! note
+    The **Apps** menu is always visible by default. If you remove all the applications that are listed by this menu, you also need to comment out this section in the header.jsp file:
 
     ```
     <li id="lotusBannerApps" class="<c:if test="${first}">lotusFirst</c:if> <c:if test="${'communities' != appName && 'profiles' != appName && 'homepage' != appName}">lotusSelected</c:if>"><%-- 

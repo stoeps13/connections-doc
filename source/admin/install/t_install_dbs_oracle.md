@@ -17,7 +17,8 @@ If the database server and HCL Connections are installed on different systems, c
 
 This task describes how to use SQL scripts to create Oracle databases for HCL Connections applications. Complete this task only if you do not want to use the database wizard.
 
-**Note:** To capture the output of each command to a log file, run the following commands before starting this task:
+!!! note
+    To capture the output of each command to a log file, run the following commands before starting this task:
 
 sql\> spool on
 
@@ -45,7 +46,8 @@ To manually create the application database tables, complete the following steps
 
     connect as sysdba
 
-    **Note:** If not logged in as sysdba, the statistics gathering job for the Bookmarks database is not created or correctly scheduled. As a result, database performance is impacted.
+    !!! note
+    If not logged in as sysdba, the statistics gathering job for the Bookmarks database is not created or correctly scheduled. As a result, database performance is impacted.
 
 6.  Enter the Oracle user ID and password.
 

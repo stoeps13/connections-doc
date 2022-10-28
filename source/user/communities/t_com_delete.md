@@ -4,7 +4,8 @@ If a community no longer has a purpose or is inactive, you might want to delete 
 
 Ensure that the community is not in use. When you delete a community, all data that is associated with it is moved to a trash area. Any subcommunities that are part of the community are also deleted.
 
-**Note:** A community and all its associated data and apps are permanently purged from the trash after a period specified by your administrator. The default period is 90 days.
+!!! note
+    A community and all its associated data and apps are permanently purged from the trash after a period specified by your administrator. The default period is 90 days.
 
 1.  From the navigation bar, click **Communities** and select the community that you want to delete.
 2.  In the community menu, click **Community Actions** and select **Delete Community** from the list.

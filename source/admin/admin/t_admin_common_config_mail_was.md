@@ -82,7 +82,8 @@ You can choose to configure notifications to be sent from a single SMTP or have 
     app\_server\_root\profiles\dm\_profile\_root\bin
     ```
 
-    **Note:** You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
+    !!! note
+    You must start the client from this directory or subsequent commands that you try to run will not execute properly. For more information, see the *Starting the wsadmin client* topic.
 
 11. Update the notification configuration file to indicate that you want to use a mail session managed by WebSphere Application Server.
 
@@ -107,7 +108,8 @@ You can choose to configure notifications to be sent from a single SMTP or have 
 
     5.  Save and close the notification-config.xml file.
 
-        **Note:** You must check out and edit the same file in the procedure described in *Enabling email notifications*. If you plan to complete that procedure next, keep the notification-config.xml file open and checked out.
+        !!! note
+    You must check out and edit the same file in the procedure described in *Enabling email notifications*. If you plan to complete that procedure next, keep the notification-config.xml file open and checked out.
 
     6.  Check in the configuration files using the following command:
 

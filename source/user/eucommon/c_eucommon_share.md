@@ -23,7 +23,8 @@ You can then search or type in the name of the people or communities you wish to
 
 For content shared in Connections only, the recipient will receive a notification that the link has been shared with them, and the link and message will be visible in their **Activity Feed**.
 
-**Note:** Recipients need to have permission to view the content you share with them. Using the **Share** button does not grant them any permissions. If additional permissions to view the files or other content being shared is required, navigate to the File, Page, or Community to grant the appropriate permissions.
+!!! note
+    Recipients need to have permission to view the content you share with them. Using the **Share** button does not grant them any permissions. If additional permissions to view the files or other content being shared is required, navigate to the File, Page, or Community to grant the appropriate permissions.
 
 You can use the **Upload** ![](share_upload.PNG) button to share specific files. To upload a file for sharing, refer to [Uploading a file](../files/t_files_add_files_refresh.md).
 

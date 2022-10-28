@@ -4,7 +4,8 @@ Install fixes with the update wizard in silent mode.
 
 For information about prerequisites, see [Installing fixes](c_installing_interim_fixes.md).
 
-**Note:** Ensure the node agent is running before installing fixes.
+!!! note
+    Ensure the node agent is running before installing fixes.
 
 This topic describes the steps to install fixes; it does not include information about how to prepare the production environment before you install fixes. You can install multiple fixes at a time.
 

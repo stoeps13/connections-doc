@@ -10,7 +10,8 @@ Your WebSphere Application Server administrative account must be a valid account
 
 The Kerberos authentication protocol \(optional\) uses strong cryptography that enables a client to prove its identity to a server across an insecure network connection. After the client and server have proven their identity, the authentication protocol encrypts all data that the client and server exchange. The SPNEGO tokens, which wrap valid Kerberos tickets, can be used to negotiate the security for SSO. For information about best practices for Service Principal Names and SPNEGO configuration, go to [Tips on using Kerberos service principal names](http://www.ibm.com/developerworks/websphere/library/techarticles/0809_lansche/0809_lansche.html). The topic also provides tips for multitier environments. For more information about setting up SPNEGO web authentication for WebSphere Application Server, refer to [WebSphere with a side of SPNEGO](http://www-03.ibm.com/support/techdocs/atsmastr.nsf/WebIndex/WP101065).
 
-**Note:** Enabling Kerberos using the **Kerberos and LTPA** option is required only if you are using Connections Mail with a Microsoft™ Exchange backend.
+!!! note
+    Enabling Kerberos using the **Kerberos and LTPA** option is required only if you are using Connections Mail with a Microsoft™ Exchange backend.
 
 To configure SPNEGO and Kerberos on WebSphere Application Server, complete the following steps:
 
@@ -38,18 +39,21 @@ To configure SPNEGO and Kerberos on WebSphere Application Server, complete the f
         Enable delegation of Kerberos credentials
         :   Select this option if it is not selected.
 
-            **Note:** Enable this option only if you are using Connections Mail with an Exchange backend; otherwise this setting should not be selected.
+            !!! note
+    Enable this option only if you are using Connections Mail with an Exchange backend; otherwise this setting should not be selected.
 
     2.  Click **OK** and then click **Save**.
     3.  Click **Kerberos configuration** and then in the **Related Configuration** area, click **SPNEGO Web authentication**.
 
-        **Note:** SPNEGO Web authentication and Kerberos authentication use the same Kerberos client configuration and keytab files.
+        !!! note
+    SPNEGO Web authentication and Kerberos authentication use the same Kerberos client configuration and keytab files.
 
 3.  Click **SPNEGO Web authentication** and then specify the SPNEGO filter as follows:
 
     1.  In the SPNEGO Filters area, click **New** and enter the following details:
 
-        **Note:** Connections Mobile for iOS devices supports Kerberos for authentication. If your deployment only includes mobile iOS devices, and does not include mobile Android devices, remove the first instance of **request-url!=/mobile** from the filter criteria.
+        !!! note
+    Connections Mobile for iOS devices supports Kerberos for authentication. If your deployment only includes mobile iOS devices, and does not include mobile Android devices, remove the first instance of **request-url!=/mobile** from the filter criteria.
 
         Host name
         :   Enter the URI for how the HCL Connections™ environment is accessed. Typically, it is the hostname/alias of the HTTP server.
@@ -60,7 +64,8 @@ To configure SPNEGO and Kerberos on WebSphere Application Server, complete the f
         Filter criteria
         :   request-url!=noSPNEGO;request-url!=/mobile;request-url!=/nav;request-url!=/bundles/js;request-url!=/static;request-url!=/activities/oauth;request-url!=/blogs/oauth;request-url!=/dogear/oauth;request-url!=/communities/calendar/oauth;request-url!=/communities/service/atom/oauth;request-url!=/communities/service/opensocial/oauth/;request-url!=/communities/recomm/oauth;request-url!=/connections/opensocial/oauth;request-url!=/connections/opensocial/anonymous/rest;request-url!=/connections/opensocial/common;request-url!=/connections/opensocial/gadgets;request-url!=/connections/opensocial/ic;request-url!=/connections/opensocial/rpc;request-url!=/connections/opensocial/social;request-url!=/connections/opensocial/xrds;request-url!=/connections/opensocial/xpc;request-url!=/connections/resources/web;request-url!=/connections/resources/ic;request-url!=/files/oauth;request-url!=/forums/oauth;request-url!=/homepage/oauth;request-url!=/metrics/service/oauth;request-url!=/moderation/oauth;request-url!=/news/oauth;request-url!=/news/follow/oauth;request-url!=/profiles/oauth;request-url!=/wikis/oauth;request-url!=/search/oauth;request-url!=/connections/core/oauth/;request-url!=/connections/oauth/authorize;request-url!=/resources;request-url!=/oauth2/endpoint/;request-url!=/activities\_content;request-url!=/files\_content;request-url!=/library\_content\_cache;request-url!=/mobile\_content;request-url!=/wikis\_content
 
-            **Note:** Ensure that you separate each filter with a semicolon \(;\). No other character is allowed as a separator.
+            !!! note
+    Ensure that you separate each filter with a semicolon \(;\). No other character is allowed as a separator.
 
         Filter class
         :   Leave this field blank to allow the system to use the default filter class \(**com.ibm.ws.security.spnego.HTTPHeaderFilter**\).
@@ -130,7 +135,8 @@ To configure SPNEGO and Kerberos on WebSphere Application Server, complete the f
     -   Click **OK** and then click **Save** to preserve your update.
 7.  Click **Global Security**. In the **Authentication** area, click **LTPA** if you have not configured Kerberos, and then click **Save**.
 
-    **Note:** The **Kerberos and LTPA** option is required only if you are using Connections Mail with an Exchange backend.
+    !!! note
+    The **Kerberos and LTPA** option is required only if you are using Connections Mail with an Exchange backend.
 
 8.  Synchronize all the nodes in your deployment.
 

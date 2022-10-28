@@ -17,7 +17,8 @@ Download Connections and Component Pack 8.0. Connections Server packages are as 
 
 **Important:** If you have previously installed ICXT, deselect the **Feature Foundation** check box when upgrading to Connections 8.0 and contact HCL Support to acquire the new ICXT upgrade package. After downloading the ICXT package follow the [ICXT installation guidelines](https://help.hcltechsw.com/connections/api/icxt/install-guide-scripted.html).
 
-**Note:** In an in-place upgrade, previous configurations for IBM FileNet and Metrics deployments will be retained in Connections 8.0 going forward.
+!!! note
+    In an in-place upgrade, previous configurations for IBM FileNet and Metrics deployments will be retained in Connections 8.0 going forward.
 
 1.  Stop all clusters and node agents in your deployment but leave the Deployment Manager running.
 
@@ -25,7 +26,8 @@ Download Connections and Component Pack 8.0. Connections Server packages are as 
 
 3.  From the Installation Manager menu, click **File** \> **Preferences**.
 
-    **Note:** Be sure that the **Search service repositories during installation and updates** option is deselected.
+    !!! note
+    Be sure that the **Search service repositories during installation and updates** option is deselected.
 
 4.  Click **Repositories** \> **Add Repository**.
 
@@ -45,11 +47,13 @@ Download Connections and Component Pack 8.0. Connections Server packages are as 
 
 11. Ensure that all the Connections applications are selected and click **Next**.
 
-    **Note:** All of the installed applications are selected by default. All of the installed applications are typically selected by default. If you clear any of the selected applications, those applications will be uninstalled. If there are any non-selected applications, and you select those applications, they will be installed.
+    !!! note
+    All of the installed applications are selected by default. All of the installed applications are typically selected by default. If you clear any of the selected applications, those applications will be uninstalled. If there are any non-selected applications, and you select those applications, they will be installed.
 
 12. Enter the administrative ID and password of the Deployment Manager and click **Validate**.
 
-    **Note:** This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java™ EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Tivoli® Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
+    !!! note
+    This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java™ EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Tivoli® Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
 
 13. In the Topology panel, select the topology that matches the deployment
 

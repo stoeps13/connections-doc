@@ -22,7 +22,8 @@ The old default and enhanced templates include the same notification types, with
       <property name="globalNotificationTemplateThemeEnable"">true</property>
     ```
 
-    **Note:** If you do not set this property to true, the old-style templates will be enabled by default.
+    !!! note
+    If you do not set this property to true, the old-style templates will be enabled by default.
 
 5.  Save, close, and then check in the notification-config.xml file as described in [Accessing the notification configuration file](t_admin_common_checkout_notification_config.md).
 

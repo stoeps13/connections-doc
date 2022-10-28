@@ -6,7 +6,8 @@ Unless you change the directory paths during the installation, the default IBM®
 
 The following tables list the default environment variables that are defined for application directories and for the customization base directory.
 
-**Note:** Production deployments often use more than one shared content store to avoid problems when applications attempt to read or write to a device at the same time. If you use multiple devices, change the environment variables to match your deployment. You must also update the properties in the HCL Connections configuration engine; otherwise, the export/import utility does not work properly.
+!!! note
+    Production deployments often use more than one shared content store to avoid problems when applications attempt to read or write to a device at the same time. If you use multiple devices, change the environment variables to match your deployment. You must also update the properties in the HCL Connections configuration engine; otherwise, the export/import utility does not work properly.
 
 Also, do not use network paths when you define content store locations.
 
@@ -176,7 +177,8 @@ COPY_LOCATION
 
 |Variable name|Description / Local or shared\*|Default value|
 |-------------|-------------------------------|-------------|
-|MESSAGE\_STORE\_PATH|Directory that is used to store the files that are used and managed by the messaging engines of the WebSphere Service Integration Bus \(SIB\) for the HCL Connections bus \(permanent, temporary, and log file\) / shared**Note:** The same requirements for other shared content apply to this directory. In addition, if NFS is used, use version 4 of the protocol.
+|MESSAGE\_STORE\_PATH|Directory that is used to store the files that are used and managed by the messaging engines of the WebSphere Service Integration Bus \(SIB\) for the HCL Connections bus \(permanent, temporary, and log file\) / shared!!! note
+    The same requirements for other shared content apply to this directory. In addition, if NFS is used, use version 4 of the protocol.
 
 |AIX and Linux: /opt/IBM/Connections/data/shared
 
@@ -190,7 +192,8 @@ Shared content must be accessible \(read/write\) by all nodes in a cluster. The 
 -   Storage area network drives \(SAN\)
 -   If you are using a shared-file system on Microsoft Windows, specify the file location by using the Universal Naming Convention \(UNC\) format. For example: \\\\server\_name\\share\_name
 
-**Note:** From version 3 of HCL Connections, all variables changed from being server-level variables to cell-level variables. Variables with a server level scope are more granular than variables with a node or cell level scope.
+!!! note
+    From version 3 of HCL Connections, all variables changed from being server-level variables to cell-level variables. Variables with a server level scope are more granular than variables with a node or cell level scope.
 
 Both shared and local content stores must be accessible by using the same path from nodes and the deployment manager.
 

@@ -37,7 +37,8 @@ To create a dedicated DB2 database user named lcuser, complete the following ste
         7.  Click**Check Names** and then click **OK**.
         8.  Click **OK** again to save your changes.
 
-            **Note:** If the DB2USERS group is not found, extended security for DB2 on Windows™ might not be enabled. See the DB2 documentation for information about Extended Windows security using DB2ADMNS and DB2USERS groups.
+            !!! note
+    If the DB2USERS group is not found, extended security for DB2 on Windows™ might not be enabled. See the DB2 documentation for information about Extended Windows security using DB2ADMNS and DB2USERS groups.
 
     -   Windows 2012
         1.  Click **Start** \> **Control Panel** and select **User Account** \> **Add or Remove User Accounts** \> **Create a New Account**.
@@ -49,7 +50,8 @@ To create a dedicated DB2 database user named lcuser, complete the following ste
         7.  Click**Check Names** and then click **OK**.
         8.  Click **OK** again to save your changes.
 
-            **Note:** If the DB2USERS group is not found, extended security for DB2 on Windows might not be enabled. See the DB2 documentation for information about Extended Windows security using DB2ADMNS and DB2USERS groups.
+            !!! note
+    If the DB2USERS group is not found, extended security for DB2 on Windows might not be enabled. See the DB2 documentation for information about Extended Windows security using DB2ADMNS and DB2USERS groups.
 
 
 For more information about granting privileges to users, see the [Database administration section](https://www.ibm.com/docs/db2/11.1?topic=database-administration) in the IBM DB2 documentation.

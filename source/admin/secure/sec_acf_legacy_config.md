@@ -70,7 +70,8 @@ acf-config-nm.xml
 acf-config-nm-flash.xml
 :   Allows Flash animations, but prevents users from changing the margins on images.
 
-**Note:** Allowing the script tag does not allow JavaScript to be run within the rich text editors. Because of the security implications of allowing users to run any JavaScript, the editors include configuration to strip in JavaScript content upon save.
+!!! note
+    Allowing the script tag does not allow JavaScript to be run within the rich text editors. Because of the security implications of allowing users to run any JavaScript, the editors include configuration to strip in JavaScript content upon save.
 
 1.  Edit the LotusConnections-config.xml file.
 
@@ -94,7 +95,8 @@ acf-config-nm-flash.xml
             -   AIX®, and Linux® only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
     3.  Open the LotusConnections-config.xml file in a text editor.
 

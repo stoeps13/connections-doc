@@ -13,7 +13,8 @@ HCL Connections provides the following connectors:
 -   Pronunciation connector
 -   Codes connector
 
-**Note:** The only supported methods for writing data or modifying data in the Profiles database are the following:
+!!! note
+    The only supported methods for writing data or modifying data in the Profiles database are the following:
 
 -   Using the supplied Profiles Tivoli Security Integrator assembly lines
 -   Using the Profiles ATOM administrative API

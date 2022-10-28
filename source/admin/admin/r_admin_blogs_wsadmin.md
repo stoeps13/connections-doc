@@ -79,7 +79,8 @@ where:
 
 Example: `wsadmin>BlogsConfigService.updateConfig("EditingPollInterval", "20")`
 
-**Note:** Configuration updates take effect immediately and do not require a server restart.
+!!! note
+    Configuration updates take effect immediately and do not require a server restart.
 
 |Option|Type|Description|UI Field Equivalent|
 |------|----|-----------|-------------------|

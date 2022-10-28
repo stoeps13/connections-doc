@@ -42,7 +42,8 @@ A file that is called INDEX.READY is created in the specified location when the 
 
         You can run social analytics indexing jobs at the end of the background indexing operation. Alternatively, you can run the SearchService.startSandBackgroundIndex if you want to create a background index for the social analytics service. For more information, see *Creating a background index for the social analytics service*.
 
-        **Note:** This command is case-sensitive, even on Windows. For example, if you specify c:\\temp as the location to create the seedlist, but the directory is C:\\Temp, an error message is returned.
+        !!! note
+    This command is case-sensitive, even on Windows. For example, if you specify c:\\temp as the location to create the seedlist, but the directory is C:\\Temp, an error message is returned.
 
         This command takes the following arguments:
 

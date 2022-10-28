@@ -4,7 +4,8 @@ TinyMCE has many options not configured by the integration and they can be set b
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the property [`additionalSettings`](r_config-js-sample.md#additionalSettings) and modify the object to supply additional TinyMCE initialization settings that are not already used by the integration.
 

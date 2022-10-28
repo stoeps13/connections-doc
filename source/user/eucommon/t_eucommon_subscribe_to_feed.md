@@ -6,14 +6,16 @@ Subscribe to feeds to receive updates about applications and users that matter t
 
 Feeds pull information from websites and provide content summaries and links. Your feed reader automatically checks for and retrieves content updates, so you don't have to.
 
-**Note:** You must have a feed reader that supports Atom feeds.
+!!! note
+    You must have a feed reader that supports Atom feeds.
 
 ## Subscribe to a feed { .section}
 
 1.  Go to the page with the content that you want to monitor.
 2.  Click the **Feed** icon ![Feed icon](subscribe_to_feed.gif)![Feed icon](subscribe_to_feed.jpg) to subscribe to the content on the current page.
 
-    **Note:** In the Blogs app, hover the cursor on the feed link to select whether to add the feed in a community or in the web browser.
+    !!! note
+    In the Blogs app, hover the cursor on the feed link to select whether to add the feed in a community or in the web browser.
 
 3.  Add the feed to your feed reader. For more information, see the documentation for your web browser or feed reader.
 

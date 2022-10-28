@@ -15,7 +15,8 @@ The activity stream can draw information from the following places:
 -   Layout of Connections classic home page: In the **Layout** field, click **Default** to use the layout and information from this page.
 -   Layout of Orient Me home page: In the **Layout** field, click **New**.
 
-    **Note:** For this widget, choosing this option uses a layout with a more modern look and feel, but the views available for the content are the same as those for the classic home page.
+    !!! note
+    For this widget, choosing this option uses a layout with a more modern look and feel, but the views available for the content are the same as those for the classic home page.
 
 -   A community: Skip the Layout field and click **Show Community**, and then type the community's name in the **Source** field.
 
@@ -37,7 +38,8 @@ Enabling the following options determines if the associated elements are display
 
 -   **Show Sharebox** - If enabled, shows a text area for users to share status updates and files.
 
-    **Note:** Users cannot use @mentions within this text area.
+    !!! note
+    Users cannot use @mentions within this text area.
 
 -   **Show Navigation**
     -   If no community is in use, shows a navigation with three navigation points \("Following," "Status Updates," and "Discover"\).

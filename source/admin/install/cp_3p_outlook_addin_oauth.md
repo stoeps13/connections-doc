@@ -2,7 +2,8 @@
 
 The following steps provide information on registering the OAuth application provider for the HCL Connections Add-in for Microsoft Outlook when this add-in is deployed as part of Compoent Pack for Connections.
 
-**Note:** You need to registering the Connections Outlook Add-in OAuth application provider before you install or upgrade a Component Pack deployment that includes the Outlook Add-in.
+!!! note
+    You need to registering the Connections Outlook Add-in OAuth application provider before you install or upgrade a Component Pack deployment that includes the Outlook Add-in.
 
 For more on configuring OAuth applications providers for Connections, see the [Configuring the HCL Connections OAuth provider](https://help.hcltechsw.com/connections/v7/admin/install/cp_install_services_tasks.html) section of the admin guide.
 

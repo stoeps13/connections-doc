@@ -2,7 +2,8 @@
 
 As a Microsoft SharePoint administrator you can register the Sharepoint app with Microsoft Azure and edit its configuration file in HCL Connections to make it available for your organization.
 
-**Note:** The SharePoint app is installed with the rest of Connections during installation.
+!!! note
+    The SharePoint app is installed with the rest of Connections during installation.
 
 Once the administration tasks are complete, Community owners can choose to add the app to their community for members to be able to view, edit, and share documents from a SharePoint server. For the user help, see [Adding the SharePoint app to a community](../../user/communities/t_com_add_sharepoint_widget.md).
 

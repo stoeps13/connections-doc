@@ -15,7 +15,8 @@ Before starting the steps, note the following:
 -   A system running Connections \(if you are upgrading from Component Pack 7, a system running Connections 7 with Component Pack deployed\).
 -   Kubernetes up and running.
 
-    **Note:** This article does not contain the initial steps to get your Kubernetes platform up and running. The base setup depends on your environment which could be Kubernetes-only.
+    !!! note
+    This article does not contain the initial steps to get your Kubernetes platform up and running. The base setup depends on your environment which could be Kubernetes-only.
 
 -   Access to the [Harbor repository](https://hclcr.io/harbor/projects/15/repositories).
 
@@ -62,7 +63,8 @@ Use the following guidelines to help you set up persistent volumes for Component
 
 These guidelines and sample files describe how to set up all of the persistent volumes required for a full installation of Component Pack. In a high availability configuration, the best practice is to maintain persistent storage away from the Kubernetes masters and worker nodes themselves, on a separate machine that all masters and workers can access.
 
-**Note:** The machine storing the persistent volumes in an HA configuration will not have Docker or Kubernetes installed.
+!!! note
+    The machine storing the persistent volumes in an HA configuration will not have Docker or Kubernetes installed.
 
 **Exporting the persistent volumes**
 
@@ -375,7 +377,8 @@ clusterName:                opensearch-cluster
 
 For sample values of these variables, refer to the [HCL Connections deployment automation Git repository](https://github.com/HCL-TECH-SOFTWARE/connections-automation/tree/main/roles/hcl/component-pack-harbor/vars/main.yml).
 
-**Note:** If you do not have all installation options from your Connections 7 environment at hand, you can run the following command to retrieve this information from the deployed charts:
+!!! note
+    If you do not have all installation options from your Connections 7 environment at hand, you can run the following command to retrieve this information from the deployed charts:
 
 ``` {#codeblock_fpg_x2j_dvb}
 helm -n connections get values <chart_name>
@@ -458,7 +461,8 @@ Make sure that the network configuration of your NFS environment is correct befo
     helm upgrade connections-volumes v-connections-helm/connections-persistent-storage-nfs -i --version 0.1.1-20220505-090030 --namespace connections -f connections-volumes.yml --wait
     ```
 
-    **Note:** Use your destination **nfs.server** and **persistentVolumePath** as parameters in connections-volumes.yml.
+    !!! note
+    Use your destination **nfs.server** and **persistentVolumePath** as parameters in connections-volumes.yml.
 
 6.  Verify that all PVCs are in "bound" state:
 
@@ -584,7 +588,8 @@ With Connections 8, OpenSearch replaces Elasticsearch 7 as the default backend f
 
 Installing the OpenSearch chart creates an additional secret – use the default secret from the bootstrap installation instead. See [Set up bootstrap charts](#bootstrap).
 
-**Note:** OpenSearch, because of the way it is set up starting with version 8, will not work if bootstrap didn't create its secrets and certificates beforehand.
+!!! note
+    OpenSearch, because of the way it is set up starting with version 8, will not work if bootstrap didn't create its secrets and certificates beforehand.
 
 1.  Get chart and version:
 
@@ -1012,7 +1017,8 @@ For post-installation tasks required to deploy the community creation wizard and
         print AdminControl.getCell()
         ```
 
-    **Note:** When you specify a path to the working directory on a system that is running Microsoft Windows, use a forward slash for the directory. For example, "C:/temp". On AIX and Linux, the directory must grant write permissions or the command fails.
+    !!! note
+    When you specify a path to the working directory on a system that is running Microsoft Windows, use a forward slash for the directory. For example, "C:/temp". On AIX and Linux, the directory must grant write permissions or the command fails.
 
 4.  Open the checked-out LotusConnectionsConfig.xml file in an XML editor of your choice and add the property componentPackInstalled to the <properties\> </properties\> tag as shown below:
 

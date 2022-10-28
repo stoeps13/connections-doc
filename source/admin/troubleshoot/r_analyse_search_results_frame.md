@@ -18,11 +18,13 @@ To access the search serverStatus page, browse to the following URL:
 http://servername/search/serverStatus
 ```
 
-**Note:** The Search application uses the search-admin role to read public and private data for creating search indexes. Create a new user account solely for the search-admin role for the Search application.
+!!! note
+    The Search application uses the search-admin role to read public and private data for creating search indexes. Create a new user account solely for the search-admin role for the Search application.
 
 The search serverStatus page highlights any configuration issues along with an analysis of the latest search logs for the node.
 
-**Note:** The primary function of search serverStatus page is to help debug issues on a system. The page is not a system monitoring tool.
+!!! note
+    The primary function of search serverStatus page is to help debug issues on a system. The page is not a system monitoring tool.
 
 There are four status colors on the search serverStatus page
 

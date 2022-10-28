@@ -4,7 +4,8 @@ Files added to the Activities, Blogs, Wikis, Forums, or Files applications could
 
 Most web browsers have security applications that prevent scripts which originate from one domain from accessing information in a browser session in another domain. This security application is loosely called the same origin policy. A domain is made up of a protocol \(such as HTTP\) and the domain \(host name\) that the page is loaded from. You can implement the following procedure to force files downloaded from Activities, Blogs, Files, or Forums to be identified as coming from a different domain than the application's web browser session.
 
-**Note:** When Siteminder is configured, the cookie domain is determined by the Siteminder CookieDomain configuration, which defines a single, fixed domain in HCL HTTP Server. This means without additional effort, downloads must share single sign-on with the application if Siteminder is used. See[Mitigating a cross site scripting attack](t_admin_common_secure_xss.md) for more information about this risk.
+!!! note
+    When Siteminder is configured, the cookie domain is determined by the Siteminder CookieDomain configuration, which defines a single, fixed domain in HCL HTTP Server. This means without additional effort, downloads must share single sign-on with the application if Siteminder is used. See[Mitigating a cross site scripting attack](t_admin_common_secure_xss.md) for more information about this risk.
 
 1.  Register a new DNS domain alias for downloads from the Activities, Blogs, or Files sites, which points to the Activities, Blogs, Files, or Forums domain respectively. For example, if your server domain name for Activities is `activities.example.com`, you could name the alias `activities-downloads.example.com` and have it point to the same IP address as activities.example.com does.
 
@@ -138,13 +139,15 @@ Most web browsers have security applications that prevent scripts which originat
         RewriteRule !^/forums/service/download/(.+)$ - [F]
         ```
 
-    **Note:** If you are cutting and pasting these statements into the configuration file, be advised that we have added hard returns to long statements to enable them to be displayed on the web page. Be sure to remove the hard-coded returns from long statements, such as URLs, after you paste them into the configuration file.
+    !!! note
+    If you are cutting and pasting these statements into the configuration file, be advised that we have added hard returns to long statements to enable them to be displayed on the web page. Be sure to remove the hard-coded returns from long statements, such as URLs, after you paste them into the configuration file.
 
     Replace references to .example.com with the alias that you created for the download domain for files downloaded from the application.
 
 6.  If you are sending encrypted connection traffic, add the same set of statements to the encrypted connection \(SSL\) virtual host section of the configuration file, but update all web address references to indicate HTTPS instead of HTTP.
 
-    **Note:** There are a few statements in the snippets for Files that must be either included or commented out depending on whether or not a encrypted connection is enabled.
+    !!! note
+    There are a few statements in the snippets for Files that must be either included or commented out depending on whether or not a encrypted connection is enabled.
 
 7.  Add the rule in the previous step to any virtual host sections of the configuration file.
 

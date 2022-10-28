@@ -4,13 +4,15 @@ Use administrative commands to update or remove inappropriate information stored
 
 To use administrative commands, you must use the wsadmin client. See [Starting the wsadmin client](t_admin_wsadmin_starting.md) for details.
 
-**Note:** The following commands can also be used to remove unwanted or inappropriate content from subcommunities.
+!!! note
+    The following commands can also be used to remove unwanted or inappropriate content from subcommunities.
 
 You can edit basic community information using wsadmin commands. For example, you can change a community's name, update a community's description, and remove tags or bookmarks from a community.
 
 The following commands can only be used to manage community content. To remove data from the applications that can be integrated with Communities, such as Activities, Blogs, Files, and Wikis, you need to refer to the application documentation for each specific application. See the links at the end of this topic for more information.
 
-**Note:** When you use the commands, if the community name that you provide as input to the command is not unique, an error similar to the following displays:
+!!! note
+    When you use the commands, if the community name that you provide as input to the command is not unique, an error similar to the following displays:
 
 ```
 WASX7015E: Exception running command: "CommunitiesService.updateCommunityDescription("My community", "updated by wsadmin cmd")"; exception information:
@@ -67,7 +69,8 @@ You can obtain the UUID for a community or subcommunity by doing one of the foll
         CommunitiesService.updateCommunityName("JDs Community", "JDs New Name")
         ```
 
-        **Note:** When you use this command, if you get an error telling you that the community or subcommunity name is not unique, enter the UUID instead.
+        !!! note
+    When you use this command, if you get an error telling you that the community or subcommunity name is not unique, enter the UUID instead.
 
         You can obtain the UUID for a community or subcommunity by doing one of the following:
 
@@ -105,7 +108,8 @@ You can obtain the UUID for a community or subcommunity by doing one of the foll
     CommunitiesService.removeTagsFromCommunity\(String communityName, List tagNames\)
     :   Allows you to remove tags from an existing community or subcommunity. This command is a two-step process. First, create a comma-separated list of the tags that you want to remove. This list of tags is saved to a variable and the variable is used as input for the removeTagsFromCommunity command.
 
-        **Note:** You can remove tags on a community or subcommunity, but you cannot remove tags associated with bookmarks or feeds within a community.
+        !!! note
+    You can remove tags on a community or subcommunity, but you cannot remove tags associated with bookmarks or feeds within a community.
 
         Because the tags are specified as a list, each tag must be enclosed in double quotation marks and separated by commas. All tags must be enclosed within brackets.
 
@@ -121,7 +125,8 @@ You can obtain the UUID for a community or subcommunity by doing one of the foll
     CommunitiesService.removeWidgetsByWidgetDefIdForAllComm\(String widgetDefId\)
     :   Allows you to remove the specified widget from all communities and subcommunities. widgetDefId corresponds to the defId attribute on <widgetDef\> elements in widgets-config.xml.
 
-        **Note:** Use this command with caution, it can delete a lot of data for many widgets. Backup your databases before running.
+        !!! note
+    Use this command with caution, it can delete a lot of data for many widgets. Backup your databases before running.
 
         widgetDefId is a string and must be enclosed in double quotation marks \("\).
 

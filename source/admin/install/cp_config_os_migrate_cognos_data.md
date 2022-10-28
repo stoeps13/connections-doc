@@ -2,7 +2,8 @@
 
 You can deploy Opensearch Metrics with the existing Metrics events data in your RDBMS. The procedure involves migrating the events data, testing the environment, and then switching users to the Opensearch Metrics component.
 
-**Note:** If you are new to Connections, skip this task and instead use the following instructions to set up OpenSearch Metrics for your first use: [Deploying OpenSearch Metrics as your first use of metrics](cp_config_os_metrics_no_cognos.md).
+!!! note
+    If you are new to Connections, skip this task and instead use the following instructions to set up OpenSearch Metrics for your first use: [Deploying OpenSearch Metrics as your first use of metrics](cp_config_os_metrics_no_cognos.md).
 
 Migrating data from your relational database to OpenSearch storage is an iterative process. Because data continues to be generated during the testing period, plan to migrate your data at least once more after you switch users to the OpenSearch Metrics component.
 

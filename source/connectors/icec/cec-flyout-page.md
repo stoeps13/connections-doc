@@ -8,7 +8,8 @@ The FlyOut Page can be easily set up: The FlyOut Page is a regular Connections E
 
 ![image](images/image123.png)
 
-**Note:** The FlyOut Page is not available in Cloud, Mobile or Anonymous Mode.
+!!! note
+    The FlyOut Page is not available in Cloud, Mobile or Anonymous Mode.
 
 **Parent topic:**[Overview](../../connectors/icec/cec-introduction_top.md)
 

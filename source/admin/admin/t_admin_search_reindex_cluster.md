@@ -84,7 +84,8 @@ This procedure uses the following three-node cluster as an example:
         scp -r root@icappnode1:/local/tmp/index.2014.Apr.06/backgroundIndex /local/tmp/index.2014.Apr.06/
         ```
 
-        **Note:** This step does not replace the active index.
+        !!! note
+    This step does not replace the active index.
 
 7.  Prepare to replace the active index, complete the following steps on the deployment manager node:
 

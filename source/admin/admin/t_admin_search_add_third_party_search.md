@@ -27,7 +27,8 @@ When you configure settings for additional search options in the LotusConnection
             -   AIX®, and Linux® only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere® Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
 3.  Navigate to the temporary working directory that you specified in the previous step, and then open the LotusConnections-config.xml file in a text editor.
 
@@ -81,7 +82,8 @@ When you configure settings for additional search options in the LotusConnection
         </sloc:searchScope>
         ```
 
-        **Note:** In this case the isGlobal parameter is set to false because the example is for a local search.
+        !!! note
+    In this case the isGlobal parameter is set to false because the example is for a local search.
 
 5.  Save your changes and then close the LotusConnections-config.xml file.
 

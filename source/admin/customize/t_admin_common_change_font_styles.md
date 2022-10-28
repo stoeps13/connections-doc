@@ -10,7 +10,8 @@ To customize a UI control in an application, you might have to edit the applicat
 
 2.  Create a <theme\_name\>Theme directory in the customizationDir directory.
 
-    **Note:** Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
+    !!! note
+    Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
 
     For information about the location of the customizationDir directory, see [Determining where to save your customizations](t_customize_find_custom_directory.md).
 
@@ -18,11 +19,14 @@ To customize a UI control in an application, you might have to edit the applicat
 
     WAS\_HOME/profiles/profile\_name/installedApps/cell\_name/Common.ear/connections.web.resources.war/WEB-INF/eclipse/plugins/com.ibm.lconn.core.styles\_version.jar!/resources/base/applications
 
-    **Note:** The com.ibm.lconn.core.styles\_version.jar file contains CSS style sheets that extend or override default styles from the OneUI 3.0.x toolkit.
+    !!! note
+    The com.ibm.lconn.core.styles\_version.jar file contains CSS style sheets that extend or override default styles from the OneUI 3.0.x toolkit.
 
-    **Note:** Hikari theme is in the same directory in the following jar: com.ibm.social.hikari.theme\_1.0.0.20151204-1501.jar
+    !!! note
+    Hikari theme is in the same directory in the following jar: com.ibm.social.hikari.theme\_1.0.0.20151204-1501.jar
 
-    **Note:** The gen4 theme is also in the same directory in the following jar: com.ibm.social.gen4.theme\_4.0.0.20151204-1501.jar
+    !!! note
+    The gen4 theme is also in the same directory in the following jar: com.ibm.social.gen4.theme\_4.0.0.20151204-1501.jar
 
     Where:
 
@@ -64,7 +68,8 @@ To customize a UI control in an application, you might have to edit the applicat
 
     -   To change the color of body text, change the default value from \#222, which is the code for black, to a color of your choosing.
 
-        **Note:** The font color that you define for body text is applied only to text that is contained within basic body tags, such as <p\> tags. User interface items such as page headings, subheadings, and links are formatted differently.
+        !!! note
+    The font color that you define for body text is applied only to text that is contained within basic body tags, such as <p\> tags. User interface items such as page headings, subheadings, and links are formatted differently.
 
     -   To change the background color, change the default value from \#fff, which is the code for white, to a color of your choosing.
 7.  Save and close the .css file.

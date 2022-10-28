@@ -6,7 +6,8 @@ To enter administrative commands, you must use the IBM® WebSphere® Application
 
 After you restart a failed Communities database or another HCL Connections application database from a backup. You must ensure that data is correctly synchronized between the Communities database and the remote application databases.
 
-**Note:** You need to recover data only if the remote databases that you recovered from backup are older or newer than the Communities database.
+!!! note
+    You need to recover data only if the remote databases that you recovered from backup are older or newer than the Communities database.
 
 1.  To recover an HCL Connections application database that integrates with Communities after a database failure, complete the following steps.
 2.  After the remote database is recovered from a backup, but before general access is recovered, temporarily disable access to the Communities application. You must also temporarily disable access to any other integrating applications that are impacted by the failure. This step must be done only at the IBM HTTP Server because the IBM WebSphere Application Server must be running to keep wsadmin commands available for the remaining recovery steps. Here is a suggested approach to disabling access:
@@ -91,7 +92,8 @@ After you restart a failed Communities database or another HCL Connections appli
 
     If Communities failed, then all the applications are affected. Each service generates an XML file that shows the current state of associated remote applications. Use this report in the next step to validate against the current state of the Communities database.
 
-    **Note:** This step does not apply when you are restoring Libraries remote applications.
+    !!! note
+    This step does not apply when you are restoring Libraries remote applications.
 
     |Application|Command|
     |-----------|-------|
@@ -103,7 +105,8 @@ ActivityService.exportSyncedResourceInfo("/temp-dir/activitiesOutput.xml", "comm
     ```
 
 |
-    |Blogs|BlogsAdminService.exportSyncedResourceInfo\(String FullFilePath, String ContainerType, String BlogType\)**Note:** The BlogType parameter is optional when you are exporting content for a blog. When you are exporting content for a blog, you can specify Blog as the value for this parameter. For an Ideation Blog, you must specify a value of IdeationBlog.
+    |Blogs|BlogsAdminService.exportSyncedResourceInfo\(String FullFilePath, String ContainerType, String BlogType\)!!! note
+    The BlogType parameter is optional when you are exporting content for a blog. When you are exporting content for a blog, you can specify Blog as the value for this parameter. For an Ideation Blog, you must specify a value of IdeationBlog.
 
 For example, to export content for a blog:
 
@@ -168,7 +171,8 @@ WikisLibraryService.exportSyncedResourceInfo("/temp-dir/wikisOutput.xml", "commu
 
     The output file that is created by the application-specific exportSyncedResourceInfo commands from the previous step is used as input for the generateSyncReports command. This command generates two files, communityDifferences and orphanedRemoteApplications, in a localized HTML format. For more information about this command, see *Generating a synchronization report*.
 
-    **Note:** This step does not apply when you recover Libraries remote applications.
+    !!! note
+    This step does not apply when you recover Libraries remote applications.
 
 8.  Resume the processing of past failed events, enter the following command:
 
@@ -186,7 +190,8 @@ WikisLibraryService.exportSyncedResourceInfo("/temp-dir/wikisOutput.xml", "commu
 
     If you want to synchronize the current state of communities with the remote application, run the CommunitiesRemoteAppService.resyncRemoteAppsForCommunity commands. For more information about these commands, see *Synchronizing remote application data with the Communities database*.
 
-    **Note:** If you are restoring Libraries remote applications, you can decide to attempt to synchronize individual communities only if users report problems. Alternatively, you can synchronize the current state of Communities to FileNet. If the only data loss occurred on FileNet and not in the Communities database, then you must synchronize the current state of Communities to FileNet. Enter the CommunitiesRemoteAppService.resyncRemoteAppsForCommunity commands to synchronize Communities.
+    !!! note
+    If you are restoring Libraries remote applications, you can decide to attempt to synchronize individual communities only if users report problems. Alternatively, you can synchronize the current state of Communities to FileNet. If the only data loss occurred on FileNet and not in the Communities database, then you must synchronize the current state of Communities to FileNet. Enter the CommunitiesRemoteAppService.resyncRemoteAppsForCommunity commands to synchronize Communities.
 
 11. To ensure that data is correctly synchronized when files or folders are shared with communities from the Files application, and those communities do not contain the Files widget, enter the following command:
 

@@ -6,7 +6,8 @@ To edit configuration files, you must use the IBM® WebSphere® Application Serv
 
 When users are logged in to Communities, the **Start a Community** button displays only when users have permissions to create a community. When users are not logged in, it is not possible to determine their level of access. However, as administrator, you can enable or disable the display of the button globally for all anonymous users by configuring the show.startCommunity.To.Unauthenticated property in the Communities configuration file.
 
-**Note:** Users must have the community-creator role in order to create communities. For more information about this role, see *Roles*.
+!!! note
+    Users must have the community-creator role in order to create communities. For more information about this role, see *Roles*.
 
 1.  To configure the show.startCommunity.To.Unauthenticated property, complete the following steps.
 2.  Start the wsadmin client from the following directory of the system on which you installed the Deployment Manager:
@@ -41,7 +42,8 @@ When users are logged in to Communities, the **Start a Community** button displa
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied. The files are kept in this working directory while you make changes to them.
 
-            **Note:** AIX and Linux only: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX and Linux only: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the HCL Connections application. This argument is required. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 

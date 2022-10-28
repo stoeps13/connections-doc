@@ -4,7 +4,8 @@ Creating simple macros to provide useful work shortcuts.
 
 1.  Using a plain text editor, open config/config.js in the extracted Tiny Editors for HCL Connections package.
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into config.js. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Locate the [`postCreateTextboxio`](r_config-js-sample.md#postCreateTextboxio) function template.
 
@@ -18,7 +19,8 @@ Creating simple macros to provide useful work shortcuts.
 
 3.  Use the runtime API `editor.macros.addSimpleMacro` to add a macro.
 
-    **Note:** The usage is as follows:
+    !!! note
+    The usage is as follows:
 
     ```
     editor.macros.addSimpleMacro(startString, endString, callback);

@@ -6,7 +6,8 @@ If FileNet® Collaboration Services \(FNCS\) and HCL Connections are in the same
 
 When FileNet is on a different WebSphere Application Server cell than HCL Connections, it cannot access the configuration values in LotusConnections-config.xml. Instead, you must create the configuration properties for HCL Connections web resources and virus scans in the connections.xml file.
 
-**Note:** When FileNet is on the same WebSphere Application Server cell as HCL Connections, you do not have to create the connections.xml file. Therefore, you must set anti-virus settings in LotusConnections-config.xml. For more information, see *Changing common configuration property values*.
+!!! note
+    When FileNet is on the same WebSphere Application Server cell as HCL Connections, you do not have to create the connections.xml file. Therefore, you must set anti-virus settings in LotusConnections-config.xml. For more information, see *Changing common configuration property values*.
 
 To configure web resources and virus scan settings, complete the following steps:
 
@@ -57,7 +58,8 @@ To configure web resources and virus scan settings, complete the following steps
     </config>
     ```
 
-    **Note:** avFilter settings are needed only if you are enabling virus scan.
+    !!! note
+    avFilter settings are needed only if you are enabling virus scan.
 
     The following list defines the properties that can be included in the connections.xml file.
 

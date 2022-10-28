@@ -91,7 +91,8 @@ The personalized user views available in the Communities application include the
     LCConfigService.checkInConfig()
     ```
 
-    **Note:** You must perform the check in during the same wsadmin session in which you checked out the files for the changes that you made to take effect.
+    !!! note
+    You must perform the check in during the same wsadmin session in which you checked out the files for the changes that you made to take effect.
 
 8.  After making updates, type the following command to deploy the changes:
 

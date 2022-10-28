@@ -14,7 +14,8 @@ Active transactions counter
 Queue counter
 :   Counts the number of active transactions that are queuing to connect to the Search server.
 
-**Note:** These counters only work when the Search application is installed on a different server from the Connections applications.
+!!! note
+    These counters only work when the Search application is installed on a different server from the Connections applications.
 
 The active transactions counter allows a specified number of active transactions to wait for a response from the Search server. For example, if the limit is set to 20, when 20 active transactions are waiting for a response from the Search server, any subsequent attempts to connect to the server are placed in a queue. If the queue counter is not equal to the value defined in the LotusConnections-config.xml configuration file, the connection to the Search server is rejected. If the queue counter is equal to the value set in the configuration file, a connection to the server is allowed. If the Search server returns data without an timeout exception being returned to the application, the queue counter is reset to 0.
 
@@ -50,7 +51,8 @@ You can set the limits allowed by the active transactions counter and the queue 
             -   AIX, and Linux only: The directory must grant write permissions or the command fails.
         -   cell\_name is the name of the WebSphere Application Server cell that hosts the HCL Connections application. If you do not know the cell name, display it by typing the following command in the wsadmin client: print AdminControl.getCell\(\)
 
-            **Note:** This input parameter is case-sensitive.
+            !!! note
+    This input parameter is case-sensitive.
 
 3.  Open the LotusConnections-config.xml in a text editor.
 
@@ -74,7 +76,8 @@ You can set the limits allowed by the active transactions counter and the queue 
 
     LCConfigService.checkInConfig\(\)
 
-    **Note:** You must run the checkin during the same wsadmin session in which you ran the checkout command.
+    !!! note
+    You must run the checkin during the same wsadmin session in which you ran the checkout command.
 
 7.  To exit the wsadmin client, type exit at the prompt.
 

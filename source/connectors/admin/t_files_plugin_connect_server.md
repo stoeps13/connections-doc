@@ -2,7 +2,8 @@
 
 Log into HCL Connections servers to access Connections content from the sidebar applications.
 
-**Note:** The HCL Connections plug-in for IBM Notes now allows you to connect to an IBM Connections Cloud server to access Files and Activities and view business cards from the Notes sidebar.
+!!! note
+    The HCL Connections plug-in for IBM Notes now allows you to connect to an IBM Connections Cloud server to access Files and Activities and view business cards from the Notes sidebar.
 
 The support for connecting to an HCL Connections Cloud server depends on whether you are using Notes 8.5.3 or Notes 9.0.1. The table shows the different Cloud support for the different versions.
 
@@ -39,7 +40,8 @@ If you know that the server requires a secure, encrypted connection, begin the a
 
 Some administrators change the context roots that are used to access HCL Connections features. If the web address that you normally use to access the Activities feature has a value other than <server\_name\>/activities, specify the server URL using a syntax similar to this: http://enterprise.example.com/activities
 
-**Note:** Your administrator might have already provided a value for this field using an administrative policy. If so, do not change the value.
+!!! note
+    Your administrator might have already provided a value for this field using an administrative policy. If so, do not change the value.
 
 |
     |**User name**|Type your user name for logging in to the IBM® Connections server.|
@@ -61,7 +63,8 @@ For HCL Connections Cloud you need these settings:
 -   `com.ibm.lconn.client.base/authserver=`
 -   `com.ibm.lconn.client.base/policy-mode=OVERWRITE`
 
-**Note:** The Cloud URL also works if the user is enabled for a different data center.
+!!! note
+    The Cloud URL also works if the user is enabled for a different data center.
 
 **Attention:** Because the OVERWRITE flag resets the existing settings, it can create conflicts and generate additional log-in requests if users switch between different data centers. Do not preconfigure these settings if your users access more than one cloud data center.
 

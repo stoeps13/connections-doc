@@ -24,7 +24,8 @@ After preparing the migration tool, you are ready to run the migration service t
 
     Choose the migration option that best fits your deployment scenario.
 
-    **Note:** The term populate on this page refers to populating users profiles and the term migrate refers to the migration of user data such as network and community relationships.
+    !!! note
+    The term populate on this page refers to populating users profiles and the term migrate refers to the migration of user data such as network and community relationships.
 
     Run user population and migration
     :   Run the following command to populate all users from Connections Profiles and migrate their data to People relationship service. If the migration process was stopped, it resumes the migration from where it left off.
@@ -101,7 +102,8 @@ After preparing the migration tool, you are ready to run the migration service t
 
         resetflag can be true or false. If set to true, the tool will run the full migration for those users regardless if they were migrated before. Otherwise, it will only migrate those users who haven't been finished.
 
-        **Note:** After adding the user group, run `npm run start migrateUser` to start migration. Users in the canary group will be migrated first.
+        !!! note
+    After adding the user group, run `npm run start migrateUser` to start migration. Users in the canary group will be migrated first.
 
     Specify user credentials in the command line
     :   By default, the migration tool reads the user password from the configuration file. It also supports specifying the user name and password in the command line and it will ignore the password in the configuration file.

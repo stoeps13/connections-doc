@@ -39,7 +39,8 @@ File owners can allow other people to share files. When someone shares a file wi
 3.  Click **More** next to the file you want to follow, then **More Actions** and select **Follow** to get notified of changes to the file, such as edits or comments.
 
 |✔|✔|✔|
-|**Add a file to one of their folders****Note:** To add a file to a folder you do not own, you must have Editor access to the folder.
+|**Add a file to one of their folders**!!! note
+    To add a file to a folder you do not own, you must have Editor access to the folder.
 
 |✔|✔|✔|
 

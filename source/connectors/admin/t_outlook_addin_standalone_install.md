@@ -30,7 +30,8 @@ The Connections Add-in for Outlook relies on environment variables for configura
     -   CONNECTIONS\_NAME – A custom name for the add-in..\(default: 'HCL Connections'\)
     -   EWS\_HOSTNAME - The hostname for Exchange Web Services. Default: 'outlook.office365.com'
 
-**Note:** Take care about ingresses listed there. You should point to both frontend domain and internal domains, if both are used. Otherwise, only point to the one that is used in your case.
+!!! note
+    Take care about ingresses listed there. You should point to both frontend domain and internal domains, if both are used. Otherwise, only point to the one that is used in your case.
 
 **Loading the Connections Add-in for Outlook docker image**
 

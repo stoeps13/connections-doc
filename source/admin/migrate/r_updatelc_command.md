@@ -10,7 +10,8 @@ The updateSilent command:
 -   Uninstalls fixes
 -   Reports on the current state of applied fixes
 
-**Note:** The updateSilent command was called the updateLC command in previous releases of HCL Connections™.
+!!! note
+    The updateSilent command was called the updateLC command in previous releases of HCL Connections™.
 
 ## Command { .refsyn}
 
@@ -48,7 +49,8 @@ updateSilent.\{sh\|bat\}
 -installDir<directory\>
 :   Specifies the fully qualified installation root of the Connections product. By default, this directory is [connections\_root](../plan/i_ovr_r_directory_conventions.md).
 
-    **Note:** If you are applying fixes to an applications in a cluster, apply the fix to the first node and then do a full synchronization to push the fix to the other nodes.
+    !!! note
+    If you are applying fixes to an applications in a cluster, apply the fix to the first node and then do a full synchronization to push the fix to the other nodes.
 
 -uninstall
 :   Uninstalls the identified fix.
@@ -118,7 +120,8 @@ The following examples demonstrate how to perform common tasks with the updateSi
 -   The Connections installation root is:C:\\IBM\\Connections
 -   The fix repository is: C:\\IBM\\Connections\\updateInstaller\\fixes
 
-**Note:** The examples include carriage returns after each parameter to make the example easier to read. When using the command, do not add carriage returns after the parameters.
+!!! note
+    The examples include carriage returns after each parameter to make the example easier to read. When using the command, do not add carriage returns after the parameters.
 
 To install a collection of fixes:
 

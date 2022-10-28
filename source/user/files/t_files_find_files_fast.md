@@ -8,7 +8,8 @@ Locating your file is as easy as [performing a search](../eucommon/t_eucommon_se
 
 2.  Click **Recent** in the sidebar. If the sidebar is not already displayed, click the folder icon in the action bar to unhide it.
 
-    **Note:** If you want more space to display files, you can hide the sidebar again by clicking the folder icon.
+    !!! note
+    If you want more space to display files, you can hide the sidebar again by clicking the folder icon.
 
 3.  To find a particular file, type its name in the box.
 

@@ -34,5 +34,6 @@ Content Creation
 
 Slide automatically
 
-**Note:** If you encounter problems with loading images, review your image settings in the Admin Dashboard. For more information, see [Handling external images](cec-handling-external-images.md).
+!!! note
+    If you encounter problems with loading images, review your image settings in the Admin Dashboard. For more information, see [Handling external images](cec-handling-external-images.md).
 

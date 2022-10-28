@@ -23,14 +23,16 @@ Use search criteria to find files by keyword, or associated with people or commu
 
 **|Search for the name of the person or community to see files associated with them or click the view menu, choose Other Files, and choose the name of the person or community.
 
-**Note:** To search for public communities you must be using Connections 3 or higher.
+!!! note
+    To search for public communities you must be using Connections 3 or higher.
 
 |
     |**To search for files
 
 **|Select one of the search scopes: **People**, **My Communities**, **Communities** or **Files in this View** Type characters into the search field. Connections returns files associated with the person or community you specify, or with those characters in the title, description, or file contents. If you do not see a match for a person, click **Search directory** to search the complete directory in an attempt to find the person.
 
-**Note:** To search for public communities you must be using Connections 3 or higher.
+!!! note
+    To search for public communities you must be using Connections 3 or higher.
 
 |
 

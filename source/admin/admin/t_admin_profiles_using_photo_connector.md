@@ -19,7 +19,8 @@ The available attributes that are returned in the work entry are in the iterator
 -   key - specifies the user’s key value
 -   updated - specifies when the photo was last modified
 
-**Note:** The dump\_photos\_to\_files assembly line uses the Iterator mode.
+!!! note
+    The dump\_photos\_to\_files assembly line uses the Iterator mode.
 
 |
 |Lookup|Fetches records from the Photo table in the Profiles database according to specified search criteria, which is the key attribute.
@@ -38,7 +39,8 @@ The search \(link\) criteria can be either uid or key.
 
 The image attribute must include the byte array containing the photo.
 
-**Note:** The load\_photos\_from\_files assembly line uses the Update mode.
+!!! note
+    The load\_photos\_from\_files assembly line uses the Update mode.
 
 The search \(link\) criteria can be either uid or key.
 

@@ -6,7 +6,8 @@ To edit configuration files, you must use the wsadmin client. See [Starting the 
 
 The Activities content store is used to store files and other content that users add to their activities. If you want to change the location of the content store after installing Activities, you can do so by performing the steps in this procedure. If you want to maintain the existing content store, you can create a new content store in addition to the existing one. See *Defining multiple content stores* for more information.
 
-**Note:** Do not copy the network path shared\_content\_store/provision directory. This folder contains program binary files only. It does not contain user content.
+!!! note
+    Do not copy the network path shared\_content\_store/provision directory. This folder contains program binary files only. It does not contain user content.
 
 To move the content store, complete the following steps:
 
@@ -35,7 +36,8 @@ To move the content store, complete the following steps:
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes to separate directories in the file path, even if you are using the Microsoft™ Windows™ operating system.
 
-            **Note:** AIX®, and Linux™: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX®, and Linux™: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere® Application Server cell hosting the HCL Connections application. This argument is case-sensitive, so type it with care. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 
@@ -64,7 +66,8 @@ To move the content store, complete the following steps:
         root.directory property
         :   Edit the value of the property to reflect the file path of the new file system location.
 
-        **Note:** Do not change the value of the <id\> element. Activities relies on the <id\> element to map to the content store configuration.
+        !!! note
+    Do not change the value of the <id\> element. Activities relies on the <id\> element to map to the content store configuration.
 
     5.  Save and close the oa-config.xml file.
 

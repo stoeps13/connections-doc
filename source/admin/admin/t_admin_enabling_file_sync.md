@@ -6,7 +6,8 @@ Sync is available on the client by default, but is only visible when users conne
 
 **Attention:** Sync should be configured before the desktop clients are configured. If sync is configured after the desktop client plug-ins, users will have to refresh their server configuration manually.
 
-**Note:** Users can sync folders as well as files using My Drive. My Drive is available to users regardless of whether the file sync folder from a previous version of HCL Connections is available. When file sync is enabled, all files and folders in a user's My Drive will be synced to their My Drive folder on their desktop.
+!!! note
+    Users can sync folders as well as files using My Drive. My Drive is available to users regardless of whether the file sync folder from a previous version of HCL Connections is available. When file sync is enabled, all files and folders in a user's My Drive will be synced to their My Drive folder on their desktop.
 
 1.  To ensure that sync is enabled in Files, perform the following steps:
 2.  Check out files-config.xml by following the first two steps described in [Changing Files configuration property values](t_admin_files_changing_config_properties.md).
@@ -46,7 +47,8 @@ Sync is available on the client by default, but is only visible when users conne
              </properties>
         ```
 
-        **Note:** You might consider starting with a value that is 1/3 of the total of Web Container thread to limit the maximum number of concurrent file sync requests. It also can be used to ensure that enough threads are available to service web application requests and typical file upload and download activity.
+        !!! note
+    You might consider starting with a value that is 1/3 of the total of Web Container thread to limit the maximum number of concurrent file sync requests. It also can be used to ensure that enough threads are available to service web application requests and typical file upload and download activity.
 
 7.  By enabling Push Notification technology, the file sync feature scales to multiple clients and the clients can update their content faster when changes are made on the server. The clients detect the availability of the push service automatically. If you want to use push technology for file sync, the server configuration needs to be changed . The Push Notification service must be enabled in general and the specific configuration items for file sync must be enabled too.
 
@@ -81,7 +83,8 @@ Sync is available on the client by default, but is only visible when users conne
         </config>
         ```
 
-        **Note:** When the previous configuration items are changed, restart the Push Notifications and Files applications.
+        !!! note
+    When the previous configuration items are changed, restart the Push Notifications and Files applications.
 
 8.  If you changed the sync setting, restart the Files application.
 

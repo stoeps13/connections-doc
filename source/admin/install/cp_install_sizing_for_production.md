@@ -7,7 +7,8 @@ For production and high availability, you should have the following machines:
 -   At least three master nodes
 -   At least three non-infrastructure worker nodes
 
-**Note:** This number of nodes ensures only "by the book" high availability of all services. As described in the preceding topic, one master node would still work fine, but you would not have high availability.
+!!! note
+    This number of nodes ensures only "by the book" high availability of all services. As described in the preceding topic, one master node would still work fine, but you would not have high availability.
 
 ## Sizing the masters {#section_uzv_mt4_3mb .section}
 
@@ -15,7 +16,8 @@ For production and high availability, you should have the following machines:
 
 For the optimal production scenario, we recommend at least three masters.
 
-**Note:** Before you create your environment, be sure that you provision your cluster in a way that it can scale, so that you'll be able to add more nodes of any type later.
+!!! note
+    Before you create your environment, be sure that you provision your cluster in a way that it can scale, so that you'll be able to add more nodes of any type later.
 
 |Maximum Number of Nodes in Cluster|Resource Requirements|AWS Equivalent|
 |----------------------------------|---------------------|--------------|

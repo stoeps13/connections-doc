@@ -6,7 +6,8 @@ The HCL Connections Add-in for Microsoft Outlook is available as:
 
 -   As part of the HCL Connections Component Pack \(v7.0 or later\)
 
-    **Note:** Depending on product release schedules, the version of the Outlook Add-in available in Component Pack may be older than the version available as standalone. You can verify the versions within the [standalone docker image](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0085519&sys_kb_id=ecb956cedbb86014a45ad9fcd39619a8). If the standalone version is newer, follow the [Upgrading Component Pack Outlook Add-in with a Standalone docker image](t_ms_teams_update_websphere_for_sso.md) instructions.
+    !!! note
+    Depending on product release schedules, the version of the Outlook Add-in available in Component Pack may be older than the version available as standalone. You can verify the versions within the [standalone docker image](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0085519&sys_kb_id=ecb956cedbb86014a45ad9fcd39619a8). If the standalone version is newer, follow the [Upgrading Component Pack Outlook Add-in with a Standalone docker image](t_ms_teams_update_websphere_for_sso.md) instructions.
 
 -   As a [standalone docker image](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0085519&sys_kb_id=ecb956cedbb86014a45ad9fcd39619a8) that can be deployed in your environment.
 

@@ -2,7 +2,8 @@
 
 Use the rich text editor to create visually interesting blog posts, wiki articles, forum topics, and activity entries. The rich text editor is also used in Communities, Events, and Profiles.
 
-**Note:** This topic describes the default rich text editor in HCL Connections™, but your organization might have implemented TinyMCE editor.
+!!! note
+    This topic describes the default rich text editor in HCL Connections™, but your organization might have implemented TinyMCE editor.
 
 Use the rich text editor to enter and format text or to insert images and links. Depending on the application that you are using and how it is configured, some features of the editor might not be available. For example, you can insert an Adobe™ Flash movie into a blog entry but this capability is not available in a forum topic.
 
@@ -24,7 +25,8 @@ In the editor, hover your mouse cursor over an icon for a label that describes t
 
 |Copy formatting|Copy formatting from one part of a document and apply it to another part of the document. You can copy the formatting of text styles, table cells, and lists. List styles must be applied to a single list at a time. When the list style formatting is copied from one list to another, the list style and list type \(number to bullet and the reverse\) is applied only to the outer list. Text style \(font face, color, size, decoration, weight, background color\) is applied to the entire selection.
 
-**Note:** When you apply copy formatting from a table cell to another table cell or from a list to another list, the table cell style, list style, and text style also copied. Table cell or list style is not applied if you are copying formatting from a table cell to a list or text or if you are copy formatting from a list to a table cell or text.
+!!! note
+    When you apply copy formatting from a table cell to another table cell or from a list to another list, the table cell style, list style, and text style also copied. Table cell or list style is not applied if you are copying formatting from a table cell to a list or text or if you are copy formatting from a list to a table cell or text.
 
  **Procedure**
 
@@ -77,7 +79,8 @@ In both cases, use the keyboard to paste the content into the dialog and then cl
 
 |Insert image|Insert an image. Browse for an image on your computer, select an image that you already uploaded, or enter the URL for an image on the web. For more information, see the [Adding an image](t_eucommon_insert_image.md) topic. In some applications, you can paste an image instead of inserting it.
 
- **Note:** This function differs across applications. In most applications, for example, it is not possible to upload an image from your computer, paste an image, nor use an attached image that you already uploaded. Those abilities are supported in Blogs, Forums, and Wikis only. Moreover, pasting an image is supported in the Chrome, Firefox, and Safari browsers only; it is not supported in Internet Explorer.
+ !!! note
+    This function differs across applications. In most applications, for example, it is not possible to upload an image from your computer, paste an image, nor use an attached image that you already uploaded. Those abilities are supported in Blogs, Forums, and Wikis only. Moreover, pasting an image is supported in the Chrome, Firefox, and Safari browsers only; it is not supported in Internet Explorer.
 
 |
 |![Permanent pen icon](../wikis/images/Perm_Pen_image.PNG)
@@ -118,14 +121,16 @@ In both cases, use the keyboard to paste the content into the dialog and then cl
 
 |Insert iFrame|Embed external content such as a web page or video. You must supply the URL of the embedded content. You can specify parameters such as the width and height in pixels, and the visibility of the border and scrollbars.
 
-**Note:** This feature is available in Blogs, Forums, and Wikis only.
+!!! note
+    This feature is available in Blogs, Forums, and Wikis only.
 
 |
 |![Insert Flash Move](../wikis/images/flash.png)
 
 |Insert a flash movie|Insert an Adobe Flash movie. You must supply the URL of the Flash movie, which usually has a file name extension of .swf. For example, http://example.com/movie.swf. Some features of the editor are not available in certain apps. For example, you can insert an Adobe Flash movie into a blog post, but not into a forum topic. For more information, see the [Adding a video to your wiki page](../wikis/t_wikis_insert_image.md) and [Adding a video to your blog posting](../communities/t_com_add_video_to_blog.md) topics.
 
-**Note:** This feature is available in Blogs, Forums, and Wikis only.
+!!! note
+    This feature is available in Blogs, Forums, and Wikis only.
 
 |
 |![Insert page break](../wikis/images/page_break.png)

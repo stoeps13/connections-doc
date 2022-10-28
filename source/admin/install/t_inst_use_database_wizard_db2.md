@@ -8,7 +8,8 @@ When you are creating a database either with the database wizard or SQL scripts,
 
 If you use only one database instance and if that instance includes other databases besides HCL Connections, configure the numdb parameter to match the total number of databases on the instance. For more information, go to the [numdb](https://www.ibm.com/docs/db2/11.1?topic=dmcp-numdb-maximum-number-concurrently-active-databases-including-host-system-i-databases) topic in the IBM DB2 documentation.
 
-**Note:** Before removing \(or dropping\) a database, stop Connections first to ensure that no database connection is in use; otherwise you will not drop the user and the database removal will not occur.
+!!! note
+    Before removing \(or dropping\) a database, stop Connections first to ensure that no database connection is in use; otherwise you will not drop the user and the database removal will not occur.
 
 DB2 uses a user account called `lcuser`. If you are creating a DB2 database with SQL scripts, you must manually create the `lcuser` account on your operating system and then run the appGrants.sql script to grant the appropriate privileges to the `lcuser` account. When you use the database wizard, this script runs automatically. For more information, see the *Creating a dedicated DB2 user* topic.
 
@@ -20,7 +21,8 @@ DB2 uses a user account called `lcuser`. If you are creating a DB2 database with
 
     gtk2-2.10.6, pango-1.14.5, fontconfig-2.4.2, pkg-config-0.19, libjpeg-6b, freetype2-2.3.9, expat-2.0.1, zlib-1.2.3, xft-2.1.6, xcursor-1.1.7, glib-1.2.10, glib2-2.12.4, atk-1.12.3, gettext-0.10.40, libpng-1.2.32, and libtiff-3.8.2
 
-    **Note:** Some of these packages have dependencies on other packages. The AIX package installer alerts you to any additional packages that might be required.
+    !!! note
+    Some of these packages have dependencies on other packages. The AIX package installer alerts you to any additional packages that might be required.
 
 
 Use the HCL Connections database wizard to create, update, and remove databases.
@@ -46,7 +48,8 @@ To create databases with the wizard, complete the following steps:
 
 4.  Select the option to **Create** a database and click **Next**.
 
-    **Note:** On the option selection panel, you can choose **Export SQL commands list only**. This option exports the create command list for you. It does not validate database connectivity or perform any create tasks.
+    !!! note
+    On the option selection panel, you can choose **Export SQL commands list only**. This option exports the create command list for you. It does not validate database connectivity or perform any create tasks.
 
 5.  Enter the details of the database you wish to create and then click **Next**:
 

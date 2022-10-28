@@ -10,7 +10,8 @@ Ensure that you have configured WebSphere Application Server to use the Kerberos
 
 Select an Active Directory account to map to administrative roles in IBM WebSphere Application Server.
 
-**Note:** Don't use the same Active Directory account for the following roles:
+!!! note
+    Don't use the same Active Directory account for the following roles:
 
 -   The bind account configured under LDAP configuration in WAS.
 -   The application account
@@ -45,7 +46,8 @@ To map the Active Directory account, complete the following steps:
     4.  Select the check box for the account name and click **Next**.
     5.  If you are satisfied with the summary information, click **Finish**.
 
-        **Note:** If you subsequently change the password for the Active Directory account that you map in this step, you must also change the password for the ConnectionsAdmin J2C alias.
+        !!! note
+    If you subsequently change the password for the Active Directory account that you map in this step, you must also change the password for the ConnectionsAdmin J2C alias.
 
 3.  Update the messaging bus configuration. Complete the steps in the [Updating the messaging bus configuration when the connectionsAdmin user ID changes](../admin/t_admin_common_change_bus_password.md) topic.
 
@@ -59,7 +61,8 @@ To map the Active Directory account, complete the following steps:
     4.  Enter the new user name and password.
     5.  Click **Apply**.
 
-        **Note:** If you subsequently change the password for the Active Directory account that you map in this step, you must also change the password for the ConnectionsAdmin J2C alias.
+        !!! note
+    If you subsequently change the password for the Active Directory account that you map in this step, you must also change the password for the ConnectionsAdmin J2C alias.
 
 6.  \(Only required if you use Windows™ services for starting or stopping Connections\) Edit your Windows services to use your Active Directory account instead of wasadmin to start and stop Connections.
 

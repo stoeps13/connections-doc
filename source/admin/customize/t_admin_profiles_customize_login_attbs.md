@@ -8,9 +8,11 @@ Default mappings for uid and mail are provided. To use a mapping for loginId, re
 
 For more information on enabling and disabling access, see [Forcing users to log in before they can access an application](../secure/t_admin_common_force_authentication.md).
 
-**Note:** The login attributes described here refer to the Profiles database table, not the LDAP; the values you enter in the Admin Console refer to the LDAP. Thus if an LDAP field has been added using the Admin Console, you would not need to add it to the Profiles database using the procedure described here.
+!!! note
+    The login attributes described here refer to the Profiles database table, not the LDAP; the values you enter in the Admin Console refer to the LDAP. Thus if an LDAP field has been added using the Admin Console, you would not need to add it to the Profiles database using the procedure described here.
 
-**Note:** When editing the login table in the Profiles database, you can comment out login attributes that you do not need, but you should not use the login table to add new login attributes.
+!!! note
+    When editing the login table in the Profiles database, you can comment out login attributes that you do not need, but you should not use the login table to add new login attributes.
 
 1.  Start the wsadmin client from the following directory of the system on which you installed the Deployment Manager:
 
@@ -34,11 +36,13 @@ For more information on enabling and disabling access, see [Forcing users to log
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes \(/\) to separate directories in the file path, regardless of your operating system.
 
-            **Note:** In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
+            !!! note
+    In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
 
             -   AIX
             -   Linux
-            **Note:** The directory must grant write permissions or the command does not complete successfully.
+            !!! note
+    The directory must grant write permissions or the command does not complete successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the Profiles application. This argument is required. It is also case-sensitive. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor: print AdminControl.getCell\(\)
         For example:
@@ -65,7 +69,8 @@ For more information on enabling and disabling access, see [Forcing users to log
     </loginAttributes>
     ```
 
-    **Note:** The uid, mail, and loginId options are on the first side of the + in the map\_dbrepos\_from\_source.properties file and refer to data in the Profiles database table. The value on the other side of the = is the LDAP \(or function\) name.
+    !!! note
+    The uid, mail, and loginId options are on the first side of the + in the map\_dbrepos\_from\_source.properties file and refer to data in the Profiles database table. The value on the other side of the = is the LDAP \(or function\) name.
 
     -   The uid value pertains to the EMPLOYEE PROF\_UID column.
     -   The email value pertains to the PROF\_MAIL column.

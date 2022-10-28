@@ -4,7 +4,8 @@ The Communities catalog displays content from IBM® Connections communities in t
 
 Sources are connections to servers or clusters that contain IBM Connections communities. The servers publish metadata about their communities and places, and sources collect that metadata in an index. Community metadata then displays in lists of communities in the **I'm an Owner**, **I’m a Member**, **I’m Following**, **I’m Invited**, **Trash**, and **My Organization Communities** views. By default, metadata is collected automatically on a schedule, but you can control collections for each source.
 
-**Note:** Only places metadata is collected, not the actual community or place content.
+!!! note
+    Only places metadata is collected, not the actual community or place content.
 
 -   **[Configuring the Communities catalog administrator role](../admin/t_admin_communities_catalog_admin_role.md)**  
 To add sources and manage the Communities catalog, you must be a catalog administrator.

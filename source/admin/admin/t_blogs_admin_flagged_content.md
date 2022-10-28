@@ -10,7 +10,8 @@ When a user flags a blog entry or comment as inappropriate, it sets in motion a 
 
 1.  Notification is sent to the moderator that an entry or comment has been flagged. The notification includes information about the person flagging the content, a justification for the action, and a link to the entry. The entry or comment is posted to the Flagged Entries or Flagged Comments page in the Moderation interface for viewing and managing flagged content.
 
-    **Note:** There is a setting in the contentreview-config.xml file which determines whether notification is sent to a moderator or content reviewer as following:
+    !!! note
+    There is a setting in the contentreview-config.xml file which determines whether notification is sent to a moderator or content reviewer as following:
 
     -   If issueCategorization is disabled, then notification is sent to all the moderators.
     -   If issueCategorization is enabled, then the notification will only be sent to the reviewers defined under each issue category, but if reviewer information is not provided, the notification will still be sent to all the moderators.
@@ -20,12 +21,14 @@ When a user flags a blog entry or comment as inappropriate, it sets in motion a 
 5.  A moderator can send entries back to the author to update the content. Entries that have been returned display in the **Returned to Author** panel.
 6.  If the author resubmits the content, it is listed in the **Reposted** area so the moderator can review the updated content. If the content is acceptable, the reviewer can dismiss the flag so that the content can be published to the blog.
 
-**Note:** If Blogs is configured so that email notification is disabled, the automatic notifications used for this workflow are disabled. The following activities would require manual intervention:
+!!! note
+    If Blogs is configured so that email notification is disabled, the automatic notifications used for this workflow are disabled. The following activities would require manual intervention:
 
 -   When an entry is flagged as inappropriate, the reviewers will not receive email indicating there is a potentially offensive posting. Also, the person who flagged the message as inappropriate will not receive a confirmation email that the post they found offensive is being reviewed. Reviewers will have to periodically visit the Flagged Entries or Flagged Comments pages of the Moderation interface to see what entries need action and then manually send confirmation notification messages to the user who flagged the entry.
 -   If the reviewer quarantines a blog entry, or returns the entry to the author to be edited, the blog owner will not receive email notifications. The reviewer will have to manually send a notification message to the blog owner.
 
-**Note:** If your organization includes people with no email, the automatic notifications used for this workflow are disabled. The following activities would require manual intervention:
+!!! note
+    If your organization includes people with no email, the automatic notifications used for this workflow are disabled. The following activities would require manual intervention:
 
 -   If a reviewer has no email, when an entry or comment is flagged as inappropriate, the reviewer will not receive email indicating there is a potentially offensive posting. Reviewers will have to periodically visit the Flagged Entries or Flagged Comments pages of the Moderation interface to see what entries need action and then manually send confirmation notification messages to the user who flagged the entry.
 -   If the blog owner has no email, and the reviewer quarantines a blog entry, or returns the entry to the author to be edited, the blog owner will not receive email notifications. The reviewer will have to manually send a notification message to the blog owner.

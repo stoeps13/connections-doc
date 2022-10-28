@@ -43,7 +43,8 @@ Complete the following steps to set up OpenSearch Metrics:
     -   com.ibm.snx\_profiles.base.title - Mapped to the Role dimension in Metrics reports
     You can change the attribute mapping by completing the following steps:
 
-    **Note:** You should only change mappings with your first use of Metrics. Otherwise, Metrics data will be inconsistent and lead to incorrect report data.
+    !!! note
+    You should only change mappings with your first use of Metrics. Otherwise, Metrics data will be inconsistent and lead to incorrect report data.
 
     1.  Get the default mapping:
 

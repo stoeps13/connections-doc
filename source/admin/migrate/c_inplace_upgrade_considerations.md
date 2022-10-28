@@ -4,7 +4,8 @@ Both the in-place and hybrid approach use the Update function in IBM Installatio
 
 Alternatively, your deployment and needs might best align with a side-by-side upgrade. See [Considerations for a side-by-side upgrade](c_sbs_upgrade_considerations.md) to learn more.
 
-**Note:** If you are on a release prior to7.0 and planning an in-place or hybrid upgrade, refer to the Knowledge Article [**Road map for Upgrading Connections**](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0076286) for guidance on first upgrading to 7.0. .
+!!! note
+    If you are on a release prior to7.0 and planning an in-place or hybrid upgrade, refer to the Knowledge Article [**Road map for Upgrading Connections**](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0076286) for guidance on first upgrading to 7.0. .
 
 ## Planning an in-place upgrade {#section_gtv_3cm_qqb .section}
 
@@ -23,7 +24,8 @@ This approach is a multi-stage process that requires setting up a new environmen
 -   Evaluate data integrity in the new environment now that production data is migrated.
 -   Complete any remaining post-migration tasks.
 
-**Note:** If Component Pack is part of your deployment, the Connections 8.0 upgrade brings some additional configurations into play, like the OpenSearch configuration in LCC.xml. For a hybrid upgrade, it makes sense to implement some configuration changes in the new environment before performing the upgrade.
+!!! note
+    If Component Pack is part of your deployment, the Connections 8.0 upgrade brings some additional configurations into play, like the OpenSearch configuration in LCC.xml. For a hybrid upgrade, it makes sense to implement some configuration changes in the new environment before performing the upgrade.
 
 ## Connections customizations {#section_qwk_qvr_qqb .section}
 

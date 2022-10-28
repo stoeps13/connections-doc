@@ -31,7 +31,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
         -   Windows: startNode.bat
 3.  Copy the installation files to the system that hosts the Deployment Manager.
 
-    **Note:** Ensure that the directory path that you enter contains no spaces.
+    !!! note
+    Ensure that the directory path that you enter contains no spaces.
 
 4.  From the Installation Manager directory, run the file to start the Installation Manager and add the repository to it as follows:
 
@@ -41,7 +42,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     -   AIX or Linux: Connections set-up\\HCL\_Connections\_Install\\HCLConnections\\repository.config
     -   Windows: Connections set-up\\HCL\_Connections\_Install\\HCLConnections\\repository.config
-    **Note:** Installation Manager might ask you to upgrade the Installation Manager. Connections bundles only the 64-bit, version 1.8.5.1 Installation Manager.
+    !!! note
+    Installation Manager might ask you to upgrade the Installation Manager. Connections bundles only the 64-bit, version 1.8.5.1 Installation Manager.
 
 5.  When IBM Installation Manager is launched, in the Select packages to install window, select the packages that you want to install, and then click **Next** to continue.
 
@@ -54,7 +56,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
 7.  Specify the location of the installation directory for HCL Connections. You can accept the default directory location, enter a new directory name, or click **Browse** to select an existing directory. Click **Next.**
 
-    **Note:** The path must consist of letters \(a-z, A-Z\), numbers \(0-9\), and an underscore \(\_\).
+    !!! note
+    The path must consist of letters \(a-z, A-Z\), numbers \(0-9\), and an underscore \(\_\).
 
 8.  Confirm the applications that you want to install and click **Next**. You can select from the following options:
 
@@ -62,7 +65,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     -   The wizard always installs the Home page, News, and Search, Common, Files, Push Notification, Rich Text Editors, and Widget Container applications, which are core features.
 
-        **Note:** If you install Communities and want users to be able to add the Rich Content app in a community, you must also install Wikis now.
+        !!! note
+    If you install Communities and want users to be able to add the Rich Content app in a community, you must also install Wikis now.
 
     -   Install Metrics now so that your application data is captured from the moment that HCL Connections is deployed. If you install Metrics at a later stage, you will not have any data reports for the period before you installed Metrics.
         |**HCL Connections 8.0**|Install all HCL Connections applications.|
@@ -100,16 +104,19 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
         Administrator ID
         :   The administrative ID of the DM.
 
-            **Note:** This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java™ EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Tivoli® Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
+            !!! note
+    This ID is set to the connectionsAdmin J2C authentication alias, which is mapped to the following Java™ EE roles: dsx-admin, widget-admin, and search-admin. It is also used by the service integration bus. If you plan to use security management software such as Tivoli® Access Manager or SiteMinder, the ID that you specify here must exist in the LDAP directory. For more information, see the *Switching to unique administrator IDs for system level communication* topic.
 
-            **Note:** This user account can be an LDAP or local repository user.
+            !!! note
+    This user account can be an LDAP or local repository user.
 
         Administrator Password
         :   The password for the administrative ID of the DM.
 
     3.  Click **Validate** to verify the DM information that you entered and that application security is enabled on WebSphere Application Server. If the verification fails, IBM Installation Manager displays an error message.
 
-        **Note:** \(AIX and Linux\) The validation process checks the number of open files that are supported by your system. If the value for this parameter, which is known as the **Open File Descriptor limit**, is too low, a file open error, memory allocation failure, or connection establishment error could occur. If one of these errors occurs, exit the installation wizard and increase the open file limit before restarting the wizard. To set the file limit, refer to the [Installation error messages](../troubleshoot/r_error_codes_install.md) topic and search for error code CLFRP0042E. The recommended value for HCL Connections is 8192. For more information about the Open File Descriptor limit, see the documentation for your operating system.
+        !!! note
+    \(AIX and Linux\) The validation process checks the number of open files that are supported by your system. If the value for this parameter, which is known as the **Open File Descriptor limit**, is too low, a file open error, memory allocation failure, or connection establishment error could occur. If one of these errors occurs, exit the installation wizard and increase the open file limit before restarting the wizard. To set the file limit, refer to the [Installation error messages](../troubleshoot/r_error_codes_install.md) topic and search for error code CLFRP0042E. The recommended value for HCL Connections is 8192. For more information about the Open File Descriptor limit, see the documentation for your operating system.
 
     4.  When the verification test is successful, click **Next**.
 
@@ -130,37 +137,44 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
         1.  Select the **Medium deployment** topology.
         2.  Select the default value or enter a **Cluster name** for each application or for groups of applications. For example, use Cluster1 for Activities, Communities, and Forums.
 
-            **Note:** IBM Installation Manager creates servers and clusters when required.
+            !!! note
+    IBM Installation Manager creates servers and clusters when required.
 
         3.  Select a **Node** for each cluster. Accept the predefined node or select a different node.
 
-            **Note:** These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
+            !!! note
+    These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
 
         4.  Enter a **Server member** name for the selected node. Choose the default or enter a custom name.
 
-            **Note:** If you enter a custom server member name, the name must be unique across all nodes in your deployment.
+            !!! note
+    If you enter a custom server member name, the name must be unique across all nodes in your deployment.
 
         5.  Click **Next**.
     -   Large deployment:
         1.  Select the **Large deployment** topology.
         2.  Enter a **Cluster name** for each application.
 
-            **Note:** IBM Installation Manager creates servers and clusters when required.
+            !!! note
+    IBM Installation Manager creates servers and clusters when required.
 
         3.  Select a **Node** for each cluster. Accept the predefined node or select a different node.
 
-            **Note:** These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
+            !!! note
+    These nodes host application server instances that serve HCL Connections applications. You can assign multiple nodes to a cluster, where each node is a server member of that cluster.
 
         4.  Enter a **Server member** name for the selected node. Choose the default or enter a custom name.
 
-            **Note:** If you enter a custom server member name, the name must be unique across all nodes in your deployment.
+            !!! note
+    If you enter a custom server member name, the name must be unique across all nodes in your deployment.
 
         5.  Click **Next**.
 11. Enter the database information:
 
     1.  Use the same database server or instance: Select **Yes** or **No**.
 
-        **Note:** If allowed by your database configuration, you can select multiple database instances as well as different database servers.
+        !!! note
+    If allowed by your database configuration, you can select multiple database instances as well as different database servers.
 
     2.  Select a **Database type** from one of the following options:
 
@@ -173,7 +187,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     4.  Enter the **Port** number of the database server. The default values are: 50000 or 25000 for DB2®, 1521 for Oracle, and 1433 for SQL Server.
 
-        **Note:** For DB2, 50000 is the default port number for DB2 v11.5.5 and earlier, and 25000 is the default for DB2 v11.5.6 and later.
+        !!! note
+    For DB2, 50000 is the default port number for DB2 v11.5.5 and earlier, and 25000 is the default for DB2 v11.5.6 and later.
 
         If your installed applications use different database servers or instances, enter the port number for each database server or instance.
 
@@ -196,7 +211,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
         DB2
         :   db2jcc4.jar and db2jcc\_license\_cu.jar
 
-            **Note:** Ensure that your user account has the necessary permissions to access the DB2 JDBC files.
+            !!! note
+    Ensure that your user account has the necessary permissions to access the DB2 JDBC files.
 
         Oracle
         :   ojdbc8.jar
@@ -218,7 +234,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
         IBM Installation Manager tests your database connection with the database values that you supplied. You can change the database configuration later in the WebSphere Application Server Integrated Solutions Console.
 
-        **Note:** Usually you can continue even if the validation failed because you can change the database settings from WebSphere Application Server Integrated Solutions Console afterward.
+        !!! note
+    Usually you can continue even if the validation failed because you can change the database settings from WebSphere Application Server Integrated Solutions Console afterward.
 
 12. Select a Notification solution. Notifications are email messages to users about new information and events in your HCL Connections deployment.
 
@@ -292,7 +309,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     1.  Enter a **domain name**. For example: mail.example.com.
 
-        **Note:** This domain name is used to build the ReplyTo address. The address consists of the suffix or prefix, a unique key, and the domain name.
+        !!! note
+    This domain name is used to build the ReplyTo address. The address consists of the suffix or prefix, a unique key, and the domain name.
 
     2.  The reply email address is given a unique ID by the system. You can customize the address by adding a prefix or suffix, using a maximum of 28 characters. This extra information is useful if the domain name is already in use for other purposes. Select one of the following options:
 
@@ -325,7 +343,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     4.  Click **Next**.
 
-    **Note:** You can modify the ReplyTo settings after installation. To edit the domain name and prefix or suffix, edit the news-config.xml file. To edit the server and authentication details, log in to the WebSphere Application Server Integrated Solutions Console and navigate to the Mail Sessions page, where you can edit the configuration.
+    !!! note
+    You can modify the ReplyTo settings after installation. To edit the domain name and prefix or suffix, edit the news-config.xml file. To edit the server and authentication details, log in to the WebSphere Application Server Integrated Solutions Console and navigate to the Mail Sessions page, where you can edit the configuration.
 
 15. In the Role Mapping window, you can add administrative users. Enter the LDAP user names to map them to the admin role. If that role is empty, the Application server administrative user is mapped to the role by default.
 
@@ -352,7 +371,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     2.  Select the nodes and click **Full Resynchronize**.
 
-    **Note:** Wait until the DM copies all the application EAR files to the installedApps directory on each of the nodes. This process can take up to 30 minutes.
+    !!! note
+    Wait until the DM copies all the application EAR files to the installedApps directory on each of the nodes. This process can take up to 30 minutes.
 
     To verify that the DM has distributed the application EAR files to the nodes, check the SystemOut.logfile of each node agent. The default path to the SystemOut.logfile on a node is [profile\_root](../plan/i_ovr_r_directory_conventions.md)/logs/nodeagent.
 
@@ -362,7 +382,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     If you chose to configure the WebServer during the install, the settings and configuration for Connections will use the IBM HTTP Server URL for communication. Ensure the HTTP Server plugin is configured to access the different Connections components.
 
-    **Note:** The following examples are only for Unix. If **WebSphere Application server** is enabled then trust the HTTP Server certificate
+    !!! note
+    The following examples are only for Unix. If **WebSphere Application server** is enabled then trust the HTTP Server certificate
 
     1.  If not already open, open a browser to the [Integrated Solutions Console](http://cprice6l.swg.usma.ibm.com:9060/ibm/console) and login.
 
@@ -376,7 +397,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     6.  At the bottom of the file find the following line: `LoadModule was_ap22_module /opt/IBM/WebSphere/Plugins/bin/64bits/mod_was_ap22_http.so WebSpherePluginConfig /opt/IBM/WebSphere/Plugins/config/webserver1/plugin-cfg.xml`.
 
-        **Note:** Make sure the value for `WebSpherePluginConfig` matches where the `plugin-cfg.xml` was propagated. If they don't match, either manually copy the `plugin-cfg.xml` to the location specified in `httpd.conf`, or update`httpd.conf` to look in the correct location.
+        !!! note
+    Make sure the value for `WebSpherePluginConfig` matches where the `plugin-cfg.xml` was propagated. If they don't match, either manually copy the `plugin-cfg.xml` to the location specified in `httpd.conf`, or update`httpd.conf` to look in the correct location.
 
     7.  Close the `httpd.conf`.
 
@@ -392,7 +414,8 @@ Assuming you made any of the modifications suggested, restart the Deployment Man
 
     3.  Select the HCL Connections clusters and click **Start**.
 
-    **Note:** If some applications do not start, the file-copying process might not have completed. Wait a few minutes and start the applications. In case the Connections applications are installed on different clusters, the cluster start order should start with the core features, then move to the other features:
+    !!! note
+    If some applications do not start, the file-copying process might not have completed. Wait a few minutes and start the applications. In case the Connections applications are installed on different clusters, the cluster start order should start with the core features, then move to the other features:
 
     -   Hompage cluster
     -   News cluster

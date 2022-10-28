@@ -81,7 +81,8 @@ To set up SSO using Security Access Manager with SPNEGO, complete the following 
 
     , adding a Tivoli Allow access to the Embedded Experience gadget, and [adding an authenticator property](t_secure_with_tam.md#AddATivoliAccessManagerCustomAuthe). You need to use the HTTP Server URLs and the DefaultAuthenticator property in this configuration.
 
-    **Note:** This procedure enables a fallback authentication method for user systems that do not support SPNEGO. This alternative is important for users of Notes®, mobile devices, and other extensions for Connections.
+    !!! note
+    This procedure enables a fallback authentication method for user systems that do not support SPNEGO. This alternative is important for users of Notes®, mobile devices, and other extensions for Connections.
 
 7.  Files and wikis display the log in button in Siteminder and SPNEGO configuration even though the user is logged in. This occurs in public files and wikis pages as the server does not require user authentication for public pages. To solve this issue, you need to disable anonymous for wikis by mapping 'reader' to 'All authenticated in application's realm'. This change needs to be done for all SPNEGO-related configurations and not just Siteminder and SPNEGO configuration. To remove the log in string for both Files and Wikis on SPNEGO configurations, follow these steps:
 
@@ -93,12 +94,14 @@ To set up SSO using Security Access Manager with SPNEGO, complete the following 
     -   Click **Map special subjects** in the drop-down menu, then click **All authenicated in application's realm**.
     -   Click **OK**, then click **Save**.
 
-        **Note:** These steps need to be completed for Files and Wikis. Once the steps are done, restart the configuration to see the changes.
+        !!! note
+    These steps need to be completed for Files and Wikis. Once the steps are done, restart the configuration to see the changes.
 
 
 After users sign in to the Windows desktop, they are automatically signed into Connections.
 
-**Note:** If you are using on-ramp plug-ins or mobile services, your data traffic is not authenticated by Kerberos tickets or SPNEGO tokens. It is instead authenticated through Java EE form-based authentication.
+!!! note
+    If you are using on-ramp plug-ins or mobile services, your data traffic is not authenticated by Kerberos tickets or SPNEGO tokens. It is instead authenticated through Java EE form-based authentication.
 
 For more information about Kerberos and SPNEGO, refer to [SPNEGO protocol and Kerberos authentication](https://www.ibm.com/docs/sva/9.0.1?topic=concepts-spnego-protocol-kerberos-authentication) in the IBM Security Access Manager documentation.
 

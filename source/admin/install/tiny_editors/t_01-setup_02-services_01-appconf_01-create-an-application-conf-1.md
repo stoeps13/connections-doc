@@ -9,7 +9,8 @@ Create a configuration file to define the settings for the Tiny Editors Services
     |**/opt/ephox/application.conf**|On Unix, Linux or AIX|
     |**C:\\opt\\ephox\\application.conf**|On Windows: where C is the boot drive for your system.|
 
-    **Note:** Use a plain text editor to avoid inserting invalid formatting or symbols into application.conf. Do not use a rich text editor such as Microsoft Word for editing configuration files.
+    !!! note
+    Use a plain text editor to avoid inserting invalid formatting or symbols into application.conf. Do not use a rich text editor such as Microsoft Word for editing configuration files.
 
 2.  Add the [`ephox.allowed-origins.origins` setting](r_application-conf.md#).
 

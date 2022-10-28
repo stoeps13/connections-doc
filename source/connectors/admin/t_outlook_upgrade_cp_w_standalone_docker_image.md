@@ -24,7 +24,8 @@ The deployed docker image can be updated using either the new Helm charts or by 
     helm upgrade -f <PATH_TO_OVERRIDE_YAML_FILE> -n <NAME_SPACE> connections-outlook-desktop <HELM_CHART_PATH>
     ```
 
-    **Note:** There is a node port change in the Outlook Add-in 21.10 helm chart, if you are upgrading from an older version, you will need to update HTTPD configuration after upgrading. Update the rules below to your **httpd.conf**for your IHS servers and restart IHS. Substitute the appropriate values for the variables shown like <VARIABLE\>:
+    !!! note
+    There is a node port change in the Outlook Add-in 21.10 helm chart, if you are upgrading from an older version, you will need to update HTTPD configuration after upgrading. Update the rules below to your **httpd.conf**for your IHS servers and restart IHS. Substitute the appropriate values for the variables shown like <VARIABLE\>:
 
     ``` {#codeblock_gyn_m4r_jrb}
     #proxy rules for outlook add-in 

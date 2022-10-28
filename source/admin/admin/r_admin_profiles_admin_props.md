@@ -193,7 +193,8 @@ ProfilesService.purgeEventLogsByEventNameAndDates\(eventName, string startDate, 
 ProfilesService.reloadFullReportsToCache\(\)
 :   Forces a reload of the full report-to chain cache from the Profiles database. This command does not take any arguments.
 
-    **Note:** If the full report-to cache is disabled, it cannot be reloaded. This command fails when the cache is disabled.
+    !!! note
+    If the full report-to cache is disabled, it cannot be reloaded. This command fails when the cache is disabled.
 
 ProfilesService.updateDescription\(String user\_email\_addr, String new\_content\_for\_description\_field\)
 ProfilesService.updateDescription\(String user\_email\_addr, String new\_content\_for\_description\_field, String orgId\)
@@ -213,7 +214,8 @@ ProfilesService.updateDescription\(String user\_email\_addr, String new\_content
     "Text to display in About Me tab for Ann",orgId="0000000045")
     ```
 
-    **Note:** Rich text cannot be entered with this command.
+    !!! note
+    Rich text cannot be entered with this command.
 
 ProfilesService.updateExperience\(String user\_email\_addr, String new\_content\_for\_experience\_field\)
 ProfilesService.updateExperience\(String user\_email\_addr, String new\_content\_for\_experience\_field, String orgId\)
@@ -233,7 +235,8 @@ ProfilesService.updateExperience\(String user\_email\_addr, String new\_content\
     "Text to display in Background field for Ann",orgId="0000000045")
     ```
 
-    **Note:** Rich text cannot be entered with this command.
+    !!! note
+    Rich text cannot be entered with this command.
 
 ProfilesService.getRoles\(String user\_email\_addr\)
 :   Retrieves the role that is associated with a user's email address. The parameter is the email address of the user whose role you are retrieving.
@@ -286,7 +289,8 @@ ProfilesService.setRole\(String user\_email\_addr, String role\)
     -   EMPLOYEE\_EXTENDED: Assign this role to users who are allowed to create content that is visible to external users. EMPLOYEE\_EXTENDED is a constant that resolves to the string "employee.extended".
     -   DEFAULT\_ROLE: Equivalent to EMPLOYEE.
 
-    **Note:** You cannot assign a role to an external user. External users have the VISITOR role, which cannot be changed.
+    !!! note
+    You cannot assign a role to an external user. External users have the VISITOR role, which cannot be changed.
 
     For example:
 
@@ -307,7 +311,8 @@ ProfilesService.setRoleByUserId\(String user\_external\_id, String role\)
     -   EMPLOYEE\_EXTENDED: Assign this role to users who are allowed to create content that is visible to external users. EMPLOYEE\_EXTENDED is a constant that resolves to the string "employee.extended".
     -   DEFAULT\_ROLE: Equivalent to EMPLOYEE.
 
-    **Note:** You cannot assign a role to an external user. External users have the VISITOR role, which cannot be changed.
+    !!! note
+    You cannot assign a role to an external user. External users have the VISITOR role, which cannot be changed.
 
     For example:
 
@@ -327,7 +332,8 @@ ProfilesService.setBatchRole\(String role, String filename\)
     -   role: The role to assign to each user in the list.
     -   filename: The name of the text file containing the list of users. The text file must be locally accessible from the client environment and must contain one valid email address per line. This command assigns the specified role to each user whose email addresses is listed in this file.
 
-        **Note:** If you are processing several hundreds of users, create several files and execute them in separate commands.
+        !!! note
+    If you are processing several hundreds of users, create several files and execute them in separate commands.
 
 
     You can assign one of the following roles to internal users:
@@ -336,7 +342,8 @@ ProfilesService.setBatchRole\(String role, String filename\)
     -   EMPLOYEE\_EXTENDED: Assign this role to users who are allowed to create content that is visible to external users. EMPLOYEE\_EXTENDED is a constant that resolves to the string "employee.extended".
     -   DEFAULT\_ROLE: Equivalent to EMPLOYEE.
 
-    **Note:** You cannot assign a role to an external user. External users have the VISITOR role, which cannot be changed.
+    !!! note
+    You cannot assign a role to an external user. External users have the VISITOR role, which cannot be changed.
 
     For example:
 
@@ -360,7 +367,8 @@ ProfilesService.setBatchRoleByUserId\(String role, String filename\)
     -   role: The role to assign to each user in the list.
     -   filename: The name of the text file containing the list of user IDs. The text file must be locally accessible from the client environment and must contain one valid user ID per line. This command assigns the specified role to each user whose ID is listed in this file.
 
-        **Note:** If you are processing several hundreds of users, create several files and execute them in separate commands.
+        !!! note
+    If you are processing several hundreds of users, create several files and execute them in separate commands.
 
 
     You can assign one of the following roles to internal users:
@@ -369,7 +377,8 @@ ProfilesService.setBatchRoleByUserId\(String role, String filename\)
     -   EMPLOYEE\_EXTENDED: Assign this role to users who are allowed to create content that is visible to external users. EMPLOYEE\_EXTENDED is a constant that resolves to the string "employee.extended".
     -   DEFAULT\_ROLE: Equivalent to EMPLOYEE.
 
-    **Note:** You cannot assign a role to an external user. External users have the VISITOR role, which cannot be changed.
+    !!! note
+    You cannot assign a role to an external user. External users have the VISITOR role, which cannot be changed.
 
     For example:
 

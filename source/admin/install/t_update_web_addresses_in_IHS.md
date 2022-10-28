@@ -59,7 +59,8 @@ To update the web addresses to your HCL Connections applications, complete the f
 
     </sloc:href\>
 
-    **Note:** If you plan to use a reverse proxy, the web addresses defined in this file must be updated to match the appropriate proxy server URLs. Go to the [HCL Connections wiki](http://www-10.lotus.com/ldd/lcwiki.nsf/) for more information about deployment scenarios, including how to configure a reverse proxy.
+    !!! note
+    If you plan to use a reverse proxy, the web addresses defined in this file must be updated to match the appropriate proxy server URLs. Go to the [HCL Connections wiki](http://www-10.lotus.com/ldd/lcwiki.nsf/) for more information about deployment scenarios, including how to configure a reverse proxy.
 
 4.  Save and check in the LotusConnections-config.xml file.
 

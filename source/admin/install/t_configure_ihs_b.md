@@ -16,7 +16,8 @@ To configure IBM HTTP Server for encrypted connections, complete the following s
 
     3.  Enter a name for the new key file. For example, *hostname-key.kdb*. Click **OK**.
 
-        **Note:** Do not overwrite the default Plugin-key.kdb file because that file might be accessed by other applications.
+        !!! note
+    Do not overwrite the default Plugin-key.kdb file because that file might be accessed by other applications.
 
     4.  Enter a password in the Password Prompt dialog box, and confirm the password. Select **Stash the password to a file** and then click **OK**. The new key database should display in the iKeyman utility.
 

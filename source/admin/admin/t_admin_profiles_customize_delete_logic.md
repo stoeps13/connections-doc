@@ -39,7 +39,8 @@ HCL Connections provides a plug-in point for defining and using custom IBM Secur
 
 4.  Add a reference to the profiles property store to your adapter files by running the fixup\_tdi\_adapters.sh or fixup\_tdi\_adapters.bat command.
 
-    **Note:** This reference is required to use the Profiles Tivoli Directory Integrator adapter. Even if you do not believe that your adapter file requires access to the profiles property store, there is no penalty for adding the reference so it is strongly advised that you run this command regardless.
+    !!! note
+    This reference is required to use the Profiles Tivoli Directory Integrator adapter. Even if you do not believe that your adapter file requires access to the profiles property store, there is no penalty for adding the reference so it is strongly advised that you run this command regardless.
 
 5.  Open the profiles\_tdi.properties file from the following location:
 

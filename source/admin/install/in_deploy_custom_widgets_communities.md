@@ -76,5 +76,6 @@ To enable the custom widgets for Communities, you must copy files to the HCL Con
 
 To quickly check the setup, log in to Connections. Create a community, click **Community actions** \> **Add apps**. The Surveys widget and Featured Survey are deployed with the other tools. Add the Surveys and Featured Survey widgets to your community. Your users are ready to build a survey.
 
-**Note:** A user with an admin role is not necessarily an active community member. You must be an owner of a community to work with communities. An admin cannot work as a community member during the integration.
+!!! note
+    A user with an admin role is not necessarily an active community member. You must be an owner of a community to work with communities. An admin cannot work as a community member during the integration.
 

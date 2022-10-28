@@ -46,7 +46,8 @@ When you add an OpenSocial gadget to the Share dialog, an additional tab is disp
 
     Each widget instance has its own properties. For example, if you are using a widget that displays bookmarks for a specific tag, you can enable multiple instances of the widget so that you can follow different tags in each widget.
 
-    **Note:** This setting is applicable only for iWidgets. Only one instance of an OpenSocial gadget can be loaded at a time.
+    !!! note
+    This setting is applicable only for iWidgets. Only one instance of an OpenSocial gadget can be loaded at a time.
 
 15. Select opensocial as a required application in the Prerequisites area.
 

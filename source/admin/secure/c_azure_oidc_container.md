@@ -13,7 +13,8 @@ Enabling this single sign-on in Connections involves completing three major step
 -   Updating WebSphere to support single sign-on with Connections
 -   Configuring Connections to support Azure
 
-**Note:** You will use values from WebSphere TAI when adding the Connections app in Azure. Then use some Azure application values to complete the WebSphere configuration.
+!!! note
+    You will use values from WebSphere TAI when adding the Connections app in Azure. Then use some Azure application values to complete the WebSphere configuration.
 
 -   **[Adding an application in Azure AD for SSO with Connections](../secure/t_azure_add_app.md)**  
 Part of setting up single sign-on with OIDC involves registering an application in Microsoft Azure Active Directory.

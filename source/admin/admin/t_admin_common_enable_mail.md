@@ -4,7 +4,8 @@ Edit configuration settings to enable email notifications in the HCL Connections
 
 Only complete this procedure if you did not enable email notifications during the product installation. Also, be sure to complete the steps described in [Sending mail from any available mail server](t_admin_common_config_mail_dnx.md) or [Sending mail from a dedicated mail server](t_admin_common_config_mail_was.md).
 
-**Note:** If your organization is implementing the new look for email notifications introduced in CR4, skip this topic and see [Enabling email notifications](t_admin_common_enable_template.md).
+!!! note
+    If your organization is implementing the new look for email notifications introduced in CR4, skip this topic and see [Enabling email notifications](t_admin_common_enable_template.md).
 
 You might choose not to enable email notifications if you have configured HCL Connections to hide email addresses, for example. Even when you do not enable email notifications, if you installed the Home page application, the product still supports a subset of notifications that can be displayed in the Home page application. The subset includes the notifications of type "Directed," which are listed in *Configuring notifications*.
 
@@ -44,7 +45,8 @@ When you set the enabled property to false globally or for a specific source, th
     </source>
     ```
 
-    **Note:** When you disable notifications during the installation process, all the email channels are set to false. Source events are left at true because notification events are still valid to be sent and displayed in the Home page activity stream. Setting the entire source to false disables all events, which means that notification emails will not be sent and will not display in the My Notifications view in the Home page.
+    !!! note
+    When you disable notifications during the installation process, all the email channels are set to false. Source events are left at true because notification events are still valid to be sent and displayed in the Home page activity stream. Setting the entire source to false disables all events, which means that notification emails will not be sent and will not display in the My Notifications view in the Home page.
 
 6.  Save, close, and then check in the notification-config.xml file as described in [Accessing the notification configuration file](t_admin_common_checkout_notification_config.md).
 

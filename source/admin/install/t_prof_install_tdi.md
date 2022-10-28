@@ -12,7 +12,8 @@ Before you attempt to configure Security Directory Integrator, complete the foll
     2.  Install Java for SDI, Refer to [Deploying Security Directory Integrator into a new install of Connections](t_prof_tdi_new_deploy.md) for additional information.
 2.  Create the Profiles database.
 
-    **Note:** The internal name of the Profiles database is PEOPLEDB.
+    !!! note
+    The internal name of the Profiles database is PEOPLEDB.
 
 3.  If your database uses a database driver that requires Java 8, or you otherwise require Java 8 when running the IBM Security Directory Integrator, see this article for instructions: [Using IBM Security Directory Integrator with Java 8 and HCL Connections 6.5 or 7.0](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0094191). Perform the following task, and then complete the rest of the tasks in [Populating the Profiles database](t_prof_install_profiles_db.md). Note that you must use the manual population method when using Java 8, not the population wizard.
 
@@ -30,7 +31,8 @@ To configure Security Directory Integrator, complete the following steps:
 
 2.  Make the database available to Security Directory Integrator by doing one of the following, depending on the database software provider:
 
-    **Note:** The following information assumes that the database server is on a separate system.
+    !!! note
+    The following information assumes that the database server is on a separate system.
 
     If the database is hosted on a separate system, copy the database JAR file to the system hosting Security Directory Integrator.
 
@@ -51,11 +53,13 @@ To configure Security Directory Integrator, complete the following steps:
 
         Paste the files into a temporary location on the system where Security Directory Integrator is installed. The wizard will prompt for this location and copy the files into the jvm/jre/lib/ext subdirectory of Security Directory Integrator.
 
-    **Note:** As a result of this step, the database files are placed in the jvm/jre/lib/ext SDI directory. This directory is on the SDI classpath, but in rare circumstances may not be close enough to the beginning of the path. If SDI throws an exception that seems to be Java related, try putting the database JAR files in the jars\\3rdparty\\others SDI directory.
+    !!! note
+    As a result of this step, the database files are placed in the jvm/jre/lib/ext SDI directory. This directory is on the SDI classpath, but in rare circumstances may not be close enough to the beginning of the path. If SDI throws an exception that seems to be Java related, try putting the database JAR files in the jars\\3rdparty\\others SDI directory.
 
 3.  Edit the ibmdisrv file to increase runtime memory. To increase the runtime memory, add the two -Xms1024M -Xmx2048M space-separated arguments to the Java™ invocation command.
 
-    **Note:** On Linux systems the file name is ibmdisrv. On Windows systems the file name is ibmdisrv.bat. On both systems the file is located in the main SDI directory.
+    !!! note
+    On Linux systems the file name is ibmdisrv. On Windows systems the file name is ibmdisrv.bat. On both systems the file is located in the main SDI directory.
 
     -   AIX® or Linux:ibmdisrv
 
@@ -66,7 +70,8 @@ To configure Security Directory Integrator, complete the following steps:
         "$TDI_HOME_DIR/IDILoader.jar" "$LOG_4J" com.ibm.di.loader.ServerLauncher "$@" &
         ```
 
-        **Note:** Do not copy and paste the example into your ibmdisrv file. Add the two arguments without changing any of the other arguments.
+        !!! note
+    Do not copy and paste the example into your ibmdisrv file. Add the two arguments without changing any of the other arguments.
 
     -   Windows™: ibmdisrv.bat
 
@@ -78,9 +83,11 @@ To configure Security Directory Integrator, complete the following steps:
         
         ```
 
-        **Note:** Do not copy and paste the example into your ibmdisrv.bat file. Add the two arguments without changing any of the other arguments.
+        !!! note
+    Do not copy and paste the example into your ibmdisrv.bat file. Add the two arguments without changing any of the other arguments.
 
-        **Note:** Check the path in ibmdisrv.bat for where SDI is installed - note the following properties:
+        !!! note
+    Check the path in ibmdisrv.bat for where SDI is installed - note the following properties:
 
         path
 

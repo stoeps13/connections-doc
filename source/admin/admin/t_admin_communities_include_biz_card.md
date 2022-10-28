@@ -10,7 +10,8 @@ For information about how to configure the Communities business card on a HCL Do
 
 The Communities business card displays basic community information, such as the name of the community, the image associated with the community, and the links for the widgets associated with the community. By including the card in your web application, you enable users to access a community directly from your application using the links in the card. 
 
-**Note:** The CSS files loaded with the Communities business card do not include font style information. To ensure that the business card appears fully integrated with your web application from a visual perspective, define your own font styles globally so that the styles used in your application are also applied to the business card.
+!!! note
+    The CSS files loaded with the Communities business card do not include font style information. To ensure that the business card appears fully integrated with your web application from a visual perspective, define your own font styles globally so that the styles used in your application are also applied to the business card.
 
 1.  To add the Communities business card to your web application, complete the following steps.
 2.  To use an Ajax proxy, add the following code to the web page within the `<head></head>` tags:
@@ -103,7 +104,8 @@ This property is required.
 
 5.  If you are building a web application that constructs its user interface using Ajax, you can make the business card user interface available by adding LiveName programmatically using JavaScript. Use the following API example:
 
-    **Note:** This step only applies when you are building an application that constructs its user interface using Ajax. The business card code only scans the HTML when the page is first loaded so, if you dynamically alter the page, you need to manually specify the DOM elements that the code rescans for business card vcard class attributes. If you are developing a completely static page, you can ignore this step.
+    !!! note
+    This step only applies when you are building an application that constructs its user interface using Ajax. The business card code only scans the HTML when the page is first loaded so, if you dynamically alter the page, you need to manually specify the DOM elements that the code rescans for business card vcard class attributes. If you are developing a completely static page, you can ignore this step.
 
     ```
     var htmlContent = "<span class="vcomm X-community-display-inline">"+

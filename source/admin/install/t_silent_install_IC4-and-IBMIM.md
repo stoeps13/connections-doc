@@ -6,7 +6,8 @@ This task assumes that IBM Installation Manager is not installed on your system.
 
 Ensure that you complete all the prerequisite tasks that are relevant for your environment. For more information, see the [Before installing](r_before_installing.md) topic.
 
-**Note:** However, do not complete the prerequisite tasks that relate to IBM Installation Manager.
+!!! note
+    However, do not complete the prerequisite tasks that relate to IBM Installation Manager.
 
 Edit the default response file to suit your environment. For more information, refer to [Using the default response file](t_silent_install_edit_response.md).
 
@@ -16,7 +17,8 @@ To perform a silent installation, complete the following steps:
 
 1.  Open a command prompt and go to the location of the silent installation file. The file is stored in the HCL\_Connections\_set-up/HCL\_Connections\_Install/IM/OS directory, whereHCL\_Connections\_set-up is the directory or media where the HCL Connections installation files are located and OS represents your operating system
 
-    **Note:** To change the paths to the response file and log file, edit the lc\_install.ini file. The file is located in the HCL\_Connections\_set-up/HCL\_Connections\_Install/IM/OS directory.
+    !!! note
+    To change the paths to the response file and log file, edit the lc\_install.ini file. The file is located in the HCL\_Connections\_set-up/HCL\_Connections\_Install/IM/OS directory.
 
 2.  Run the silent installation script:
 

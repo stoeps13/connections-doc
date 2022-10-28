@@ -6,7 +6,8 @@ You can add or override the defaults for several characteristics of the email no
 
 The following procedure explains how to use the cloud administration console to create and edit an app/organization extension that you can use to make these customizations.
 
-**Note:** An organization can have multiple apps for notification customizations. If multiple apps are enabled, the earliest one will take precedence. It is best is to have only one app enabled at a time.
+!!! note
+    An organization can have multiple apps for notification customizations. If multiple apps are enabled, the earliest one will take precedence. It is best is to have only one app enabled at a time.
 
 1.  Log in as a user with Organization Administration privileges, click **Admin** on the navigation bar and then click **Manage Organization**.
 
@@ -36,7 +37,8 @@ The following procedure explains how to use the cloud administration console to 
 
     5.  Click **Path** and enter notify.
 
-        **Note:** Do not try test a new customization by changing the path to the existing notification extension \(in other words, don't use any value other than "notify" in this step\). If you no longer want the current customization, you should disable or delete the existing extension.
+        !!! note
+    Do not try test a new customization by changing the path to the existing notification extension \(in other words, don't use any value other than "notify" in this step\). If you no longer want the current customization, you should disable or delete the existing extension.
 
     6.  Click **Next**.
 
@@ -92,7 +94,8 @@ The following procedure explains how to use the cloud administration console to 
 
     -   To customize the **company logo**:
 
-        **Note:** Supported image file formats are jpg/jpeg and png \(under 40Kb in size due to email client restrictions\).
+        !!! note
+    Supported image file formats are jpg/jpeg and png \(under 40Kb in size due to email client restrictions\).
 
         -   Logo image
 
@@ -228,7 +231,8 @@ The following procedure explains how to use the cloud administration console to 
 
 7.  Click **Add** to enter your customizations into the payload and then click **Save** to save the extension. You can return to the extension later if you want to add or change other properties.
 
-    **Note:** If you later decide that you don't want to show an element, you must delete only the value \(""\), not the entire property.
+    !!! note
+    If you later decide that you don't want to show an element, you must delete only the value \(""\), not the entire property.
 
 8.  If you no longer want to use the currently enabled notification customizations, perform the following steps to disable the organization extension:
 

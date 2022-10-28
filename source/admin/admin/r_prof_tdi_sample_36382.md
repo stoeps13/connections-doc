@@ -51,7 +51,8 @@ Use the following procedure:
 
 4.  Open the map\_dbrepos\_from\_source.properties file and configure mappings as needed based on the attributes in your source LDIF file. Note the following sample mapping for a single user:
 
-    **Note:** In this example, a `guid` field was not present in the LDIF file so the `guid` entry in the following sample is mapped to `employeeNumber`, which will enable processing. See [Mapping fields manually](../install/t_prof_tdi_mapfields.md) and [Creating an iterator connector](t_admin_profiles_create_iterator_connector.md) for details.
+    !!! note
+    In this example, a `guid` field was not present in the LDIF file so the `guid` entry in the following sample is mapped to `employeeNumber`, which will enable processing. See [Mapping fields manually](../install/t_prof_tdi_mapfields.md) and [Creating an iterator connector](t_admin_profiles_create_iterator_connector.md) for details.
 
     ```
     deptNumber=departmentNumber

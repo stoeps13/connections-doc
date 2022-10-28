@@ -17,7 +17,8 @@ Upload files from your device to share them with people or communities or store 
 
 5.  Click **Upload**.
 
-    **Note:** If your organization has enabled the sync feature, you can drag and drop or copy, cut, and paste a file from your desktop to your My Drive folder. See [Organizing, syncing, and editing files in My Drive](c_files_sync_refresh.md#).
+    !!! note
+    If your organization has enabled the sync feature, you can drag and drop or copy, cut, and paste a file from your desktop to your My Drive folder. See [Organizing, syncing, and editing files in My Drive](c_files_sync_refresh.md#).
 
     If you want, you can also [share files in a status update](../profiles/t_pers_update_status.md).
 

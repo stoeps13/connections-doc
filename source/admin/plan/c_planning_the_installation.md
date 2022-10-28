@@ -15,7 +15,8 @@ When you are installing Connections, you have three deployment options:
 Small deployment
 :   Install all Connections applications on a single node in a single cluster. This option is the simplest deployment but has limited flexibility and does not allow individual applications to be scaled up. All the applications run within a single Java™ Virtual Machine \(JVM\).
 
-    **Note:** The diagram depicts a topology with up to 8 servers. If you install the servers on shared systems, you do not need to deploy 8 separate systems.
+    !!! note
+    The diagram depicts a topology with up to 8 servers. If you install the servers on shared systems, you do not need to deploy 8 separate systems.
 
     ![Small deployment topology](deployment-diagrams-connections-small.jpg "Small deployment ")
 

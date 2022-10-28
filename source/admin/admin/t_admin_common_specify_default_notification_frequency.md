@@ -91,7 +91,8 @@ You can also specify the email digest frequency for updates from any third-party
         </categories>
         ```
 
-        **Note:** The Library application has its own source. To configure the default frequency settings for email digests related to libraries, look for the following section:
+        !!! note
+    The Library application has its own source. To configure the default frequency settings for email digests related to libraries, look for the following section:
 
         ```
         <source name="ecm_files" enabled="true" defaultFollowFrequency="INDIVIDUAL" frequencyLocked="false"/>

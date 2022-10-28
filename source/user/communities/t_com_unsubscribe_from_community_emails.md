@@ -6,7 +6,8 @@ If you prefer not to get community-wide emails from owners and other members of 
 
 2.  Click **Community Actions** and select **Unsubscribe from Mail**.
 
-    **Note:** If you change your mind, you can always return to the community, click **Community Actions** and select **Subscribe to Mail** from the list.
+    !!! note
+    If you change your mind, you can always return to the community, click **Community Actions** and select **Subscribe to Mail** from the list.
 
 
 You will no longer get general emails from the community. If you want to manage email notifications that you're getting as a result of choosing to follow people or communities, see [Getting browser and email notifications](../profiles/c_pers_getting_notifications.md).

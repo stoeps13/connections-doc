@@ -14,7 +14,8 @@ Change an existing LDAP user to be connectionsAdmin so that both Connections and
 
     2.  Open a browser session to: <fileNetHostName\>:<fileNetPort\>/dm.
 
-        **Note:** The default HTTP port in FileNet is commonly set to 80 or 9080.
+        !!! note
+    The default HTTP port in FileNet is commonly set to 80 or 9080.
 
     3.  Log in with the `connectionsAdmin` user you previously added.
 

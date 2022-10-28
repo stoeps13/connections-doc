@@ -35,7 +35,8 @@ This task describes how to use SQL scripts to create SQL Server databases for HC
 
 Download the [Microsoft JDBC Driver 4.0 for SQL Server](http://www.microsoft.com/en-us/download/details.aspx?id=11774) driver from the Microsoft web site and follow the instructions to extract the driver files. HCL Connections uses the sqljdbc4.jar file.
 
-**Note:** To capture the output of each command to a log file, append the following parameter to each command:
+!!! note
+    To capture the output of each command to a log file, append the following parameter to each command:
 
 \>\> \\file\_path\\db\_application.log
 
@@ -63,7 +64,8 @@ To create the application database tables, complete the following steps:
 
     3.  Add the local account to the Local Administrators group.
 
-    **Note:** You must specify these credentials later as parameters of the U and P flags for the sqlcmd command.
+    !!! note
+    You must specify these credentials later as parameters of the U and P flags for the sqlcmd command.
 
 3.  Create a directory on the SQL Server system where you can store the application databases.
 
@@ -79,7 +81,8 @@ To create the application database tables, complete the following steps:
 
     2.  Enter the following command to create the application database table:
 
-        **Note:** If your database server has multiple SQL Server instances, add the following parameter as the first parameter in each command:
+        !!! note
+    If your database server has multiple SQL Server instances, add the following parameter as the first parameter in each command:
 
         -S sqlserver\_server\_name\\sqlserver\_server\_instance\_name
 

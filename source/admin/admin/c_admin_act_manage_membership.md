@@ -2,7 +2,8 @@
 
 Use administrative commands to change member access levels and synchronize member IDs.
 
-**Note:** When the name of a group that is used in an activity is renamed in LDAP, the old group name still appears on the **Members** page of the activity.
+!!! note
+    When the name of a group that is used in an activity is renamed in LDAP, the old group name still appears on the **Members** page of the activity.
 
 -   **[Retrieving member information](../admin/t_admin_act_manage_membership.md)**  
 Learn about the administrative commands that display the members of an activity. You can retrieve either a single member or a list of members.

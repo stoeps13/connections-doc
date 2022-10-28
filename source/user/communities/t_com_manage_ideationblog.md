@@ -22,7 +22,8 @@ An ideation blog is a type of blog that is designed to generate ideas on a parti
 3.  Click the **Ideation Blog** tab.
 4.  Select what Ideation Blog content you'd like to see on the community Highlights page and the app itself.
 
-    **Note:** Want to show the Ideation Blog on the community Highlights page? See [Adding apps and widgets to the Highlights page](c_com_highlights_widgets.md).
+    !!! note
+    Want to show the Ideation Blog on the community Highlights page? See [Adding apps and widgets to the Highlights page](c_com_highlights_widgets.md).
 
 5.  Click **Save** or **Save And Close**.
 

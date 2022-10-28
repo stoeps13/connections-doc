@@ -4,7 +4,8 @@ Use administrative commands to change the level of access that members have to o
 
 To run administrative commands, you must use the wsadmin client. See [Starting the wsadmin client](t_admin_wsadmin_starting.md) for details.
 
-**Note:** You cannot use the AccessControlService commands to fetch, set, or delete access to community activities. See Communities administrative commands for information about the commands you can use to add a person to a community.
+!!! note
+    You cannot use the AccessControlService commands to fetch, set, or delete access to community activities. See Communities administrative commands for information about the commands you can use to add a person to a community.
 
 1.  Use the following command to access the Activities configuration file:
 

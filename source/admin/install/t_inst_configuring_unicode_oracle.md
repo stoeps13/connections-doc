@@ -8,7 +8,8 @@ Installation must be performed so the AL32UTF8 character set is used. This is ma
 
 2.  Select the Use Unicode \(AL32UTF8\) option.
 
-    **Note:** Leave **Create As Container Database** unselected.
+    !!! note
+    Leave **Create As Container Database** unselected.
 
 
 **Parent topic:**[Creating Oracle databases](../install/c_inst_create_database_oracle.md)

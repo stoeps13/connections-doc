@@ -64,7 +64,8 @@ You are configuring a proxy server to reside in front of the HTTP Server \(IHS\)
 
     5.  Click **New...** and add the settings for your IHS hostname and port. By default, the HTTP port is port 80, and the secure port \(HTTPS\) is 443. If these values are different on your environment, adjust these values accordingly.
 
-        **Note:** REMEMBER TO REPEAT THIS STEP FOR THE OTHER GENERIC CLUSTER PROTOCOL.
+        !!! note
+    REMEMBER TO REPEAT THIS STEP FOR THE OTHER GENERIC CLUSTER PROTOCOL.
 
     6.  Stop, synchronize, and restart the nodes in your environment.
 
@@ -107,7 +108,8 @@ You are configuring a proxy server to reside in front of the HTTP Server \(IHS\)
         3.  Enter the name for the generic server cluster that you created earlier for HTTP requests.
         4.  Select **Affinity type**, select **Active affinity** and enter a value of 1800 seconds \(30 minutes\). This is the default expiration time of the DM. If this value has been changed, then change this affinity value to be the same as the DM expiration time.
 
-            **Note:** To determine the current value of the deployment manager expiration time, go to WAS\_APPSERVER\_DIR\\profiles\\DMgrProfile\\config\\cells\\Cell name\\applications\\isclite.ear\\deployments\\isclite and open the file deployment.xml. Locate the value of invalidationTimeout. This is the value of your DM timeout.
+            !!! note
+    To determine the current value of the deployment manager expiration time, go to WAS\_APPSERVER\_DIR\\profiles\\DMgrProfile\\config\\cells\\Cell name\\applications\\isclite.ear\\deployments\\isclite and open the file deployment.xml. Locate the value of invalidationTimeout. This is the value of your DM timeout.
 
         5.  Click **Apply** and save the configuration file.
         6.  Repeat this step for HTTPS, but assign the generic server cluster name for the HTTPS generic cluster that you set up earlier.
@@ -129,7 +131,8 @@ You are configuring a proxy server to reside in front of the HTTP Server \(IHS\)
 
         -   HTTP requests
         -   HTTPS requests
-        **Note:** The default port values of these requests for the HTTP Server \(IHS\) are port 80 \(for HTTP\) and port 443 \(for HTTPS\). If you changed these port values on your configuration, then make note of the changed values.
+        !!! note
+    The default port values of these requests for the HTTP Server \(IHS\) are port 80 \(for HTTP\) and port 443 \(for HTTPS\). If you changed these port values on your configuration, then make note of the changed values.
 
         1.  Navigate to **Servers** \> **Server Types** \> **WebSphere proxy servers** \> **Proxy server name** \> **Proxy Settings** \> **\(expandable\) Proxy Virtual Host Configuration** \> **Proxy virtual hosts**. Click **New...**.
         2.  Change the value of **Virtual host name** to `*`.
@@ -162,7 +165,8 @@ You are configuring a proxy server to reside in front of the HTTP Server \(IHS\)
         9.  Click **Manage Modules**. In the **Clusters and servers:** text box, make sure that only the value for **WebSphere:cell=cluster=PushNotificationCluster** is selected.
         10. Select all the modules in the list and then click **Apply**.
 
-            **Note:** There should be no reference to the IHS server in the **Server** column of the table.
+            !!! note
+    There should be no reference to the IHS server in the **Server** column of the table.
 
         11. Stop, synchronize, and restart all nodes.
 9.  Change the default proxy HTTP port.

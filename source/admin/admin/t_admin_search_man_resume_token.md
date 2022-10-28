@@ -17,7 +17,8 @@ Use the Search application to update the resume tokens for components in an inde
     SearchService.updateResumeTokens\(String components, String date, String indexLocation\)
     :   Updates the resume tokens in the index.
 
-        **Note:** You can run this command on background indexes only.
+        !!! note
+    You can run this command on background indexes only.
 
         This command takes the following arguments:
 

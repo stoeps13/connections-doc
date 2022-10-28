@@ -2,7 +2,8 @@
 
 With Editor access, you can create a wiki page and add content to it so you can share information with community members.
 
-**Note:** For information on wiki roles, see [Assigning app roles for community members](managing_roles_for_community_members.md).
+!!! note
+    For information on wiki roles, see [Assigning app roles for community members](managing_roles_for_community_members.md).
 
 1.  From the navigation bar, click **Communities** and select the community that you want to contribute to.
 2.  In the community **Highlights** page, in the **Wiki** area, click **Create a Wiki Page**. Alternatively, click **Wiki** in the community menu then **New Page** in the sidebar.

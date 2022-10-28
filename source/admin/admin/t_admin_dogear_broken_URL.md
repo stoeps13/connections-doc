@@ -6,7 +6,8 @@ To edit configuration files, you must use the wsadmin client. See [Starting the 
 
 When a user takes action to remove or correct a broken link, they can remove the link from their own bookmarks. You can configure whether the user can notify all other users about the broken link so they can also take action. The default is to enable the option, but, if you are administering a large deployment, you may want to turn this option off to stop notification mail from going to large groups. You can also turn on or off an option that notifies you each time a broken URL notification is sent, giving you the opportunity to correct or remove the link. Again, you may want to disable this option if the mail volume is excessive.
 
-**Note:** Disabling this filter introduces vulnerability to XSS and other types of malicious attack. See *Securing applications from malicious attack* for additional information.
+!!! note
+    Disabling this filter introduces vulnerability to XSS and other types of malicious attack. See *Securing applications from malicious attack* for additional information.
 
 1.  Open a command window and start the wsadmin command line tool as described in the topic, *Starting the wsadmin client*.
 

@@ -38,7 +38,8 @@ This section describes how to set up a development environment in which you can 
     C:\Program Files\IBM\TDI\V7.0/ibmditk -s C:\TDIProject\20120530\TDI
     ```
 
-    **Note:** The workspace used for development must reference a TDI solution directory that contains all the Profiles TDI artifacts. It is not sufficient to create a new TDI solution directory or use one that does not contain these artifacts. If you attempt to use a Profiles TDI component, such as one of the connectors, and they do not appear in the connector list, then you do not have your workspace and solution configured correctly.
+    !!! note
+    The workspace used for development must reference a TDI solution directory that contains all the Profiles TDI artifacts. It is not sufficient to create a new TDI solution directory or use one that does not contain these artifacts. If you attempt to use a Profiles TDI component, such as one of the connectors, and they do not appear in the connector list, then you do not have your workspace and solution configured correctly.
 
 5.  When you start the Tivoli Directory Integrator Configuration Editor, you are asked to specify a workspace. This is a working directory in which to store things related to your development project. When prompted, specify the same file path that you are using for the connector files, but replace TDI with workspace.
 

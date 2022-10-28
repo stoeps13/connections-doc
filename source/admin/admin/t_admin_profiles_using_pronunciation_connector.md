@@ -17,9 +17,11 @@ In this mode, the PronunciationConnector connects to the Pronunciation table in 
 |
 |Lookup|Fetches records from the Pronunciation table in the Profiles database according to specified search criteria.
 
-**Note:** The PronunciationConnector only supports searches by uid and key.
+!!! note
+    The PronunciationConnector only supports searches by uid and key.
 
-**Note:** The search \(link\) criteria must be the key attribute.
+!!! note
+    The search \(link\) criteria must be the key attribute.
 
 |
 |Update|Updates the pronunciation records in the Pronunciation table in the Profiles database. The connector can update the database using the pronunciation file link, inputting it as an InputStream data type, or using the pronunciation content, inputting it as a byte data type.
@@ -29,7 +31,8 @@ The search \(link\) criteria is the same as the Lookup mode.
 |
 |Delete|Deletes records in the Pronunciation table in the Profiles database according to specified search criteria.
 
-**Note:** The PronunciationConnector can only delete pronunciation records that are specified by key.
+!!! note
+    The PronunciationConnector can only delete pronunciation records that are specified by key.
 
 The search \(link\) criteria is the same as the Lookup mode.
 

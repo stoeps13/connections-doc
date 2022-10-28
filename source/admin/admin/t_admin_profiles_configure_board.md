@@ -6,9 +6,11 @@ To edit configuration files, use the IBM® WebSphere® Application Server wsadmi
 
 The recent updates feature allows users to connect with people in their network by posting messages to their profile and commenting on their status messages. As administrator, you can enable or disable the feature for specific profile types, depending on your organization's needs. You can configure access control settings according to profile type. You can also configure visibility of targeted events in the Profiles activity stream.
 
-**Note:** Profiles directory extensions must be enabled to support this capability. Extensions are enabled by default.
+!!! note
+    Profiles directory extensions must be enabled to support this capability. Extensions are enabled by default.
 
-**Note:** Profiles policy contains two related settings that impact how a user is enabled to post a status update on their Profile page – profiles.board and profile.status.update. It is recommended to have identical settings for both of these policies. In case of conflict between the two settings, the most restrictive setting is used. See *Configuring the status update feature* for related information.
+!!! note
+    Profiles policy contains two related settings that impact how a user is enabled to post a status update on their Profile page – profiles.board and profile.status.update. It is recommended to have identical settings for both of these policies. In case of conflict between the two settings, the most restrictive setting is used. See *Configuring the status update feature* for related information.
 
 1.  The following steps provide information about the properties that you can set for the recent updates feature, and the access levels and scopes that you can configure.
 2.  Start the wsadmin client from the following directory of the system on which you installed the Deployment Manager:
@@ -50,7 +52,8 @@ The recent updates feature allows users to connect with people in their network 
     profile.board
     :   Enables or disables the Profiles recent updates feature.
 
-        **Note:** Configuring this property does not affect the ability to post status messages.
+        !!! note
+    Configuring this property does not affect the ability to post status messages.
 
         This property takes a string value. Possible values include:
 
@@ -65,19 +68,23 @@ The recent updates feature allows users to connect with people in their network 
         -   self. Users with the specified profile type can view and post messages in their own recent updates area. Administrators can also view and post messages in the recent updates area of users with the specified profile type.
         -   colleagues\_not\_self. Only people who belong to the network of the user with the specified profile type, and who have the person role, can view and post messages to the user's recent updates area. Users with the specified profile type cannot post messages to their own recent updates area.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   colleagues\_and\_self. People who belong to the network of the user with the specified profile type, and who have the person role, can view and post messages to the user's recent updates area. Users with the specified profile type can also post messages to their own recent updates area.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   person\_not\_self. Users with the Person role in the News application can post messages to or view the recent updates area of users with the specified profile type. Users with the specified profile type cannot post messages to their own recent updates area.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   person\_and\_self. Users with the Person role in the News application, including self, can post messages to or view the recent updates area of users with the specified profile type. Users with the specified profile type can also post messages to their own recent updates area.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
     profile.board.write.comment
     :   Controls user access to post comments to the recent updates area.
@@ -88,19 +95,23 @@ The recent updates feature allows users to connect with people in their network 
         -   self. Users with the specified profile type can view and post comments to their own recent updates area. Administrators can also view and post comments to the recent updates area of users with the specified profile type.
         -   colleagues\_not\_self. Only the people who belong to the network of the user with the specified profile type, and who have the person role, can view and post comments to the user's recent updates area. Users with the specified profile type cannot post comments to their own recent updates area.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   colleagues\_and\_self. People who belong to the network of the user with the specified profile type, and who have the person role, can view and post comments to the user's recent updates area. Users with the specified profile type can also post comments to their own recent updates area.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   person\_not\_self. Users with the Person role in the News application can post comments to and view the recent updates area of users with the specified profile type. Users with the specified profile type cannot post comments to their own recent updates area.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
         -   person\_and\_self. Users with the Person role in the News application, including self, can post comments to and view the recent updates area of users with the specified profile type. Users with the specified profile type can also post comments to their own recent updates area.
 
-            **Note:** If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
+            !!! note
+    If resourceOwner is specified on the access check, the resource owner constraint must also be met, unless the user has the self role.
 
     For example:
 

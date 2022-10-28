@@ -28,7 +28,8 @@ This configuration procedure applies to files attached to Wikis pages through th
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied. The files are kept in this working directory while you make changes to them.
 
-            **Note:** AIX® and Linux™ only: The directory must grant write permissions or the command will not run successfully.
+            !!! note
+    AIX® and Linux™ only: The directory must grant write permissions or the command will not run successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the HCL Connections application. This argument is required. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor:
 
@@ -52,7 +53,8 @@ This configuration procedure applies to files attached to Wikis pages through th
 
 4.  In the mimeType attribute, specify a mime type in standard format, for example `text/plain`. Each value must be unique or an error is returned when you start the system. Go to the [Internet Assigned Numbers Authority \(IANA\)](http://www.iana.org/assignments/media-types/) website for a list of MIME types.
 
-    **Note:** The mediaType attribute is not supported in this release.
+    !!! note
+    The mediaType attribute is not supported in this release.
 
 5.  In each extension element, specify the extensions that you want to map to the MIME type. Each value must be unique or an error is returned when you start the system.
 

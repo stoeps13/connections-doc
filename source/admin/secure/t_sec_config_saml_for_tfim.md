@@ -60,7 +60,8 @@ com.ibm.websphere.security.performTAIForUnprotectedURI
 
         Assign this property the value `true`.
 
-    **Note:** Be sure to include a comma separating the two values.
+    !!! note
+    Be sure to include a comma separating the two values.
 
 4.  Configure single sign-on \(SSO\) partners as follows:
 
@@ -114,7 +115,8 @@ com.ibm.websphere.security.performTAIForUnprotectedURI
         wsadmin>AdminTask.exportSAMLSpMetadata('-spMetadataFileName /tmp/spdata.xml -ssoId 1')
         ```
 
-        **Note:** This command creates the /tmp/spdata.xml SP metadata file.
+        !!! note
+    This command creates the /tmp/spdata.xml SP metadata file.
 
     2.  Copy /tmp/spdata.xml to the IdP server and then import it into the IdP.
     3.  Restart the IdP.
@@ -145,13 +147,15 @@ com.ibm.websphere.security.performTAIForUnprotectedURI
     1.  From the WebSphere® Application Server Integrated Solutions Console, navigate to **Global security** \> **Trust association** \> **Interceptors** \> **com.ibm.ws.security.web.saml.ACSTrustAssociationInterceptor** to set the Custom property **sso\_1.sp.login.error.page** to com.ibm.connections.concerto.services.ADFSIdPMapping if Microsoft™ Active Directory Federation Services \(ADFS\) is used. Otherwise, use com.ibm.connections.concerto.services.TFIMIdPMapping.
         -   TFIMIdPMapping is used for TFIM 6.2.2, SAML 2.0 IdP only.
 
-            **Note:** When TFIM is in place, it can rely on either WebSphere or WebSEAL as a single point of contact for the SAML IdP implementation.
+            !!! note
+    When TFIM is in place, it can rely on either WebSphere or WebSEAL as a single point of contact for the SAML IdP implementation.
 
         -   ADFSIdPMapping is used for MS ADFS 2.0, SAML 2.0 IdP only.
     2.  Obtain the com.ibm.connections.concerto.services.jar from the [connections\_root](http://www-10.lotus.com/ldd/lcwiki.nsf/xpDocViewer.xsp?lookupName=IBM+Connections+4.5+Documentation#action=openDocument&res_title=Directory_path_conventions_ic45&content=pdcontent)/Concerto directory and copy this file into the WebSphere Application Server’s library extension folder. For example, copy com.ibm.connections.concerto.services.jar to:
         -   Windows™: C:\\IBM\\WebSphere\\AppServer\\lib\\ext
         -   AIX®, Linux™: /opt/IBM/WebSphere/AppServer/lib/ext
-        -   **Note:** For a multi-node ND deployment, all the nodes must have this redirection service JAR available for the SAML TAI to pick up.
+        -   !!! note
+    For a multi-node ND deployment, all the nodes must have this redirection service JAR available for the SAML TAI to pick up.
 
 10. Restart the deployment as follows:
 

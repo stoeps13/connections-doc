@@ -22,7 +22,8 @@ To view information about sharing a file, right-click a file or folder and selec
 
 -   To copy a link to the file, select **File Actions** \> **Copy URL** to copy the link to the clipboard. From there, you can manually paste it into a mail message.
 
-    **Note:** You can also share a link from the About page if you are the person who last created, modified, or locked the file. Click your name and choose **Send link** to create a mail message.
+    !!! note
+    You can also share a link from the About page if you are the person who last created, modified, or locked the file. Click your name and choose **Send link** to create a mail message.
 
 -   Sharing a folder makes the content available to everyone you share with. Special rules apply to sharing or editing files in folders.
 

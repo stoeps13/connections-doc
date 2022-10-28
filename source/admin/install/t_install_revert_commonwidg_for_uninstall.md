@@ -2,7 +2,8 @@
 
 The HCL Connections Installation Manager program requires that you revert the Common and WidgetContainer applications the News cluster for uninstallation if you previously separated those applications to their own clusters.
 
-**Note:** When reverting the Common application, the Connection-proxy ear will be reverted at the same time. The new cluster, node, and server name will be the same as those of the Common application.
+!!! note
+    When reverting the Common application, the Connection-proxy ear will be reverted at the same time. The new cluster, node, and server name will be the same as those of the Common application.
 
 1.  Stop all clusters in the Connections deployment.
 

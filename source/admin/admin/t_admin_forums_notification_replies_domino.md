@@ -40,7 +40,8 @@ A mail server uses a rule or trigger to direct reply emails to a mailbox dedicat
 
     7.  Add the following Lotusscript to the agent:
 
-        **Note:** The following script is only an example to be used for reference, and you will need to change or adjust the script based on your actual environment.
+        !!! note
+    The following script is only an example to be used for reference, and you will need to change or adjust the script based on your actual environment.
 
         ```
         Sub Initialize

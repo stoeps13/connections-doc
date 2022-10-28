@@ -6,7 +6,8 @@ Customize the product by replacing images specific to HCL Connections™ with yo
 
     **Tip:** To find the source file for the image that you want to change, use one of the web inspector tools listed in [Customization best practices](c_customize_best_practices.md) to inspect the image. The image name displays in the img tag. If the image is sprited, you can see the class that has the image or icon.
 
-    **Note:** You can find the sprited images file: com.ibm.oneui3.styles\_3.X.X.<DATE-STAMP\>.jar in the following location: WAS\_HOME/profiles/<AppServer\> /installedApps/<cell\>/Common.ear/connections.web.resources.war/WEB-INF/eclipse/plugins
+    !!! note
+    You can find the sprited images file: com.ibm.oneui3.styles\_3.X.X.<DATE-STAMP\>.jar in the following location: WAS\_HOME/profiles/<AppServer\> /installedApps/<cell\>/Common.ear/connections.web.resources.war/WEB-INF/eclipse/plugins
 
 2.  Open the copied image file and update it as needed.
 
@@ -16,7 +17,8 @@ Customize the product by replacing images specific to HCL Connections™ with yo
 
 4.  Create a CCS file named custom.css and store it in the following subdirectory of the customization directory: customizationDir/themes/<theme\_name\>Theme.
 
-    **Note:** Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
+    !!! note
+    Each theme, for example: "red", "green", "onyx", "gen4", "hikari", \(the default theme\) has a theme customization folder called customizationDir/themes/<theme\_name\>Theme/. So the customization folder for the hikari theme is customizationDir/themes/hikariTheme/.
 
 5.  To replace the HCL Connections Activities icon with your customized icon image, open the CSS file in a text editor and add the following lines:
 

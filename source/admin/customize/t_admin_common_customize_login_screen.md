@@ -44,7 +44,8 @@ You can change the appearance of the Connections login page to meet your organiz
 
 4.  Edit the login.jsp file or files to contain the information you want.
 
-    **Note:** For information on how to replace the logo on the login page, refer to the steps covered in [Changing the HCL Connections logo](t_customize_change_logo.md).
+    !!! note
+    For information on how to replace the logo on the login page, refer to the steps covered in [Changing the HCL Connections logo](t_customize_change_logo.md).
 
 5.  Save and close the login page.
 

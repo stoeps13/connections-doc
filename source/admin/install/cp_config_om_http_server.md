@@ -48,7 +48,8 @@ Complete this task to ensure that the HTTP server redirects users to the Orient 
 
     For high availability deployments, replace `master\_node\_host\_name` with the load balancer DNS of the HA cluster \(Must be FQHN\).
 
-    **Note:** 32080 is the port of the Ingress Controller, so make sure that is deployed and running before making these changes. Take note of the new appreg URL when using Ingress.
+    !!! note
+    32080 is the port of the Ingress Controller, so make sure that is deployed and running before making these changes. Take note of the new appreg URL when using Ingress.
 
     For example, after inserting the above statements, your code block will look like the following snippet:
 

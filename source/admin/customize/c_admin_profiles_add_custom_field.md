@@ -6,7 +6,8 @@ The Profiles application provides a set of default attributes. Because every org
 
 You can also add simple string extension attributes by including additional lines in the profiles-config.xml file, as illustrated in the [Specifying a custom field as required and declaring maximum field length](t_admin_profiles_specify_required_field.md) topic.
 
-**Note:** It is not necessary to populate the values of the newly-added custom extension attributes using the Profiles IBM® Tivoli® Directory Integrator \(TDI\) Solution scripts that are provided. The values can be manually entered into the database using the **Edit My Profile** page in the user interface. Storing these values in the LDAP directory and populating the values using Tivoli Directory Integrator Solution scripts is optional.
+!!! note
+    It is not necessary to populate the values of the newly-added custom extension attributes using the Profiles IBM® Tivoli® Directory Integrator \(TDI\) Solution scripts that are provided. The values can be manually entered into the database using the **Edit My Profile** page in the user interface. Storing these values in the LDAP directory and populating the values using Tivoli Directory Integrator Solution scripts is optional.
 
 **Related information**  
 

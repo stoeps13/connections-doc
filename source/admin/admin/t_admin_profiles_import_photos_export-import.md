@@ -35,7 +35,8 @@ You can use the dump\_photos\_to\_files and load\_photos\_from\_file assembly-li
 
 |
 
-    **Note:** Make sure that new Profiles database is populated with users before running the load\_photos\_from\_files command.
+    !!! note
+    Make sure that new Profiles database is populated with users before running the load\_photos\_from\_files command.
 
 
 This sample collect\_photos.in file contains three entries.

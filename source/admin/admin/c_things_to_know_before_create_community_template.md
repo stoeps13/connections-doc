@@ -50,7 +50,8 @@ What is NOT included in a template
 
 :   Social information such as status updates, likes, download history, and so on
 
-**Note:** The community template will copy the External Access flag from the original community. This flag limits the ability of a community to invite external members or not invite them, and it cannot be changed in communities created from the template. If you require external access, make sure to create a template from a community that allows external member access.
+!!! note
+    The community template will copy the External Access flag from the original community. This flag limits the ability of a community to invite external members or not invite them, and it cannot be changed in communities created from the template. If you require external access, make sure to create a template from a community that allows external member access.
 
 **Parent topic:**[Administering community templates](../admin/t_admin_comm_templates_container.md)
 

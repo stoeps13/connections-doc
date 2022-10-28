@@ -6,7 +6,8 @@ Add an image to an entry in an HCL Connections application.
 
 You can add any image file format that is supported by your browser. The most widely supported image formats are BMP, GIF, JPG, JPEG, PNG, and RAW
 
-**Note:** This function differs across applications. In Blog, Forums, and Wiki, you can upload an image from your computer, insert an image from the web, and paste an image. In Blog and Wiki, you can also use an existing image that you already uploaded.
+!!! note
+    This function differs across applications. In Blog, Forums, and Wiki, you can upload an image from your computer, insert an image from the web, and paste an image. In Blog and Wiki, you can also use an existing image that you already uploaded.
 
 ## Inserting an image {#section_unp_4ts_sy .section}
 
@@ -16,12 +17,14 @@ You can add any image file format that is supported by your browser. The most wi
 4.  Click the tab to select whether you want to upload an image from **Local Files**, **Web URL**, or **Existing Images**.
     -   In **Local Files** tab, click **Browse** to select the image from your computer. You can directly drag and drop files to the window. Set the additional options and then click **Upload Image**.
 
-        **Note:** In Blog and Wiki, you can only upload one image at a time, but in Forums, you can upload more than one image at a time.
+        !!! note
+    In Blog and Wiki, you can only upload one image at a time, but in Forums, you can upload more than one image at a time.
 
     -   In **Web URL** tab, enter the URL where the image file is located. If the image is on an external server, use the full address, for example, http://example.com/image.png. If the image is on the same server as the Connections application, use a relative path, for example, /images/image.png. Then click **Insert Image**.
     -   In **Existing Images** tab, select the image that you want to insert from existing images and then click **Insert Image**.
 
-        **Note:** Only Blog and Wiki support selecting from existing images. For blogs, images added in all entries of the same blog are available for you to select. For wikis, you can only select from the images that are already inserted in the same wiki page.
+        !!! note
+    Only Blog and Wiki support selecting from existing images. For blogs, images added in all entries of the same blog are available for you to select. For wikis, you can only select from the images that are already inserted in the same wiki page.
 
 5.  After the image is inserted, you can set image properties by right-clicking the image and select **Image Properties**.
 

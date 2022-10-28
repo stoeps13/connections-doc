@@ -21,7 +21,8 @@ Consider tasks that you might want to complete after you install HCL Connections
     -   For user directory maintenance:
         -   To keep the Profiles data in sync with the source from which you populated it, schedule the sync\_all\_dns script to run nightly. See [Synchronizing the Profiles database with your organization's user data](t_admin_profiles_sync_ldap.md) for more details.
 
-            **Note:** If you made any customizations to the population process, schedule your custom synchronization script to run nightly instead.
+            !!! note
+    If you made any customizations to the population process, schedule your custom synchronization script to run nightly instead.
 
         -   To keep information about managers up-to-date, run the mark\_managers program. For more information, see the [Configuring the Manager designation in user profiles](../install/r_report-to_chains_profiles.md) topic.
 

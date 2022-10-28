@@ -7,7 +7,8 @@ Using a forum to ask and answer questions is a great way to share expertise and 
 
     When you answer a question in a forum, the person who posted the question receives a notification with your answer. That person can choose whether to accept or reject your answer. If they accept your answer, the question is marked as answered and is flagged with a tick ![Tick denotes an accepted answer](completed_16x16.gif)![Tick denotes an accepted answer](completed_16x16.gif) to indicate that it is answered correctly. A question can have multiple correct answers.
 
-    **Note:** If you answer your own question, the response is automatically flagged as an accepted answer.
+    !!! note
+    If you answer your own question, the response is automatically flagged as an accepted answer.
 
 
 Question topics that are still not answered are displayed on the **Open Questions** tab on the My Forums page. You can view resolved questions by clicking the **Answered Questions** tab.

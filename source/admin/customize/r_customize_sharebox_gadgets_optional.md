@@ -101,7 +101,8 @@ The actionId corresponds to the tab that is dirty.
 
 Set to true when data has been entered in one or more fields in the gadget. Set to false when no changes from the user exist in the gadget.
 
-**Note:** If the gadget dirty state is true, when a user tries to close the Share dialog by using means outside of the dirty gadget, they are prompted to confirm the current action and lose changes.
+!!! note
+    If the gadget dirty state is true, when a user tries to close the Share dialog by using means outside of the dirty gadget, they are prompted to confirm the current action and lose changes.
 
 |
 |setSubmitState\(inProgress\)
@@ -117,7 +118,8 @@ ibm.connections.sharedialog.setSubmitState(false);
 
 Set to true when the item in the submission state. Set to false when the item is not in the submit state.
 
-**Note:** If set to true, then the user cannot switch to a different gadget tab.
+!!! note
+    If set to true, then the user cannot switch to a different gadget tab.
 
 |
 

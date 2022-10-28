@@ -33,7 +33,8 @@ To review the JVM heap size, complete the following steps:
         Maximum Heap Size
         :   2560 MB
 
-    **Note:** Ensure that you are not allocating more memory than the physical capacity of the system where the JVM is installed.
+    !!! note
+    Ensure that you are not allocating more memory than the physical capacity of the system where the JVM is installed.
 
 5.  Adjust the current values of the heap size up or down to suit the needs of your deployment and your hardware capabilities.
 

@@ -27,11 +27,13 @@ To edit configuration files, you must use the IBM® WebSphere® Application Serv
 
         -   working\_directory is the temporary working directory to which the configuration XML and XSD files are copied and are stored while you make changes to them. Use forward slashes \(/\) to separate directories in the file path, regardless of your operating system.
 
-            **Note:** In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
+            !!! note
+    In order for the command to complete successfully, the directory must grant write permissions if you are using one of the following operating systems:
 
             -   AIX
             -   Linux
-            **Note:** The directory must grant write permissions or the command does not complete successfully.
+            !!! note
+    The directory must grant write permissions or the command does not complete successfully.
 
         -   cell\_name is the name of the WebSphere Application Server cell hosting the Profiles application. This argument is required. It is also case-sensitive. If you do not know the cell name, you can determine it by typing the following command in the wsadmin command processor: print AdminControl.getCell\(\)
         For example:
@@ -74,12 +76,14 @@ The keyword and directory search operations do not have this limit.
 
 This property takes a Boolean value.
 
-**Note:** Enabling this setting negatively impacts the performance of the Search by \> Name function available in the Profiles user interface.
+!!! note
+    Enabling this setting negatively impacts the performance of the Search by \> Name function available in the Profiles user interface.
 
 |
     |nameOrdering.enabled|When this property is set to true, names must be entered as \(FirstName LastName\) or \(LastName, FirstName\). By default, it is set to false.
 
-**Note:** When only a single word is entered, that word is treated as the LastName value during search.
+!!! note
+    When only a single word is entered, that word is treated as the LastName value during search.
 
 This property takes a Boolean value.
 

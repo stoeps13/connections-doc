@@ -14,7 +14,8 @@ Have a big announcement or idea? Create a blog entry to tell others about it. Yo
     -   To include an external media link in a feed that includes this entry, enter the URL in the **External media URL** field.
 6.  To publish, click **Post**.
 
-    **Note:** If you have Owner or Author permissions, your entry is published and visible in the blog. If you have Draft permission, your entry is submitted for review. Your post is not visible in the blog until a moderator approves it. For more information on roles and permissions, see [Managing roles and permissions](c_blogs_roles.md).
+    !!! note
+    If you have Owner or Author permissions, your entry is published and visible in the blog. If you have Draft permission, your entry is submitted for review. Your post is not visible in the blog until a moderator approves it. For more information on roles and permissions, see [Managing roles and permissions](c_blogs_roles.md).
 
 
 ## Next steps {#section_sz4_cth_my .section}
