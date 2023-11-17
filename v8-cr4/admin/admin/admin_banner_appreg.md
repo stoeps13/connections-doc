@@ -8,10 +8,10 @@ You need Component Pack installed to perform the following procedures. If Compon
 
 To set up the banner, you first need to create a new app registry extension. Afterward, you can control the content and functionality of the banner through the app registry.
 
-1.  Log into Connections as an admin user.
-2.  Navigate to <connections\_hostname\>/appreg/apps.
-3.  Click **New App** to create a new extension.
-4.  Click **Code Editor**, and then replace the data with the following `ADMIN_BANNER_APP_DATA` configuration:
+1. Log into Connections as an admin user.
+2. Navigate to <connections\_hostname\>/appreg/apps.
+3. Click **New App** to create a new extension.
+4. Click **Code Editor**, and then replace the data with the following `ADMIN_BANNER_APP_DATA` configuration:
 
     ```
     {
@@ -41,8 +41,7 @@ To set up the banner, you first need to create a new app registry extension. Aft
     }
     ```
 
-5.  Click **Save**.
-
+5. Click **Save**.
 
 ## Customizing the admin banner { .section}
 
@@ -58,4 +57,3 @@ If you want to change when and with what message the banner is displayed, you ca
 For style customizations, refer to [Customizing the look and feel of HCL Connections](../customize/customizing-look-and-feel.md#administrative-banner) in the "Customizing" section of the documentation.
 
 **Parent topic:** [Administering the display of a site-wide banner](../admin/admin_banner_onprem.md)
-

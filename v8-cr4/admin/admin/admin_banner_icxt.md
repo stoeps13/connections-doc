@@ -38,20 +38,18 @@ For style customizations, refer to [Customizing the look and feel of HCL Connect
 
 After creating the banner, you can enable, disable, or check it using other APIs:
 
--   To enable:
+- To enable:
 
     Send an HTTP `PUT` request to `<connections_hostname>/ic360/ui/api/admin-banner/enable`
-    
--   To disable:
+
+- To disable:
 
     Send an HTTP `PUT` request to `<connections_hostname>/ic360/ui/api/admin-banner/disable`
 
--   To check the current status and configuration of the banner:
+- To check the current status and configuration of the banner:
 
     Send an HTTP `GET` request to `<connections_hostname>/ic360/ui/api/admin-banner/config.json`
-    
+
     This shows the `.json` file that you configured when you created or customized the banner.
 
-
 **Parent topic:** [Administering the display of a site-wide banner](../admin/admin_banner_onprem.md)
-

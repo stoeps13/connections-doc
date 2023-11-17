@@ -8,12 +8,9 @@ You can administer the banner in two ways: through the app registry or through F
 
 Administering the banner through the app registry involves creating an app registry extension and updating its configuration. Afterwards, you can control when and which message the banner displays. On the other hand, Feature Foundation involves the use of APIs. This way, you can enable or disable the banner and define how it displays in Connections. You cannot configure different messages for different user groups, but you can still enter a message that shows for all users.
 
-
-
--   **[Administering the banner using app registry](../admin/admin_banner_appreg.md)**  
+- **[Administering the banner using app registry](../admin/admin_banner_appreg.md)**  
 Create an app registry extension and specify select properties in the configuration, such as the message you want displayed, to make the most out of the banner in Connections.
--   **[Administering the banner using Feature Foundation](../admin/admin_banner_icxt.md)**  
+- **[Administering the banner using Feature Foundation](../admin/admin_banner_icxt.md)**  
 Use APIs on Feature Foundation to show, manage, and update the banner in Connections.
 
 **Parent topic:** [Administering common areas](../admin/c_admin_act_wsadmin.md)
-
